@@ -234,7 +234,9 @@ def head_common(title, desc, canonical, og_img, og_alt, prefix, extra=""):
 <meta name="twitter:description" content="{esc(desc)}">
 <meta name="twitter:image" content="{og_img}">
 <link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">
-<link rel="icon" href="{prefix}assets/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{prefix}favicon.ico" sizes="48x48">
+<link rel="icon" href="{prefix}assets/icon-96.png" sizes="96x96" type="image/png">
+<link rel="icon" href="{prefix}assets/icon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <link rel="manifest" href="{prefix}site.webmanifest">
 <link rel="sitemap" type="application/xml" href="{prefix}sitemap.xml">
@@ -511,8 +513,9 @@ def build_images():
         T = TOURS[k]
         og_card(T["img"], f'{T["loc"]} · {T["irl"]}', T["title"], f'{T["dur"]} · {money(T["price"])} per {T["unit"]} · tours from mid-Nov 2026',
                 os.path.join(a, "og", SEO[k]["slug"] + ".jpg"))
-    for s, n in [(32, "icon-32.png"), (180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")]:
+    for s, n in [(32, "icon-32.png"), (48, "icon-48.png"), (96, "icon-96.png"), (144, "icon-144.png"), (180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")]:
         pin_icon(s).save(os.path.join(a, n))
+    pin_icon(256).save(os.path.join(ROOT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
     open(os.path.join(ROOT, "favicon.svg"), "w").write(
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".45" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient></defs>'
         '<rect width="32" height="32" rx="8" fill="url(#g)"/><g transform="translate(4 4)" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></g></svg>\n')
