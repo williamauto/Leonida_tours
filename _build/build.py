@@ -156,6 +156,43 @@ DISCLAIMER = ("<strong>Unofficial tours.</strong> Leonida Tours is an independen
 url = lambda path="": SITE + "/" + path
 turl = lambda k: url(f"tours/{SEO[k]['slug']}/")
 
+# ---------------------------------------------------------------- trademark guard
+# Commercial pages (home, tours, locations, map, policies) may not use protected
+# game marks in their title, meta description, H1 or schema entity name. Body copy
+# may name the game nominatively and with attribution, which is what the field
+# guide is for; blog articles are exempt because the game is their subject.
+# "Vice City" is allowed site-wide: it is the geographic nickname the site's live
+# titles already use ("Miami Vice City") and it names a real city.
+TRADEMARKS = [(re.compile(r"grand\s+theft\s+auto", re.I), "Grand Theft Auto"),
+              (re.compile(r"\bgta\b", re.I), "GTA"),
+              (re.compile(r"rockstar", re.I), "Rockstar"),
+              (re.compile(r"take-?two", re.I), "Take-Two"),
+              (re.compile(r"\blucia\b", re.I), "Lucia"),
+              (re.compile(r"\bjason\b", re.I), "Jason")]
+
+def guard(page, fields, graph=None):
+    problems = []
+    for label, text in fields:
+        if not text:
+            continue
+        for rx, name in TRADEMARKS:
+            if rx.search(text):
+                problems.append(f"{page}: {label} contains '{name}' -> {str(text)[:90]}")
+    if graph:
+        for node in graph:
+            kind = node.get("@type")
+            if kind in ("FAQPage", "Question", "Answer", "BreadcrumbList", "ListItem"):
+                continue
+            for key in ("name", "headline"):
+                val = node.get(key)
+                if not isinstance(val, str):
+                    continue
+                for rx, name in TRADEMARKS:
+                    if rx.search(val):
+                        problems.append(f"{page}: schema {kind}.{key} contains '{name}' -> {val[:90]}")
+    if problems:
+        raise SystemExit("trademark guard failed:\n  " + "\n  ".join(problems))
+
 # ---------------------------------------------------------------- schema
 ORG_ID, SITE_ID = url("#organization"), url("#website")
 def org():
@@ -213,7 +250,13 @@ def ld(graph):
     return '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": graph},
                                                               ensure_ascii=False, separators=(",", ":")) + "</script>"
 
-def head_common(title, desc, canonical, og_img, og_alt, prefix, extra=""):
+def head_common(title, desc, canonical, og_img, og_alt, prefix, extra="", og_type="website", article=None):
+    art = ""
+    if og_type == "article" and article:
+        art = (f'\n<meta property="article:published_time" content="{article.get("published", TODAY)}">'
+               f'\n<meta property="article:modified_time" content="{article.get("modified", TODAY)}">'
+               f'\n<meta property="article:section" content="{esc(article.get("section", ""))}">'
+               f'\n<meta property="article:author" content="{esc(article.get("author", BRAND))}">')
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 {GTM_HEAD}<title>{esc(title)}</title>
@@ -227,7 +270,7 @@ def head_common(title, desc, canonical, og_img, og_alt, prefix, extra=""):
 <meta name="geo.region" content="US-FL"><meta name="geo.placename" content="Miami Beach">
 <meta name="geo.position" content="25.7781;-80.1310"><meta name="ICBM" content="25.7781, -80.1310">
 <link rel="alternate" hreflang="en-us" href="{canonical}"><link rel="alternate" hreflang="x-default" href="{canonical}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{BRAND}">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{esc(title)}">
@@ -240,7 +283,7 @@ def head_common(title, desc, canonical, og_img, og_alt, prefix, extra=""):
 <meta name="twitter:site" content="@leonidatours">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(desc)}">
-<meta name="twitter:image" content="{og_img}">
+<meta name="twitter:image" content="{og_img}">{art}
 <link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{prefix}favicon.ico" sizes="48x48">
 <link rel="icon" href="{prefix}assets/icon-96.png" sizes="96x96" type="image/png">
@@ -248,7 +291,9 @@ def head_common(title, desc, canonical, og_img, og_alt, prefix, extra=""):
 <link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <link rel="manifest" href="{prefix}site.webmanifest">
 <link rel="sitemap" type="application/xml" href="{prefix}sitemap.xml">
+<link rel="alternate" type="application/rss+xml" title="{BRAND} blog" href="{prefix}feed.xml">
 <link rel="alternate" type="text/plain" title="LLM summary" href="{prefix}llms.txt">
+<link rel="alternate" type="text/plain" title="Full site text for AI assistants" href="{prefix}llms-full.txt">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
@@ -319,7 +364,16 @@ def build_index():
     body = body.replace('<img src="img/${T.img}.jpg" alt="">', '<img src="img/${T.img}.jpg" alt="${T.title}">')
     # crawlable footer links
     links = "".join(f'<li><a href="tours/{SEO[k]["slug"]}/">{esc(TOURS[k]["title"])}</a></li>' for k in ORDER)
-    body = body.replace('<p class="legal">', f'<nav class="foot-links" aria-label="All tours"><h2>Tours</h2><ul>{links}</ul></nav>\n    <p class="legal">', 1)
+    site_links = "".join(f'<li><a href="{href}">{label}</a></li>' for href, label in
+                         [("blog/", "Blog"), ("locations/", "Real locations field guide"), ("map/", "Map of the real locations"),
+                          ("about/", "About us"), ("editorial-policy/", "Editorial policy"), ("contact/", "Contact"),
+                          ("meeting-point/", "Meeting point"), ("cancellation-policy/", "Cancellation policy"),
+                          ("insurance-and-licensing/", "Insurance & licensing"), ("privacy/", "Privacy"), ("terms/", "Terms"),
+                          ("feed.xml", "RSS feed"), ("llms-full.txt", "Full text for AI assistants")])
+    body = body.replace('<p class="legal">',
+        f'<nav class="foot-links" aria-label="All tours"><h2>Tours</h2><ul>{links}</ul></nav>\n'
+        f'    <nav class="foot-links" aria-label="Guides and policies"><h2>Guides & policies</h2><ul>{site_links}</ul></nav>\n'
+        '    <p class="legal">', 1)
     css += ("\n.foot-links{margin:28px 0 8px}.foot-links h2{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}"
             ".foot-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px 24px}"
             ".foot-links a{color:var(--muted);text-decoration:none;font-size:14px}.foot-links a:hover{color:var(--text)}"
@@ -339,6 +393,7 @@ def build_index():
              faq_schema(FAQ, url())]
     extra = ('<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">\n' + ld(graph) +
              "\n<style>[hidden]:not([hidden=until-found i]){display:none!important}\n" + css + "</style>")
+    guard("home", [("title", title), ("meta", desc), ("h1", "Step into Leonida IRL.")], graph)
     out = ("<!doctype html>\n<html lang=\"en-US\">\n<head>\n" +
            head_common(title, desc, url(), url("assets/og-home.jpg"), "Leonida Tours: Miami skyline at sunset, unofficial IRL tours", "", extra) +
            "</head>\n<body>\n" + GTM_BODY + body + "</body>\n</html>\n")
@@ -414,6 +469,7 @@ def build_tour(k):
                  {"@type": "ListItem", "position": 2, "name": "Tours", "item": url("#map")},
                  {"@type": "ListItem", "position": 3, "name": T["title"], "item": page}]},
              trip(k), faq_schema(faqs, page)]
+    guard(f"tour {k}", [("title", S["title"]), ("meta", S["meta"]), ("h1", T["title"])], graph)
     reserve = f'{p}?tour={k}#preregister'
     out = f"""<!doctype html>
 <html lang="en-US">
@@ -459,8 +515,22 @@ def build_tour(k):
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(out)
 
 # ---------------------------------------------------------------- images: OG cards + icons
-FONT_B = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_R = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+def _resolve_font(bold):
+    """First usable TrueType font, so the build works on Linux and macOS."""
+    cands = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "/Library/Fonts/Arial Bold.ttf" if bold else "/Library/Fonts/Arial.ttf",
+        "/System/Library/Fonts/Supplemental/Verdana Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Verdana.ttf",
+    ]
+    for c in cands:
+        if os.path.exists(c):
+            return c
+    raise SystemExit("no usable TrueType font found for the OG cards")
+
+FONT_B = _resolve_font(True)
+FONT_R = _resolve_font(False)
 def sunset(w, h):
     g = Image.new("RGB", (w, h)); px = g.load()
     stops = [(0, (255, 95, 162)), (.45, (255, 122, 133)), (1, (255, 166, 107))]
@@ -519,6 +589,7 @@ def og_card(img_name, kicker, title, sub, out):
 
 def build_images():
     a = os.path.join(ROOT, "assets"); os.makedirs(os.path.join(a, "og"), exist_ok=True)
+    open(os.path.join(a, "tour.css"), "w").write(TOUR_CSS)
     og_card("hero", "Miami · Everglades · Florida Keys", "Leonida is real. Play it IRL.",
             "Small-group & private tours to the real places that inspired the game. From $79.", os.path.join(a, "og-home.jpg"))
     for k in ORDER:
@@ -532,13 +603,49 @@ def build_images():
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".45" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient></defs>'
         '<rect width="32" height="32" rx="8" fill="url(#g)"/><g transform="translate(4 4)" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></g></svg>\n')
 
+# ---------------------------------------------------------------- content pages
+def _short(s, n):
+    s = str(s)
+    return s if len(s) <= n else s[:n - 1].rstrip() + "…"
+
+def build_content():
+    """Build the blog, locations, map and policy pages, with their OG cards."""
+    import pages as P
+    posts, statics, locs = P.load_posts(), P.load_statics(), P.load_locations()
+    a = os.path.join(ROOT, "assets", "og"); os.makedirs(a, exist_ok=True)
+    for r in posts:
+        og_card(r["img"], r["cat"], _short(r["title"], 54), _short(r["excerpt"], 92),
+                os.path.join(a, f'blog-{r["slug"]}.jpg'))
+    for l in locs["locations"]:
+        og_card(l["img"], f'Real location · {l["area"]}', _short(l["name"], 40), _short(l["addr"], 72),
+                os.path.join(a, f'loc-{l["slug"]}.jpg'))
+    for s in statics:
+        og_card(s["img"], s["kicker"], _short(s["title"], 54), _short(s["excerpt"], 92),
+                os.path.join(a, f'page-{s["slug"]}.jpg'))
+    P.CTX = {
+        "esc": esc, "money": money, "url": url, "ld": ld, "org": org, "head_common": head_common,
+        "img_attrs": img_attrs, "ALT": ALT, "SIZE": SIZE, "TOURS": TOURS, "SEO": SEO, "ORDER": ORDER,
+        "BRAND": BRAND, "EMAIL": EMAIL, "DISCLAIMER": DISCLAIMER, "TODAY": TODAY, "PIN": PIN,
+        "ORG_ID": ORG_ID, "SITE_ID": SITE_ID, "GTM_BODY": GTM_BODY, "guard": guard,
+    }
+    P.build_all()
+    entries = [(url("blog/"), "0.9", "hero")]
+    entries += [(url(f'blog/{r["slug"]}/'), "0.7", r["img"]) for r in posts]
+    entries += [(url("locations/"), "0.9", "hero")]
+    entries += [(url(f'locations/{l["slug"]}/'), "0.7", l["img"]) for l in locs["locations"]]
+    entries += [(url("map/"), "0.8", "hero")]
+    entries += [(url(f'{s["slug"]}/'), "0.5", s["img"]) for s in statics]
+    return entries
+
 # ---------------------------------------------------------------- crawl files
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot",
            "Perplexity-User", "Google-Extended", "Applebot", "Applebot-Extended", "Bingbot", "DuckAssistBot", "meta-externalagent", "CCBot"]
 INDEXNOW_KEY = hashlib.sha256(("leonida-tours-indexnow" + HOST).encode()).hexdigest()[:32]
 
-def build_crawl_files():
-    pages = [(url(), "1.0", "hero")] + [(turl(k), "0.8", TOURS[k]["img"]) for k in ORDER]
+def build_crawl_files(extra_pages=()):
+    import pages as P
+    posts, statics, locs = P.load_posts(), P.load_statics(), P.load_locations()
+    pages = [(url(), "1.0", "hero")] + [(turl(k), "0.8", TOURS[k]["img"]) for k in ORDER] + list(extra_pages)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
     for loc, pr, img in pages:
@@ -560,7 +667,7 @@ def build_crawl_files():
              "Everglades and Florida Keys places that inspired the game world of Leonida (Vice City). Tours start mid-November 2026 "
              f"(launch day {LAUNCH}). Reservations are free with nothing to pay upfront. Not affiliated with Rockstar Games or Take-Two Interactive.", "",
              f"- Home base: Ocean Drive, Miami Beach, Florida, USA", f"- Email: {EMAIL}", "- Instagram / TikTok: @leonidatours",
-             f"- Reserve: {url('#preregister')}", "", "## Tours", ""]
+             f"- Reserve: {url('#preregister')}", f"- Full text of every page: {url('llms-full.txt')}", f"- RSS feed: {url('feed.xml')}", "", "## Tours", ""]
     for k in ORDER:
         T = TOURS[k]
         lines.append(f"- [{T['title']}]({turl(k)}): {money(T['price'])} per {T['unit']}, {T['dur']}, group {T['group']}, departs {T['departs']}, "
@@ -568,6 +675,19 @@ def build_crawl_files():
     lines += ["", "## Miami Vice City tour stops (in order)", ""]
     lines += [f"{i+1}. {s['name']} ({s['irl']}): {s['p']}" for i, s in enumerate(LAND)]
     lines += ["", "## FAQ", ""] + [f"**{q}** {a}" for q, a in FAQ]
+    lines += ["", "## Real locations field guide", ""]
+    lines.append(f"- [{url('locations/')}]: field guide to {len(locs['locations'])} real Miami, Everglades and Florida Keys places matched to their in-game counterparts, with addresses, coordinates and a confidence rating for each.")
+    lines.append(f"- [{url('map/')}]: interactive map of every location, with coordinates.")
+    for l in locs["locations"]:
+        lines.append(f"  - {l['name']} ({l['area']}): {l['addr']} - {l['lat']}, {l['lng']} - confidence: {l['confidence']} - in the game as {l['game_name']}.")
+    lines += ["", "## Blog", ""]
+    lines.append(f"- [{url('blog/')}]: {len(posts)} guides to Miami, the Everglades and the Florida Keys.")
+    for r in posts:
+        lines.append(f"  - [{url('blog/' + r['slug'] + '/')}]: {r['title']} ({r['date']})")
+    lines += ["", "## Company and policy pages", ""]
+    for s in statics:
+        lines.append(f"- [{url(s['slug'] + '/')}]: {s['title']}")
+    lines += ["", f"Full text of every page: {url('llms-full.txt')}", f"RSS feed: {url('feed.xml')}"]
     open(os.path.join(ROOT, "llms.txt"), "w").write("\n".join(lines) + "\n")
 
     open(os.path.join(ROOT, "site.webmanifest"), "w").write(json.dumps({
@@ -590,15 +710,50 @@ h1{{font-size:clamp(32px,6vw,56px);margin:0 0 12px}}a{{display:inline-block;marg
     json.dump({"site_url": SITE, "host": HOST, "indexnow_key": INDEXNOW_KEY, "urls": [p[0] for p in pages]},
               open(os.path.join(HERE, "urls.json"), "w"), indent=2)
     os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
-    open(os.path.join(ROOT, "assets", "tour.css"), "w").write(TOUR_CSS)
 
 if __name__ == "__main__":
     import shutil
-    live = {SEO[k]["slug"] for k in ORDER}
+    import pages as P
+    posts, statics, locs = P.load_posts(), P.load_statics(), P.load_locations()
+    live_tours = {SEO[k]["slug"] for k in ORDER}
+    live_og = (live_tours
+               | {f"blog-{r['slug']}" for r in posts}
+               | {f"loc-{l['slug']}" for l in locs["locations"]}
+               | {f"page-{s['slug']}" for s in statics})
+    live_top = {"blog", "locations", "map"} | {s["slug"] for s in statics}
+    live_blog = {r["slug"] for r in posts}
+    live_locs = {l["slug"] for l in locs["locations"]}
+
+    # remove pages that no longer exist in the content modules
     for d in os.listdir(os.path.join(ROOT, "tours")) if os.path.isdir(os.path.join(ROOT, "tours")) else []:
-        if d not in live: shutil.rmtree(os.path.join(ROOT, "tours", d))
+        if d not in live_tours: shutil.rmtree(os.path.join(ROOT, "tours", d))
     for f in os.listdir(os.path.join(ROOT, "assets", "og")) if os.path.isdir(os.path.join(ROOT, "assets", "og")) else []:
-        if f[:-4] not in live: os.remove(os.path.join(ROOT, "assets", "og", f))
-    build_images(); build_crawl_files(); build_index()
+        if f.endswith(".jpg") and f[:-4] not in live_og: os.remove(os.path.join(ROOT, "assets", "og", f))
+
+    # a manifest of what the last build generated, so removed pages get cleaned up
+    manifest_path = os.path.join(HERE, "generated.json")
+    try:
+        old = json.load(open(manifest_path))
+    except Exception:
+        old = {"top": [], "blog": [], "locations": []}
+    for d in old.get("top", []):
+        if d not in live_top and os.path.isdir(os.path.join(ROOT, d)):
+            shutil.rmtree(os.path.join(ROOT, d))
+    for group, live in (("blog", live_blog), ("locations", live_locs)):
+        p = os.path.join(ROOT, group)
+        if not os.path.isdir(p): continue
+        for sub in old.get(group, []):
+            if sub not in live and os.path.isdir(os.path.join(p, sub)):
+                shutil.rmtree(os.path.join(p, sub))
+        for sub in os.listdir(p):
+            if os.path.isdir(os.path.join(p, sub)) and sub not in live:
+                shutil.rmtree(os.path.join(p, sub))
+    json.dump({"top": sorted(live_top), "blog": sorted(live_blog), "locations": sorted(live_locs)},
+              open(manifest_path, "w"), indent=2)
+
+    build_images()
+    entries = build_content()
+    build_crawl_files(entries)
+    build_index()
     for k in ORDER: build_tour(k)
-    print("built for", SITE)
+    print(f"built for {SITE} - {len(entries) + 1 + len(ORDER)} pages")

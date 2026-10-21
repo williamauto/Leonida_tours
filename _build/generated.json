@@ -1,0 +1,46 @@
+{
+  "top": [
+    "about",
+    "blog",
+    "cancellation-policy",
+    "contact",
+    "editorial-policy",
+    "insurance-and-licensing",
+    "locations",
+    "map",
+    "meeting-point",
+    "privacy",
+    "terms"
+  ],
+  "blog": [
+    "best-things-to-do-in-miami-beach",
+    "everglades-airboat-tour-guide",
+    "gta-6-everglades-grassrivers",
+    "gta-6-florida-keys-leonida-keys",
+    "gta-6-locations-in-real-life",
+    "gta-6-map-and-regions",
+    "gta-6-release-date",
+    "gta-6-trailers-timestamped",
+    "is-gta-6-set-in-miami",
+    "miami-in-3-days-itinerary",
+    "miami-launch-week-guide",
+    "miami-sunset-cruise-guide"
+  ],
+  "locations": [
+    "bayside-marketplace",
+    "calle-ocho-little-cuba",
+    "everglades-national-park",
+    "jade-ocean-sunny-isles",
+    "little-haiti",
+    "miami-international-airport",
+    "nine-one-nine-e11even",
+    "ocean-view-hotel-clevelander",
+    "portmiami-port-vice-city",
+    "sahara-arena-kaseya-center",
+    "seven-mile-bridge",
+    "star-island-flagler-memorial",
+    "venetian-causeway",
+    "vice-city-sign",
+    "wynwood-arts-district"
+  ]
+}

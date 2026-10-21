@@ -1,0 +1,1790 @@
+{
+ "intro": "Every stop on a Leonida Tours route is a real, publicly accessible place in South Florida. This is the field guide to the ones that map to locations in Grand Theft Auto VI, with addresses, coordinates and how confident we are about each match. We rate every identification so you know what is a documented landmark and what is community reconstruction.",
+ "locations": [
+  {
+   "slug": "ocean-view-hotel-clevelander",
+   "name": "The Clevelander",
+   "game_name": "Ocean View Hotel",
+   "area": "Vice Beach",
+   "addr": "1020 Ocean Drive, Miami Beach, FL 33139",
+   "lat": 25.78104,
+   "lng": -80.13046,
+   "img": "neon",
+   "img_alt": "Ocean Drive neon signs and palm trees at night, Miami Beach",
+   "confidence": "Strong",
+   "confidence_note": "Identified by trailer frame and by the building's distinctive pink neon facade, widely corroborated across the mapping community.",
+   "seen": "Trailer 1 (0:33) and Trailer 2 (2:34)",
+   "tour": "vc-van",
+   "meta": "The Clevelander, the pink Art Deco hotel at 1020 Ocean Drive in South Beach. The real place behind a famous in-game hotel, with what to look at.",
+   "title": "The Clevelander, 1020 Ocean Drive, Miami Beach | Leonida Tours",
+   "lede": "The in-game Ocean View Hotel is the Clevelander, the pink-neon Art Deco hotel on Ocean Drive in South Beach. The facade, the corner sign and the pool-bar frontage in the trailer all match a building that has stood at 1020 Ocean Drive since 1938. It is a working hotel, a bar and a landmark most people walk past without knowing what it is.",
+   "body": [
+    {
+     "p": [
+      "The Clevelander is the most widely agreed real-world match in Vice Beach, and the one piece of evidence is unusually strong: the shape and colour of the building. The Clevelander's signature is a pastel-pink Art Deco facade with a large cursive neon sign, sitting on the corner of Ocean Drive and 11th Street. That exact sign is what the trailer shows behind a Vice Beach police stop."
+     ]
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "Stand on the north side of Ocean Drive and look up. The neon sign sits on the seaward corner of the building, above a row of arched windows. Walk the block south and you pass the rest of the South Beach Art Deco strip, which is the wider landscape the game's Vice Beach is built on."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "1020 Ocean Drive, Miami Beach, FL 33139"
+       ],
+       [
+        "Coordinates",
+        "25.78104, -80.13046"
+       ],
+       [
+        "In-game name",
+        "Ocean View Hotel"
+       ],
+       [
+        "District in game",
+        "Vice Beach"
+       ],
+       [
+        "Built",
+        "1938, Art Deco"
+       ],
+       [
+        "Today",
+        "Hotel, bar and event venue"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Getting there",
+     "id": "getting-there"
+    },
+    {
+     "p": [
+      "The Clevelander is six blocks north of 1st Street and two blocks south of the Fontainebleau. South Beach is flat, hot and easy to walk, but parking is genuinely difficult on Ocean Drive itself. The practical options are a valet, a garage on 11th Street, or a rideshare drop on Collins Avenue a short walk away."
+     ]
+    },
+    {
+     "note": {
+      "title": "A note on photography",
+      "text": "This is a working hotel and a popular bar. The facade and the street are public and photographable from the pavement. The interior, the pool deck and the bar are private property: be a guest, or buy a drink, before you point a camera inside."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "The Clevelander is the first stop on the Miami Vice City small-group tour, and it is also the opening move of the private convertible and Jeep routes. We start there because it is where the game's establishing shot of Vice Beach comes from, and because it is the clearest possible first frame for anyone who has seen the trailer."
+     ]
+    },
+    {
+     "h2": "Inside: the bar and the rooftop pool deck",
+     "id": "inside-the-bar-and-the-rooftop-pool-deck"
+    },
+    {
+     "p": [
+      "The building itself is the point, and it has been photographed so heavily that the pink facade reads as a piece of Miami iconography. Inside, the bar and the rooftop pool deck are where the real Miami history is: the Clevelander was the beach's social centre through the 1980s revival, and the neon sign has been the same hand-painted design for decades."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is the Ocean View Hotel in GTA 6 the Clevelander?",
+     "Almost certainly. The Clevelander's pink Art Deco facade and rooftop neon sign appear in the trailer in the same position as the in-game hotel. It is the most widely repeated identification in the community, though Rockstar has never published an official list of real-world inspirations."
+    ],
+    [
+     "Can you stay at the Clevelander?",
+     "Yes. It operates as a hotel, a bar and an event venue. Rooms and the rooftop pool deck are for guests; the street outside is for everyone."
+    ],
+    [
+     "Is it on the tour?",
+     "Yes. It is stop one on the Miami Vice City small-group tour and the first stop on both private routes."
+    ]
+   ]
+  },
+  {
+   "slug": "calle-ocho-little-cuba",
+   "name": "Calle Ocho and Máximo Gómez Park",
+   "game_name": "Little Cuba",
+   "area": "Vice City",
+   "addr": "SW 8th Street, Little Havana, Miami, FL 33135",
+   "lat": 25.76704,
+   "lng": -80.21702,
+   "img": "havana",
+   "img_alt": "Welcome to Little Havana mural with a rooster on Calle Ocho, Miami",
+   "confidence": "Official naming",
+   "confidence_note": "Rockstar names Little Cuba in its own Vice City description, and Little Havana and Little Cuba are the same real district.",
+   "seen": "Trailer 2 (1:02) and the official Vice City region page",
+   "tour": "vc-van",
+   "meta": "Calle Ocho and Maximo Gomez Park in Miami's Little Havana. The real heart of the game's Little Cuba district, with where to eat and which tour stops.",
+   "title": "Calle Ocho and Maximo Gomez Park, Little Havana | Leonida Tours",
+   "lede": "Little Cuba is the real Little Havana. Rockstar's own description of Vice City names it directly: \"the bustling panederias of Little Cuba,\" alongside Ocean Beach's pastel Art Deco hotels and the VC Port. The real district runs along Calle Ocho, SW 8th Street, and its centrepiece is Máximo Gómez Park, the small square of domino tables that the game turns into its main street.",
+   "body": [
+    {
+     "p": [
+      "Little Havana is the largest Cuban community outside Cuba and the most intact. It is not a themed district or a museum: it is a working neighbourhood where the bakery counter still turns out guava pastries at 7am and the domino tables start before lunch."
+     ]
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "Start at the corner of SW 8th Street and Miami Avenue at the Domino Park, the plaza named for the politician Máximo Gómez. On a weekday afternoon you will see men and women playing dominoes on folding tables under the trees, for money, with a circle of spectators and loud commentary. The park is the real-life version of what the trailer shows in Little Cuba."
+     ]
+    },
+    {
+     "p": [
+      "Two blocks north on SW 8th Street is the Calle Ocho walk, where the awnings, the open front of the bars and the painted storefronts create exactly the dense, hand-painted street the game reproduces. The murals along Biscayne Boulevard at 29th Street are worth the detour."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "SW 8th Street, Miami, FL 33135"
+       ],
+       [
+        "Coordinates",
+        "25.76704, -80.21702"
+       ],
+       [
+        "In-game name",
+        "Little Cuba / Little Havana"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Anchor",
+        "Máximo Gómez Park (Domino Park)"
+       ],
+       [
+        "Signature",
+        "Cafecito, panaderías, domino tables"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Food worth stopping for",
+     "id": "food"
+    },
+    {
+     "p": [
+      "The pastelito and the cortadito are the two orders that every local would tell you to get, and both are sold from windows you can walk up to. The line for cafecito at the ventanita is the single most reliable way to spend five minutes inside the district rather than photographing it from the car."
+     ]
+    },
+    {
+     "note": {
+      "title": "Visiting respectfully",
+      "text": "Little Havana is a residential neighbourhood first. Domino Park is a public square, and playing there is the point, but do not walk through a game to film it, and do not photograph people at the tables without asking. The scene reads as a photo set within a few minutes of visitors treating it like one."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "Calle Ocho is stop seven on the Miami Vice City small-group tour. We stop at the park, we buy cafecito and a pastelito from the ventanita, and we leave enough time for the domino tables to be the point of the stop rather than a photo behind it."
+     ]
+    },
+    {
+     "h2": "The best hour of the week to walk it",
+     "id": "the-best-hour-of-the-week-to-walk-it"
+    },
+    {
+     "p": [
+      "The district's heart is the diagonal of SW 8th Street between Miami Avenue and Biscayne Boulevard, and the best single hour of the week is Saturday morning, when the fruit and vegetable carts are out and the bakery queue moves slowly enough to talk to the people in it. Come on a Sunday and half the shops are shut, which tells you something about who the neighbourhood is actually for."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is Little Cuba in GTA 6 the same as Little Havana?",
+     "Yes. Rockstar's official Vice City page names \"Little Cuba\" as one of the city's neighbourhoods. Little Cuba is the nickname for the real Little Havana district, centred on SW 8th Street, so the game's district and the real one are the same place under two names."
+    ],
+    [
+     "What is Máximo Gómez Park?",
+     "It is the small plaza at SW 8th Street and Miami Avenue that locals call Domino Park. The open-air domino games there have been running for decades, and they are the clearest real-world parallel to the game's Little Cuba street scenes."
+    ],
+    [
+     "Do you stop there on the tour?",
+     "Yes, stop seven on the Miami Vice City small-group tour, with a cafecito and pastelito stop included."
+    ]
+   ]
+  },
+  {
+   "slug": "wynwood-arts-district",
+   "name": "Wynwood Arts District",
+   "game_name": "Stockyard",
+   "area": "Vice City",
+   "addr": "NW 2nd Avenue, Wynwood, Miami, FL 33127",
+   "lat": 25.8012,
+   "lng": -80.1994,
+   "img": "wynwood",
+   "img_alt": "Bright street mural in the Wynwood arts district, Miami",
+   "confidence": "Strong",
+   "confidence_note": "The trailer shows the Stockyard as a street-car-meet strip covered in murals, matching Wynwood's warehouse blocks and painted facades.",
+   "seen": "Trailer 2 (1:55) and Trailer 1 (0:50)",
+   "tour": "vc-van",
+   "meta": "Wynwood Arts District on NW 2nd Avenue, Miami. The real street behind the game's Stockyard, with address, when to visit and which tour stops there.",
+   "title": "Wynwood Arts District: the murals on NW 2nd Avenue, Miami",
+   "lede": "The Stockyard is Wynwood. The trailer shows a street-car meet on a strip of murals and low warehouse blocks, and Wynwood is exactly that: a few dozen blocks of painted warehouses in Miami's Over-the-Riverfront neighbourhood where the street art is the point rather than a decoration. It is the densest concentration of large-format murals anywhere in the United States.",
+   "body": [
+    {
+     "p": [
+      "Wynwood began as a garment and cigar district. When the manufacturing moved out, the empty warehouse shells were cheap and the walls were enormous. What happened next turned it into the single most photographed street-art neighbourhood in the country, and it is the closest real match to how the game stages the Stockyard."
+     ]
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "The core is NW 2nd Avenue between NW 25th and NW 29th Streets. The murals rotate constantly, so the single most useful piece of advice is to walk rather than drive: the painted sides of buildings on 1st and 2nd Avenue and the big warehouse walls facing NW 25th Street are the ones that last longest."
+     ]
+    },
+    {
+     "p": [
+      "The Wynwood Walls and the adjacent parking structure on NW 2nd Avenue carry the highest-profile work, and they are open and walkable from the street. The rest of the district is a public road network with art on the buildings around it, which is why the neighbourhood is also where a lot of Miami's best small bars and coffee are now."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "NW 2nd Ave, Wynwood, Miami, FL 33127"
+       ],
+       [
+        "Coordinates",
+        "25.80120, -80.19940"
+       ],
+       [
+        "In-game name",
+        "Stockyard"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Core blocks",
+        "NW 2nd Ave, NW 25th–29th St"
+       ],
+       [
+        "Signature",
+        "Warehouse-scale murals, car meets"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "When to come",
+     "id": "when-to-come"
+    },
+    {
+     "p": [
+      "Walls go up and come down, but the best light for photography is late afternoon and the busiest time is Thursday to Saturday evening, when the street car meets run and the galleries open. If you want the murals with fewer people in shot, come at opening time on a weekday, when the painting crews are still working."
+     ]
+    },
+    {
+     "note": {
+      "title": "Where to park, honestly",
+      "text": "Street parking in Wynwood is paid, metered and heavily policed, and the free options are on the edges rather than in the middle: the municipal lots on NW 2nd Avenue and the side streets past NW 29th Street. The fastest approach is to park once and walk the district rather than circling for a block that is closer to the wall."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "Wynwood is stop five on the Miami Vice City small-group tour, and we walk it rather than drive it: a 25-minute loop through the mural blocks with a local host who can tell you which artists are on the wall and which walls are about to come down. It is the same route the private convertible and Jeep tours run, at your pace."
+     ]
+    },
+    {
+     "h2": "Beyond the murals: the working neighbourhood",
+     "id": "beyond-the-murals-the-working-neighbourhood"
+    },
+    {
+     "p": [
+      "The murals are worth the walk, but the district is also a working neighbourhood with coffee roasters, a bookshop, a natural-wine bar and two of the better restaurants in Miami-Dade. If you have half a day rather than half an hour, that is what most regular visitors tell us they remember."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is the Stockyard in GTA 6 Wynwood?",
+     "Yes. The Stockyard is shown as a street-car-meet location lined with murals, and Wynwood is the real Miami neighbourhood with that exact combination: warehouse walls, big murals and night-time car meets. It is one of the most consistently identified locations in the game."
+    ],
+    [
+     "Do I need to pay to see the murals?",
+     "No. The street art is on public walls and public roads. The Wynwood Walls and the adjacent garage are free to walk through; the galleries and shops around them are not."
+    ],
+    [
+     "How long do you spend there?",
+     "About 25 minutes on foot, which is enough to reach the main mural blocks without turning the stop into a hike."
+    ]
+   ]
+  },
+  {
+   "slug": "sahara-arena-kaseya-center",
+   "name": "Kaseya Center",
+   "game_name": "Sahara Arena",
+   "area": "Vice City",
+   "addr": "601 Biscayne Blvd, Miami, FL 33132",
+   "lat": 25.78115,
+   "lng": -80.18788,
+   "img": "downtown",
+   "img_alt": "Downtown Miami highways, palm trees and towers at night",
+   "confidence": "Strong",
+   "confidence_note": "Confirmed by press reporting and by the matching arrangement of arena, observation wheel and port cranes around it.",
+   "seen": "Trailer 2 (1:40)",
+   "tour": "vc-van",
+   "meta": "Kaseya Center at 601 Biscayne Blvd, Miami. The real arena behind the game's Sahara Arena, with address, what the frame shows and which tour drives past it.",
+   "title": "Kaseya Center, 601 Biscayne Blvd, Miami | Leonida Tours",
+   "lede": "The in-game Sahara Arena is the Kaseya Center, the Miami Heat's basketball arena on Biscayne Boulevard in Downtown Miami. It is also the clearest example of how the game builds a location: the arena itself is only one part of the match, because the observation wheel to the north and the container cranes of PortMiami to the south are arranged in the game exactly as they are in the real city.",
+   "body": [
+    {
+     "p": [
+      "The arena opened in 1999 on the site of the old Miami Arena, between Biscayne Boulevard and the American Airlines Arena footprint. It sits at the northern end of Downtown Miami, with the Metromover running over the top of the court and the Biscayne Boulevard transit corridor running east from its doors."
+     ]
+    },
+    {
+     "h2": "The three-object tell",
+     "id": "the-tell"
+    },
+    {
+     "p": [
+      "When you match a single building in a game, you are guessing. When you match three landmarks in the right relative positions, you have a fix. In the trailer frame, the arena is flanked by the giant observation wheel and the port cranes behind it, and that arrangement only exists in one place in Miami."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Object in frame",
+       "Real-world counterpart"
+      ],
+      "rows": [
+       [
+        "The arena bowl",
+        "Kaseya Center, 601 Biscayne Blvd"
+       ],
+       [
+        "The observation wheel",
+        "Bayside Marketplace, 401 N Biscayne Blvd"
+       ],
+       [
+        "The gantry cranes",
+        "PortMiami terminals, Dodge Island"
+       ],
+       [
+        "The overpass",
+        "I-395 / Biscayne Boulevard ramps"
+       ],
+       [
+        "In-game name",
+        "Sahara Arena"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "The arena's blank outer wall carries the large-format LED display that the trailer's neon pattern is modelled on. From the south side of Biscayne Boulevard, facing north, you can see the wheel and the port cranes in the same frame, which is the photograph to take."
+     ]
+    },
+    {
+     "note": {
+      "title": "Tours and event days",
+      "text": "The arena hosts Miami Heat home games, concerts and major events. On a busy game night the surrounding streets are closed to traffic and the atmosphere in the plaza is worth seeing even if you are not going in. We do not include tickets; we drive past and stop for the photo."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "The arena is part of stop four on the Miami Vice City small-group tour, the Downtown and Biscayne Boulevard stop, where we pull up on the plaza side and get the frame with the wheel and the cranes behind it. The boat tour passes the same stretch of waterfront from the water, which is the other half of the shot."
+     ]
+    },
+    {
+     "h2": "Arriving: the plaza and the Metromover",
+     "id": "arriving-the-plaza-and-the-metromover"
+    },
+    {
+     "p": [
+      "The arena sits on a full block between Biscayne Boulevard and the Metromover tracks, so the plaza on the north side is the approach the game's footage uses. The Metromover itself is worth a ride: it runs on an elevated loop between the arena and the museums and gives the cleanest short view of the Downtown skyline, including the wheel and the arena together."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is the Sahara Arena the Kaseya Center?",
+     "Yes. The arena's position on Biscayne Boulevard, its shape and the placement of the observation wheel and port cranes behind it match the Kaseya Center in Downtown Miami. This one was reported by press coverage shortly after Trailer 2 and is not contested."
+    ],
+    [
+     "Can you go inside the Kaseya Center?",
+     "Yes, for a game, a concert or a tour on event days. Tickets are sold by the arena. On a normal tour we drive past the plaza and stop for the photograph."
+    ],
+    [
+     "Is it on the boat route too?",
+     "The boat passes the waterfront below the arena and PortMiami, which is where you get the cranes-and-arena angle from the water at golden hour."
+    ]
+   ]
+  },
+  {
+   "slug": "nine-one-nine-e11even",
+   "name": "E11EVEN",
+   "game_name": "NINE1NINE",
+   "area": "Vice City",
+   "addr": "29 NE 11th Street, Miami, FL 33132",
+   "lat": 25.7838,
+   "lng": -80.195,
+   "img": "brickell",
+   "img_alt": "Neon-lit Brickell towers at night",
+   "confidence": "Strong",
+   "confidence_note": "The name construction is the evidence: eleven rendered as 9-1-1-9, and the address matches the club shown in the frame.",
+   "seen": "Trailer 2 (1:28)",
+   "tour": "vc-boat",
+   "meta": "E11EVEN, the club at 29 NE 11th Street, Miami. The real place behind the game's NINE1NINE, with the naming trick explained and how to see it.",
+   "title": "E11EVEN, 29 NE 11th Street, Miami | Leonida Tours",
+   "lede": "The 24-hour club in Trailer 2 is E11EVEN, at 29 NE 11th Street in Downtown Miami. The identification rests on the name: eleven written as 9-1-1-9, the same digits reordered, which is the kind of construction that does not happen by accident. The real club sits on a low-rise block two streets back from Biscayne Boulevard, and it is the in-game nightclub.",
+   "body": [
+    {
+     "p": [
+      "E11EVEN is a nightclub in the Northeast Downtown district, on NE 11th Street between NE 1st and NE 2nd Avenues, a couple of blocks from the arena. Rockstar's Trailer 2 shows a late-night club scene, and the community matched it to this address within days of the trailer dropping."
+     ]
+    },
+    {
+     "h2": "Why the name is the proof",
+     "id": "why-the-name"
+    },
+    {
+     "p": [
+      "Rockstar does not translate names literally. They change them: Vice-Dale for Miami-Dade, Little Cuba for Little Havana, Sahara Arena for an arena that is not in the Sahara. E11EVEN breaks that rule, because the transformation is arithmetic rather than semantic: eleven becomes 9-1-1-9. It is the same joke, and it is why the match is considered strong."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "29 NE 11th St, Miami, FL 33132"
+       ],
+       [
+        "Coordinates",
+        "25.78380, -80.19500"
+       ],
+       [
+        "In-game name",
+        "NINE1NINE"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Known for",
+        "Late-night club, 24-hour hours"
+       ],
+       [
+        "Identification basis",
+        "Name construction + address match"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Visiting for real",
+     "id": "visiting"
+    },
+    {
+     "p": [
+      "The club operates on its own schedule, which for a 24-hour venue means the interesting hours are the small ones: 2am to 6am, when it is a working Miami nightclub rather than a tourist venue. Check the venue's own listings for the current schedule before you plan around it, and remember it is a working business on a residential-adjacent block, so street noise after close is real."
+     ]
+    },
+    {
+     "note": {
+      "title": "We do not book clubs",
+      "text": "Leonida Tours is a licensed sightseeing operator, not a nightlife promoter. We do not sell entry to any club and we do not include alcohol in any tour price. We will point you at the door and we will tell you honestly whether it is the right stop for your night."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "The block is a short walk from the Downtown stop on the Miami Vice City small-group tour and it sits inside the loop the private convertible and Jeep routes run. The boat tour leaves from Bayside Marina a few hundred metres north, which is the closest thing to an approach by water."
+     ]
+    },
+    {
+     "h2": "The neighbourhood, not just the door",
+     "id": "The neighbourhood, not just the door"
+    },
+    {
+     "p": [
+      "Northeast Downtown is the part of Miami most visitors never walk: a grid of low-rise blocks between Biscayne Boulevard and the rail yards, with the arena to the south and the old warehouses to the north. It is where the city's actual nightlife lives, which is precisely why the game put its main club here rather than on Ocean Drive."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "What is E11EVEN in GTA 6 called?",
+     "In the game the club is NINE1NINE. The real club is E11EVEN, at 29 NE 11th Street in Downtown Miami. The name match works because eleven, spelled as digits, becomes 9-1-1-9."
+    ],
+    [
+     "Can you go in?",
+     "E11EVEN is a working nightclub with its own schedule and entry arrangements. We do not sell club tickets or alcohol; check the venue's current listings and plan your own night around it."
+    ],
+    [
+     "How close is it to the tour route?",
+     "It is inside the Downtown loop, a short walk from the Downtown and Biscayne Boulevard stop on the small-group tour and within the private convertible and Jeep routes."
+    ]
+   ]
+  },
+  {
+   "slug": "portmiami-port-vice-city",
+   "name": "PortMiami",
+   "game_name": "PortViceCity",
+   "area": "Vice City",
+   "addr": "1100 NW 6th St, Miami, FL 33133",
+   "lat": 25.77806,
+   "lng": -80.1733,
+   "img": "port",
+   "img_alt": "Aerial view of PortMiami, cruise ships and the islands of Biscayne Bay",
+   "confidence": "Strong",
+   "confidence_note": "The gantry cranes, berth layout and bridge approach in the trailer frame match PortMiami's container terminal on Dodge Island.",
+   "seen": "Trailer 1 (0:24) and Trailer 2 (2:27)",
+   "tour": "vc-boat",
+   "meta": "PortMiami on Dodge Island, Miami. The real cruise port behind the game's PortViceCity, with address, what to see from the terminals and which tour goes there.",
+   "title": "PortMiami on Dodge Island, Miami | Leonida Tours",
+   "lede": "The in-game PortViceCity is PortMiami, the container and cruise terminal on Dodge Island. Rockstar's own Vice City description calls it \"the cruise ship capital of the world,\" which is Miami's port, and the trailer's speedboat chase and the gantry cranes are the terminals you can still see from the causeway and from the water.",
+   "body": [
+    {
+     "p": [
+      "PortMiami sits on Dodge Island between Downtown Miami and Miami Beach, reachable by the PortMiami causeway. It handles both containers and cruise ships: the cruise terminal is on the south side, the container yards on the north, and the gantry cranes that appear in Trailer 1 stand over the container berths at the north-east corner of the island."
+     ]
+    },
+    {
+     "h2": "Where to see the cranes",
+     "id": "cranes"
+    },
+    {
+     "p": [
+      "The container cranes are best seen from the MacArthur Causeway approach, where the road lifts you onto the causeway and gives a clear view across the channel at the island's working end. On the water they are even more dramatic, because you pass underneath the causeway and then look back at the row of cranes against the skyline."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "1100 NW 6th St, Miami, FL 33133"
+       ],
+       [
+        "Coordinates",
+        "25.77806, -80.17330"
+       ],
+       [
+        "In-game name",
+        "PortViceCity"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Landmark",
+        "Container gantry cranes, Dodge Island"
+       ],
+       [
+        "Also",
+        "Cruise terminal, PortMiami"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Two ports, two tours",
+     "id": "two-ports"
+    },
+    {
+     "p": [
+      "The boat tour is the port tour. It leaves Bayside Marina, runs the channel, and passes PortMiami on the way out to Star Island and Fisher Island, which means you see the working harbour from the water rather than from a car window on a causeway at 70mph. The city tour covers the causeway view as part of the Downtown and Brickell stops."
+     ]
+    },
+    {
+     "note": {
+      "title": "Security and photography",
+      "text": "PortMiami is a secured federal facility. The public areas, the cruise terminal promenade and the viewing points along the causeways are fine for photographs. Do not stop, walk or park anywhere marked as restricted, and keep clear of the freight gates and the rail crossings."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "PortMiami is on the water route: the Miami Vice City by Boat tour passes the terminals between Bayside Marina and Fisher Island, and the sunset departure holds long enough to get the cranes lit against the skyline. On the land route you see it from the Venetian Causeway and MacArthur Causeway between stops three and eight."
+     ]
+    },
+    {
+     "h2": "The cruise side",
+     "id": "The cruise side"
+    },
+    {
+     "p": [
+      "The cruise terminal on the south end of Dodge Island is a different building from the container yard on the north, and it is where the mega-ships berth. In the game's Vice City this is a single port district combining both, which is a liberty the trailer takes: the game's port is one place, the real one is two, separated by half a mile of island."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is PortViceCity in GTA 6 PortMiami?",
+     "Yes. The trailer's speedboat chase and the row of container gantry cranes match PortMiami on Dodge Island, and Rockstar's official Vice City description refers to \"the VC Port, the cruise ship capital of the world,\" which is Miami's port."
+    ],
+    [
+     "Can you go inside the port?",
+     "Not as a visitor. It is a secured federal facility. The cruise terminal promenade and the public causeway viewpoints are open and are where you get the photographs."
+    ],
+    [
+     "Which tour sees the cranes best?",
+     "The boat tour, from the water. On land you pass them quickly on the MacArthur Causeway between Downtown and Brickell."
+    ]
+   ]
+  },
+  {
+   "slug": "miami-international-airport",
+   "name": "Miami International Airport",
+   "game_name": "Vice City International Airport",
+   "area": "Greater Leonida",
+   "addr": "5000 NW 36th St, Miami, FL 33142",
+   "lat": 25.7959,
+   "lng": -80.287,
+   "img": "downtown",
+   "img_alt": "Downtown Miami highways, palm trees and towers at night",
+   "confidence": "Strong",
+   "confidence_note": "The airport's shape, the runway grid on the flat western edge of the city and the terminal frontage match MIA.",
+   "seen": "Trailer 1 (0:11) and Trailer 2 (0:36)",
+   "tour": null,
+   "meta": "Miami International Airport (MIA), 5000 NW 36th St, Miami. The real airport behind the game's international terminal, with layout and how it works.",
+   "title": "Miami International Airport (MIA) | Leonida Tours",
+   "lede": "The in-game Vice City International Airport is Miami International Airport, MIA, at 5000 NW 36th Street. It sits on the flat western edge of the city in the game, exactly where MIA sits in Miami-Dade: a spread-out campus of runways, terminals and cargo aprons that the game reproduces closely because the approach pattern and the overhead sign are so recognisable.",
+   "body": [
+    {
+     "p": [
+      "MIA is the third-busiest airport in the United States by passenger traffic and the busiest in the state of Florida. It is not in the city of Miami proper but in Miami-Dade County, northwest of the core, which is why the game places its airport on the flat western edge of Vice City rather than downtown."
+     ]
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "The most recognisable view is the approach: aircraft stacked over the western suburbs on finals. The best public vantage is on the east side of the airport at the runway 9 approach, and the best photographed spot in the game-matching sense is the terminal frontage with the taxiway bridges and the giant overhead sign, which is why Trailer 2 uses a plane on approach over a motorway."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "5000 NW 36th St, Miami, FL 33142"
+       ],
+       [
+        "Coordinates",
+        "25.79590, -80.28700"
+       ],
+       [
+        "In-game name",
+        "Vice City International Airport"
+       ],
+       [
+        "Region in game",
+        "Greater Leonida"
+       ],
+       [
+        "IATA / ICAO",
+        "MIA / KMIA"
+       ],
+       [
+        "Layout",
+        "Three north-south runways"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Real game, real visit",
+     "id": "visiting"
+    },
+    {
+     "p": [
+      "If you are flying in for the launch, MIA is where you land, and the airport's own art collection, the Dolphin and Flamingo ponds in the flamingo park outside the terminal, and the tropical gardens between concourses are all worth an hour of your layover."
+     ]
+    },
+    {
+     "note": {
+      "title": "Not on a tour route",
+      "text": "The airport is about 20 miles from Ocean Drive in Miami Beach, so it is not part of any of our routes. We can advise on transfers, and every tour we run includes hotel or meeting-point pickup in Miami Beach, Downtown or Brickell."
+     }
+    },
+    {
+     "h2": "Why it matters for the map",
+     "id": "map-significance"
+    },
+    {
+     "p": [
+      "The airport anchors the west side of the city, and the game's district map puts it on the flat, grid-like land west of the bay. If you are trying to line up the in-game map with the real one, the airport, the port and the causeway are the three fixed points that make the rest of the geography legible."
+     ]
+    },
+    {
+     "h2": "Why the game made it big",
+     "id": "Why the game made it big"
+    },
+    {
+     "p": [
+      "Airports are a difficult thing to compress, and GTA VI does not try: the game keeps the airport on the flat western edge with the same sprawl and the same runway grid. It is one of the few locations where the map is more faithful to the real thing than to the game's own dramatic instincts, which is why it reads so easily."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is Vice City International Airport Miami International Airport?",
+     "Yes. The game's airport matches MIA in position on the flat western edge of the city, in runway layout and in the terminal-and-taxiway frontage shown in Trailer 2. It is not the Fort Lauderdale or Miami Beach heliport that the game also uses."
+    ],
+    [
+     "Is MIA in the city of Miami?",
+     "No. Despite the name, Miami International Airport is in Miami-Dade County, about 20 miles northwest of Miami Beach and around 12 miles northwest of Downtown Miami."
+    ],
+    [
+     "Can I get a tour to the airport?",
+     "Not as a scheduled stop. All our tours pick up in Miami Beach, Downtown or Brickell, and we are happy to advise on airport transfers."
+    ]
+   ]
+  },
+  {
+   "slug": "seven-mile-bridge",
+   "name": "Seven Mile Bridge",
+   "game_name": "Seven Mile Bridge",
+   "area": "Leonida Keys",
+   "addr": "Overseas Highway, Marathon, FL 32952",
+   "lat": 24.7016,
+   "lng": -81.15969,
+   "img": "keys",
+   "img_alt": "Seven Mile Bridge over turquoise water in the Florida Keys",
+   "confidence": "Strong",
+   "confidence_note": "The in-game bridge is the real structure, reproduced down to the arch profile and the low concrete section.",
+   "seen": "Trailer 2 (0:04) and the Launch Trailer (0:03)",
+   "tour": "keys",
+   "meta": "The real Seven Mile Bridge at Marathon in the Florida Keys. Address, when to go, the famous swim and photo, and which tour stops there.",
+   "title": "Seven Mile Bridge, Marathon, Florida Keys | Leonida Tours",
+   "lede": "The game's Seven Mile Bridge is the real Seven Mile Bridge, part of the Overseas Highway at Marathon in the Middle Florida Keys. It is the single most photographed structure in the Keys, an old seven-mile section of concrete arches running parallel to a newer highway that took the traffic in 1982, and the game reproduces the arches rather than the modern span.",
+   "body": [
+    {
+     "p": [
+      "The bridge was built between 1935 and 1942 as part of the Florida Overseas Railroad, which carried mail and cargo to Key West until the 1935 hurricane destroyed the line. The rail deck was rebuilt as a highway, and the old concrete arches were left standing as the fishing walkway that has become the state's most famous bridge photo."
+     ]
+    },
+    {
+     "h2": "Which span you are looking at",
+     "id": "which-span"
+    },
+    {
+     "p": [
+      "There are two bridges here, running side by side across the channel. The old arch span, to the east, is the one everybody photographs and the one that appears in the game. The newer four-lane span to the west carries the traffic. If you want the classic shot, you want the old arches, which are also where the fishing camps are."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "Overseas Highway, Marathon, FL 32952"
+       ],
+       [
+        "Coordinates",
+        "24.70160, -81.15969"
+       ],
+       [
+        "In-game name",
+        "Seven Mile Bridge"
+       ],
+       [
+        "Region in game",
+        "Leonida Keys"
+       ],
+       [
+        "Built",
+        "1935–1942, as part of the Overseas Railroad"
+       ],
+       [
+        "Length",
+        "7.1 miles, old arch span"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "The swim most people do not know about",
+     "id": "swim"
+    },
+    {
+     "p": [
+      "Seven Mile Bridge has an annual swimming race, and the reason for it is extraordinary: the highway crosses the gap between two islands through the natural channel of the ocean, which means the swim is open water rather than a bay. There is a small concrete seawall at the Marathon side that locals use as the entry point, and the tradition of a marked channel and a spectator boat goes back decades."
+     ]
+    },
+    {
+     "h2": "When to go",
+     "id": "when-to-go"
+    },
+    {
+     "p": [
+      "Late afternoon, when the sun drops behind the bridge and the arches pick up the light. Mornings are quieter and the water is clearer for swimming. In winter, sunsets over the Atlantic from the bridge are the reason photographers plan their year around it."
+     ]
+    },
+    {
+     "note": {
+      "title": "Road closures happen",
+      "text": "Hurricane repairs and construction have closed sections of the Overseas Highway more than once in recent years, and the Seven Mile Bridge has been under repair far more often than the photographs suggest. Check the Florida 511 service before you drive down, and treat the old arch span as something to view from the new bridge rather than to stop on."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "The bridge is the fourth stop on the Leonida Keys road trip, a full day from Miami down the Overseas Highway through Key Largo and Islamorada. We stop for the photograph, and on a clear day the turquoise water on the Atlantic side is the colour the game is trying to reproduce."
+     ]
+    },
+    {
+     "h2": "Getting into the water on race day",
+     "id": "getting-into-the-water-on-race-day"
+    },
+    {
+     "p": [
+      "The tradition is older than it looks and it is genuinely local rather than a tourist gimmick: the bridge crosses the natural gap between two islands, so the water on either side is open ocean, not a lagoon. The seawall entry point is concrete, shallow at the edge and easy to get into, and on race day the channel is buoyed and a spectator boat runs the course."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is the Seven Mile Bridge in GTA 6 the real one?",
+     "Yes. The game reproduces the older concrete arch span of the Seven Mile Bridge at Marathon, including the arches that have been a fishing walkway since the 1980s, rather than the newer four-lane bridge beside it."
+    ],
+    [
+     "How long is the drive from Miami?",
+     "About three and a half hours each way on the Overseas Highway, which is why our Keys trip runs as a full day with a morning departure. The Seven Mile Bridge itself is about two hours from Miami Beach."
+    ],
+    [
+     "Can you swim at the bridge?",
+     "Yes. The channel between the keys is open ocean and there is a local swimming tradition with a marked course and a spectator boat on race day. Ask locally about current conditions before you enter, and respect the marked channel."
+    ]
+   ]
+  },
+  {
+   "slug": "everglades-national-park",
+   "name": "Everglades National Park",
+   "game_name": "Grassrivers",
+   "area": "Grassrivers",
+   "addr": "40001 State Road 6, Homestead, FL 33034",
+   "lat": 25.2866,
+   "lng": -80.8986,
+   "img": "glades",
+   "img_alt": "Everglades wetland reflecting a golden sunset",
+   "confidence": "Official region + community match",
+   "confidence_note": "Rockstar names the wetland region Grassrivers and describes gators and mangroves in its own copy; the Everglades is the only wetland of that scale in Florida.",
+   "seen": "Trailer 1 (0:20), Trailer 2 (2:18) and the official Grassrivers region page",
+   "tour": "airboat",
+   "meta": "Everglades National Park at 40001 SR 6, Homestead. The real wetland behind the game's Grassrivers region, with distances and which tour goes there.",
+   "title": "Everglades National Park, Homestead, Florida | Leonida Tours",
+   "lede": "Rockstar calls the state's wetland region Grassrivers, and its official description names the alligators and the mangroves. The real place is the Everglades: a 1.5-million-acre wetland that runs from Lake Okeechobee south to the Gulf, 40 miles from the neon strip where the rest of Leonida Tours runs.",
+   "body": [
+    {
+     "p": [
+      "There is no serious alternative candidate. The Everglades is the largest subtropical wilderness in the United States, the only place in the country with sawgrass marsh running to the horizon and an alligator population you can count from a boat, and it sits roughly where the game puts a wetland region between the Keys and the west coast."
+     ]
+    },
+    {
+     "h2": "What Rockstar actually wrote",
+     "id": "official-copy"
+    },
+    {
+     "p": [
+      "The game's own region page is short, and the short version is worth quoting in full because it is the official description and everything else is inference. The heading is \"Welcome to the Wetlands\", the standfirst is \"The untamable jewel of Leonida's crown\", and the body reads: \"You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves.\""
+     ]
+    },
+    {
+     "note": {
+      "title": "The one spatial fact in the official copy",
+      "text": "Rockstar's own image caption for Grassrivers describes a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That is the game's own statement that the wetland region is close enough to the city to see it. It does not give a distance, and neither does anyone else."
+     }
+    },
+    {
+     "h2": "The Everglades in three parts",
+     "id": "three-parts"
+    },
+    {
+     "p": [
+      "The park is not one place. The northern River of Grass near Everglades City is sawgrass and birdlife. The central area around Homestead and the airboat concession is the part most visitors see, with mangroves, alligators and the paved road that runs for miles through open marsh. The southern tip is the mangrove tunnel and the coast, where the Gulf meets the swamp."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "40001 State Road 6, Homestead, FL 33034"
+       ],
+       [
+        "Coordinates",
+        "25.28660, -80.89860"
+       ],
+       [
+        "In-game name",
+        "Grassrivers"
+       ],
+       [
+        "Region in game",
+        "Grassrivers"
+       ],
+       [
+        "Size",
+        "~1.5 million acres"
+       ],
+       [
+        "Distance from Miami",
+        "About 45 miles / 70 km"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Airboats, and why they are the point",
+     "id": "airboats"
+    },
+    {
+     "p": [
+      "In the trailer an airboat is the signature vehicle of the wetland, and in the real Everglades that is exactly right: because the marsh is too shallow and too vegetated for a conventional hull, the standard way to move through it is an airboat, a flat-bottomed hull with a propeller caged above the waterline. An Extended Look even shows one being driven in gameplay."
+     ]
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "Our Grasslands airboat tour leaves Miami in the morning, shuttles you out to the edge of the park, and puts you on an airboat run through the sawgrass with a wildlife guide, followed by a boardwalk and viewing tower stop. It is a half-day, it works for ages five and up, and it is the one route on our map that does not start on Ocean Drive."
+     ]
+    },
+    {
+     "h2": "Practicalities",
+     "id": "Practicalities"
+    },
+    {
+     "p": [
+      "There is no entry fee to drive the park road, which is one of the great free attractions in the United States. The concession at the entrance sells airboat rides and alligator programmes, and the two-hour loop south towards Marathon is the section everyone should drive. Do not try to cover the whole park in a day: it is 1.5 million acres and the interesting parts are far apart."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is Grassrivers in GTA 6 the Everglades?",
+     "Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland region of that scale and character in Florida. It is the most confident regional match in the game."
+    ],
+    [
+     "How far is the Everglades from Miami?",
+     "About 45 miles, roughly an hour and a half of driving from Downtown Miami, depending on traffic. The park entrance is off the Tamiami Trail, and the drive itself is one of the best parts."
+    ],
+    [
+     "Will you actually see alligators?",
+     "Your wildlife guide takes you to the places gators are most often seen, and on a good day you will see them. Sightings are never guaranteed, because they are wild animals in a huge place."
+    ]
+   ]
+  },
+  {
+   "slug": "jade-ocean-sunny-isles",
+   "name": "Jade Ocean Condominium",
+   "game_name": "The Jade Ocean tower",
+   "area": "Vice Beach",
+   "addr": "17121 Collins Ave, Sunny Isles Beach, FL 33160",
+   "lat": 25.93434,
+   "lng": -80.12102,
+   "img": "skyday",
+   "img_alt": "Modern glass condominium tower above turquoise Atlantic water in Sunny Isles Beach",
+   "confidence": "Strong",
+   "confidence_note": "Identified from the tower's rooftop helipad and profile; the community has matched it to this building on Collins Avenue.",
+   "seen": "Trailer 2 (2:33)",
+   "tour": null,
+   "meta": "Jade Ocean at 17121 Collins Ave, Sunny Isles Beach. The real tower behind the game's waterfront skyscraper, with address, why it matches and what to see there.",
+   "title": "Jade Ocean Condominium, 17121 Collins Ave | Leonida Tours",
+   "lede": "The tower Lucia steps off in Trailer 2 is Jade Ocean, a glass condominium at 17121 Collins Avenue in Sunny Isles Beach. The game's version is moved roughly ten miles south, closer to the centre of Vice Beach, but the building's rooftop helipad, its rounded profile and its position on the barrier island all match.",
+   "body": [
+    {
+     "p": [
+      "Sunny Isles Beach is the most northeasterly strip of Miami Beach, past Haulover and before the north tip of the island. It is lined with 1980s and 1990s condominium towers, most of them quite tall, most of them directly on the sand with the Atlantic on one side and the Intracoastal on the other."
+     ]
+    },
+    {
+     "h2": "The frame in the trailer",
+     "id": "the-frame"
+    },
+    {
+     "p": [
+      "The shot is Lucia on a helipad on the roof of a beachfront tower, stepping off toward a canopy westward. Below and behind, the Venetian Islands and the causeway bridges pass under with the downtown skyline beyond. That arrangement only works from a point on the north end of the barrier island, which is where Jade Ocean stands."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "17121 Collins Ave, Sunny Isles Beach, FL 33160"
+       ],
+       [
+        "Coordinates",
+        "25.93434, -80.12102"
+       ],
+       [
+        "In-game name",
+        "The Jade Ocean tower"
+       ],
+       [
+        "District in game",
+        "Vice Beach"
+       ],
+       [
+        "Building",
+        "Glass residential condominium"
+       ],
+       [
+        "Game change",
+        "Moved roughly 10 miles south"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "The building is private residential, with a gated entrance off Collins Avenue and a beach club and pool deck for owners and guests. The public part worth the drive is the beach in front of it and the view north up the coast toward Haulover and the inlet, which is the clearest real photograph of the shot in the trailer."
+     ]
+    },
+    {
+     "note": {
+      "title": "Not on our route",
+      "text": "Sunny Isles Beach is a 35-minute drive north of Ocean Drive, on the far side of Haulover Inlet. It is not on any of our scheduled routes, but it makes a good add-on if you are driving up for the afternoon and want to see the Jade Ocean and the northern tip of the barrier island."
+     }
+    },
+    {
+     "h2": "Why it is on the map",
+     "id": "map-significance"
+    },
+    {
+     "p": [
+      "The tower is the northern anchor of the game's Vice Beach, which is how the community pinned down the shape of the barrier island in the game. If you are mapping the in-game coastline onto the real one, Jade Ocean fixes the north end and the Seven Mile Bridge fixes the south end of the road."
+     ]
+    },
+    {
+     "h2": "The northern tip",
+     "id": "The northern tip"
+    },
+    {
+     "p": [
+      "Past Sunny Isles the barrier island narrows to Haulover Inlet, and beyond the inlet the land turns rural almost immediately. That contrast, a wall of towers on one side of the water and farmland on the other, is a very Miami ending to the drive north, and the game flattens it into a single grid."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "What is the Jade Ocean in GTA 6?",
+     "It is a beachfront condominium tower in Vice Beach, shown in Trailer 2 with a rooftop helipad. The real building it is modelled on is Jade Ocean at 17121 Collins Avenue in Sunny Isles Beach, which the game has moved about ten miles south."
+    ],
+    [
+     "Can you go to the rooftop?",
+     "No. It is a private residential building with a gated lobby and a residents-only pool deck. The beach opposite and the street view are public."
+    ],
+    [
+     "Is it on a Leonida Tours route?",
+     "No. It is about 35 minutes north of our meeting point on Ocean Drive and we do not run a scheduled stop there."
+    ]
+   ]
+  },
+  {
+   "slug": "star-island-flagler-memorial",
+   "name": "Star Island and the Flagler Memorial",
+   "game_name": "Star Island",
+   "area": "Vice City",
+   "addr": "1200 Brickell Ave, Miami, FL 33131",
+   "lat": 25.77404,
+   "lng": -80.14889,
+   "img": "b_star",
+   "img_alt": "Waterfront mansion and palm trees on Star Island, Miami",
+   "confidence": "Strong",
+   "confidence_note": "The white obelisk in the trailer identifies the spot: the Flagler Memorial on Monument Island is visible from across Biscayne Bay.",
+   "seen": "Trailer 1 (0:11) and Trailer 2 (2:19)",
+   "tour": "vc-boat",
+   "meta": "Star Island in Biscayne Bay with the Flagler Memorial obelisk. The real island behind the game's waterfront neighbourhood, and what to see from the water.",
+   "title": "Star Island and the Flagler Memorial, Miami | Leonida Tours",
+   "lede": "The villas in Trailer 1, filmed from a jet ski across Biscayne Bay, are Star Island, the man-made island off the MacArthur Causeway. The giveaway in the frame is not the mansions but the white obelisk above the trees on the right: that is the Flagler Memorial on Monument Island, and it can be seen from across the bay. No canal view can produce that sightline.",
+   "body": [
+    {
+     "p": [
+      "Star Island was built in the 1920s out of mangrove fill by the developer of nearby Miami Beach, and it has been the most expensive residential island in the world for most of its history. Its mansions line a single private road, with deep-water docks on the bay side and the downtown skyline a few minutes away across the water."
+     ]
+    },
+    {
+     "h2": "The obelisk",
+     "id": "obelisk"
+    },
+    {
+     "p": [
+      "The Flagler Memorial stands on Monument Island, a smaller artificial island next to Star Island, and is the reason the whole frame is identifiable. It was completed in 1921 and is one of the most recognisable silhouettes on the Miami waterfront: a tall white column with a statue on top, visible from far out in the bay."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "1200 Brickell Ave, Miami, FL 33131"
+       ],
+       [
+        "Coordinates",
+        "25.77404, -80.14889"
+       ],
+       [
+        "In-game name",
+        "Star Island"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "The obelisk",
+        "Flagler Memorial, Monument Island"
+       ],
+       [
+        "Built",
+        "1921"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "The island itself is private, gated and not a place you can walk. What you can do is look at it from the water, and the boat tour route deliberately passes close to the north tip of Star Island and then holds at Monument Island so you can frame the obelisk against the downtown skyline."
+     ]
+    },
+    {
+     "h2": "Millionaire's Row, and the boats",
+     "id": "millionaires-row"
+    },
+    {
+     "p": [
+      "South and west of Star Island, the string of barrier islands along the eastern edge of Biscayne Bay is known as Millionaire's Row: Palm Island, Hibiscus Island, Sunset Island and the Venetian Islands. The deep-water channels between them are lined with private docks and moored superyachts, which is where the megayacht density in the trailer comes from."
+     ]
+    },
+    {
+     "note": {
+      "title": "Privacy and photography",
+      "text": "These are private residential islands with residents who do live there. Photograph from the water, on the public route, and do not go ashore, dock, or use a drone over private property. The boat tour keeps to the public channel for exactly this reason."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "Star Island and the Flagler obelisk are the centrepiece of the Miami Vice City by Boat tour, which loops out of Bayside Marina past PortMiami and Fisher Island, along Millionaire's Row, and then holds for the golden-hour skyline shot with the obelisk in frame."
+     ]
+    },
+    {
+     "h2": "The causeway above",
+     "id": "The causeway above"
+    },
+    {
+     "p": [
+      "The MacArthur Causeway crosses from Brickell over to the islands and passes directly over the north tip of Star Island, which means there is a public road with an unobstructed view of the mansions and their private docks from above. It is the closest you can get to the island without a boat, and it is where most people first understand what the game is drawing."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is Star Island in GTA 6 the real Star Island?",
+     "Yes. The white obelisk above the trees in the trailer is the Flagler Memorial on Monument Island, which is visible from across Biscayne Bay only from the water east of Star Island. That sightline is what pins the frame to this location."
+    ],
+    [
+     "Can you visit Star Island?",
+     "It is a private gated residential island. You cannot drive or walk onto it. The boat tour passes close by on the public channel."
+    ],
+    [
+     "What is Millionaire's Row?",
+     "The string of private islands along the east side of Biscayne Bay: Star, Palm, Hibiscus, Sunset and the Venetian Islands, known for their waterfront mansions and deep-water docks."
+    ]
+   ]
+  },
+  {
+   "slug": "bayside-marketplace",
+   "name": "Bayside Marketplace",
+   "game_name": "The observation wheel",
+   "area": "Vice City",
+   "addr": "401 N Biscayne Blvd, Miami, FL 33132",
+   "lat": 25.7794,
+   "lng": -80.186,
+   "img": "brickell",
+   "img_alt": "Neon-lit Brickell towers at night",
+   "confidence": "Strong",
+   "confidence_note": "The wheel appears in the same frame as the arena and the port cranes, in the same relative positions as the real Bayside Marketplace.",
+   "seen": "Trailer 2 (1:40)",
+   "tour": "vc-van",
+   "meta": "Bayside Marketplace and its observation wheel in Downtown Miami. The real wheel behind the game's harbour landmark, with address and what it looks like.",
+   "title": "Bayside Marketplace and the observation wheel, Miami",
+   "lede": "The giant observation wheel beside the arena in Trailer 2 is the one at Bayside Marketplace, 401 N Biscayne Boulevard in Downtown Miami. What makes the match solid is not the wheel itself, but the company it keeps: the arena to the south, the port cranes behind, and the I-395 ramps overhead, all in the same arrangement as the real city.",
+   "body": [
+    {
+     "p": [
+      "Bayside Marketplace is a shopping and dining complex on the north side of Downtown Miami, built around the inlet where Biscayne Bay meets the Miami River. The observation wheel is on its waterfront side and turns slowly, visible from a long way up the boulevard."
+     ]
+    },
+    {
+     "h2": "Getting the frame",
+     "id": "getting-the-frame"
+    },
+    {
+     "p": [
+      "The trailer's composition works from the plaza on the arena side of Biscayne Boulevard, looking north with the wheel behind and the port cranes beyond it. From the street that is a five-minute walk, and it is one of the few places in the game where you can stand in one spot and line up three separate landmarks."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "401 N Biscayne Blvd, Miami, FL 33132"
+       ],
+       [
+        "Coordinates",
+        "25.77940, -80.18600"
+       ],
+       [
+        "In-game name",
+        "The observation wheel"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Adjacent",
+        "Kaseya Center, port cranes"
+       ],
+       [
+        "Setting",
+        "Biscayne Bay inlet, Downtown"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "At ground level, the wheel is a working ride with ticketed cabins and good views over the bay at dusk. The waterfront walkway around the inlet is public and is a genuinely good place to stand, with the Miami River mouth on one side and the Downtown skyline on the other."
+     ]
+    },
+    {
+     "h2": "Two faces of the same downtown",
+     "id": "two-faces"
+    },
+    {
+     "p": [
+      "The wheel sits at the north end of Downtown; the arena is a short walk south; the port is across the inlet. On foot the three are five minutes apart, which is why our Downtown stop is a single loop rather than a drive: you see the plaza, the wheel, the arena side and the waterfront in one walk."
+     ]
+    },
+    {
+     "note": {
+      "title": "Getting in and out of Downtown",
+      "text": "Downtown Miami runs on a signed one-way grid, and Biscayne Boulevard is no exception: check the street blades before you pull out, and be prepared for the trip down to Brickell to take longer than the map suggests. Parking is priced by the hour and by the event, and the garages under the buildings are usually the least painful option on foot."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "The Downtown and Biscayne Boulevard stop on the Miami Vice City small-group tour covers all of it: the arena plaza, the wheel, the waterfront and the view down Biscayne Boulevard towards Brickell. The boat tour picks up the same skyline from the water, with the wheel and the cranes reflected in Biscayne Bay at sunset."
+     ]
+    },
+    {
+     "h2": "The wheel from the water",
+     "id": "The wheel from the water"
+    },
+    {
+     "p": [
+      "From Biscayne Bay the wheel is visible behind the arena, and the whole downtown cluster reads as one composition: the arena bowl in front, the wheel at its shoulder and the port cranes further back across the channel. That is the same angle the boat tour holds for the golden-hour stop, which is why the boat route gets the postcard and the land route gets the close-up."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "What is the observation wheel in GTA 6?",
+     "It is the wheel at Bayside Marketplace in Downtown Miami. It appears in Trailer 2 alongside the arena and the port cranes, in the same relative positions as the real landmarks."
+    ],
+    [
+     "Can you ride the wheel?",
+     "Yes, it is an operating attraction with ticketed gondolas. We do not include the ride in our tour price; we stop at the plaza for the photograph and the view."
+    ],
+    [
+     "Is it far from the tour route?",
+     "No. It is a few minutes' walk from the arena, and both are inside the Downtown stop on the small-group tour."
+    ]
+   ]
+  },
+  {
+   "slug": "little-haiti",
+   "name": "Little Haiti",
+   "game_name": "Little Haiti",
+   "area": "Vice City",
+   "addr": "500 NW 2nd Ave, Miami, FL 33128",
+   "lat": 25.8065,
+   "lng": -80.217,
+   "img": "laperle",
+   "img_alt": "Colorful murals on a wall in Little Haiti, Miami",
+   "confidence": "Official naming",
+   "confidence_note": "Rockstar names Little Haiti in Trailer 2 and in the character pages for the game's characters in Vice City.",
+   "seen": "Trailer 2 (1:02)",
+   "tour": "vc-van",
+   "meta": "Little Haiti on NW 2nd Avenue, Miami. The real Caribbean district north of Downtown, with address, what to see, where to eat and which tour stops there.",
+   "title": "Little Haiti, NW 2nd Avenue, Miami | Leonida Tours",
+   "lede": "Little Haiti is the real Little Haiti, the Caribbean neighbourhood north of Downtown Miami. Rockstar names it directly in Trailer 2, and it is the one in-game district on our route whose real-world name is completely unchanged, which makes it the easiest place in the game to stand in and confirm.",
+   "body": [
+    {
+     "p": [
+      "Little Haiti was settled in the 1950s by Haitian and Caribbean immigrants and is now the cultural heart of a much larger Caribbean community in Miami. It covers roughly 60 city blocks north of Downtown, bounded by NW 20th Street, NW 6th Avenue, Biscayne Boulevard and I-395."
+     ]
+    },
+    {
+     "h2": "What to actually look at",
+     "id": "what-to-look-at"
+    },
+    {
+     "p": [
+      "The district's spine is NW 2nd Avenue, and the landmark everybody photographs is the mural at the corner of NW 2nd Avenue and NW 21st Street: a large painted hand and the words of the motto of the Northside Alliance, the community organisation that has held the neighbourhood together for decades."
+     ]
+    },
+    {
+     "p": [
+      "The other anchors are the Caribbean cultural centre and the plaza next to it, the bakery counters along NW 2nd, and the small bars that fill the blocks behind the churches. The neighbourhood does its best work at weekends, when there is a genuine market atmosphere rather than a daytime one."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "500 NW 2nd Ave, Miami, FL 33128"
+       ],
+       [
+        "Coordinates",
+        "25.80650, -80.21700"
+       ],
+       [
+        "In-game name",
+        "Little Haiti"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Anchor",
+        "The Northside Alliance mural"
+       ],
+       [
+        "Also",
+        "Caribbean cultural centre"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Food worth stopping for",
+     "id": "food"
+    },
+    {
+     "p": [
+      "Haitian patties, accra, fried plantain and griot are the order of the day, and the Haitian grocery counters on NW 2nd sell the spices and imported staples that the whole neighbourhood cooks from. A patty and a juice box is the standard local lunch."
+     ]
+    },
+    {
+     "note": {
+      "title": "A neighbourhood, not a set",
+      "text": "Little Haiti is residential. The murals and the plaza are public, and the church and the cultural centre are open to visitors, but most of the streets here are people's front doors. Walk, keep noise down, and photograph the art rather than the people."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "Little Haiti is stop six on the Miami Vice City small-group tour, with a stop at the cultural centre and a Haitian patty on the way through. It is the quietest of the eight stops and, for a lot of guests, the one they remember most."
+     ]
+    },
+    {
+     "h2": "The murals",
+     "id": "The murals"
+    },
+    {
+     "p": [
+      "Northside Alliance has been commissioning and maintaining murals across the district for more than three decades, and they are about place rather than about art: they name the community's history, its founders and its demands. The most photographed is the hand on the corner of NW 2nd Avenue and NW 21st Street, and the block behind it is the one to walk slowly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is Little Haiti in GTA 6 the same as the real Little Haiti?",
+     "Yes. Unlike most in-game names, Rockstar left this one unchanged, and Trailer 2 shows the district in Vice City. The real Little Haiti is the Caribbean neighbourhood north of Downtown Miami, centred on NW 2nd Avenue."
+    ],
+    [
+     "What is the most photographed spot there?",
+     "The mural at NW 2nd Avenue and NW 21st Street, and the Caribbean cultural centre and plaza next to it, which is where the community's gatherings happen."
+    ],
+    [
+     "Do you stop there on the tour?",
+     "Yes, stop six on the Miami Vice City small-group tour, including a cultural centre stop and a patty."
+    ]
+   ]
+  },
+  {
+   "slug": "venetian-causeway",
+   "name": "Venetian Causeway",
+   "game_name": "The Vice Causeway toll plaza",
+   "area": "Vice City",
+   "addr": "1000 Venetian Causeway, Miami, FL 33132",
+   "lat": 25.79003,
+   "lng": -80.17821,
+   "img": "bridgenight",
+   "img_alt": "Miami skyline and causeway bridge at sunset over Biscayne Bay",
+   "confidence": "Strong",
+   "confidence_note": "The toll plaza is redrawn to the detail: four lanes under a tiled roof, arches on stuccoed piers, the same lane signage.",
+   "seen": "Trailer 2 and Trailer 1 causeway sequences",
+   "tour": "vc-van",
+   "meta": "The Venetian Causeway toll plaza in Miami. The real toll plaza behind the game's causeway crossing, with the SunPass detail and toll prices.",
+   "title": "Venetian Causeway toll plaza, Miami | Leonida Tours",
+   "lede": "The toll plaza on the causeway in the trailer is Miami's real Venetian Causeway toll plaza, on Biscayne Boulevard between Downtown Miami and Miami Beach. The match is unusually precise: four lanes under a tiled roof, arches on stuccoed piers, the same signage on the same side, and a bike lane where the game puts one.",
+   "body": [
+    {
+     "p": [
+      "The Venetian Causeway is the oldest road connection between the mainland and Miami Beach, opened in 1928 and extended north in the 1930s. The 1930s section carries the toll plaza, which is still an operating SunPass barrier and still charges a few dollars for the crossing."
+     ]
+    },
+    {
+     "h2": "The detail that proves it",
+     "id": "the-detail"
+    },
+    {
+     "p": [
+      "The game does not rename the toll system, it re-brands it. The real toll authority is Florida's SunPass; the game's equivalent is set in the same typeface with a sun standing in for the divider. Roadside signage, the booth design, the lane count and the DO NOT STOP boards are all reproduced. Fan mapping projects place the plaza precisely, and the coordinates are publicly documented."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "Address",
+        "1000 Venetian Causeway, Miami, FL 33132"
+       ],
+       [
+        "Coordinates",
+        "25.79003, -80.17821"
+       ],
+       [
+        "In-game name",
+        "The causeway toll plaza"
+       ],
+       [
+        "District in game",
+        "Vice City"
+       ],
+       [
+        "Opened",
+        "1928, extended in the 1930s"
+       ],
+       [
+        "Toll",
+        "SunPass, about $3.25 with a transponder"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Why the causeway matters more than the plaza",
+     "id": "why-it-matters"
+    },
+    {
+     "p": [
+      "The causeway is the drive that puts the skyline in front of you. It is the standard Miami approach shot, the one every visitor's first photo attempts, and it is the road that makes the relationship between Downtown Miami and Miami Beach legible: two separate cities on two separate islands, joined by a road over the water."
+     ]
+    },
+    {
+     "h2": "Crossing it on the tour",
+     "id": "crossing"
+    },
+    {
+     "p": [
+      "Our routes cross the causeway with the windows down. On the small-group tour it is stop three, with an optional drone shot on the causeway if you have booked the aerial add-on, and on the private convertible and Jeep routes it is the golden-hour photo stop."
+     ]
+    },
+    {
+     "note": {
+      "title": "One-way streets downtown",
+      "text": "Downtown Miami has a signed one-way system that catches visitors out constantly, and the causeway feeds straight into it. Follow the signs rather than your phone's straight line, and expect the trip from the causeway into Brickell to take longer than the map suggests."
+     }
+    },
+    {
+     "h2": "Where it sits on our route",
+     "id": "our-route"
+    },
+    {
+     "p": [
+      "Stop three on the Miami Vice City small-group tour, and the golden-hour stop on both private routes. It is also on the way out to the boat tour's meeting point at Bayside Marina, which is why we can get the skyline reflection from the water so easily."
+     ]
+    },
+    {
+     "h2": "The other bridges",
+     "id": "The other bridges"
+    },
+    {
+     "p": [
+      "The Venetian is one of four road connections between the mainland and Miami Beach, and the difference between them is the whole character of the city: the causeway goes over the middle of the bay with the skyline dead ahead, the MacArthur goes further north past the mansions, and the bridges at the south end take you through Bal Harbour and Surfside. The game picks the one with the best photograph."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is the causeway toll plaza in GTA 6 the Venetian Causeway?",
+     "Yes. The four-lane plaza under the tiled roof, the arches on the stuccoed piers and the lane signage all match the real Venetian Causeway toll plaza in Miami, and the community has published the exact coordinates."
+    ],
+    [
+     "How much is the toll?",
+     "The real Venetian Causeway toll is around $3.25 with a SunPass transponder, and higher without one. It is a few dollars either way, and most rental cars include the transponder as a service."
+    ],
+    [
+     "Is it worth stopping on the causeway?",
+     "It is the single best approach shot in Miami, and on the small-group tour it is a formal stop. On the private routes it is the golden-hour photo stop."
+    ]
+   ]
+  },
+  {
+   "slug": "vice-city-sign",
+   "name": "The VICE sign",
+   "game_name": "Vice City Sign",
+   "area": "Greater Leonida",
+   "addr": "West of Miami International Airport, near the NW 25th St runway approach, Miami, FL 33142",
+   "lat": 25.7906,
+   "lng": -80.2851,
+   "img": "neon",
+   "img_alt": "Large illuminated roadside sign glowing at dusk",
+   "confidence": "Community identification",
+   "confidence_note": "The sign is described in official material and reproduced by mapping projects, but the exact real-world structure is less firmly established than the other landmarks on this page.",
+   "seen": "Trailer 1 and Trailer 2",
+   "tour": null,
+   "meta": "The roadside VICE sign near Miami International Airport. How the weakest location identification on this list actually works, and where to find it.",
+   "lede": "Every open-world game needs one sign that says the place name, and GTA VI has the VICE sign: the tall illuminated letters on a metal frame beside the airport. Rockstar has shown it in official material, and mapping projects place it on the western edge of the city near the airport's runway approach, where a driver would pass it on the way in.",
+   "body": [
+    {
+     "p": [
+      "The sign is the kind of object that is easy to remember and hard to pin down. It is tall, it is lit, it is next to an approach, and it is on the flat western side of the map. Those four constraints narrow the search area to a handful of square miles around the airport."
+     ]
+    },
+    {
+     "h2": "What is confirmed and what is not",
+     "id": "confirmed"
+    },
+    {
+     "p": [
+      "Confirmed: Rockstar's official material shows a large Vice City sign near the airport, and its placement in the game is fixed. Not confirmed: no official source has published the address of a real sign, and the coordinates below reflect the best-supported community placement rather than a confirmed prototype."
+     ]
+    },
+    {
+     "table": {
+      "head": [
+       "Detail",
+       "The real thing"
+      ],
+      "rows": [
+       [
+        "In-game name",
+        "Vice City Sign"
+       ],
+       [
+        "Region in game",
+        "Greater Leonida, west of the city"
+       ],
+       [
+        "Confirmed",
+        "Presence and general placement in official footage"
+       ],
+       [
+        "Unconfirmed",
+        "Exact real-world address"
+       ],
+       [
+        "Confidence",
+        "Community identification"
+       ],
+       [
+        "Best estimate",
+        "25.79060, -80.28510"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Why it is hard to pin down",
+     "id": "why-hard"
+    },
+    {
+     "p": [
+      "The game exaggerates scale. Signage, bridges and towers are typically rendered larger than life in the game world, and the sign is set in open ground where the real object would be smaller and lower than the game makes it look. That is the general reason an identification can be well-supported in direction and still be imprecise on the metre."
+     ]
+    },
+    {
+     "note": {
+      "title": "How we label this one",
+      "text": "This is the one entry on this page where we lead with the uncertainty. Our rule is simple: we state what is officially shown, we state what the community has proposed, and we do not present the proposal as fact. If you are writing about it, quote the official description and attribute the location to the mapping community."
+     }
+    },
+    {
+     "h2": "What to do instead",
+     "id": "alternative"
+    },
+    {
+     "p": [
+      "If the goal is the photograph rather than the forensic match, the real roadside signs around Miami International Airport and along the Airport Expressway are the equivalent shot, and the hotel and building signage on Ocean Drive is where the game's Vice Beach identity actually comes from. The Clevelander at 1020 Ocean Drive is the version of this idea you can actually stand in front of."
+     ]
+    },
+    {
+     "h2": "What the game is doing",
+     "id": "What the game is doing"
+    },
+    {
+     "p": [
+      "A sign that names the place is how an open world tells you where you are in the first ten seconds of play. Rockstar put a monumental version of it on the approach to the city, which means it is a landmark by design: something you drive towards, something that appears on the horizon before the skyline does."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Where is the real VICE sign?",
+     "Nobody knows for certain. Rockstar shows it in official footage near the airport, and mapping projects place it on the western edge of the city near the airport's runway approach, but no official real-world address has been published. We treat it as a community identification, not a confirmed match."
+    ],
+    [
+     "Why is this less certain than the other entries?",
+     "Because there is a single object with no building behind it to match against. The other landmarks on this page are confirmed by architecture, position and surrounding context; a roadside sign has only its shape and its position to go on."
+    ],
+    [
+     "What is the closest confirmed match?",
+     "The Clevelander on Ocean Drive, which carries the neon identity of Vice Beach, and the real signage on Ocean Drive itself."
+    ]
+   ],
+   "title": "The VICE sign near Miami International Airport | Leonida Tours"
+  }
+ ]
+}

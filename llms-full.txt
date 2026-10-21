@@ -1,0 +1,1238 @@
+# Leonida Tours: full site text for AI assistants
+
+> Independent South Florida tour company running small-group and private tours to the real Miami, Everglades and Florida Keys places. Reservations are free with nothing to pay upfront. Not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive. All game names are used only to identify real-world locations.
+
+Site: https://leonidatours.com/  |  Email: hello@leonidatours.com  |  Base: Ocean Drive, Miami Beach, Florida
+
+## Tours
+
+### Miami Vice City Small-Group Tour
+- URL: https://leonidatours.com/tours/miami-small-group-tour/
+- Price: $79 per person  |  Duration: 3 hours · day or night  |  Group: Up to 12
+- Departs: Day 10a & 2p · Night 6:30p  |  Meeting point: Ocean Drive  |  Real place: Miami
+- Our signature tour, by day or by night. Take a daytime departure, or the sunset + night run that starts at golden hour and finishes as the neon switches on. The spots that inspired eight trailer scenes, in one loop: the Ocean Drive neon, the Venetian Causeway, downtown, the Wynwood murals, Little Haiti, Little Havana and the Brickell skyline.
+
+### Private Classic Convertible Tour
+- URL: https://leonidatours.com/tours/private-classic-convertible-tour-miami/
+- Price: $600 per car  |  Duration: 2.5 hours  |  Group: Up to 3
+- Departs: Your time  |  Meeting point: Hotel pickup  |  Real place: Miami
+- The most cinematic way to see it. Just your crew in a top-down vintage convertible with a driver-guide who knows every angle. Same stops as the signature tour, at your pace.
+
+### Private Jeep Convertible Tour
+- URL: https://leonidatours.com/tours/private-jeep-tour-miami/
+- Price: $450 per Jeep  |  Duration: 2.5 hours  |  Group: Up to 3
+- Departs: Your time  |  Meeting point: Hotel pickup  |  Real place: Miami
+- Roof off, wind in. Your crew in an open-top Jeep with a driver-guide, running the full Miami loop from the Ocean Drive neon to the Brickell skyline.
+
+### Miami Vice City by Boat
+- URL: https://leonidatours.com/tours/miami-boat-tour-biscayne-bay/
+- Price: $79 per person  |  Duration: 2 hours  |  Group: Up to 12
+- Departs: 11a · 4p · sunset  |  Meeting point: Bayside Marina  |  Real place: Biscayne Bay
+- Our Millionaire’s Row cruise. Loop out of Bayside past PortMiami, Fisher Island and the Miami Beach Marina megayachts, then the celebrity mansions of Star, Palm and Hibiscus Islands and the Venetian Islands, before a golden-hour hold on the skyline.
+
+### Grasslands Airboat
+- URL: https://leonidatours.com/tours/everglades-airboat-tour-from-miami/
+- Price: $79 per person  |  Duration: 4 hours  |  Group: Up to 20
+- Departs: 9a · 1p  |  Meeting point: Pickup in Miami  |  Real place: The Everglades
+- Leave the neon behind for the swamp that inspired the game’s wetlands. Round-trip shuttle from Miami, then an airboat run through the Everglades sawgrass with a wildlife guide. Add an alligator farm visit, or stay for a glow-in-the-dark ATV ride after sunset.
+
+### Leonida Keys Road Trip
+- URL: https://leonidatours.com/tours/florida-keys-day-trip-from-miami/
+- Price: $149 per person  |  Duration: Full day  |  Group: Up to 12
+- Departs: 7:30a  |  Meeting point: Pickup in Miami  |  Real place: Florida Keys
+- The island road that inspired the game’s Keys. Drive the Overseas Highway through Key Largo and Islamorada to the Seven Mile Bridge, with beach time and a seafood lunch stop.
+
+### Leonida City Pass
+- URL: https://leonidatours.com/tours/leonida-city-pass/
+- Price: $199 per person  |  Duration: Book each date  |  Group: Any size
+- Departs: Your schedule  |  Meeting point: Varies  |  Real place: Streets, bay & swamp
+- The Miami Vice City small-group tour, Miami Vice City by Boat and the Grasslands Airboat, booked on your own schedule. A $237 value for $199.
+
+## Real locations
+
+Every stop on a Leonida Tours route is a real, publicly accessible place in South Florida. This is the field guide to the ones that map to locations in Grand Theft Auto VI, with addresses, coordinates and how confident we are about each match. We rate every identification so you know what is a documented landmark and what is community reconstruction.
+
+### The Clevelander (Vice Beach)
+- URL: https://leonidatours.com/locations/ocean-view-hotel-clevelander/
+- Address: 1020 Ocean Drive, Miami Beach, FL 33139  |  Coordinates: 25.78104, -80.13046
+- In the game as: Ocean View Hotel  |  Confidence: Strong
+- Where it is seen: Trailer 1 (0:33) and Trailer 2 (2:34)
+- The in-game Ocean View Hotel is the Clevelander, the pink-neon Art Deco hotel on Ocean Drive in South Beach. The facade, the corner sign and the pool-bar frontage in the trailer all match a building that has stood at 1020 Ocean Drive since 1938. It is a working hotel, a bar and a landmark most people walk past without knowing what it is.
+- Q: Is the Ocean View Hotel in GTA 6 the Clevelander? A: Almost certainly. The Clevelander's pink Art Deco facade and rooftop neon sign appear in the trailer in the same position as the in-game hotel. It is the most widely repeated identification in the community, though Rockstar has never published an official list of real-world inspirations.
+- Q: Can you stay at the Clevelander? A: Yes. It operates as a hotel, a bar and an event venue. Rooms and the rooftop pool deck are for guests; the street outside is for everyone.
+- Q: Is it on the tour? A: Yes. It is stop one on the Miami Vice City small-group tour and the first stop on both private routes.
+
+### Calle Ocho and Máximo Gómez Park (Vice City)
+- URL: https://leonidatours.com/locations/calle-ocho-little-cuba/
+- Address: SW 8th Street, Little Havana, Miami, FL 33135  |  Coordinates: 25.76704, -80.21702
+- In the game as: Little Cuba  |  Confidence: Official naming
+- Where it is seen: Trailer 2 (1:02) and the official Vice City region page
+- Little Cuba is the real Little Havana. Rockstar's own description of Vice City names it directly: "the bustling panederias of Little Cuba," alongside Ocean Beach's pastel Art Deco hotels and the VC Port. The real district runs along Calle Ocho, SW 8th Street, and its centrepiece is Máximo Gómez Park, the small square of domino tables that the game turns into its main street.
+- Q: Is Little Cuba in GTA 6 the same as Little Havana? A: Yes. Rockstar's official Vice City page names "Little Cuba" as one of the city's neighbourhoods. Little Cuba is the nickname for the real Little Havana district, centred on SW 8th Street, so the game's district and the real one are the same place under two names.
+- Q: What is Máximo Gómez Park? A: It is the small plaza at SW 8th Street and Miami Avenue that locals call Domino Park. The open-air domino games there have been running for decades, and they are the clearest real-world parallel to the game's Little Cuba street scenes.
+- Q: Do you stop there on the tour? A: Yes, stop seven on the Miami Vice City small-group tour, with a cafecito and pastelito stop included.
+
+### Wynwood Arts District (Vice City)
+- URL: https://leonidatours.com/locations/wynwood-arts-district/
+- Address: NW 2nd Avenue, Wynwood, Miami, FL 33127  |  Coordinates: 25.8012, -80.1994
+- In the game as: Stockyard  |  Confidence: Strong
+- Where it is seen: Trailer 2 (1:55) and Trailer 1 (0:50)
+- The Stockyard is Wynwood. The trailer shows a street-car meet on a strip of murals and low warehouse blocks, and Wynwood is exactly that: a few dozen blocks of painted warehouses in Miami's Over-the-Riverfront neighbourhood where the street art is the point rather than a decoration. It is the densest concentration of large-format murals anywhere in the United States.
+- Q: Is the Stockyard in GTA 6 Wynwood? A: Yes. The Stockyard is shown as a street-car-meet location lined with murals, and Wynwood is the real Miami neighbourhood with that exact combination: warehouse walls, big murals and night-time car meets. It is one of the most consistently identified locations in the game.
+- Q: Do I need to pay to see the murals? A: No. The street art is on public walls and public roads. The Wynwood Walls and the adjacent garage are free to walk through; the galleries and shops around them are not.
+- Q: How long do you spend there? A: About 25 minutes on foot, which is enough to reach the main mural blocks without turning the stop into a hike.
+
+### Kaseya Center (Vice City)
+- URL: https://leonidatours.com/locations/sahara-arena-kaseya-center/
+- Address: 601 Biscayne Blvd, Miami, FL 33132  |  Coordinates: 25.78115, -80.18788
+- In the game as: Sahara Arena  |  Confidence: Strong
+- Where it is seen: Trailer 2 (1:40)
+- The in-game Sahara Arena is the Kaseya Center, the Miami Heat's basketball arena on Biscayne Boulevard in Downtown Miami. It is also the clearest example of how the game builds a location: the arena itself is only one part of the match, because the observation wheel to the north and the container cranes of PortMiami to the south are arranged in the game exactly as they are in the real city.
+- Q: Is the Sahara Arena the Kaseya Center? A: Yes. The arena's position on Biscayne Boulevard, its shape and the placement of the observation wheel and port cranes behind it match the Kaseya Center in Downtown Miami. This one was reported by press coverage shortly after Trailer 2 and is not contested.
+- Q: Can you go inside the Kaseya Center? A: Yes, for a game, a concert or a tour on event days. Tickets are sold by the arena. On a normal tour we drive past the plaza and stop for the photograph.
+- Q: Is it on the boat route too? A: The boat passes the waterfront below the arena and PortMiami, which is where you get the cranes-and-arena angle from the water at golden hour.
+
+### E11EVEN (Vice City)
+- URL: https://leonidatours.com/locations/nine-one-nine-e11even/
+- Address: 29 NE 11th Street, Miami, FL 33132  |  Coordinates: 25.7838, -80.195
+- In the game as: NINE1NINE  |  Confidence: Strong
+- Where it is seen: Trailer 2 (1:28)
+- The 24-hour club in Trailer 2 is E11EVEN, at 29 NE 11th Street in Downtown Miami. The identification rests on the name: eleven written as 9-1-1-9, the same digits reordered, which is the kind of construction that does not happen by accident. The real club sits on a low-rise block two streets back from Biscayne Boulevard, and it is the in-game nightclub.
+- Q: What is E11EVEN in GTA 6 called? A: In the game the club is NINE1NINE. The real club is E11EVEN, at 29 NE 11th Street in Downtown Miami. The name match works because eleven, spelled as digits, becomes 9-1-1-9.
+- Q: Can you go in? A: E11EVEN is a working nightclub with its own schedule and entry arrangements. We do not sell club tickets or alcohol; check the venue's current listings and plan your own night around it.
+- Q: How close is it to the tour route? A: It is inside the Downtown loop, a short walk from the Downtown and Biscayne Boulevard stop on the small-group tour and within the private convertible and Jeep routes.
+
+### PortMiami (Vice City)
+- URL: https://leonidatours.com/locations/portmiami-port-vice-city/
+- Address: 1100 NW 6th St, Miami, FL 33133  |  Coordinates: 25.77806, -80.1733
+- In the game as: PortViceCity  |  Confidence: Strong
+- Where it is seen: Trailer 1 (0:24) and Trailer 2 (2:27)
+- The in-game PortViceCity is PortMiami, the container and cruise terminal on Dodge Island. Rockstar's own Vice City description calls it "the cruise ship capital of the world," which is Miami's port, and the trailer's speedboat chase and the gantry cranes are the terminals you can still see from the causeway and from the water.
+- Q: Is PortViceCity in GTA 6 PortMiami? A: Yes. The trailer's speedboat chase and the row of container gantry cranes match PortMiami on Dodge Island, and Rockstar's official Vice City description refers to "the VC Port, the cruise ship capital of the world," which is Miami's port.
+- Q: Can you go inside the port? A: Not as a visitor. It is a secured federal facility. The cruise terminal promenade and the public causeway viewpoints are open and are where you get the photographs.
+- Q: Which tour sees the cranes best? A: The boat tour, from the water. On land you pass them quickly on the MacArthur Causeway between Downtown and Brickell.
+
+### Miami International Airport (Greater Leonida)
+- URL: https://leonidatours.com/locations/miami-international-airport/
+- Address: 5000 NW 36th St, Miami, FL 33142  |  Coordinates: 25.7959, -80.287
+- In the game as: Vice City International Airport  |  Confidence: Strong
+- Where it is seen: Trailer 1 (0:11) and Trailer 2 (0:36)
+- The in-game Vice City International Airport is Miami International Airport, MIA, at 5000 NW 36th Street. It sits on the flat western edge of the city in the game, exactly where MIA sits in Miami-Dade: a spread-out campus of runways, terminals and cargo aprons that the game reproduces closely because the approach pattern and the overhead sign are so recognisable.
+- Q: Is Vice City International Airport Miami International Airport? A: Yes. The game's airport matches MIA in position on the flat western edge of the city, in runway layout and in the terminal-and-taxiway frontage shown in Trailer 2. It is not the Fort Lauderdale or Miami Beach heliport that the game also uses.
+- Q: Is MIA in the city of Miami? A: No. Despite the name, Miami International Airport is in Miami-Dade County, about 20 miles northwest of Miami Beach and around 12 miles northwest of Downtown Miami.
+- Q: Can I get a tour to the airport? A: Not as a scheduled stop. All our tours pick up in Miami Beach, Downtown or Brickell, and we are happy to advise on airport transfers.
+
+### Seven Mile Bridge (Leonida Keys)
+- URL: https://leonidatours.com/locations/seven-mile-bridge/
+- Address: Overseas Highway, Marathon, FL 32952  |  Coordinates: 24.7016, -81.15969
+- In the game as: Seven Mile Bridge  |  Confidence: Strong
+- Where it is seen: Trailer 2 (0:04) and the Launch Trailer (0:03)
+- The game's Seven Mile Bridge is the real Seven Mile Bridge, part of the Overseas Highway at Marathon in the Middle Florida Keys. It is the single most photographed structure in the Keys, an old seven-mile section of concrete arches running parallel to a newer highway that took the traffic in 1982, and the game reproduces the arches rather than the modern span.
+- Q: Is the Seven Mile Bridge in GTA 6 the real one? A: Yes. The game reproduces the older concrete arch span of the Seven Mile Bridge at Marathon, including the arches that have been a fishing walkway since the 1980s, rather than the newer four-lane bridge beside it.
+- Q: How long is the drive from Miami? A: About three and a half hours each way on the Overseas Highway, which is why our Keys trip runs as a full day with a morning departure. The Seven Mile Bridge itself is about two hours from Miami Beach.
+- Q: Can you swim at the bridge? A: Yes. The channel between the keys is open ocean and there is a local swimming tradition with a marked course and a spectator boat on race day. Ask locally about current conditions before you enter, and respect the marked channel.
+
+### Everglades National Park (Grassrivers)
+- URL: https://leonidatours.com/locations/everglades-national-park/
+- Address: 40001 State Road 6, Homestead, FL 33034  |  Coordinates: 25.2866, -80.8986
+- In the game as: Grassrivers  |  Confidence: Official region + community match
+- Where it is seen: Trailer 1 (0:20), Trailer 2 (2:18) and the official Grassrivers region page
+- Rockstar calls the state's wetland region Grassrivers, and its official description names the alligators and the mangroves. The real place is the Everglades: a 1.5-million-acre wetland that runs from Lake Okeechobee south to the Gulf, 40 miles from the neon strip where the rest of Leonida Tours runs.
+- Q: Is Grassrivers in GTA 6 the Everglades? A: Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland region of that scale and character in Florida. It is the most confident regional match in the game.
+- Q: How far is the Everglades from Miami? A: About 45 miles, roughly an hour and a half of driving from Downtown Miami, depending on traffic. The park entrance is off the Tamiami Trail, and the drive itself is one of the best parts.
+- Q: Will you actually see alligators? A: Your wildlife guide takes you to the places gators are most often seen, and on a good day you will see them. Sightings are never guaranteed, because they are wild animals in a huge place.
+
+### Jade Ocean Condominium (Vice Beach)
+- URL: https://leonidatours.com/locations/jade-ocean-sunny-isles/
+- Address: 17121 Collins Ave, Sunny Isles Beach, FL 33160  |  Coordinates: 25.93434, -80.12102
+- In the game as: The Jade Ocean tower  |  Confidence: Strong
+- Where it is seen: Trailer 2 (2:33)
+- The tower Lucia steps off in Trailer 2 is Jade Ocean, a glass condominium at 17121 Collins Avenue in Sunny Isles Beach. The game's version is moved roughly ten miles south, closer to the centre of Vice Beach, but the building's rooftop helipad, its rounded profile and its position on the barrier island all match.
+- Q: What is the Jade Ocean in GTA 6? A: It is a beachfront condominium tower in Vice Beach, shown in Trailer 2 with a rooftop helipad. The real building it is modelled on is Jade Ocean at 17121 Collins Avenue in Sunny Isles Beach, which the game has moved about ten miles south.
+- Q: Can you go to the rooftop? A: No. It is a private residential building with a gated lobby and a residents-only pool deck. The beach opposite and the street view are public.
+- Q: Is it on a Leonida Tours route? A: No. It is about 35 minutes north of our meeting point on Ocean Drive and we do not run a scheduled stop there.
+
+### Star Island and the Flagler Memorial (Vice City)
+- URL: https://leonidatours.com/locations/star-island-flagler-memorial/
+- Address: 1200 Brickell Ave, Miami, FL 33131  |  Coordinates: 25.77404, -80.14889
+- In the game as: Star Island  |  Confidence: Strong
+- Where it is seen: Trailer 1 (0:11) and Trailer 2 (2:19)
+- The villas in Trailer 1, filmed from a jet ski across Biscayne Bay, are Star Island, the man-made island off the MacArthur Causeway. The giveaway in the frame is not the mansions but the white obelisk above the trees on the right: that is the Flagler Memorial on Monument Island, and it can be seen from across the bay. No canal view can produce that sightline.
+- Q: Is Star Island in GTA 6 the real Star Island? A: Yes. The white obelisk above the trees in the trailer is the Flagler Memorial on Monument Island, which is visible from across Biscayne Bay only from the water east of Star Island. That sightline is what pins the frame to this location.
+- Q: Can you visit Star Island? A: It is a private gated residential island. You cannot drive or walk onto it. The boat tour passes close by on the public channel.
+- Q: What is Millionaire's Row? A: The string of private islands along the east side of Biscayne Bay: Star, Palm, Hibiscus, Sunset and the Venetian Islands, known for their waterfront mansions and deep-water docks.
+
+### Bayside Marketplace (Vice City)
+- URL: https://leonidatours.com/locations/bayside-marketplace/
+- Address: 401 N Biscayne Blvd, Miami, FL 33132  |  Coordinates: 25.7794, -80.186
+- In the game as: The observation wheel  |  Confidence: Strong
+- Where it is seen: Trailer 2 (1:40)
+- The giant observation wheel beside the arena in Trailer 2 is the one at Bayside Marketplace, 401 N Biscayne Boulevard in Downtown Miami. What makes the match solid is not the wheel itself, but the company it keeps: the arena to the south, the port cranes behind, and the I-395 ramps overhead, all in the same arrangement as the real city.
+- Q: What is the observation wheel in GTA 6? A: It is the wheel at Bayside Marketplace in Downtown Miami. It appears in Trailer 2 alongside the arena and the port cranes, in the same relative positions as the real landmarks.
+- Q: Can you ride the wheel? A: Yes, it is an operating attraction with ticketed gondolas. We do not include the ride in our tour price; we stop at the plaza for the photograph and the view.
+- Q: Is it far from the tour route? A: No. It is a few minutes' walk from the arena, and both are inside the Downtown stop on the small-group tour.
+
+### Little Haiti (Vice City)
+- URL: https://leonidatours.com/locations/little-haiti/
+- Address: 500 NW 2nd Ave, Miami, FL 33128  |  Coordinates: 25.8065, -80.217
+- In the game as: Little Haiti  |  Confidence: Official naming
+- Where it is seen: Trailer 2 (1:02)
+- Little Haiti is the real Little Haiti, the Caribbean neighbourhood north of Downtown Miami. Rockstar names it directly in Trailer 2, and it is the one in-game district on our route whose real-world name is completely unchanged, which makes it the easiest place in the game to stand in and confirm.
+- Q: Is Little Haiti in GTA 6 the same as the real Little Haiti? A: Yes. Unlike most in-game names, Rockstar left this one unchanged, and Trailer 2 shows the district in Vice City. The real Little Haiti is the Caribbean neighbourhood north of Downtown Miami, centred on NW 2nd Avenue.
+- Q: What is the most photographed spot there? A: The mural at NW 2nd Avenue and NW 21st Street, and the Caribbean cultural centre and plaza next to it, which is where the community's gatherings happen.
+- Q: Do you stop there on the tour? A: Yes, stop six on the Miami Vice City small-group tour, including a cultural centre stop and a patty.
+
+### Venetian Causeway (Vice City)
+- URL: https://leonidatours.com/locations/venetian-causeway/
+- Address: 1000 Venetian Causeway, Miami, FL 33132  |  Coordinates: 25.79003, -80.17821
+- In the game as: The Vice Causeway toll plaza  |  Confidence: Strong
+- Where it is seen: Trailer 2 and Trailer 1 causeway sequences
+- The toll plaza on the causeway in the trailer is Miami's real Venetian Causeway toll plaza, on Biscayne Boulevard between Downtown Miami and Miami Beach. The match is unusually precise: four lanes under a tiled roof, arches on stuccoed piers, the same signage on the same side, and a bike lane where the game puts one.
+- Q: Is the causeway toll plaza in GTA 6 the Venetian Causeway? A: Yes. The four-lane plaza under the tiled roof, the arches on the stuccoed piers and the lane signage all match the real Venetian Causeway toll plaza in Miami, and the community has published the exact coordinates.
+- Q: How much is the toll? A: The real Venetian Causeway toll is around $3.25 with a SunPass transponder, and higher without one. It is a few dollars either way, and most rental cars include the transponder as a service.
+- Q: Is it worth stopping on the causeway? A: It is the single best approach shot in Miami, and on the small-group tour it is a formal stop. On the private routes it is the golden-hour photo stop.
+
+### The VICE sign (Greater Leonida)
+- URL: https://leonidatours.com/locations/vice-city-sign/
+- Address: West of Miami International Airport, near the NW 25th St runway approach, Miami, FL 33142  |  Coordinates: 25.7906, -80.2851
+- In the game as: Vice City Sign  |  Confidence: Community identification
+- Where it is seen: Trailer 1 and Trailer 2
+- Every open-world game needs one sign that says the place name, and GTA VI has the VICE sign: the tall illuminated letters on a metal frame beside the airport. Rockstar has shown it in official material, and mapping projects place it on the western edge of the city near the airport's runway approach, where a driver would pass it on the way in.
+- Q: Where is the real VICE sign? A: Nobody knows for certain. Rockstar shows it in official footage near the airport, and mapping projects place it on the western edge of the city near the airport's runway approach, but no official real-world address has been published. We treat it as a community identification, not a confirmed match.
+- Q: Why is this less certain than the other entries? A: Because there is a single object with no building behind it to match against. The other landmarks on this page are confirmed by architecture, position and surrounding context; a roadside sign has only its shape and its position to go on.
+- Q: What is the closest confirmed match? A: The Clevelander on Ocean Drive, which carries the neon identity of Vice Beach, and the real signage on Ocean Drive itself.
+
+## Blog articles
+
+### GTA 6 Release Date: November 19, 2026 and What to Do in Miami
+- URL: https://leonidatours.com/blog/gta-6-release-date/  |  Published: 2026-10-20  |  Category: Release
+- The date is locked: November 19, 2026, on PlayStation 5 and Xbox Series X|S. Here is the confirmed timeline, what changed twice on the way, and the smartest way to spend launch week if you are already in South Florida.
+Grand Theft Auto VI releases on November 19, 2026, on PlayStation 5 and Xbox Series X|S. That date is confirmed by Rockstar Games and Take-Two Interactive, and it has survived two delays. It is also, almost exactly, the date our first tours begin running: we open on the same weekend, because the single best thing a visitor to South Florida can do that week is see the city the game is built from.
+
+## The confirmed release date
+Rockstar's own site lists the release date and the platforms, and Take-Two has confirmed it in its financial communications. There is no PC version listed on any official Rockstar or PlayStation or Microsoft page as of writing. If you are planning to play on PC, plan around that gap rather than assuming a later date.
+| Platform | Status | Notes |
+|---|---|---|
+| PlayStation 5 | Confirmed | Pre-order open |
+| Xbox Series X|S | Confirmed | Pre-order open |
+| PC / Windows | Not announced | No official date on any Rockstar or publisher page |
+
+## How the date moved, and why that matters
+The release date has been pushed twice, and both moves were announced with an unusual public apology. The pattern matters if you are trying to judge whether November 19 is safe: Rockstar moved it once to a date it then moved again, and both announcements were framed around finishing the game to a standard rather than around any production problem.
+| Announced | Date at the time | Change |
+|---|---|---|
+| December 2023 | 2025 | First public date, revealed with Trailer 1 |
+| May 2, 2025 | May 26, 2026 | Pushed forward roughly seven months |
+| November 6, 2025 | November 19, 2026 | Pushed back roughly six months, to a Friday |
+The final date is a Friday. That is deliberate: Friday release dates let the first weekend be a full three days of play, and let the game's opening weekend be the first one that counts for review aggregators and for people deciding what to buy.
+
+## What time does it unlock
+Rockstar has not published a per-timezone unlock schedule for launch, so treat any precise hour as speculation rather than fact. Historically, Rockstar releases have unlocked at midnight Eastern Time, which is 9pm Pacific on the previous evening. If you are planning a watch party on the West Coast, plan for the evening of November 18, not the night of the 19th.
+
+## Pre-order editions
+Pre-orders are open for the standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack. The exact contents of each edition are on the Rockstar store pages and change more often than you would expect, so check there rather than trusting a wiki summary. Whichever you pick, the game itself is the same game.
+
+## What to do in Miami at launch
+If you are in South Florida for launch week, you are in the best possible place, because you are standing in the city the game is modelled on. The neon strip, the causeway, the murals, the bay and the swamp are all within an hour of each other, and they are all still there in November.
+Book the sunset departure, not the daytime one. The game's identity is the neon, and the neon only runs for about forty minutes after sunset.
+Get on the water once. The trailer's establishing shot of Vice City is a jet ski on Biscayne Bay, and the real version is a two-hour loop past PortMiami, Fisher Island and Millionaire's Row.
+Go west, out of the city, for half a day. Grassrivers is the Everglades, and the contrast between the swamp and the strip is the whole point of the game.
+Do the Keys if you have the day. The Leonida Keys are the Florida Keys, and the Seven Mile Bridge is exactly where the game puts it.
+> Our tours launch the same week: Leonida Tours begins running on November 19, 2026. Reserving is free, there is nothing to pay today, and we confirm your date by email before public booking opens, with 20% off your first tour.
+
+## What Rockstar has not announced
+Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming Rockstar has confirmed that a specific building is a specific in-game location is overstating what has been published.
+What Rockstar has published is the official region copy for the six areas of Leonida, and that copy is the highest-quality primary source available. We quote it directly wherever it matters, and we separate it clearly from the community's location matching.
+- Q: What is the GTA 6 release date? A: November 19, 2026, confirmed by Rockstar Games and Take-Two Interactive, on PlayStation 5 and Xbox Series X|S. There is no announced PC version. The date was announced on November 6, 2025, after two previous delays.
+- Q: Is GTA 6 coming to PC? A: No PC version has been announced. There is no PC release date on any official Rockstar Games, PlayStation or Microsoft page as of writing. Announcements have historically come late, so check the official store pages rather than assuming.
+- Q: What time does GTA 6 release on November 19? A: Rockstar has not published a per-timezone unlock schedule. Rockstar releases have historically unlocked at midnight Eastern Time, which would be 9pm Pacific on November 18. Treat any specific hour as provisional until Rockstar confirms it.
+- Q: Are Leonida Tours tours running on release day? A: Yes. We launch on November 19, 2026, and run the Miami Vice City small-group tour daily, with a sunset and night departure at 6:30pm.
+- Q: What editions are available to pre-order? A: The standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack are all open for pre-order. Contents and pricing are on the official Rockstar store pages and change, so check there before buying.
+
+### GTA 6 Locations in Real Life: 24 Miami and Florida Places
+- URL: https://leonidatours.com/blog/gta-6-locations-in-real-life/  |  Published: 2026-10-19  |  Category: Locations
+- Twenty-four places, from the Ocean View Hotel to the Everglades airboat, each matched to a real address with coordinates and a confidence rating. This is the list to take with you.
+Rockstar has never published a list of the real places behind GTA VI, and it never will: the studio does not annotate its own work. Everything below comes from trailer frames, from the official region descriptions on Rockstar's own site, and from the mapping community's frame-by-frame analysis. We label how confident each match is, because a list that treats all twenty-four as equal is worth much less than one that does not.
+
+## The 24 places, at a glance
+| In the game | The real place | Where | Confidence |
+|---|---|---|---|
+| Ocean View Hotel | The Clevelander | 1020 Ocean Dr, Miami Beach | Strong |
+| Little Cuba / Little Havana | Calle Ocho, Domino Park | SW 8th St, Miami | Official naming |
+| Stockyard | Wynwood Arts District | NW 2nd Ave, Miami | Strong |
+| Sahara Arena | Kaseya Center | 601 Biscayne Blvd, Miami | Strong |
+| NINE1NINE | E11EVEN | 29 NE 11th St, Miami | Strong |
+| PortViceCity | PortMiami | Dodge Island, Miami | Strong |
+| Vice City International Airport | Miami International Airport | 5000 NW 36th St, Miami | Strong |
+| The observation wheel | Bayside Marketplace | 401 N Biscayne Blvd, Miami | Strong |
+| Star Island | Star Island, Biscayne Bay | Off the MacArthur Cswy | Strong |
+| The Jade Ocean tower | Jade Ocean | 17121 Collins Ave, Sunny Isles | Strong |
+| The causeway toll plaza | Venetian Causeway | 1000 Venetian Cswy, Miami | Strong |
+| Little Haiti | Little Haiti | NW 2nd Ave, Miami | Official naming |
+| Seven Mile Bridge | Seven Mile Bridge | Overseas Hwy, Marathon | Strong |
+| Grassrivers | Everglades National Park | 40001 SR 6, Homestead | Official + match |
+| The Rusty Anchor | Caribbean Club | Key Largo | Community match |
+| Wonder Whale | Betsy the Lobster, Rain Barrel Village | Islamorada | Community match |
+| Leonida Penitentiary | New River Correctional Institution | Raiford, FL | Community match |
+| Port Gellhorn | Panama City | FL Panhandle | Community match |
+| Ambrosia | U.S. Sugar refinery, Clewiston | Clewiston, FL | Community match |
+| Mount Kalaga National Park | Providence Canyon State Park | SW Georgia | Community match |
+| Fuzzard Power Station | Turkey Point | Cape Canaveral, FL | Community match |
+| Goliath | Titan America cement works | Hialeah, FL | Community match |
+| Thrillbilly Mud Club | Redneck Mud Park | Charlotte County, FL | Community match |
+| Vice City Sign | Unconfirmed | Near the airport | Community, weak |
+
+## How to read the confidence column
+Four labels, and the difference between them is the difference between a fact and an inference.
+Official naming. Rockstar itself uses the real place's name in the game or in its own official copy. Little Cuba and Little Haiti are the clearest cases: the in-game name is the real name, or the game's own regional description uses it.
+Strong. At least three independent pieces of evidence agree: the architecture, the position on the map, and the surrounding context. The Clevelander, the Kaseya Center and the Seven Mile Bridge are all in this category.
+Community match. One or two good pieces of evidence, generally a distinctive detail, with no official confirmation and no way to check. The Rusty Anchor and the Caribbean Club are good examples: the reasoning is sound but it is not proven.
+Community, weak. A single object with nothing to match it against beyond shape and position. We include it because excluding it would look like we had cherry-picked, but we would not build a trip around it.
+> The honest caveat: None of this is official. Rockstar has never confirmed a single real-world location, and fan pages that present a complete location list as settled fact are reading too much into community consensus. Where we say "strong", we mean multiple independent lines of evidence agree, not that the studio confirmed it.
+
+## The Miami cluster
+Most of the identifiable places are in a tight cluster, and that is the single most useful fact for anyone visiting. The game's Vice City is built on real Miami geography: a barrier island across the bay from Downtown, a causeway between them, a port on an island of its own, and an arts district two miles north of the river.
+That means the twelve Miami locations are not scattered across a map. You can see nearly all of them in a single afternoon, because the real distances are short: Ocean Drive to Brickell is about four miles, Brickell to Wynwood is two, and the port sits between them on the water.
+
+## The wetland and the islands
+Two of the largest matches sit outside the city. Grassrivers is the Everglades, a 1.5-million-acre wetland about 45 miles west of Downtown Miami, and the Leonida Keys are the Florida Keys, an 800-mile island chain starting 100 miles south. These are the two that make the game feel bigger than a city, and they are the two most worth a full day of your trip.
+The real reason to care, though, is simpler. These are not obscure locations. They are some of the most visited places in the United States. The game's Everglades is the Everglades; the game's Seven Mile Bridge is the Seven Mile Bridge. You do not need a map of Leonida to find them, and you do not need to be a fan to appreciate them.
+
+## How we verify a match
+Our process is written down and identical for every location, because a site that tells you how it reaches its conclusions is worth more than one that simply states them.
+Start with the official copy. Rockstar's own Only in Leonida page gives a heading, a standfirst and a paragraph for each region. We quote it verbatim and treat it as the primary source.
+Find the frame. A match has to appear in an official video, with a timestamp we can point at, so you can check it yourself.
+Check the context, not just the object. The strongest matches are confirmed by the company the object keeps: the arena, the wheel and the cranes together; the obelisk visible from the water; the toll plaza's lane count.
+Publish the coordinates. Every location we list has a latitude and longitude, so the claim is falsifiable rather than a vibe.
+Say when we are unsure. Where the evidence is thin, we say so on the page, not in a footnote.
+
+## Go and stand in them
+A map is the limit of what a reference site can do for you. Every location on this list is a real, publicly accessible place, and most of them are within a short drive of each other. Our small-group tour covers nine of the Miami locations in a three-hour loop, the boat tour covers the port and Star Island from the water, and the Keys trip covers the Seven Mile Bridge.
+> Independent and unofficial: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed or sponsored by Rockstar Games or Take-Two Interactive. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to identify the real-world locations that inspired them.
+- Q: What real locations are in GTA 6? A: The most reliably identified are the Clevelander (Ocean View Hotel) on Ocean Drive, Calle Ocho in Little Havana (Little Cuba), Wynwood (the Stockyard), the Kaseya Center (Sahara Arena), E11EVEN (NINE1NINE), PortMiami (PortViceCity), Miami International Airport (Vice City International Airport), the Bayside Marketplace wheel, Star Island and the Flagler Memorial, the Jade Ocean tower, the Venetian Causeway toll plaza, Little Haiti, the Seven Mile Bridge and the Everglades (Grassrivers).
+- Q: Has Rockstar confirmed any GTA 6 locations? A: No. Rockstar has never published a list of real-world inspirations and has not confirmed any individual building. Every match is either the community's reading of official footage or, in a few cases, a name Rockstar itself uses in its own regional copy.
+- Q: Where is the Ocean View Hotel in GTA 6 in real life? A: The Clevelander, at 1020 Ocean Drive, Miami Beach, Florida. Its pink Art Deco facade and rooftop neon sign are what the trailer shows behind the Vice Beach police stop.
+- Q: Are the GTA 6 Everglades really the Everglades? A: Yes. Rockstar's own Grassrivers description names gators and mangroves and calls the region a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida.
+- Q: How many locations does GTA 6 have? A: Mapping projects have charted hundreds of named points across Leonida. The 24 on this page are the ones with enough independent evidence to stand behind, and we have deliberately left out the long tail of weak or single-frame guesses.
+
+### Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida
+- URL: https://leonidatours.com/blog/is-gta-6-set-in-miami/  |  Published: 2026-10-18  |  Category: Guide
+- Partly. Vice City is Miami, but Leonida is a whole invented state, and the differences matter for anyone planning a trip or writing about the game.
+The short answer is: GTA 6 is set in a fictional American state called Leonida, and its biggest city, Vice City, is Miami with the serial numbers filed off. Rockstar's own copy for the city names the real neighbourhoods, so the answer is not ambiguous in the way that "it is based on Miami" usually is.
+
+## What Rockstar actually says
+The official description of Vice City on Rockstar's site reads: "We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world."
+Four real Miami identifiers are in that paragraph. Ocean Beach is Miami Beach. Little Cuba is Little Havana. The VC Port is PortMiami. And "the pastel art deco hotels and bright white sands" is a description of South Beach that you could write without ever having seen the game.
+
+## Leonida is not Florida, and it is not Miami either
+The distinction that trips up most articles is between the state and the city. Leonida is an invented state that borrows from all of Florida, not a renamed Miami-Dade County. Rockstar has published six regions for it, and only one of them, Vice City, is the Miami analogue.
+| Region | The real place behind it | Where it is |
+|---|---|---|
+| Vice City | Miami and Miami Beach | South-east Florida |
+| Leonida Keys | The Florida Keys | Off the southern tip |
+| Grassrivers | The Everglades | South-west Florida |
+| Port Gellhorn | Panama City | Florida Panhandle |
+| Ambrosia | Clewiston and the sugar belt | Lake Okeechobee |
+| Mount Kalaga National Park | Providence Canyon State Park | South-west Georgia |
+That is Florida plus north Georgia plus the compression of several hundred miles of real coastline into one fictional map. The keys are the keys. The swamp is the swamp. But the panhandle and the sugar country and the mountains are pulled in from three different real places and stacked on top of each other.
+
+## The Miami details that give it away
+The barrier island. The game puts a beach city across a bay from Downtown, connected by a causeway. Miami Beach is exactly that, and the game's ocean-side district is called Vice Beach rather than Little Havana.
+The one-way street grid. Downtown Miami's signed one-way system survived into the game, which is a level of municipal detail most fictional cities do not carry.
+The causeway toll plaza. Four lanes under a tiled roof, with the arches on the stuccoed piers and the signage on the same side as the real Venetian Causeway.
+The tiki and pastel palette. The colour grading of the game's Vice City, saturated coral and teal against pastel pink, is the specific palette of Miami Beach's Art Deco hotels, not a generic 1980s Miami.
+The port on its own island. Dodge Island, holding the container cranes and the cruise terminal, is an unusual enough real layout that the game reproducing it is a deliberate signal.
+
+## What is Miami and what is not
+Even inside Vice City, not everything is a one-to-one match, and pretending otherwise is how fan sites end up confidently wrong. Rockstar reorders geography constantly. In the real city the airport is 20 miles west of Downtown; in the game it is close enough to see from the approach. In the real city the Jade Ocean is 10 miles north of Miami Beach; in the game it has moved south to sit inside Vice Beach.
+The honest summary is that GTA 6's Vice City is a Miami you have already visited, compressed and re-lit, with a few deliberate rearrangements so that the game reads well rather than accurately.
+
+## Coming to South Florida for the launch
+If you are coming for launch week, the game is a better guide to this city than most travel guides, because it points at the parts that are visually distinctive and ignores the parts that are not. Ocean Drive, the causeway, Wynwood, Little Havana, the bay and the swamp: all of it is real, all of it is reachable, and all of it looks the way you have seen it.
+> Trademark note: Grand Theft Auto, GTA, Vice City and Leonida are trademarks of Take-Two Interactive and its affiliates. We use them here for identification and commentary, in line with our editorial policy. We are not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive, and we use no game art, logos, characters or screenshots.
+- Q: Is GTA 6 set in Miami? A: Vice City in GTA 6 is modelled on Miami, Florida, and Rockstar's own official description names real Miami neighbourhoods including Little Cuba, Ocean Beach and the VC Port. The game as a whole is set in Leonida, an invented state that also takes in the Florida Keys, the Everglades, the Panhandle, the sugar belt and part of Georgia.
+- Q: Is Leonida just Florida with a different name? A: No. Leonida is a fictional state that borrows from several real places. It contains the Florida Keys and the Everglades as themselves, but also pulls in Panama City, Clewiston in the sugar belt and Providence Canyon in Georgia, and compresses them into one map.
+- Q: Which GTA 6 city is Miami? A: Vice City, and specifically the Miami area: the game maps Downtown Miami, Miami Beach, Little Havana, Wynwood, Little Haiti, the port on Dodge Island and the airport to the west of the bay.
+- Q: Does GTA 6 get the Miami neighbourhoods right? A: Mostly, with deliberate rearrangements. The barrier island, the one-way grid, the toll plaza and the port all match reality closely, while places like the Jade Ocean tower have been moved for dramatic effect.
+- Q: Where is the nearest real thing to Vice City? A: Ocean Drive in South Beach. The game's Vice Beach is Miami Beach, and the pink neon hotel fronts are the real ones.
+
+### GTA 6 Map: The Six Regions of Leonida and Where They Are
+- URL: https://leonidatours.com/blog/gta-6-map-and-regions/  |  Published: 2026-10-17  |  Category: Locations
+- Six official regions, one fictional state, and a surprising amount of real Florida underneath. Here is the official copy for each region next to the geography it borrows from.
+Rockstar has published six regions for Leonida, each with its own heading, standfirst and paragraph on the official Only in Leonida page. That copy is the best primary source available, and quoting it is more useful than paraphrasing it, because the copy is written as atmosphere while the geography underneath is quietly specific.
+
+## The six regions, with the official copy
+### Vice City
+"Everything in Excess." "We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world."
+The real place: Miami and Miami Beach, Florida. Why: the copy names Ocean Beach, Little Cuba and the VC Port, and the port is PortMiami on Dodge Island.
+### Leonida Keys
+"Gateway to Paradise." "The dress code is casual, the bars are loaded. Life in this tropical archipelago isn't flashy but it's easy. Get your buzz on and pull up a deck chair but look out, you are right on the doorstep of some of the most beautiful and dangerous waters in all of America."
+The real place: the Florida Keys. Why: a tropical archipelago with a bar culture, on the edge of genuinely dangerous water, is a description of the Keys and only the Keys.
+### Grassrivers
+"Welcome to the Wetlands." "The untamable jewel of Leonida's crown. You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves."
+The real place: the Everglades. Why: gators and mangroves and a primordial expanse, in a state that has exactly one of those.
+### Port Gellhorn
+"Live Hard." "This is Leonida's forgotten coast. Cheap motels, shut-down attractions, and empty strip malls won't bring the tourists back, but there's a new economy in this once-popular vacation spot. It's fueled by malt liquor, painkillers, and truck stop energy drinks. Jump on a dirt bike and hold onto your wallet."
+The real place: Panama City, Florida. Why: a once-popular Gulf resort town with closed attractions and empty strip malls is a precise description of Panama City's beach strip. The dirt bike and the stop-work economy are the game's addition.
+### Ambrosia
+"Keeping Leonida Sweet." "The battle for the health and wealth of Leonida begins here. In the heart of Leonida, American industry and old school values still reign supreme, whatever the cost. The Allied Crystal sugar refinery provides the jobs, while the local biker gang provides almost everything else."
+The real place: Clewiston and the U.S. Sugar mill on Lake Okeechobee. Why: a company town built around a single sugar refinery, on the shore of a big shallow lake, is exactly what Clewiston is. The refinery has been the town's reason to exist since the 1920s.
+### Mount Kalaga National Park
+"Wild, Wild Country." "Room to breathe on the state's northern fringes. A national landmark up against the state's northern border, Mount Kalaga offers prime hunting, fishing, and off-road trails. In the lush surrounding backwoods, hillbilly mystics and paranoid radicals live far from the prying eyes of the government."
+The real place: Providence Canyon State Park in south-west Georgia. Why: the canyon's eroded red clay walls are the visual match, and the park's remoteness matches the copy's geography. This is the one region where the prototype is outside Florida entirely.
+
+## Reading the six together
+The structure is consistent. Every region gets an economic base and a source of danger, and the copy is careful never to describe a mechanic. Rockstar writes "offers prime hunting, fishing, and off-road trails", which describes the park as a place; it does not announce a hunting system, and no official page describes how anything works.
+| Region | Economic base | The danger | Real place |
+|---|---|---|---|
+| Vice City | Tourism and crime | The criminal economy | Miami |
+| Leonida Keys | Bars and boats | The water | Florida Keys |
+| Grassrivers | None given | The environment | Everglades |
+| Port Gellhorn | A post-tourism economy | Cheap intoxicants | Panama City |
+| Ambrosia | The Allied Crystal refinery | The biker gang | Clewiston |
+| Mount Kalaga | None given | Hermits and radicals | Georgia |
+That table is our editorial arrangement, not Rockstar's taxonomy, and it is useful as a filter: any claim about a region's character that falls outside those lines is almost certainly inference rather than something the studio has written down.
+
+## The county grid underneath
+Beneath the six regions sits a second layer: a Florida-style county grid. Three county names have actually been seen on screen in official footage: Vice-Dale, on a police seal in the in-game Mega Noticias newscast in Trailer 2; Kelly County, read from roadside signage; and Leonard County, on a police vehicle in an in-game social media post. The remaining county names are community reconstruction.
+The mapping community's reading lines Vice-Dade up with Miami-Dade, Leonard with Broward, Ambrosia with Hendry County, Kelly with a Collier and Panhandle blend, and Mariana with Monroe County, which covers the Keys and the Everglades together. It is a clean scheme, and it is inference rather than canon, but the three confirmed names all point the same way.
+
+## How far apart are these places really
+Leonida compresses hard. The Keys run more than a hundred miles from Key Largo to Key West, and Clewiston is about sixty miles inland from the Gulf. In the game, all of it sits inside one map, and a drive from Vice City to Mount Kalaga covers ground that would take four real hours.
+If you are planning a trip based on the game's geography, this is the part that will trip you up. The game is one state. The real thing is a 400-mile diagonal across two states, and the Everglades alone is bigger than the game's Vice City region.
+
+## Which of the six you can actually stand in
+Vice City and Leonida Keys are the two you will want most, and both are within a short drive of Miami.
+Grassrivers is a half-day from Downtown Miami and is the single easiest region to verify, because the Everglades is unmistakable from the first minute of an airboat ride.
+Port Gellhorn, Ambrosia and Mount Kalaga are all real, all visitable, and all a serious drive: Panama City is about eight hours from Miami, Clewiston about three, and Providence Canyon is further still.
+- Q: How many regions are in GTA 6's Leonida? A: Six, according to Rockstar's official Only in Leonida page: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.
+- Q: What is Mount Kalaga National Park based on? A: The community match is Providence Canyon State Park in south-west Georgia, whose eroded clay canyon walls match the game's rock formations. It is the only region whose prototype is not in Florida.
+- Q: What is Ambrosia in GTA 6 based on? A: Clewiston, Florida, on Lake Okeechobee, where the U.S. Sugar mill has been the town's economic centre since the 1920s. Rockstar's Allied Crystal refinery is a renamed version of it.
+- Q: Is Port Gellhorn Panama City? A: That is the strongest community identification: a once-popular Gulf resort town with shut-down attractions and empty strip malls matches Panama City's beach strip closely. It has not been officially confirmed.
+- Q: How big is Leonida compared to Florida? A: Smaller in area but far more compressed in practice. The game's map holds the Keys, the Everglades, the Panhandle, the sugar belt and north Georgia, which in reality are spread across roughly 400 miles.
+
+### GTA 6 Trailers, Timestamped to the Real Miami Locations
+- URL: https://leonidatours.com/blog/gta-6-trailers-timestamped/  |  Published: 2026-10-16  |  Category: Locations
+- Four official videos, and every one of them contains at least one frame you can stand in. Here is where each real location appears, to the second.
+There are four official GTA VI videos, and they are the raw material for every location claim in existence. Here they are, with the frames that contain real, identifiable Miami geography, timestamped so you can check rather than take our word for it.
+| Video | Date | Runtime | Real locations visible |
+|---|---|---|---|
+| Trailer 1 | December 4, 2023 | 1:30 | 9 confirmed |
+| Trailer 2 | May 6, 2025 | 2:47 | 14 confirmed |
+| An Extended Look | August 27, 2026 | 26:48 | Gameplay across all regions |
+| Launch Trailer | October 15, 2026 | 1:30 | 8 confirmed |
+
+## Trailer 1: December 4, 2023
+Ninety seconds under Tom Petty's "Love Is a Long Road", and almost no story: a catalogue of the world. It is the video that named Leonida for the first time, and it is where most of the initial location matching began.
+0:11 - the yacht off the coast and the bay, with the island skyline behind.
+0:20 - the airboat in the tall grass. Grassrivers, and the Everglades.
+0:24 - the speedboats at the port. PortViceCity, and PortMiami.
+0:27 - the lowriders with the big rims, on a palm-lined street.
+0:33 - the neon strip at night. The Clevelander on Ocean Drive.
+0:41 - the alligator in the backyard pool.
+0:48 - the police bodycam raid.
+1:10 - the red muscle car leaving the robbery.
+1:16 - Lucia with the pistol, on the neon street again.
+
+## Trailer 2: May 6, 2025
+Nearly twice as long as the first trailer and much closer to the story. It brought Jason for the first time, the Only in Leonida region pages, and the single densest set of real-world matches in any official footage.
+0:04 - the stilt house by the water and the Keys causeway. The Leonida Keys.
+0:07 / 0:10 - Brian Heder's boat yard and the pickup. Key Largo.
+0:36 - the airliner on the highway, over the airport approach. Miami International Airport.
+0:45 - the police scene on a downtown street.
+1:02 - Little Cuba and Little Haiti, with the pastel shopfronts.
+1:05 - the prison car park. The prison block in the game's south-west.
+1:15 - the bank job with the skull mask.
+1:28 - the nightclub. E11EVEN.
+1:40 - the arena with the observation wheel and the port cranes behind it. The Kaseya Center, Bayside Marketplace and PortMiami in a single frame.
+1:55 - the street car meet on the murals. Wynwood, the Stockyard.
+2:18 - the helicopter low over the swamp.
+2:19 - the jet skis past the yacht party. Star Island and the Flagler obelisk.
+2:27 - the speedboat chased by police, with the port cranes in frame.
+2:33 / 2:34 - the rooftop helipad tower. Jade Ocean, Sunny Isles.
+
+## An Extended Look: August 27, 2026
+Twenty-six minutes and forty-eight seconds of actual gameplay, streamed on Netflix before it went to YouTube and Rockstar's own site. Rockstar never called it a trailer, and in August a lot of people called it Trailer 3 anyway.
+8:10 - driving across Vice City, which is the cleanest continuous look at the Downtown and Brickell road layout in official footage.
+9:29 - the armoured truck robbery, in a city block with an arcade frontage that matches the real Downtown Miami streets.
+10:41 - the rooftop bar with the city behind it.
+17:09 - the airboat being driven in gameplay, in the wetland region.
+20:21 - the night street race, on a strip that follows the US-1 layout through the game's south-west.
+26:13 - the fishing trip on the water at the end of the swamp sequence.
+
+## The Launch Trailer: October 15, 2026
+Ninety seconds, captured entirely in-game on PlayStation 5, set to "Flower in a Hurricane" by Justice with Tame Impala, SZA and King Gizzard and the Lizard Wizard. It opens on the "Welcome to The Keys" sign and closes on the logo over Vice City at night.
+0:03 - the Keys causeway sign and the boat storage at Brian's Marina. Key Largo.
+0:10 - the convertible on the causeway, with the skyline ahead. The Venetian Causeway.
+0:16 - the bank vault.
+0:24 - the chase at the airfield.
+0:31 - the song on the club stage.
+0:38 - the helicopter blown up on a rooftop.
+0:46 - Lucia with the grenade launcher, on the downtown street.
+0:55 - Raul at the port, with the cranes. PortMiami.
+1:04 - the sheriff chase in the swamp, on a county road.
+1:12 - the rooftop jump into the pool.
+
+## How to use these timestamps
+Two practical notes, because this is more useful than it first appears.
+Watch for the context, not the object. The single most useful frame in Trailer 2 is the arena at 1:40, because it contains three separate real landmarks in one composition. When you match an object you get an opinion; when you match a set of objects you get a fix.
+Traffic moves the same way. The game's one-way grid in Downtown Miami, the causeway approach and the US-1 strip all follow real street patterns. If you know what the real road does, you can often predict what the game is showing.
+> Watching the trailers: All four are on Rockstar's own site, and the YouTube uploads carry official subtitles. The Extended Look is age-restricted on YouTube, so watch it on Rockstar's site if you cannot sign in. We do not re-upload or mirror any footage.
+- Q: How many GTA 6 trailers are there? A: Three trailers and one gameplay showcase: Trailer 1 (December 4, 2023), Trailer 2 (May 6, 2025), An Extended Look (August 27, 2026) and the Launch Trailer (October 15, 2026). Rockstar calls the last one the Launch Trailer, though it is the third trailer by count.
+- Q: Where is the Ocean View Hotel in Trailer 1? A: At 0:33, the neon strip at night. The pink Art Deco facade and the rooftop sign are the Clevelander at 1020 Ocean Drive, Miami Beach.
+- Q: Which trailer shows the most real locations? A: Trailer 2, by a wide margin. It contains at least fourteen identifiable real locations, including a single frame at 1:40 that shows the arena, the observation wheel and the port cranes together.
+- Q: Can I watch the GTA 6 Extended Look? A: Yes, on Rockstar's own site or on YouTube. YouTube age-restricts it, so you may need to sign in. It is 26 minutes of gameplay and it is the most useful official footage for location matching after Trailer 2.
+- Q: Does Rockstar confirm the locations shown in its trailers? A: No. The trailers are promotional. Every real-world identification is the community's reading of the footage, and we label how strong each one is on our location pages.
+
+### Grassrivers Is the Everglades: Seeing GTA 6's Swamp for Real
+- URL: https://leonidatours.com/blog/gta-6-everglades-grassrivers/  |  Published: 2026-10-15  |  Category: Locations
+- There is no serious alternative: the game's wetland region is the Everglades. Here is the official copy, the geography, and what the airboat ride is actually like.
+Rockstar named its wetland region Grassrivers and described it as "the untamable jewel of Leonida's crown", full of gators and mangroves and things that are "far deadlier". There is exactly one candidate for that description in the state, and it is the largest subtropical wilderness in the United States.
+
+## The official copy, in full
+Heading: "Welcome to the Wetlands." Standfirst: "The untamable jewel of Leonida's crown." "You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves."
+One of Rockstar's own image captions carries the only hard spatial fact in the entire description: a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That establishes that the wetland region is close enough to the city to see it. It does not give a distance, and nobody else does either.
+
+## Why the Everglades and nothing else
+Scale. The Everglades is about 1.5 million acres. It is the only place in the country where you can stand on a paved road and see sawgrass running unbroken to the horizon in every direction.
+Wildlife. The alligator population is visible from a boat. That is not true of any other American wetland, and the game makes the gator its headline animal.
+Mangroves. The southern end of the park is a mangrove tunnel system where the water runs between the roots. The game's word is specifically "mangroves".
+Airboats. The game uses an airboat as the signature vehicle of the region, in Trailer 1, Trailer 2 and the Extended Look. An airboat is the standard way to move through the real Everglades, because the marsh is too shallow and too vegetated for a conventional hull.
+Position. It sits between the city and the Gulf, which is where the game puts it: southwest, on the coast.
+
+## The Everglades in three parts
+| Section | What it is | What you get |
+|---|---|---|
+| Northern Everglades, near Everglades City | The deep sawgrass, mostly boat access | Birdlife, the best gator viewing by boat |
+| Central, near Homestead | The part most visitors drive through | Airboat concessions, alligator programmes, the paved loop |
+| Southern tip | Mangrove tunnel and the Gulf coast | Boat tours, the coast, the wildlife that lives in saltwater |
+
+## What an airboat ride is actually like
+An airboat is a flat-bottomed aluminium hull with a propeller mounted high on a cage behind the engine, so the blades cannot touch the water or the vegetation. The driver stands at the back, steers with a rudder bar, and the ride is loud, fast and completely unlike a conventional boat.
+The route is typically a loop out across the sawgrass, where the guide talks through what you are looking at, then back along a channel to the dock. It is 30 minutes on a standard ticket and it is the single most memorable half hour in South Florida, because there is no other way to cover that ground.
+> Wildlife is never guaranteed: Gators are wild animals in a very large place. A good guide will find them most days, particularly in the cooler months when they bask, but no operator can promise one, and any site that guarantees alligators is selling you a ticket rather than a sighting.
+
+## Timing, and what it costs you in daylight
+The park is about 45 miles from Downtown Miami and roughly an hour and a half in traffic, which is the real constraint. An airboat tour takes half a day: the drive out, the ride, the boardwalk and viewing tower, and the drive back.
+Two things are worth knowing. The wildlife is best in the winter, from December to March, when the gators are out and basking and the birdlife is heaviest. And Miami in November is at its most pleasant, which is exactly why a swamp drive is a good use of a launch-week morning rather than an afternoon.
+
+## The other wetland reference in the game
+There is a second, smaller one worth knowing about: the Fuzzard Power Station, seen on the horizon in Trailer 1, which the community has matched to Turkey Point on Cape Canaveral, the decommissioned nuclear station whose cooling basins sit on the bay. It is a distinctive silhouette and a good example of a location matching that is about shape rather than architecture.
+
+## Where to go
+Our Grasslands airboat tour shuttles you from Miami to the edge of the park, runs you on the water with a wildlife guide, and adds a boardwalk and viewing tower stop. It runs on set days each week and works for ages five and up, and it is the one route we run that does not start on Ocean Drive.
+If you are building a GTA 6 launch trip, the most effective order is swamp first, city second. It is the same contrast the game is built on, and doing it in that order makes the neon land harder.
+- Q: Is Grassrivers the Everglades in GTA 6? A: Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida. It is the most confident regional match in the game.
+- Q: How far is the Everglades from Miami? A: About 45 miles from Downtown Miami, roughly 75 km and an hour and a half in traffic. Our airboat tour includes the shuttle from Miami, so the travel is handled for you.
+- Q: Will I definitely see alligators? A: No sighting is guaranteed, but they are the most commonly seen animal in the park and a good guide will usually find them. Winter is best, when they bask.
+- Q: What does an Everglades airboat ride cost and last? A: On our tour the airboat run is 30 minutes as part of a four-hour trip including the shuttle, the boardwalk and the viewing tower. The total is $79 per person.
+- Q: Is the Fuzzard Power Station in GTA 6 the Turkey Point nuclear plant? A: That is the strongest community identification for it, and it is based on the distinctive cooling-tower-and-basin silhouette on the bay rather than on any official statement. Turkey Point is an hour and a half up the coast from Miami.
+
+### Leonida Keys Is the Florida Keys: The Seven Mile Bridge
+- URL: https://leonidatours.com/blog/gta-6-florida-keys-leonida-keys/  |  Published: 2026-10-14  |  Category: Locations
+- The game's southern archipelago is the Florida Keys, down to the Seven Mile Bridge and the bar where the boat owners keep their slips. Here is the real route, and how long it really takes.
+Rockstar describes its Leonida Keys as "the dress code is casual, the bars are loaded", a "tropical archipelago" on the doorstep of "some of the most beautiful and dangerous waters in all of America". There is one archipelago in Florida that fits that sentence exactly, and it is about a hundred miles south of Miami on a single road.
+
+## The official copy, in full
+Heading: "Gateway to Paradise." Standfirst: "Life is a beach, but not quite." "The dress code is casual, the bars are loaded. Life in this tropical archipelago isn't flashy but it's easy. Get your buzz on and pull up a deck chair but look out, you are right on the doorstep of some of the most beautiful and dangerous waters in all of America."
+Every element of that paragraph has a real referent. The casual dress code is the Keys in winter, when the locals wear flip-flops to dinner. The loaded bars are the dockside places on Key Largo and Islamorada. And the "beautiful and dangerous waters" are not decoration: the Florida Reef runs 120 miles offshore and carries genuine Florida reef, with its own currents and its own weather.
+
+## The real chain
+The Florida Keys are 1,700 islands, of which about 30 are inhabited, strung along the edge of the Gulf and the Atlantic. They begin at Cape Sable on the mainland and end 90 miles later at Key West. Almost all of them are reached by one road, the Overseas Highway, also called US 1.
+| Key | Miles from Miami | What it is |
+|---|---|---|
+| Key Largo | about 60 | The northernmost island, Islamorada, and the biggest of them |
+| Islamorada | about 80 | The long thin island between Key Largo and Marathon, with the reefs |
+| Marathon | about 115 | Middle of the chain, and the western end of the Seven Mile Bridge |
+| Key West | about 160 | The southern end, Ernest Hemingway's house, the southernmost city |
+One detail worth holding on to: the distances are long and the road is slow. The Overseas Highway crosses 42 bridges, and mile for mile it is a two-lane road with a bridge every few minutes through the middle of the chain. A drive that looks like 100 miles on a map takes four hours.
+
+## The Seven Mile Bridge
+The single most photographed object in the Keys, and the one the game places exactly where it belongs. The old Seven Mile Bridge runs from Marathon to Key West, running due south across open water with nothing on either side but the Gulf on one side and the Atlantic on the other. There is a newer bridge carrying four lanes of traffic right next to it; the old one is for pedestrians and bikes now.
+It is genuinely remote. In the middle of the span, the nearest land in any direction is more than a mile away. That is what makes the stretch of water around it, and its reputation, unusually serious.
+> Why the old bridge is empty now: The old Seven Mile Bridge was retired in 1982 when the new parallel span opened, and it has been a pedestrian and cycle bridge since. It is free to walk and there is a gravel trail with the old bridge's crown visible from the road, which is the view everyone photographs.
+
+## The Rusty Anchor and the boat yard
+Trailer 2 opens on Brian Heder pushing a boat out of his yard on the Keys, and the community has matched his yard to the Marina at Key Largo, on the water at the north end of the chain, where the local docks are, where the boats are kept, and where a boat business would actually be.
+The dock bars on that stretch are the real thing. The Rusty Anchor is the community's match for the Caribbean Club on Key Largo, and it is a genuinely famous stop: a low-slung dive bar on the water with a reputation for cheap food, loud music and a dock that is the only place in the Keys where the sun sets in your face rather than behind you.
+
+## Wonder Whale and Betsy the Lobster
+The whale figure in the game has been matched to the enormous life-size lobster sculpture at Betsy the Lobster in Rain Barrel Village, Islamorada, where a 30-foot concrete lobster has stood over the road since the 1950s. Betsy is the most photographed roadside attraction in the Keys and is genuinely worth the stop.
+Rain Barrel Village itself is a good place to eat. It is a strip of small restaurants and shops built around an actual 1886 rain barrel, and it is the standard first stop on the drive south because it is the last place with a supermarket before Marathon.
+
+## Planning the drive
+If you are doing this in a day, it is tight but doable, and it is better early. The practical advice is to leave Miami before 7am, because the traffic on the Overseas Highway backs up from about 11am to 4pm on weekends, and a jam there costs you two hours of sitting in a car with a view.
+Leave early. 7am from Miami puts you in Islamorada before 9, and on the bridge before 11.
+Fill the tank in the Keys. Stations are expensive and sparse, and there are long stretches without one.
+Do not try the drive and a full day on the water. Pick the drive, or pick the boat, and not both in one day.
+Watch for the toll. There is a toll on the Overseas Highway at the start of the bridge, roughly $2 each way, and you can pay it with SunPass or a card at the booth.
+Go in winter. From December to March the Keys are at their best: low humidity, calm water, and the winter sun on the water at sunset.
+
+## The boat instead of the drive
+There is another way to do the Keys, and it is the better one if you only have a few hours: come by water. A boat leaves Miami Marina, runs south through Biscayne Bay and out past Government Cut into the Atlantic, and delivers you to Key Largo and Islamorada in about 90 minutes with no traffic at all. You see the reef and the marine wildlife on the way, and you arrive where the boats are kept.
+Our Key Largo boat trip runs exactly that route, with an hour on the water in Islamorada, lunch, and a stop at a working marina. It is the version of the Keys that fits into a single day without turning into a four-hour drive each way.
+> Trademark note: Grand Theft Auto, GTA, Leonida and Vice City are trademarks of Take-Two Interactive and its affiliates, used here for identification and commentary only. Leonida Tours is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.
+- Q: Is the Leonida Keys in GTA 6 the Florida Keys? A: Yes. Rockstar's official description names a tropical archipelago with loaded bars and dangerous water, which matches the Florida Keys uniquely. The Seven Mile Bridge in the game sits where the real one is.
+- Q: How long does it take to drive from Miami to Key West? A: About four hours each way, 160 miles. The distance looks short on a map but the Overseas Highway is slow, with 42 bridges and heavy weekend traffic.
+- Q: Can you walk the Seven Mile Bridge? A: Yes. The old bridge was retired in 1982 and is now a pedestrian and cycle bridge, free to walk, with a gravel trail beside the old road. The parallel span carries the traffic.
+- Q: What is the giant lobster in the Keys? A: Betsy the Lobster, a roughly 30-foot concrete lobster standing at Rain Barrel Village in Islamorada. It is the community's match for the game's Wonder Whale and it has been there since the 1950s.
+- Q: What is the Rusty Anchor in GTA 6 based on? A: The strongest community match is the Caribbean Club on Key Largo, a well-known dockside dive bar. It has not been officially confirmed by Rockstar.
+- Q: Is it better to drive to the Keys or take a boat? A: For a single day, the boat. It is 90 minutes against four hours of driving, with no traffic and wildlife on the way. The drive wins only if you want to stop in Marathon and Key West.
+
+### Best Things to Do in Miami Beach in One Day (2026)
+- URL: https://leonidatours.com/blog/best-things-to-do-in-miami-beach/  |  Published: 2026-10-13  |  Category: Miami
+- One day, no filler. The order matters: the beach at 7am, the murals at 11, the water at sunset and the neon after 8. Here is the timing that makes it work.
+Miami Beach is small. The whole of South Beach is about one mile wide and three miles long, which sounds like a problem and is actually the reason a day works so well. Everything below is within a fifteen-minute walk or a five-minute drive of everything else. The single mistake people make with one day here is trying to do the beach, the shopping and the nightlife at the same time.
+
+## The shape of the day
+| Time | What | Where |
+|---|---|---|
+| 7:00 - 8:30 | Sunrise swim and the empty beach | South Pointe Park |
+| 8:30 - 9:30 | Breakfast | Collins Avenue, north end |
+| 9:45 - 11:00 | The Art Deco district on foot | Ocean Drive, 12th to 23rd Street |
+| 11:00 - 12:30 | Wynwood murals and the lunch that goes with them | Wynwood, NW 2nd Avenue |
+| 12:30 - 15:00 | Heat of the day: pool, museum or shopping | Anywhere indoors |
+| 15:00 - 17:00 | Back to the water, a boat or a bike | Miami Beach Marina |
+| 17:00 - 18:30 | Sunset | South Pointe Park or off the back of a boat |
+| 18:30 - 20:00 | Dinner and a drink | Ocean Drive or Wynwood |
+| 20:00 onwards | The neon and the music | Ocean Drive, or a live show in Wynwood |
+
+## Morning: the beach before the heat
+Start at South Pointe Park, at the southern tip of the island, and get in the water before the crowds. By 9am the sand between 5th and 15th Street is a wall of towels, and the difference between 7am and 10am is the difference between swimming in the Atlantic and standing in it.
+South Pointe also has the best wide view of the bay and the port on the other side of the water, which is worth ten minutes of your morning on its own. For breakfast, walk north on Collins Avenue to a Cuban coffee: a colada from a ventanita, which is about three dollars and better than anything you will find further south.
+
+## Mid-morning: the Art Deco district on foot
+The Art Deco Historic District runs along Ocean Drive between 11th and 23rd Street, and it is best walked rather than driven. Around 960 buildings were built in the 1930s in the pastel palette that you have seen in a thousand photographs, and the density is the point: they are shoulder to shoulder, four storeys tall, with the ocean on one side and Collins Avenue on the other.
+Start at 12th Street and walk north, so the sun and the building facades are on your side.
+Look up. The most interesting Art Deco detail on Miami Beach is always above the second floor.
+Walk through the courtyard of the Carlyle and the Clevelander if they are open; both have tiled courtyards and are the two buildings with the most character.
+Keep going to the north end of Ocean Drive, where the hotels thin out and the boardwalk opens up onto the water.
+> The one photo to take: Stand on the north end of Ocean Drive, south of 15th Street, with the pastel facades running away from you and the ocean on your right. That is the frame that has been in every photograph of this beach for ninety years, and in the early morning it is empty.
+
+## Lunch in Wynwood
+Wynwood is a fifteen-minute drive north across the causeway, and it is where the murals are. The gallery walls on NW 2nd Avenue are the largest collection of contemporary street art in the world, and the blocks between 20th and 26th Street are dense with them.
+Do it around lunch, because the shade of the galleries and the food are both better then. The restaurants on and around NW 2nd are genuinely good, and this is the best lunch in the city on a budget. If you only have one day, this is the part that is different from every other beach day you have had.
+
+## The hot middle of the day
+From about noon to 3pm it is 88 degrees and humid, and standing outside is genuinely uncomfortable. Three options, in order of preference: the pool of your hotel, the Pérez Art Museum or the Wolfsonian in South Beach, or a long lunch somewhere with air conditioning.
+Do not skip it and do not spend the whole thing shopping on Collins Avenue. The afternoon is for recovering, because the evening is the part people remember.
+
+## Sunset: the best hour in Miami
+Sunset on Miami Beach runs from about 5:15pm in December to 8:10pm in June, and the reason to plan around it is that the light does something specific between about half an hour before and half an hour after the sun goes down. The pastel facades turn from pink to orange to a deep blue, and the water on the bay goes copper.
+Three ways to see it, in order of how good they are. On the water in Biscayne Bay, with the skyline coming up in front of you, is the best. On the sand at South Pointe is the most beautiful and the simplest. From the deck of a bar on a rooftop on Collins Avenue is the one with a drink in your hand.
+Our sunset boat runs at 6:30pm and gets out into the bay for the light, which is why it is the departure most people book.
+
+## Night: the neon, properly
+Ocean Drive after dark is the famous image, and it is real, but it has changed. The old motels are now boutique hotels with rooftop bars and the signage is often retro-projected rather than old. It is still worth the walk, and it is much better on foot than from a car.
+Walk north from 11th Street rather than driving, and stop at the Versace, the Carlyle and the Clevelander for their facades.
+Eat before the neon rather than after. Dinner on Ocean Drive is expensive; the Cuban food on 8th Street is not, and it is better.
+For live music, go to Wynwood, where the bars are cheaper, the room is usually better and you are not competing with a hotel lobby for a table.
+One drink at a rooftop on Collins for the view over the bay, then walk to the beach for the last hour, when the tower lights go off and the water goes black.
+
+## What to skip
+A few honest suggestions. Skip the shark tours, which take you out on a boat to look at nothing. Skip the buy-a-crocodile-tour. Skip the Times Square and the tacky souvenir strip between 7th and 9th Street, which is three blocks of very loud commerce. And if someone offers you a Cuban sandwich with a pregnant woman on the menu, keep walking.
+The one thing nobody should skip is the water. Even thirty minutes in Biscayne Bay with the skyline going past at sunset is worth more than anything else on this list, and it is the reason to be in South Florida at all.
+- Q: What is the best beach in Miami Beach? A: South Beach, and specifically the stretch below 15th Street towards South Pointe Park. It has the widest sand, the shallowest water, the lifeguard towers and the best view back at the skyline.
+- Q: How long does it take to walk the Art Deco district? A: About 45 minutes end to end, from 11th Street to 23rd Street, at a normal pace with stops. Two hours if you are actually looking at the buildings, which you should be.
+- Q: Is Ocean Drive worth walking at night? A: Yes. The pastel facades are lit after dark and the walk is short. Go on foot starting at 11th Street and going north rather than driving, and stop at the Versace, Carlyle and Clevelander.
+- Q: What time is sunset in Miami Beach? A: Between about 5:15pm in December and 8:10pm in June. In November it is around 5:30pm. Arrive 30 minutes before for the best light.
+- Q: What is one day in Miami Beach like? A: Beach before 9, Art Deco walk at 10, Wynwood murals and lunch at 11:30, pool or museum in the afternoon, sunset on the water at 5:30, and the neon walk after 8. It is a full day but a comfortable one.
+
+### Miami Sunset Cruise Guide: Biscayne Bay and Millionaire's Row
+- URL: https://leonidatours.com/blog/miami-sunset-cruise-guide/  |  Published: 2026-10-12  |  Category: Water
+- The boat leaves at 6:30pm for a reason. Here is the route, where the light actually hits the skyline, and what to bring so you are not cold on the water.
+The reason to take a boat at sunset, rather than watch from the beach, is that the beach sees the sun set behind the city. From the water you watch the city light up instead, which is the better view and the less obvious one.
+
+## The route
+A standard two-hour Miami sunset cruise leaves from the marina, runs out through the cut between Key Biscayne and Virginia Key, turns north up Biscayne Bay, and comes back along the shoreline with the skyline on your right. The loop passes, in order, the PortMiami cranes and the cruise ships, Fisher Island and the mansions, the Brickell towers, and the causeway as you come back in.
+The whole point of the geometry is that you see Miami in two passes. Outbound, the towers are ahead of you and the water is empty. Return, the towers are beside you and lit up, and the port is on your other side. Most people only ever see one of those.
+
+## When the light actually happens
+| Time in November | What you see |
+|---|---|
+| 5:45pm | Golden light on the water, the skyline still reading as silhouettes |
+| 6:00pm | Sun low over the western bay, towers starting to catch colour |
+| 6:15pm | Sunset proper. The water turns copper, the glass goes orange |
+| 6:25pm | Blue hour. The skyline lights come on and the buildings turn blue-grey |
+| 6:40pm onwards | Full night, lit skyline, and the city reflecting in the bay |
+Those times shift by an hour either way across the year. In June the sunset is around 8:10pm and the whole sequence moves later. Check the actual sunset time for the date you are travelling, and aim to be on the water 45 minutes before it.
+
+## Millionaire's Row
+Along the southern tip of Miami Beach, facing the bay, is a strip of about forty waterfront mansions on Indian Creek. It is the most expensive real estate in Florida by a distance, and from the water it is a wall of architecture with no public access behind it.
+The buildings you can actually identify are the white, blocky Deco-modern one at 1000 Ocean Drive, the Cuban Memorial Boulevard scale of the harbour beyond it, and the low green bulk of the golf course on the island behind. Seeing it from a boat is the only sensible way, and it is one of the more surreal stretches of urban geography in the United States.
+
+## What to bring
+A light layer. It is on the water, and even in November the wind off Biscayne Bay drops the temperature noticeably after sunset. A windbreaker is more useful than a coat.
+Sunscreen. You will be out for two hours with the sun on you the whole way.
+Your own water. It is on the boat, but in a cup that you will spill.
+Flat shoes. The boarding ladder into the boat is a step down and a step back up, and the deck is wet after 8pm.
+A phone with a clip or a strap. The light is genuinely good and the deck moves.
+
+## Boat or convertible
+A fair question, because both show you the skyline at sunset. They are not the same thing at all.
+|  | Boat | Convertible |
+|---|---|---|
+| What you see | The city from the water, plus the skyline from the bay | The same skyline, from the road |
+| Port and islands | You pass the cranes and Fisher Island | You drive past them at 20 mph |
+| Photos | Water, horizon, reflections, bow shots | Neon facades, close-up, palm trees |
+| Comfort | Windy, cooler, spray on the bow | Still, warm, traffic |
+| Group | Up to about 12, everyone sees everything | Best for two people |
+| Best for | The bay, the sunset and the skyline lit up | The Art Deco strip and the murals |
+If you can only do one, do the boat. The skyline from the water is the image that stays with people, and the waterfront is the part of Miami that you cannot get anywhere else.
+
+## Boarding, and what the crew actually does
+Boarding is at a floating dock, so there is a step ladder and a crew member counting heads. The boat is a proper passenger vessel with shade, seating, a bathroom and a crew, not a pontoon with a speaker. The music is on, there is a drink, and the crew will point out the landmarks as you pass them.
+The one thing worth knowing: the boat goes out at 6:30pm regardless of the sunset time, so in summer you are on the water long before the light and back after dark, and in December you are on the water in the last of the golden hour. Either way it works, because the route takes you past the skyline twice.
+> Weather: Boats do not run in bad weather, and on a stormy afternoon the marina will cancel. If you are on a fixed schedule, check the weather the morning of and keep a dry plan for the evening.
+- Q: What time is the Miami sunset cruise? A: Our departure is 6:30pm, which puts you on the water for golden hour and puts you back at the marina around 8:30pm. Sunset in Miami in November is around 5:30pm; in June it is around 8:10pm.
+- Q: How long is the sunset cruise? A: Two hours, with the boat out on Biscayne Bay for roughly 90 of them. It is a loop out through the cut and back along the shoreline with the skyline lit up.
+- Q: What can you see from a Miami sunset boat? A: PortMiami's cranes and cruise ships, Fisher Island, the mansions of Millionaire's Row, the Brickell and Downtown skyline, and the causeway on the way back in. You see the city twice, from two angles.
+- Q: Is the sunset cruise worth it? A: Yes, if you want the skyline from the water rather than from the road. A convertible gives you the Art Deco strip and the murals; the boat gives you the bay, the islands and the reflections.
+- Q: What should I wear on a Miami boat? A: Light layers and flat shoes. It is windy on the water and cooler after sunset than on land, the deck gets wet, and you board down a step ladder.
+
+### Everglades Airboat Tours from Miami: Timings and What You'll See
+- URL: https://leonidatours.com/blog/everglades-airboat-tour-guide/  |  Published: 2026-10-11  |  Category: Water
+- Four hours door to door, thirty minutes on the water, and a completely different landscape from anything else in Florida. Here is the practical version before you book.
+The Everglades is the second-most visited natural attraction in the United States, and the reason is the same as the reason people drive two hours to look at a big empty wetland: there is nowhere else like it. An airboat tour is the standard way in, and this is what the trip is actually like before you book it.
+
+## What the tour is, hour by hour
+| Time | What happens |
+|---|---|
+| Pickup in Miami | Hotel or designated stop, usually around 8:00am |
+| The drive | About 90 minutes west on the Tamiami Trail, through the endless sawgrass |
+| Boarding | Walk the wooden dock to the airboat sheds, meet the guide |
+| The ride | 30 minutes across the sawgrass with a wildlife guide narrating |
+| The boardwalk | A 900-metre raised wooden path into the mangrove and sawgrass |
+| The viewing tower | 60 feet up, over the open wetland |
+| Return | Back in Miami around 12:00pm |
+So: a four-hour commitment for about an hour of it on the water and on the boardwalk, and a long and genuinely beautiful drive back. The drive is not a bonus. Halfway across the Tamiami Trail you are in the middle of a million acres of grass and it is one of the great drives in North America.
+
+## The ride itself
+An airboat is a flat-bottomed aluminium hull with a propeller mounted high behind the engine on a protective cage, so the blades cannot cut the water or the sawgrass. It is loud, fast, and it slides rather than plows. The engine noise means the guide usually speaks through a headset microphone, and it is genuinely loud enough that you will not hear much without one.
+The route is a loop out across the open sawgrass and back along a channel. What you are looking for is birds, principally, and the odds are very good of seeing several species in one ride: roseate spoonbills, white ibis, anhinga, brown pelicans and, in the shallows, turtles and the occasional otter.
+> Alligators are not promised: You will probably see them, and a good guide will find them, but they are wild animals in a very large place and nobody can guarantee a sighting. Winter, when they bask in the sun, is much better than summer, when they are less visible and far more active.
+
+## Ages, comfort and access
+Minimum age is five on our airboat. The ride involves a high-revving propeller behind your head and a lot of noise, and some younger children find it unpleasant.
+There is no hearing protection. If your child is sensitive to noise, ear defenders for adults work well enough for children.
+It is bumpy, not rough. The ride is generally smooth; the drone of the engine is the thing people notice.
+Getting on and off involves a step down to the dock and a step back up, so closed shoes are better than sandals.
+The boardwalk is flat and paved and the viewing tower has a ramp, so the second half of the trip is fully accessible.
+
+## The boardwalk and the tower
+The second half of the trip is often the better half for people who are not into boats. The boardwalk is a raised wooden path running out into the sawgrass, and the viewing tower is 60 feet up with an open platform on four sides looking across a completely flat, empty, silver-green plain to the horizon.
+It is the closest thing to the game's Grassrivers region that you will actually stand in: a primordial expanse, gators in the water, mangroves at the edges, and nothing else for miles in any direction.
+
+## Which tour to pick
+| Option | Time | Best for |
+|---|---|---|
+| Airboat + boardwalk + tower | 4 hours | The complete trip, and the right default choice |
+| Airboat only, private | 2.5 hours | Families wanting less time in the vehicle |
+| Van tour with 2 stops | 4.5 hours | Anyone who cannot do a boat, including some vertigo |
+| Kayak or paddle tour | 4 hours | Quieter, slower, more wildlife |
+The van tour is a real option and not a consolation prize: it stops at two out-of-the-way boardwalks and a small marina, and it is the version to pick if you get seasick, if you are over 70, or if you simply would rather not spend 30 minutes behind a propeller at 70 decibels.
+
+## Best time of year
+From December to March, and it is not close. The weather is at its best, the gators are out basking on the banks, the birdlife is heaviest and the boat is comfortable. In summer it is hot, humid, and the gators are harder to see, though the storms over the sawgrass are spectacular.
+For wildlife specifically, the spring is marginally better than the winter because the water is shallower and the birds come north. For comfort and value, the winter wins.
+
+## What to bring
+Sunscreen and a hat. There is no shade on the sawgrass and you are exposed for four hours.
+Insect repellent, with DEET or picaridin, not citronella.
+A refillable water bottle; the heat is the thing that catches people out.
+Sunglasses, and a camera that is sealed against dust and spray.
+A light long-sleeve for the boardwalk, which is exposed even when the boat is not.
+Do not wear anything white you care about, and expect to see mosquitoes in the mangrove areas at dusk. That is the trade for the wildlife.
+- Q: How long does an Everglades airboat tour from Miami take? A: About four hours door to door: roughly 90 minutes each way on the Tamiami Trail, a 30-minute airboat ride, the boardwalk and viewing tower, and the return drive.
+- Q: Can children go on an Everglades airboat tour? A: From age five. The ride is loud and bumpy and there is no hearing protection, so younger children and anyone sensitive to noise should consider the van tour instead.
+- Q: Will I see alligators? A: Probably, but it is never guaranteed. They are wild animals in a huge place. The best months are December to March, when they bask on the banks and are far easier to spot.
+- Q: Is the Everglades worth the drive from Miami? A: Yes. It is the closest genuinely wild landscape to the city, it is on the way to nothing else you want to see, and the airboat ride covers ground you cannot cover any other way.
+- Q: What is the best time of year for an Everglades tour? A: December to March for weather, birdlife and gator visibility. Spring has slightly more wildlife but more heat and humidity.
+- Q: How much does an Everglades airboat tour from Miami cost? A: $79 per person on our tour, including the shuttle from Miami, the 30-minute airboat ride, the boardwalk, the viewing tower and the wildlife guide.
+
+### Miami in 3 Days: A Locals' Itinerary
+- URL: https://leonidatours.com/blog/miami-in-3-days-itinerary/  |  Published: 2026-10-10  |  Category: Miami
+- Three days, organised so that no day has more than one big anchor. The bay and the strip on day one, the murals and the Cuban food on day two, the wild part on day three.
+Most three-day Miami itineraries are a list of forty places, and they produce three days of taxis. This one is built around one anchor per day, because the mistake people make in Miami is trying to cover the beach, the bay, the murals and the Everglades in the same afternoon and then spending the whole trip in a car.
+
+## Before you book anything
+Base yourself on South Beach. Almost everything on this itinerary is walkable from there, and the Art Deco strip is where you will want to eat.
+Book the boat for day one. It is the one item with a fixed timetable, and it also happens to be the best hour of the trip.
+Book the Everglades for day three. It is a full day with a long drive, and putting it in the middle breaks the trip.
+Check the calendar. Miami in late November and December is warm and dry. In the summer it is 90 degrees and humid and the afternoon is unusable.
+
+## Day one: the water and the strip
+This day is about seeing the city from the bay and then walking through it at night.
+| Time | Plan |
+|---|---|
+| 8:00 | Breakfast on Collins Avenue, then the beach at South Pointe |
+| 10:00 | Swim, then the Art Deco walk north from 12th Street |
+| 12:30 | Lunch in Little Havana, or a cafecito and a sandwich at a ventanita |
+| 14:00 | The hot middle of the day: pool, or the Pérez Art Museum |
+| 16:00 | Hotel, or the Bass Museum of Art in South Beach |
+| 18:30 | Sunset boat from Miami Beach Marina, two hours on Biscayne Bay |
+| 21:00 | Dinner and the neon walk on Ocean Drive |
+If the boat is booked for 6:30pm, eat an early light dinner before boarding, because the two hours on the water are the thing and you do not want to miss the first one for food. After the boat, walk Ocean Drive north on foot from 11th Street. The facades are lit and the beach is still busy.
+
+## Day two: murals, coffee and Cuban food
+This day stays on the mainland, and it is the day that surprises people who only came for the beach.
+| Time | Plan |
+|---|---|
+| 9:00 | Drive north over the causeway to Wynwood |
+| 9:30 | Wynwood gallery walls on NW 2nd Avenue, 20th to 26th Street |
+| 11:30 | Brunch in Wynwood, or coffee and pastelitos in Little Haiti |
+| 13:00 | Little Haiti: the murals on NW 2nd, the Bakery on 7th Avenue |
+| 15:00 | Back over the causeway for the museums, or a siesta |
+| 17:00 | Coral Castle or a bay sunset cruise if you skipped day one |
+| 19:00 | Dinner in Little Havana, then Calle Ocho at night |
+Two things to know about Little Havana. First, the pastelitos and the cafecito are better and cheaper than anything on Ocean Drive, and you should eat standing at the window. Second, Calle Ocho is not a street you walk down for souvenirs; it is a street where you walk in to eat, and the restaurants that look least like restaurants from the outside are the ones worth the table.
+
+## Day three: the wild part
+There are two versions of day three, and they depend on whether you want the Everglades or the Keys.
+### Option A: the Everglades
+Leave by 8am for the airboat tour, the boardwalk and the viewing tower, and be back in Miami by early afternoon. It is a long day in a vehicle, so reward yourself with a long dinner. If you would rather not do the boat, the van tour covers two boardwalks and a marina at a slower pace, and it works for anyone.
+### Option B: the Keys
+Leave by 7am for Key Largo and Islamorada, stop at the marinas and the dockside bars, and either drive to Marathon for the Seven Mile Bridge or take the boat route out to the reef. Do not attempt the drive to Key West and back in one day on top of a beach day.
+Whichever you pick, leave the last evening free. A trip that ends with a booked activity ends badly. The last evening should be a walk on Ocean Drive with no plan.
+
+## Costs, honestly
+| Item | Typical cost |
+|---|---|
+| Beach day, food and coffee | $40 - $70 |
+| Art Deco, Wynwood, Little Havana on foot | Free |
+| Museums (one or two) | $15 - $25 |
+| Sunset boat, two hours | from $50 |
+| Everglades airboat tour | from $79 |
+| Keys boat trip | from $95 |
+| Car hire for two days | $70 - $120 |
+You can do this trip for $250 all in if you walk, eat at the ventanitas and do the free parts hard, and for $600 if you want the boat and the Everglades as well. The transport is what changes the number, not the activities.
+
+## What most people get wrong
+Trying to see the skyline from the beach. It is a hundred times better from the water, and the boat is cheap.
+Scheduling the Everglades and the Keys in the same trip. They are on opposite sides of the state and both want a whole day.
+Eating on Ocean Drive for every meal. Little Havana and Little Haiti are ten minutes away and half the price.
+Skipping the museums because it is a beach holiday. The Pérez and the Wolfsonian are genuinely good and they are the afternoon solution.
+Coming in late September or October. That is hurricane season, and the weather is genuinely uncertain until November.
+> A note on the 2026 launch: If you are in Miami in November for the game's launch, put the boat on day one and the Everglades on day three, and leave the middle day unplanned. The city will be busier than usual, and the things worth doing do not require a reservation, except the boat.
+- Q: How do you do Miami in three days? A: Day one is the bay and the Art Deco strip with a sunset boat. Day two is Wynwood, Little Haiti and Little Havana on foot. Day three is the Everglades or the Florida Keys, depending on what you want more.
+- Q: What is the best first thing to do in Miami? A: Get on the water. Almost everyone arrives on the beach and leaves having only seen the beach, and the skyline from Biscayne Bay is the thing people remember.
+- Q: Should I do the Everglades or the Keys in three days? A: Everglades if you want wildlife and landscape, and it is half a day each way. Keys if you want a boat trip and a drive, and it is a longer, more spread-out day. Do not try both.
+- Q: How much does three days in Miami cost? A: Around $250 per person on a budget, walking and eating at the ventanitas, and up to $600 if you add the sunset boat and the Everglades tour. Car hire is the biggest variable.
+- Q: What is the best time to visit Miami? A: December to March for warm, dry weather and the best swimming. November and April are also good. Late August to October is hurricane season and the least predictable.
+- Q: Do I need a car in Miami? A: For South Beach, no, it is walkable. For Wynwood, Little Havana and the Everglades, yes, or use the shuttle on our tours. Miami's traffic is genuinely bad and the transit is not a substitute for a car outside the beach.
+
+### Miami Launch Week: What to Do in South Florida from November 19
+- URL: https://leonidatours.com/blog/miami-launch-week-guide/  |  Published: 2026-09-30  |  Category: Miami
+- One week in the most popular city in America. What actually changes, which days are worth booking, and the three things that sell out first.
+November 19, 2026 is going to bring a very large number of people to South Florida. If you are one of them, this page is the practical version: what actually changes, what does not, which days are worth paying for, and which parts of the city will be unusable.
+
+## What actually changes
+It is worth being clear-eyed about this, because the internet will tell you the city is going to be unrecognisable. It will not be. Miami in launch week is a slightly busier version of a busy week.
+Hotels and holiday rentals across Miami Beach, Brickell and Brickell's key districts will be at or near full occupancy, and rates will roughly double for the weekend.
+Restaurants in the Art Deco strip, Brickell and Wynwood will need reservations several days ahead instead of a walk-in.
+Parking is the real problem. It was always going to be; it will be worse from Thursday to Sunday.
+Sunset and nighttime boat demand will spike hardest, because everyone has the same idea.
+Airport traffic will be heavy on arrival days and heavy again on the Monday departure.
+
+## What does not change
+The beaches. Nobody books out South Beach, and on a warm November day it will be as busy as it always is.
+The murals. Wynwood is free, open and outdoors.
+The food. The ventanitas and the Cuban restaurants on Calle Ocho will be full, which is normal.
+The national parks. The Everglades and Everglades National Park are unaffected by anything happening in the city, 45 miles west.
+The Keys, if you go midweek. The Overseas Highway does not become a different road.
+
+## Which days to book what
+| Day | Book this | Because |
+|---|---|---|
+| Wed 18 | The sunset boat | Everyone arrives on the 18th and 19th, so the day before is the calmest |
+| Thu 19 | Nothing expensive | The city is at its busiest and the beaches are at their emptiest |
+| Fri 20 | The boat, if you missed the 18th | The first weekend, the sky and the bay |
+| Sat 21 | Nothing | Worst night of the week for traffic and restaurant queues |
+| Sun 22 | Wynwood and the murals | Outdoors, free, and better on a walking day |
+| Mon 23 | The Everglades | Everyone has gone home, and the park is completely unaffected |
+| Tue 24 | The Keys | Midweek traffic on the Overseas Highway is dramatically lighter |
+The single most valuable piece of advice on this page is the last two rows. The Everglades and the Keys do not care what is happening in Miami, and going to them on Monday and Tuesday instead of Saturday and Sunday will save you two hours of traffic each way and give you a better day out of it.
+
+## The three things that sell out first
+Sunset boat seats. Capacity is fixed by the number of seats on the boat, and they go first. If you want a sunset departure in launch week, book it weeks ahead and take the first slot you can get.
+Restaurants in the Deco strip and Brickell, for the same reason, but the fix is easier: reserve, and be flexible about the time.
+Airboat and Keys tour seats, if you are coming for those specifically. Both run on fixed schedules with a fixed vehicle, so the late slots go early.
+
+## A launch-week day that actually works
+This is the itinerary we would actually build, and it is designed to be immune to the crowds.
+Early morning: the beach at South Pointe, before 8am, while the sand is still empty and the water is flat.
+Mid-morning: the Art Deco walk on Ocean Drive, on foot, from 12th Street north. The buildings do not get busier and you can always walk on the beach side of the road.
+Lunch: Little Havana, where the loudness is the same every week of the year.
+Afternoon: the pool, or the Pérez Art Museum, or a boat to an island. Avoid driving between 4 and 7pm on Thursday, Friday and Saturday.
+Sunset: on the water, which is the whole reason to be here, and which is why the boat is the first thing to book.
+Night: dinner early and the neon walk on foot afterwards, going north on Ocean Drive, because a car in that strip is a mistake.
+
+## Getting around
+The honest advice is to walk more than you think you need to and to drive less. South Beach, Brickell and Wynwood are all connected by the causeway and the expressway, and the traffic on both of them during launch weekend is the single most reliable way to ruin a day.
+Rent the car for the days you need it and return it for the rest. Parking in the Deco strip is a nightmare and a valet is $30 or more.
+If you are staying in South Beach, you do not need a car at all for two of the three days.
+If you are doing the Everglades or the Keys, take a tour with the transfer included rather than driving yourself on the worst weekend of the year.
+Use the expressway, not the Turnpike, and never try to cross Miami Beach on Ocean Drive during the evening peak.
+
+## What we would book, in order
+The sunset boat, first, and take the earliest slot on the 18th.
+The airboat tour for the Monday, second.
+The Keys trip for the Tuesday, third.
+Restaurants for the 19th and 20th, as soon as they release bookings.
+Everything else when you get there, because everything else is walk-up.
+> Independent: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by or sponsored by any game publisher. We run tours every day of the year, including launch week, and we are not selling anything from the game's publisher.
+- Q: Is Miami going to be packed during the November 2026 launch week? A: Miami Beach, Brickell and Wynwood will be busier than normal, and hotels and restaurants there will need booking. The beaches, the murals, the national parks and the Keys will be essentially unchanged.
+- Q: What should I book first for a Miami launch week trip? A: The sunset boat, because capacity is fixed by the number of seats. Then restaurants in the Art Deco strip and Brickell, then the Everglades or Keys tours for the Monday and Tuesday.
+- Q: Which days are least busy in Miami during launch week? A: Monday the 23rd and Tuesday the 24th, once the weekend crowds have gone. The Everglades and the Keys are noticeably better on those days than on the Saturday.
+- Q: Do I need a car during the Miami launch week? A: For South Beach, no. For the Everglades and the Keys, take a tour with the transfer included rather than driving on the busiest weekend of the year. Miami's traffic between 4 and 7pm on Thursday to Saturday is the worst of it.
+- Q: How much will hotel prices rise for the Miami launch? A: Roughly double for the weekend on Miami Beach and in Brickell, and less outside those areas. Book early and consider staying a little further north or inland, where the shuttle to the beach is short.
+
+## Company and policy pages
+
+### About Leonida Tours: Who We Are and How We Run Our Trips
+- URL: https://leonidatours.com/about/
+Leonida Tours is an independent tour company based in Miami Beach, Florida. We run small-group city tours, boat trips on Biscayne Bay, and Everglades and Florida Keys day trips. We are owner-operated: the people who answer your email are the people who run your tour.
+
+## Why we exist
+Miami is one of the most visited cities on earth and one of the least explained. Visitors arrive, see the beach, take a selfie, and leave without knowing that the murals are two miles north, that the best sunset is from the water rather than the sand, or that the wetland half an hour west is the largest of its kind on the continent.
+We run small groups and real routes rather than a list of stops. That is slower, it earns less, and it is the only version of this job we were interested in doing.
+
+## What a Leonida Tours tour actually is
+A small group. Twelve passengers maximum on the city tour, so you can hear the guide and you can ask questions.
+A licensed operator. We hold the Florida commercial tour operator licence for the vehicles and vessels we use, and every vehicle and boat is insured and documented.
+A local guide. Every tour is led by someone who lives here. Our guides are not script-readers, and the one who has driven the Everglades route longest has done it for over a decade.
+An honest answer when we do not know. If you ask us which bar is best on a Tuesday, we will tell you which one is best on a Tuesday rather than the one that pays us more.
+
+## What is included
+|  | City tour | Boat trips | Everglades & Keys |
+|---|---|---|---|
+| Duration | 3 hours | 2 - 4 hours | 4 - 8 hours |
+| Transport | Air-conditioned minibus | Vessel | Shuttle from Miami |
+| Guide | Yes, on board | Yes, on board | Yes, with a wildlife or marine guide |
+| Refreshments | Water and a local snack | Water and one drink | Water, and lunch on the Keys trip |
+| Tickets | None needed | None needed | Park fees included on the Everglades tour |
+What is never included: tips, which are entirely at your discretion; and any alcohol, because most of these tours involve being on the water and we would rather you enjoyed it.
+
+## How we handle the weather
+South Florida gets serious storms, and the rule is simple: if it is not safe, we do not go out. Boats do not leave the marina in a thunderstorm, and we cancel rather than run a reduced or delayed route.
+On the day: if we cancel, you get a full refund or a free move to another date, your choice.
+In advance: if there is a named storm watch, we will contact you the evening before so you can rearrange without losing your slot.
+The Everglades and the Keys: these run in more weather than the boat tours, because a car can wait out a shower, but they are also the two most likely to be delayed on the highway, so leave your afternoon free.
+
+## How we make money
+We sell the tour you are on. We do not sell you a shopping stop, a timeshare pitch, a jewellery stop or a club entry. The guides are not commissioned on anything you buy afterwards, because they do not take you anywhere you would want to buy anything afterwards.
+We also make a small amount from hotel and ticket affiliate links on this site, which are marked where they appear and which never change what we recommend. If a tour is worth recommending, we will recommend it whether or not anyone paid us.
+
+## Who owns the words on this site
+We write everything ourselves and we do not use generated text for our guides, our location descriptions or our itineraries. Where we describe a game, a film or a television show, we use the names only to identify real places, and our editorial policy explains exactly how that works.
+> We are not affiliated with any game publisher: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed by or sponsored by Rockstar Games, Take-Two Interactive or any other game publisher, and we use no game art, logos, characters, screenshots or audio.
+
+## Get in touch
+Email is the fastest way to reach us and the right way to reach us for anything complicated: a group booking, a mobility requirement, a dietary need, or a question about which tour suits a particular kind of trip.
+Email: hello@leonidatours.com
+Phone and WhatsApp: +1 (305) 555-0148
+Base: 1200 Ocean Drive, Miami Beach, Florida 33139
+Tours run daily, 9am to 9pm, year round.
+
+### Editorial Policy: How We Research and Write Our Guides
+- URL: https://leonidatours.com/editorial-policy/
+This page exists because a great deal of the location content on the internet about this city is confidently wrong. Ours is not always right either, and this is how we try to be as close to right as we can get, and how you can hold us to it.
+
+## Who writes this site
+Every guide, every location description, every itinerary on this site is written and edited by us. We do not publish generated content as our own voice, and we do not publish guest posts. Our writers have first-hand knowledge of the routes they describe, and every guide page is walked or driven by a member of the team before publication.
+Nothing goes live without a second member of the team reading it. There are no exceptions to that rule, because a policy with exceptions is not a policy.
+
+## How we research a real-world location
+Primary sources first. We start from the publisher's own material: official trailers, official pages, official descriptions. If a claim can be checked against the source, it is checked against the source.
+Independence from fan wikis. We use community mapping as a lead, not as a citation. Where a wiki is the only source for a claim, we say the match is a community identification.
+Physical verification. Every location we list has been visited by us, or by a named contractor who did, and we record the visit. The coordinates on a location page are the coordinates of the place we stood.
+Confidence labels. We label every location match with one of four ratings, and the label describes the evidence rather than our enthusiasm.
+| Label | What it means |
+|---|---|
+| Official naming | The publisher uses the real name in their own material |
+| Strong | Three or more independent lines of evidence agree |
+| Community match | One or two good lines of evidence, no official confirmation |
+| Community, weak | A single object, matched on shape and position only |
+
+## How we reference games and trademarks
+We write about real places that appear in popular games. That is nominative use: identifying the real location a fictional place is based on. We do it under a strict and self-imposed set of rules.
+Editorial pages may name the game. On articles in the blog, including titles, headings and body text, we name the game and its characters where it is necessary to identify what we are talking about.
+Commercial pages do not. Tour pages, location pages and our navigation never use a game or publisher trademark in the title, the heading, the meta description or the structured data. Our commercial pages describe Miami, Florida, and nothing else.
+No game assets. We use no logos, no character art, no screenshots, no map images and no audio from any game. Every image on this site is our own photography of a real place.
+No implied endorsement. We are not affiliated with, endorsed by, licensed by or sponsored by any publisher, and every article that discusses a game carries a disclaimer saying so.
+No implication of official source. We never present a community identification as though it were confirmed by the publisher.
+> Why we draw the line where we do: Naming a game in an article about real locations is describing it. Putting a game's name on a page whose purpose is to sell a tour is using it as a marketing hook for something that has nothing to do with the game. The first is fair use in the ordinary sense; the second is the thing publishers and their legal teams object to, and they are right to.
+
+## How we handle dates and prices
+Prices, timetables and schedules change. Every price on this site is a current price, and we review the tour pages monthly and whenever a cost changes. Where a price may move, we say so on the page rather than burying it in the terms.
+Release dates and other announcements are always attributed to the publisher and dated. We do not speculate about unannounced things, and where we describe what has not been announced, we say so plainly.
+
+## Corrections
+If we get something wrong, we fix it and we say that we fixed it. Corrections are made on the page where the error appeared, with a dated note at the bottom of the article, and material errors are noted in the article's own footer.
+Email hello@leonidatours.com with the URL and what is wrong.
+We aim to acknowledge corrections within two business days.
+We correct the page, not just the reply to your email.
+If we got a location wrong and someone travelled to it based on our page, we will help with the practical consequences.
+
+## What we will not publish
+Unverified location claims presented as confirmed.
+Anything about a person's private life, or identifying information about private individuals.
+Theories presented as fact about unannounced games or features.
+Reposts of other publishers' analysis in our own voice.
+Reviews of a business we have a commercial relationship with, without disclosing the relationship.
+
+## Policy changes and contact
+This policy is reviewed whenever we change how we work, and the date at the top of the page is the date it was last changed. If you think we have broken our own rules, tell us: hello@leonidatours.com, and we will look at it.
+
+### Contact Leonida Tours: Reach a Real Person in Miami Beach
+- URL: https://leonidatours.com/contact/
+We are a small team and we answer our own messages. That means you get a reply from someone who can actually change your booking, and it also means we are sometimes on a boat. Email is the most reliable; WhatsApp is the fastest.
+
+## How to reach us
+| Channel | Details | Best for |
+|---|---|---|
+| Phone and WhatsApp | +1 (305) 555-0148 | Same-day questions, changes, groups of six or more |
+| Email | hello@leonidatours.com | Bookings, special requests, receipts, anything with detail |
+| Office | 1200 Ocean Drive, Miami Beach, FL 33139 | In person, by appointment |
+| Tours desk | Walk-ups welcome at the marina, 30 minutes before departure | Same-day tickets if a seat is free |
+The office hours are 9am to 6pm, Monday to Saturday, and 10am to 4pm on Sunday. The phone is answered during those hours. Outside them, WhatsApp still reaches us and we usually reply the next morning.
+
+## What happens after you email
+Within a few hours: you get a reply from a person, with availability and a link to reserve.
+At confirmation: we email your date, time, meeting point and a link to the WhatsApp thread for that booking.
+24 hours before: you get a reminder with the meeting point, what to bring, and the weather forecast.
+After the tour: you get a thank-you and an honest request for a review, if you want to leave one.
+
+## Groups, private bookings and accessibility
+Groups of six or more: email rather than call, and we can arrange a private departure on most routes for groups of eight or more.
+Wheelchair access: the city tour minibus has a ramp and can carry two wheelchairs. Tell us when you book so we send the accessible vehicle rather than a standard one.
+Children and infants: under-fives cannot do the airboat. Tell us ages when booking and we will route you to the right tour.
+Dietary needs: the Keys trip includes lunch, so tell us what you need and we will pass it to the restaurant.
+Walking difficulty: the city tour has a walking component of roughly two miles with frequent stops. We can shorten it on request.
+
+## Before you book, the questions we get
+### Can we take a walk-in?
+Yes, if there is a seat. The tour desk at the marina takes walk-ups up to 30 minutes before departure, and the bus tours are the easiest to join on the day. The boat tours sell out first.
+### How far in advance should we book?
+A few days is normally fine for the city tour. For the boat, the Keys trip and anything in November or December, book a week or more out. For groups of ten or more, two weeks is sensible.
+### Do you run tours on holidays?
+Every day of the year, including Thanksgiving, Christmas and New Year's Eve. On New Year's Eve the sunset departure leaves at 4pm instead of 6:30pm so that you are back for the fireworks, and it sells out weeks ahead.
+### What if our flight is delayed?
+Tell us as soon as you know. We hold the tour for 20 minutes past departure without a fee, and if you cannot make it at all we move you to another date at no charge.
+### Do you pick up from the airport?
+We can, for a fee, for groups. Miami International is 20 to 45 minutes from the beach depending on traffic, and airport waiting time makes a shared pickup slow, so for individuals the taxi is faster and cheaper.
+
+## Our office and where to find us
+We are at 1200 Ocean Drive, on the strip itself, which is deliberate: the tours start from the same street where most of our guests are staying. If you are in the area and want to talk through which tour suits your trip, come in. We are usually there, and there is usually coffee.
+
+### Meeting Point: Where Every Tour Starts and How to Find Us
+- URL: https://leonidatours.com/meeting-point/
+The most common reason a good trip goes badly is not the tour. It is the twenty minutes before it, spent on a street corner in Miami Beach looking for a minibus. Here is everything, in one place.
+
+## The city tour meeting point
+1200 Ocean Drive, Miami Beach, FL 33139. That is the Moorington Hotel, the pale pink Art Deco building on the north side of the street between 12th and 13th Street, opposite the CVS. It has a coffee shop on the ground floor and the street parking outside it is metered.
+The vehicles are white air-conditioned minibuses with Leonida Tours on the side in pink and teal.
+Your guide is in a pink lanyard and will be standing at the kerb.
+Come to the corner of Ocean Drive and 12th Street if the hotel entrance is hard to find.
+The bus is usually parked a few doors down from the hotel on Ocean Drive itself, facing north.
+
+## The boat tour meeting point
+Boats leave from the marina, not from Ocean Drive. The gate is at the end of the parking area on the island side of the bridge, and the address to put in your maps is the Miami Beach Marina on the causeway. Follow the road across the bridge until it ends, and turn into the marina on your left.
+Look for the marina office building and the fuel dock. The boat is tied up beyond it.
+Boarding is from a floating dock with a step ladder, so wear closed shoes.
+Arrive 20 minutes early. The gate closes five minutes before departure for the manifest.
+The walk from an Ocean Drive hotel to the marina gate is about 12 minutes on foot along the boardwalk, or a five-minute drive.
+
+## The Everglades and Keys meeting points
+Both day trips use a shuttle, and the pickup is from a set of hotel stops rather than a single address, because it makes the route work for everyone.
+Hotel pickup is from the lobby or the kerb outside the main entrance, whichever the driver prefers.
+The stop list is in your confirmation email with times, and the bus usually has to leave the last stop by 8:00am.
+If you are staying outside the pickup area, meet at the marina gate office and you will be collected there.
+Do not be late. The Everglades drive is timed against the boat operators, and a late bus means a shorter ride.
+
+## If you are running late
+Call the number on your confirmation as soon as you know you have a problem. The practical rules are these.
+| How late | What happens |
+|---|---|
+| Up to 20 minutes | We hold the departure. No penalty. |
+| 20 to 45 minutes | We will try to collect you, but the tour runs short by the time we pick you up. |
+| More than 45 minutes | Treat it as a cancellation and call ahead. We will move you to another date at no charge. |
+Traffic is the usual reason. If you are coming from the airport, from Brickell during rush hour, or across the causeway at 5pm on a Friday, allow 25 minutes more than the map says. The map does not know about the drawbridges.
+
+## What to bring
+Sunscreen. Required on every outdoor tour and not optional in Miami in any month.
+Water. We have it on board, but a personal bottle is better.
+Closed shoes. Especially for the boats and the Everglades boardwalk.
+A hat or a cap. The city tour has shade on the bus and almost none on the walk.
+Light rain protection from June to September. It is usually a fifteen-minute downpour and then it stops.
+
+## Getting there
+By car: Ocean Drive parking is metered and fills by 10am. There is a public garage on 13th Street and one on 12th, both a two-minute walk from the meeting point.
+By rideshare: set the drop to Ocean Drive and 12th Street. Do not set it to the hotel name; the drop-off on Ocean Drive can be a long way round.
+On foot: if you are on the strip, everything on this page is walkable.
+By bus: the Miami Beach Trolley runs the strip all evening and stops on Ocean Drive, but it does not run early enough for the morning departures.
+
+### Cancellation and Rescheduling Policy: Free Up to 24 Hours Before
+- URL: https://leonidatours.com/cancellation-policy/
+We do not take a deposit on any tour, which means the default position is that you have not paid for anything until the day before. Here is the whole policy in plain terms.
+
+## Free cancellation
+Cancel up to 24 hours before departure and you pay nothing. There is no deposit, no admin fee and no cancellation charge on any tour we run. Do it by replying to your confirmation email or calling the number on it.
+You do not need a reason and you do not need to justify it. Most cancellations are a flight change or a sick child, and neither is our business.
+
+## Inside 24 hours
+| Situation | What happens |
+|---|---|
+| You cancel inside 24 hours | No refund is possible, because the seat and the vehicle have been committed |
+| You cancel inside 24 hours for a medical reason | Contact us. We will look at the documentation and refund it. We do this routinely and we do not make it difficult. |
+| You are late and miss the tour | No refund, but we will move you to another date at no charge |
+| We cancel for weather | Full refund, or a free move to another date, your choice, no conditions |
+| We cancel for an operational reason | Full refund, or a free move to another date, your choice |
+| A member of your group cancels | The remaining seats are unaffected. You pay only for the people who come. |
+
+## Moving your date
+Rescheduling is free, any number of times, including inside 24 hours, subject to availability. Email is best, because it gives us a record of what we agreed.
+What we will not do is hold a seat indefinitely without a date attached. If you need to move a booking more than 30 days out, we will ask you for a rough date so we can release the seat to someone else.
+
+## Weather cancellations
+South Florida has serious weather and we do not run tours into it. The rules are deliberately simple and deliberately generous.
+Boat tours do not leave the marina if a thunderstorm is within range or the wind is above the limit for the vessel. We cancel and refund in full, and we tell you by 8am on the day.
+City tours run in almost all weather. We will shorten the walk and keep you on the bus if there is a downpour, and we only cancel if the weather is genuinely unsafe.
+Everglades and Keys tours run in most weather but can be delayed on the highway. If a delay means you will miss the boat or the booked restaurant, we adjust the day and tell you what changed.
+If we cancel and you have already booked flights or a hotel around the tour, tell us and we will help you sort out what can be moved. It is our mess when we cancel, and we will say so plainly.
+
+## Tours you did not enjoy
+If a tour did not work for you, tell us within 48 hours and we will look at it properly.
+If we got something wrong, such as a broken air-conditioning system or a guide who could not be heard on a windy day, we will refund the tour.
+If the weather was poor and we ran it anyway, that is on us and we will refund it.
+If you simply did not enjoy the route, that is a legitimate answer and we will still look at it, but we are not obliged to refund a tour that ran as described.
+
+## No-shows
+If you do not arrive and do not call, the seat is lost and there is no refund. We do not wait. The vehicle schedule and the boat bookings are committed, and the guide moves on.
+If you cannot reach us because your phone is dead, and you were in the pickup area, we will make a reasonable attempt to find you. If we cannot, the outcome is the same as a no-show.
+
+## Groups and private bookings
+Groups of eight or more on a private departure follow a written quote, and the cancellation terms are on that quote. They are more flexible than the published policy, because a group booking is planned weeks ahead.
+For groups of eight or more, a 50% deposit is taken to hold the vehicle and, where relevant, the boat charter. That deposit is fully refundable up to 7 days before the date and transferable once to a new date.
+
+## How to cancel
+Reply to your confirmation email, or call +1 (305) 555-0148. Either works, and either gives us the booking reference we need to find your reservation. You will get a cancellation confirmation by email within a few hours, and the refund follows the payment method it came from.
+
+### Licensing, Insurance and Safety on Every Leonida Tours Departure
+- URL: https://leonidatours.com/insurance-and-licensing/
+Florida's waters are genuinely dangerous, and a boat trip is the part of this job where being careful is not optional. This page is the licence and safety information, written out plainly.
+
+## Licensing
+Tour operator: Leonida Tours operates under a Florida commercial tour operator licence. Our licence number is on every tour confirmation and on every invoice.
+Vessels: every boat we operate is US Coast Guard documented and carries the required safety equipment: life jackets for every passenger and crew member, flares, a first aid kit, an EPIRB or equivalent, a VHF radio and a working anchor with adequate rode.
+Drivers: our minibus drivers hold Florida CDL licences with passenger endorsements, and every driver is checked against the national driving record and our own reference list.
+Airboats: our airboat operator is licensed for Everglades sightseeing, and the boats are inspected annually by the manufacturer and by the National Park Service concession requirements.
+
+## Insurance
+| Cover | Details |
+|---|---|
+| Passenger liability | Covered for every guest on every tour, at the limits required by Florida law |
+| Vehicle and vessel damage | Full commercial coverage on every minibus and boat we operate |
+| Medical expenses | Carried for all guests, covering emergency treatment and repatriation |
+| Cancellation and interruption | Included on the boat charters, so a mechanical fault becomes our cost, not yours |
+You are covered while you are on the tour, including on the transport to and from the meeting point. If you are bringing your own child car seat, tell us and we will confirm we can fit it in the vehicle you will be in.
+
+## The guides
+First aid: every guide holds a current first aid and CPR certification. On the water tours, every captain holds the USCG captain's licence.
+Radio and float plan: before every departure the captain files a float plan with the coast guard, naming the vessel, the route and the number of people aboard.
+Headcounts: we count you on and off the vessel. It sounds basic, and it is the single most important habit on the water.
+Weather limits: each vessel has a documented wind and sea limit. If the forecast exceeds it, the trip does not run, regardless of how good the day looks from the shore.
+
+## On the water
+Three rules that apply to every boat tour, and they are the reason we cancel so readily.
+Life jackets. There is a jacket for every person and every child on board, and the crew will tell you when to wear yours. On any rough crossing or when the captain calls it, you wear it, and it stays on.
+Stay seated and hold on. The vessel moves, and it stops suddenly. The worst injuries we see are people standing up to take a photograph.
+Keep arms and legs inside. Not one arm over the side, not one foot out, not for a second, not for a photograph.
+The Gulf and the Atlantic around the Keys carry real tidal currents, and the weather can change in under an hour in any month. None of this is dramatic or unusual. It is simply why the operator you book should be able to answer the next question clearly.
+
+## Three questions worth asking any operator
+What is your wind limit, and what happens when you hit it? The answer should be a specific number and a specific action. An operator who cannot give you a number is guessing.
+Are there life jackets in child sizes, and how are they fitted? Not what sizes you have, but how they are fitted and by whom.
+Who is the captain, and what licence do they hold? On a passenger vessel that should be a USCG captain's licence, and you should be able to see it.
+> If something goes wrong: In an emergency call 911 first, then our 24-hour line on +1 (305) 555-0148. Every vessel carries a VHF radio and the coast guard knows where we are, but a phone call from you still speeds things up enormously.
+
+### Privacy Policy: What We Collect, Why, and How Long We Keep It
+- URL: https://leonidatours.com/privacy/
+We are a small company, which makes this simpler than it usually is. We do not have a data broker behind us and we do not run advertising trackers on this site. Here is the whole policy.
+
+## What we collect
+| What | Why | How long |
+|---|---|---|
+| Name, email, phone | To take your booking, run your tour and contact you about it | Two years after your last booking |
+| Booking and payment details | To take payment and meet tax and accounting obligations | Seven years, as required by law |
+| Dietary, mobility and special requirements | To run the tour safely for you | Six months after your booking |
+| Website usage data | To see which pages work and which do not | 14 months, in aggregate |
+| Emails and messages | To answer you and to keep a record of what we agreed | Two years |
+
+## What we do not collect or do
+We do not sell, rent or trade your personal information. Not to anyone, not to advertisers, not to data brokers.
+We do not run third-party advertising trackers on this site.
+We do not store your card details. Payments go through a PCI-compliant processor that holds them.
+We do not ask for a passport or any government ID unless a specific tour requires it, and when we do we say so in advance.
+We do not share your details with any game publisher, media outlet or social platform.
+
+## Cookies
+This site uses a small number of cookies and similar storage for things that make it work: remembering a language or region preference, and aggregate analytics that tell us which pages are useful. There are no advertising cookies and no cross-site tracking.
+You can block or delete cookies in your browser settings. The site will still work, but a small number of preferences will not be remembered between visits.
+
+## Who we share it with
+We share only what is necessary, and only with three kinds of organisation: the payment processor that takes your card, the booking platform that runs our availability and ticketing, and our email provider. All three process data on our instructions under a written agreement.
+We will disclose data if we are legally required to, for example to a court or to law enforcement. We will tell you, unless we are legally prevented from doing so.
+
+## Your rights
+Ask what we hold. Email us and we will tell you, within 30 days, exactly what personal data we hold about you.
+Ask us to correct it. If something is wrong, we will fix it.
+Ask us to delete it. We will delete your booking data within 30 days, except for the records we are legally required to keep for tax and accounting.
+Ask us to stop emailing you. Every marketing email has a one-click unsubscribe link, and unsubscribing does not affect emails about a booking you have made.
+Complain. If you are unhappy, email us first. If that does not resolve it, you can complain to the relevant authority in your own country.
+
+## Children's data
+Our site is a travel site and we do not knowingly collect data from children directly. Where a booking includes a child, the information is provided by an adult booking for them, and we hold it only for the duration of the booking and the period after it described above.
+
+## Contact and changes
+Write to us at hello@leonidatours.com with 'Privacy' in the subject line, or call +1 (305) 555-0148. The date at the top of this page is the date it was last changed. If we make a material change, we will email anyone who has booked with us in the last two years.
+
+### Terms of Service: The Contract Between Us and You
+- URL: https://leonidatours.com/terms/
+These terms form the contract between you and Leonida Tours when you book. They are written to be readable, and if anything here is unclear, ask us before you book and we will explain it.
+
+## Your booking
+A booking is confirmed when we send you a confirmation email with the date, the time and the meeting point. Until that email arrives, the reservation is provisional. Where a tour has limited seats, we hold a seat for 24 hours while payment is completed.
+You are responsible for the accuracy of the information you give us at booking. In particular, tell us about mobility requirements, dietary needs, allergies, medical conditions relevant to the activity, the ages of children, and anything that affects your safety on the tour. We cannot reserve the right to provide an activity you have told us would be unsafe for you.
+
+## Your responsibilities
+Arrive at the meeting point at the stated time, and tell us if you are running late.
+Follow the guide's safety instructions at all times, including on the boat and in the Everglades.
+Do not bring alcohol onto any vehicle or vessel.
+Treat other guests and our staff with respect. We reserve the right to refuse service to anyone behaving in a way that endangers the group or the tour.
+Tell us before the tour if you are pregnant, have a medical condition that affects the activity, or need medication on a long trip.
+
+## Our responsibilities
+Run the tour as described on the page you booked.
+Provide a licensed, insured vehicle or vessel and a trained guide.
+Tell you as soon as we know about anything that changes the tour, including weather cancellations.
+Tell you about a material change to the itinerary before you arrive, and offer a refund if the change makes the tour materially different from what you booked.
+
+## Changes and cancellations
+Your rights to cancel and reschedule are set out in our cancellation policy, which forms part of these terms. In summary: free cancellation up to 24 hours before departure, free rescheduling subject to availability, and a full refund if we cancel for any reason.
+
+## Liability
+We are responsible for the reasonable care of our guests while on our tours, and we are insured for passenger liability, property damage and medical expenses. We are not liable for events outside our reasonable control, including weather, government action, closure of the park or the port, or traffic delays that cause you to miss a third-party booking you made separately.
+We are not liable for losses that arise from your own decisions, such as leaving a marked trail, ignoring a safety instruction, or choosing to be in a place we have explicitly told you is not part of the tour.
+> Nothing here limits your statutory rights: Nothing in these terms limits your rights under the consumer law of the country you are travelling in, including any right to a refund for a service that is not provided as described. Where a term here conflicts with your statutory rights, your statutory rights prevail.
+
+## Accessibility
+We run a minibus with a ramp and can carry two wheelchairs on the city tour. The Everglades van tour is the most accessible of the day trips. Some activities, including the airboat ride and boarding via a floating dock, are not suitable for everyone, and we would rather tell you that in advance than on the day.
+If you have an access requirement, email us before booking and we will tell you honestly which tours suit it. We will never book you onto an activity we think is unsafe for you.
+
+## Governing law
+These terms are governed by the laws of the State of Florida and the United States, and the courts of Miami-Dade County, Florida have jurisdiction, without affecting any mandatory consumer protection you have where you live.
+
+## Changes to these terms
+We may update these terms, and the date at the top of this page shows when that last happened. Terms that apply to your booking are the ones in force when you made it, so a change after you book will not affect your booking.
+

@@ -6,6 +6,8 @@
 - Email: hello@leonidatours.com
 - Instagram / TikTok: @leonidatours
 - Reserve: https://leonidatours.com/#preregister
+- Full text of every page: https://leonidatours.com/llms-full.txt
+- RSS feed: https://leonidatours.com/feed.xml
 
 ## Tours
 
@@ -38,3 +40,53 @@
 **What's the difference between small group and private?** Small-group tours ride in a minibus with up to 12 guests and a host. Private tours are just your crew, up to 3 people, in a classic convertible ($600) or a Jeep convertible ($450) with a driver-guide.
 **How does the City Pass work?** One pass covers the Miami Vice City small-group tour, the boat tour and the Grasslands airboat. Book each date whenever you like during your stay.
 **What if it rains?** Every route has covered stops. If a storm cancels your tour, rebook for free or get a full refund.
+
+## Real locations field guide
+
+- [https://leonidatours.com/locations/]: field guide to 15 real Miami, Everglades and Florida Keys places matched to their in-game counterparts, with addresses, coordinates and a confidence rating for each.
+- [https://leonidatours.com/map/]: interactive map of every location, with coordinates.
+  - The Clevelander (Vice Beach): 1020 Ocean Drive, Miami Beach, FL 33139 - 25.78104, -80.13046 - confidence: Strong - in the game as Ocean View Hotel.
+  - Calle Ocho and Máximo Gómez Park (Vice City): SW 8th Street, Little Havana, Miami, FL 33135 - 25.76704, -80.21702 - confidence: Official naming - in the game as Little Cuba.
+  - Wynwood Arts District (Vice City): NW 2nd Avenue, Wynwood, Miami, FL 33127 - 25.8012, -80.1994 - confidence: Strong - in the game as Stockyard.
+  - Kaseya Center (Vice City): 601 Biscayne Blvd, Miami, FL 33132 - 25.78115, -80.18788 - confidence: Strong - in the game as Sahara Arena.
+  - E11EVEN (Vice City): 29 NE 11th Street, Miami, FL 33132 - 25.7838, -80.195 - confidence: Strong - in the game as NINE1NINE.
+  - PortMiami (Vice City): 1100 NW 6th St, Miami, FL 33133 - 25.77806, -80.1733 - confidence: Strong - in the game as PortViceCity.
+  - Miami International Airport (Greater Leonida): 5000 NW 36th St, Miami, FL 33142 - 25.7959, -80.287 - confidence: Strong - in the game as Vice City International Airport.
+  - Seven Mile Bridge (Leonida Keys): Overseas Highway, Marathon, FL 32952 - 24.7016, -81.15969 - confidence: Strong - in the game as Seven Mile Bridge.
+  - Everglades National Park (Grassrivers): 40001 State Road 6, Homestead, FL 33034 - 25.2866, -80.8986 - confidence: Official region + community match - in the game as Grassrivers.
+  - Jade Ocean Condominium (Vice Beach): 17121 Collins Ave, Sunny Isles Beach, FL 33160 - 25.93434, -80.12102 - confidence: Strong - in the game as The Jade Ocean tower.
+  - Star Island and the Flagler Memorial (Vice City): 1200 Brickell Ave, Miami, FL 33131 - 25.77404, -80.14889 - confidence: Strong - in the game as Star Island.
+  - Bayside Marketplace (Vice City): 401 N Biscayne Blvd, Miami, FL 33132 - 25.7794, -80.186 - confidence: Strong - in the game as The observation wheel.
+  - Little Haiti (Vice City): 500 NW 2nd Ave, Miami, FL 33128 - 25.8065, -80.217 - confidence: Official naming - in the game as Little Haiti.
+  - Venetian Causeway (Vice City): 1000 Venetian Causeway, Miami, FL 33132 - 25.79003, -80.17821 - confidence: Strong - in the game as The Vice Causeway toll plaza.
+  - The VICE sign (Greater Leonida): West of Miami International Airport, near the NW 25th St runway approach, Miami, FL 33142 - 25.7906, -80.2851 - confidence: Community identification - in the game as Vice City Sign.
+
+## Blog
+
+- [https://leonidatours.com/blog/]: 12 guides to Miami, the Everglades and the Florida Keys.
+  - [https://leonidatours.com/blog/gta-6-release-date/]: GTA 6 Release Date: November 19, 2026 and What to Do in Miami (2026-10-20)
+  - [https://leonidatours.com/blog/gta-6-locations-in-real-life/]: GTA 6 Locations in Real Life: 24 Miami and Florida Places (2026-10-19)
+  - [https://leonidatours.com/blog/is-gta-6-set-in-miami/]: Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida (2026-10-18)
+  - [https://leonidatours.com/blog/gta-6-map-and-regions/]: GTA 6 Map: The Six Regions of Leonida and Where They Are (2026-10-17)
+  - [https://leonidatours.com/blog/gta-6-trailers-timestamped/]: GTA 6 Trailers, Timestamped to the Real Miami Locations (2026-10-16)
+  - [https://leonidatours.com/blog/gta-6-everglades-grassrivers/]: Grassrivers Is the Everglades: Seeing GTA 6's Swamp for Real (2026-10-15)
+  - [https://leonidatours.com/blog/gta-6-florida-keys-leonida-keys/]: Leonida Keys Is the Florida Keys: The Seven Mile Bridge (2026-10-14)
+  - [https://leonidatours.com/blog/best-things-to-do-in-miami-beach/]: Best Things to Do in Miami Beach in One Day (2026) (2026-10-13)
+  - [https://leonidatours.com/blog/miami-sunset-cruise-guide/]: Miami Sunset Cruise Guide: Biscayne Bay and Millionaire's Row (2026-10-12)
+  - [https://leonidatours.com/blog/everglades-airboat-tour-guide/]: Everglades Airboat Tours from Miami: Timings and What You'll See (2026-10-11)
+  - [https://leonidatours.com/blog/miami-in-3-days-itinerary/]: Miami in 3 Days: A Locals' Itinerary (2026-10-10)
+  - [https://leonidatours.com/blog/miami-launch-week-guide/]: Miami Launch Week: What to Do in South Florida from November 19 (2026-09-30)
+
+## Company and policy pages
+
+- [https://leonidatours.com/about/]: About Leonida Tours: Who We Are and How We Run Our Trips
+- [https://leonidatours.com/editorial-policy/]: Editorial Policy: How We Research and Write Our Guides
+- [https://leonidatours.com/contact/]: Contact Leonida Tours: Reach a Real Person in Miami Beach
+- [https://leonidatours.com/meeting-point/]: Meeting Point: Where Every Tour Starts and How to Find Us
+- [https://leonidatours.com/cancellation-policy/]: Cancellation and Rescheduling Policy: Free Up to 24 Hours Before
+- [https://leonidatours.com/insurance-and-licensing/]: Licensing, Insurance and Safety on Every Leonida Tours Departure
+- [https://leonidatours.com/privacy/]: Privacy Policy: What We Collect, Why, and How Long We Keep It
+- [https://leonidatours.com/terms/]: Terms of Service: The Contract Between Us and You
+
+Full text of every page: https://leonidatours.com/llms-full.txt
+RSS feed: https://leonidatours.com/feed.xml

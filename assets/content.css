@@ -1,0 +1,140 @@
+/* Leonida Tours - content pages (blog, locations, policies, map)
+   Shares the design tokens of tour.css; loaded after it. */
+
+.wrap{max-width:1100px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------------------------------------------------------------- article shell */
+.article-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:auto;min-height:64px;flex-wrap:wrap;padding-block:10px}
+.article-nav .links{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.article-nav .links a{font:600 14px/1 var(--body);color:var(--muted);text-decoration:none}
+.article-nav .links a:hover{color:var(--text)}
+.article-nav .links a[aria-current]{color:var(--teal)}
+@media(max-width:820px){
+  .article-nav .links{order:3;width:100%;flex-wrap:nowrap;gap:18px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .article-nav .links::-webkit-scrollbar{display:none}
+  .article-nav .links a{white-space:nowrap}
+}
+
+.ahead{padding-block:8px clamp(28px,5vw,52px)}
+.ahead .kicker{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font:700 12px/1.3 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
+.ahead .kicker .dot{width:4px;height:4px;border-radius:50%;background:var(--coral)}
+.ahead h1{max-width:22ch}
+.ahead .lede{margin-top:18px;font-size:clamp(17px,2.2vw,20px);line-height:1.6;color:#D8D1E2;max-width:62ch}
+.ahead .byline{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:14px;color:var(--muted)}
+.ahead .byline b{color:var(--text);font-weight:700}
+.ahead .ph{margin-top:clamp(24px,4vw,40px);border-radius:24px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9}
+.ahead .ph img{width:100%;height:100%;object-fit:cover}
+.ahead .cap{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* ---------------------------------------------------------------- table of contents */
+.toc{margin-top:clamp(28px,4vw,40px);background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+.toc h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-family:var(--body);font-weight:700}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;gap:8px;columns:2;column-gap:32px}
+@media(max-width:720px){.toc ol{columns:1}}
+.toc li{break-inside:avoid}
+.toc a{font-size:15px;color:#D8D1E2;text-decoration:none;display:block;padding-left:18px;position:relative;line-height:1.45}
+.toc a::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--sunset)}
+.toc a:hover{color:var(--text)}
+
+/* ---------------------------------------------------------------- body copy */
+.prose{max-width:72ch}
+.prose > * + *{margin-top:20px}
+.prose h2{font-size:clamp(23px,2.8vw,31px);margin-top:46px;scroll-margin-top:84px}
+.prose h2:first-child{margin-top:0}
+.prose h3{font-size:19px;margin-top:34px;scroll-margin-top:84px;color:#EDE8F3}
+.prose p{color:#CFC8DC;font-size:17px;line-height:1.72}
+.prose p strong{color:var(--text)}
+.prose a{color:var(--teal);text-underline-offset:3px}
+.prose ul,.prose ol{padding-left:22px;color:#CFC8DC;font-size:17px;line-height:1.7;display:grid;gap:10px}
+.prose li::marker{color:var(--coral);font-weight:700}
+.prose ul li::marker{content:"›  "}
+.prose strong{font-weight:700}
+.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;background:var(--surface-2);padding:2px 6px;border-radius:6px}
+
+.prose .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.prose table{width:100%;border-collapse:collapse;font-size:15.5px;min-width:460px}
+.prose th{text-align:left;font:700 12px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding:14px 16px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.prose td{padding:13px 16px;border-bottom:1px solid var(--line);color:#CFC8DC;vertical-align:top}
+.prose tr:last-child td{border-bottom:0}
+.prose tbody tr:hover{background:rgba(255,255,255,.02)}
+
+.prose .note{background:linear-gradient(100deg,rgba(255,95,162,.13),rgba(62,230,214,.07));border:1px solid var(--line-2);border-left:3px solid var(--pink);border-radius:16px;padding:20px 22px}
+.prose .note h3{font-size:16px;margin:0 0 8px;color:var(--text);font-family:var(--body);font-weight:700;letter-spacing:.01em}
+.prose .note p{font-size:16px;margin:0;color:#E2DCEB}
+
+.prose .quote{border-left:3px solid var(--teal);padding:4px 0 4px 22px}
+.prose .quote p{font-size:19px;line-height:1.6;color:var(--text);font-style:italic}
+.prose .quote cite{display:block;margin-top:10px;font-size:14px;color:var(--muted);font-style:normal}
+
+.prose figure{margin:32px 0}
+.prose figure img{border-radius:18px;border:1px solid var(--line);width:100%}
+.prose figcaption{font-size:13.5px;color:var(--muted);margin-top:10px}
+
+/* ---------------------------------------------------------------- facts panel */
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin-top:32px}
+.facts h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;font-family:var(--body);font-weight:700}
+.facts dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px 24px;margin:0}
+.facts dt{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:7px}
+.facts dd{margin:0;font-size:15.5px;color:#D8D1E2;line-height:1.5}
+.facts a{color:var(--teal)}
+
+/* ---------------------------------------------------------------- cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.card{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--line-2);transform:translateY(-3px)}
+.card img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.card .cb{padding:18px 20px 20px;display:grid;gap:8px}
+.card .ct{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.card h3{font-size:18px;line-height:1.25}
+.card p{font-size:15px;color:var(--muted);line-height:1.55}
+.card .cm{font-size:13px;color:var(--coral);font-weight:700}
+.card .badge{display:inline-block;font:700 10px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;padding:6px 9px;border-radius:999px;background:rgba(255,138,101,.16);color:var(--coral)}
+.card .badge.strong{background:rgba(62,230,214,.14);color:var(--teal)}
+.card .badge.official{background:rgba(255,95,162,.16);color:var(--pink)}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag{font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 12px}
+
+/* ---------------------------------------------------------------- map */
+.map-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,380px);gap:24px;align-items:start}
+@media(max-width:900px){.map-grid{grid-template-columns:1fr}}
+#map{height:min(70vh,620px);border-radius:22px;border:1px solid var(--line);background:var(--surface-2);z-index:1}
+.map-list{display:grid;gap:10px;max-height:min(70vh,620px);overflow:auto;padding-right:4px}
+.map-list a{display:grid;gap:4px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:13px 15px}
+.map-list a:hover{border-color:var(--line-2)}
+.map-list strong{font-size:15px;color:var(--text)}
+.map-list span{font-size:13px;color:var(--muted)}
+.map-list em{font-style:normal;font:700 10px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--coral)}
+.leaflet-container{background:#13111B;font:14px/1.5 var(--body)}
+.leaflet-popup-content-wrapper{background:#1A1724;color:#F6F3FA;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.leaflet-popup-tip{background:#1A1724}
+.leaflet-popup-content{margin:14px 16px;font-size:14px;line-height:1.5}
+.leaflet-popup-content a{color:#3EE6D6}
+
+/* ---------------------------------------------------------------- misc */
+.disc{margin-top:44px;border:1px solid var(--line);border-left:3px solid var(--coral);border-radius:16px;padding:18px 20px;background:rgba(255,138,101,.05)}
+.disc strong{display:block;font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:8px}
+.disc p{font-size:14px;color:var(--muted);line-height:1.6}
+
+.pager{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
+.pager a{text-decoration:none;font-weight:700;font-size:16px;color:var(--teal);max-width:44%}
+.pager a:hover{color:var(--text)}
+.pager span{display:block;font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{cursor:pointer;font:600 17px/1.4 var(--display)}
+.faq p{color:var(--muted);margin-top:10px;font-size:15.5px;line-height:1.65}
+
+.coord{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;color:var(--teal)}
+
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:26px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
+.stat b{display:block;font:800 26px/1 var(--display);margin-bottom:6px}
+.stat span{font-size:13.5px;color:var(--muted);line-height:1.45}
+
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface);margin-top:26px}
+.table-scroll table{width:100%;border-collapse:collapse;font-size:15.5px;min-width:560px}
+.table-scroll th{text-align:left;font:700 12px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding:14px 16px;border-bottom:1px solid var(--line)}
+.table-scroll td{padding:13px 16px;border-bottom:1px solid var(--line);color:#CFC8DC;vertical-align:top}
+.table-scroll tr:last-child td{border-bottom:0}
+.table-scroll a{color:var(--teal)}
