@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLRJMFGL');</script>
+<!-- End Google Tag Manager -->
 <title>Leonida Tours | Miami Vice City IRL Tours, Everglades &amp; Keys</title>
 <meta name="description" content="Unofficial small-group &amp; private tours to the real South Florida spots that inspired the game: Ocean Drive, Wynwood, the Everglades &amp; the Keys. From $79.">
 <link rel="canonical" href="https://leonidatours.com/">
@@ -532,6 +539,10 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
 .foot-links{margin:28px 0 8px}.foot-links h2{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}.foot-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px 24px}.foot-links a{color:var(--muted);text-decoration:none;font-size:14px}.foot-links a:hover{color:var(--text)}
 a.mcard{text-decoration:none}</style></head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLRJMFGL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Leonida Tours home">
@@ -1366,6 +1377,7 @@ form.addEventListener('submit',async e=>{
   const btn=$('#submitBtn'); btn.disabled=true; btn.textContent='Saving…';
   try{
     await save(entry);
+    try{(window.dataLayer=window.dataLayer||[]).push({event:'generate_lead',form_name:'reservation',tour:entry.tour,travel_date:entry.travel_date,group_size:Number(entry.group_size),currency:'USD',value:(TOURS[entry.tour]||{}).price||0});}catch(e){}
     track('reservation_submit',{tour_id:entry.tour,group_size:+entry.group_size,travel_date:entry.travel_date});
     const d=new Date(entry.travel_date+'T12:00:00'), safe=email.replace(/[<>&"]/g,'');
     const name=k==='updates'?'New routes & offers':TOURS[k].title;

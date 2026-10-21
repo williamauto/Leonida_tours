@@ -19,6 +19,14 @@ TODAY = datetime.date.today().isoformat()
 LAUNCH = "2026-11-19"
 EMAIL = "hello@leonidatours.com"
 BRAND = "Leonida Tours"
+GTM_ID = os.environ.get("GTM_ID", "GTM-NLRJMFGL")
+GTM_HEAD = ("<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
+            "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
+            "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n"
+            "'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
+            f"}})(window,document,'script','dataLayer','{GTM_ID}');</script>\n<!-- End Google Tag Manager -->\n") if GTM_ID else ""
+GTM_BODY = (f'<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_ID}"\n'
+            'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->\n') if GTM_ID else ""
 SOCIAL = ["https://www.instagram.com/leonidatours", "https://www.tiktok.com/@leonidatours"]
 
 D = json.load(open(os.path.join(HERE, "data.json")))
@@ -208,7 +216,7 @@ def ld(graph):
 def head_common(title, desc, canonical, og_img, og_alt, prefix, extra=""):
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{esc(title)}</title>
+{GTM_HEAD}<title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -295,6 +303,10 @@ def build_index():
         "    const msgBody=encodeURIComponent(Object.entries(entry).map(([a,b])=>a+': '+b).join('\\n'));\n"
         f"    window.location.href='mailto:{EMAIL}?subject='+sub+'&body='+msgBody; return true;\n  }}\n" + old)
 
+    # GTM conversion event when a reservation is saved
+    old_save = "    await save(entry);"
+    assert old_save in body
+    body = body.replace(old_save, old_save + "\n    try{(window.dataLayer=window.dataLayer||[]).push({event:'generate_lead',form_name:'reservation',tour:entry.tour,travel_date:entry.travel_date,group_size:Number(entry.group_size),currency:'USD',value:(TOURS[entry.tour]||{}).price||0});}catch(e){}", 1)
     # image dimensions + async decoding for CLS / LCP
     def add_dims(m):
         tag, name = m.group(0), m.group(1)
@@ -329,7 +341,7 @@ def build_index():
              "\n<style>[hidden]:not([hidden=until-found i]){display:none!important}\n" + css + "</style>")
     out = ("<!doctype html>\n<html lang=\"en-US\">\n<head>\n" +
            head_common(title, desc, url(), url("assets/og-home.jpg"), "Leonida Tours: Miami skyline at sunset, unofficial IRL tours", "", extra) +
-           "</head>\n<body>\n" + body + "</body>\n</html>\n")
+           "</head>\n<body>\n" + GTM_BODY + body + "</body>\n</html>\n")
     open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(out)
 
 # ---------------------------------------------------------------- tour pages
@@ -410,7 +422,7 @@ def build_tour(k):
              f'<link rel="preload" as="image" href="{p}img/{T["img"]}.jpg">' + chr(10) + ld(graph) + chr(10) + f'<link rel="stylesheet" href="{p}assets/tour.css">')}
 </head>
 <body>
-<header class="nav"><div class="wrap"><a class="logo" href="{p}"><i>{PIN}</i>LEONIDA <span class="grad">TOURS</span></a>
+{GTM_BODY}<header class="nav"><div class="wrap"><a class="logo" href="{p}"><i>{PIN}</i>LEONIDA <span class="grad">TOURS</span></a>
 <a class="btn btn-primary btn-sm" href="{reserve}">Reserve free</a></div></header>
 <main>
 <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="{p}">Home</a></li><li><a href="{p}#map">Tours</a></li><li aria-current="page">{esc(T["title"])}</li></ol></nav></div>
@@ -565,10 +577,10 @@ def build_crawl_files():
                   {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]}, indent=2) + "\n")
 
     open(os.path.join(ROOT, "404.html"), "w").write(f"""<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Page not found | {BRAND}</title><meta name="robots" content="noindex"><link rel="icon" href="{url('favicon.svg')}" type="image/svg+xml">
+{GTM_HEAD}<title>Page not found | {BRAND}</title><meta name="robots" content="noindex"><link rel="icon" href="{url('favicon.svg')}" type="image/svg+xml">
 <style>body{{margin:0;min-height:100vh;display:grid;place-items:center;background:#0A0910;color:#F6F3FA;font:16px/1.6 system-ui,sans-serif;text-align:center;padding:24px}}
 h1{{font-size:clamp(32px,6vw,56px);margin:0 0 12px}}a{{display:inline-block;margin-top:20px;padding:14px 22px;border-radius:999px;background:linear-gradient(100deg,#FF5FA2,#FFA66B);color:#1A0712;font-weight:700;text-decoration:none}}p{{color:#A7A1B6}}</style></head>
-<body><main><h1>Wasted. Page not found.</h1><p>This spot isn't on the map. Respawn on the home page and pick a tour.</p><a href="{url()}">Back to Leonida Tours</a></main></body></html>
+<body>{GTM_BODY}<main><h1>Wasted. Page not found.</h1><p>This spot isn't on the map. Respawn on the home page and pick a tour.</p><a href="{url()}">Back to Leonida Tours</a></main></body></html>
 """)
     open(os.path.join(ROOT, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY + "\n")
     open(os.path.join(ROOT, "_config.yml"), "w").write("# GitHub Pages: publish files as-is; _build/ holds the generator.\nexclude: [_build, README.md]\ninclude: [.well-known]\n")
