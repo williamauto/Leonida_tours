@@ -42,7 +42,7 @@ STATIC = [
   {"p": ["We also make a small amount from hotel and ticket affiliate links on this site, which are marked where they appear and which never change what we recommend. If a tour is worth recommending, we will recommend it whether or not anyone paid us."]},
   {"h2": "Who owns the words on this site", "id": "editorial"},
   {"p": ["We write everything ourselves and we do not use generated text for our guides, our location descriptions or our itineraries. Where we describe a game, a film or a television show, we use the names only to identify real places, and our editorial policy explains exactly how that works."]},
-  {"note": {"title": "We are not affiliated with any game publisher", "text": "Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed by or sponsored by Rockstar Games, Take-Two Interactive or any other game publisher, and we use no game art, logos, characters, screenshots or audio."}},
+  {"note": {"title": "We are not affiliated with any game publisher", "text": "Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed by or sponsored by any game publisher, and we use no game art, logos, characters, screenshots or audio."}},
   {"h2": "Get in touch", "id": "contact"},
   {"p": ["Email is the fastest way to reach us and the right way to reach us for anything complicated: a group booking, a mobility requirement, a dietary need, or a question about which tour suits a particular kind of trip."]},
   {"ul": [
@@ -56,7 +56,7 @@ STATIC = [
   ["Are Leonida Tours guides local?", "Yes. Every tour is led by a South Florida resident who drives these routes regularly. Our most experienced guide has been running the Everglades route for over a decade."],
   ["What happens if the weather is bad?", "Boat tours do not leave the marina in a thunderstorm and we cancel rather than run a shortened route. If we cancel, you get a full refund or a free move to another date, whichever you prefer."],
   ["Do you take hotel pickups?", "Yes, in the South Beach, Brickell and Downtown area. The shuttle is included in the price and adds roughly 20 minutes to the tour."],
-  ["Are you affiliated with Rockstar Games or any game publisher?", "No. Leonida Tours is an independent South Florida tour company with no affiliation with, endorsement from or sponsorship by any game publisher. We use game names only to identify real-world locations."]
+  ["Are you affiliated with any game publisher?", "No. Leonida Tours is an independent South Florida tour company with no affiliation with, endorsement from or sponsorship by any game publisher. We use game names only to identify real-world locations."]
  ],
  "related": ["editorial-policy", "contact", "meeting-point"]
 },

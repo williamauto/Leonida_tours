@@ -168,7 +168,7 @@ def nav(p, current=""):
         '<nav class="links" aria-label="Sections">'
         + a("blog/", "Blog") + a("locations/", "Locations") + a("map/", "Map") + a("about/", "About")
         + '</nav>'
-        f'<a class="btn btn-primary btn-sm" href="{p}#preregister">Reserve free</a>'
+        f'<a class="btn btn-primary btn-sm" href="{p}#preregister">Reserve Now</a>'
         "</div></header>"
     )
 
@@ -236,10 +236,10 @@ def web_page(page, name, desc, extra=None):
 
 # ---------------------------------------------------------------- shared CTA
 def CTA(p):
-    return ('<section><div class="wrap cta"><span class="eyebrow">Free reservation &middot; nothing to pay today</span>'
+    return ('<section><div class="wrap cta"><span class="eyebrow">Reserve now &middot; nothing to pay today</span>'
             '<h2 style="margin:0">Come and see it. <span class="grad">Ride first.</span></h2>'
             '<p class="lede">Tell us your date and group size and we will confirm your spot before public booking opens, plus 20% off your first tour.</p>'
-            f'<a class="btn btn-primary" href="{p}#preregister">Reserve free</a></div></section>')
+            f'<a class="btn btn-primary" href="{p}#preregister">Reserve Now</a></div></section>')
 
 
 # ---------------------------------------------------------------- blog
@@ -393,9 +393,14 @@ def confidence_class(c):
 def build_locations_index(locs):
     p = "../"
     page = CTX["url"]("locations/")
+    items = locs["locations"]
+    counts = {}
+    for l in items:
+        counts[l["area"]] = counts.get(l["area"], 0) + 1
+    areas = sorted(counts, key=lambda a: (-counts[a], a))
     rows = []
     cards = []
-    for l in locs["locations"]:
+    for l in items:
         badge = confidence_class(l["confidence"])
         rows.append(
             f'<tr><td><a href="{p}locations/{l["slug"]}/">{esc(l["name"])}</a></td>'
@@ -404,12 +409,15 @@ def build_locations_index(locs):
             f'<td><span class="badge {badge}">{esc(l["confidence"])}</span></td></tr>'
         )
         cards.append(
-            f'<a class="card" href="{p}locations/{l["slug"]}/">'
+            f'<a class="card loc-card" href="{p}locations/{l["slug"]}/" data-area="{esc(l["area"])}">'
             f'<img src="{p}img/{l["img"]}.jpg" alt="{esc(l["img_alt"])}" loading="lazy" decoding="async" {CTX["img_attrs"](l["img"])}>'
             f'<div class="cb"><span class="ct">{esc(l["area"])}</span><h3>{esc(l["name"])}</h3>'
             f'<p>{esc(l["addr"])}</p>'
             f'<span class="badge {badge}">{esc(l["confidence"])}</span></div></a>'
         )
+    chips = [f'<button type="button" data-area="all" aria-pressed="true">All places <small>{len(items)}</small></button>']
+    for a in areas:
+        chips.append(f'<button type="button" data-area="{esc(a)}" aria-pressed="false">{esc(a)} <small>{counts[a]}</small></button>')
     graph = [
         CTX["org"](),
         {"@type": "WebSite", "@id": CTX["SITE_ID"], "url": CTX["url"](), "name": CTX["BRAND"]},
@@ -418,23 +426,44 @@ def build_locations_index(locs):
                  {"mainEntity": {"@id": page + "#list"}}),
         breadcrumb(page, [("Locations", page)]),
         {"@type": "CollectionPage", "@id": page + "#list", "name": "Leonida Tours real locations field guide",
-         "url": page, "numberOfItems": len(locs["locations"]),
+         "url": page, "numberOfItems": len(items),
          "itemListElement": [{"@type": "ListItem", "position": i + 1,
                               "item": {"@type": "TouristAttraction", "name": l["name"],
                                        "url": CTX["url"](f'locations/{l["slug"]}/'),
                                        "address": l["addr"],
                                        "geo": {"@type": "GeoCoordinates", "latitude": l["lat"], "longitude": l["lng"]}}}
-                             for i, l in enumerate(locs["locations"])]},
+                             for i, l in enumerate(items)]},
     ]
     guard("locations index", [("title", f"Real Locations Field Guide | {CTX['BRAND']}"),
                               ("h1", "The real places behind the game"),
                               ("meta", "Fifteen real Miami, Everglades and Florida Keys places matched to their in-game counterparts, with addresses, coordinates and a confidence rating.")],
           graph)
     extra = CTX["ld"](graph)
-    stat = (f'<div class="stat"><b>{len(locs["locations"])}</b><span>real places mapped and verified</span></div>'
-            '<div class="stat"><b>4</b><span>confidence ratings, from official to community</span></div>'
-            '<div class="stat"><b>15</b><span>coordinates published</span></div>'
-            '<div class="stat"><b>0</b><span>game assets used</span></div>')
+    js = """
+<script>
+(function(){
+  var chips=document.querySelectorAll('#locFilter button[data-area]');
+  var cards=document.querySelectorAll('#locGrid .loc-card');
+  var count=document.getElementById('locCount');
+  var empty=document.getElementById('locEmpty');
+  if(!chips.length||!cards.length) return;
+  function apply(a){
+    chips.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.area===a)); });
+    var n=0;
+    cards.forEach(function(c){ var ok=(a==='all'||c.dataset.area===a); c.hidden=!ok; if(ok)n++; });
+    if(count) count.textContent = a==='all' ? 'Showing all '+n+' places' : 'Showing '+n+' place'+(n===1?'':'s')+' in '+a;
+    if(empty) empty.hidden = n>0;
+  }
+  chips.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.area); }); });
+  try{
+    var q=new URLSearchParams(window.location.search).get('area');
+    if(q){
+      chips.forEach(function(b){ if(b.dataset.area===q) apply(q); });
+    }
+  }catch(e){}
+})();
+</script>
+"""
     out = ("<!doctype html>\n<html lang=\"en-US\">\n<head>\n" +
            page_head(f"Real Locations Field Guide | {CTX['BRAND']}",
                      "Fifteen real Miami, Everglades and Florida Keys places matched to their in-game counterparts, with addresses, coordinates and a confidence rating.",
@@ -444,16 +473,25 @@ def build_locations_index(locs):
            '<main><div class="wrap ahead"><div class="kicker">Field guide<span class="dot"></span>15 places</div>'
            "<h1>The real places behind the game</h1>"
            f'<p class="lede">{esc(locs["intro"])}</p>'
-           f'<div class="stat-row">{stat}</div>'
            '<div class="tag-row"><span class="tag"><a href="../map/" style="color:inherit;text-decoration:none">Open the map</a></span>'
            '<span class="tag"><a href="../blog/gta-6-locations-in-real-life/" style="color:inherit;text-decoration:none">Read the full guide</a></span></div>'
            '</div>'
-           '<section><div class="wrap"><h2>Every location</h2>'
+           '<section><div class="wrap">'
+           '<h2>Every place</h2>'
+           '<div class="loc-bar">'
+           f'<div class="ride-toggle" role="group" aria-label="Filter places by area" id="locFilter">{"".join(chips)}</div>'
+           f'<p class="loc-count" id="locCount" role="status">Showing all {len(items)} places</p>'
+           '</div>'
+           f'<div class="card-grid" id="locGrid">{"".join(cards)}</div>'
+           '<p class="loc-empty" id="locEmpty" hidden>No places in this area yet. Pick another area.</p>'
+           '</div></section>'
+           '<section><div class="wrap">'
+           f'<details class="table-details"><summary>Full index table &middot; all {len(items)} places with addresses</summary>'
            '<div class="table-scroll"><table><thead><tr><th>Real place</th><th>In the game</th><th>District</th><th>Address</th><th>Confidence</th></tr></thead>'
-           f'<tbody>{"".join(rows)}</tbody></table></div></div></section>'
-           f'<section><div class="wrap"><h2>Browse by place</h2><div class="card-grid">{"".join(cards)}</div></div></section>'
+           f'<tbody>{"".join(rows)}</tbody></table></div></details>'
+           '</div></section>'
            + CTA(p) +
-           "</main>" + footer(p) + "</body>\n</html>\n")
+           "</main>" + footer(p) + js + "</body>\n</html>\n")
     write_html("locations", out)
 
 
@@ -617,20 +655,44 @@ def build_static(s, statics):
     write_html(slug, out)
 
 
-# ---------------------------------------------------------------- map
+AREA_COLORS = {
+    "Vice City": "#FF5FA2",
+    "Vice Beach": "#FF8A65",
+    "Greater Leonida": "#7CC4FF",
+    "Leonida Keys": "#FFA66B",
+    "Grassrivers": "#3EE6D6",
+}
+
+
 def build_map(locs):
     p = "../"
     page = CTX["url"]("map/")
     items = locs["locations"]
+    counts = {}
+    for l in items:
+        counts[l["area"]] = counts.get(l["area"], 0) + 1
+    areas = sorted(counts, key=lambda a: (-counts[a], a))
     markers = [{
         "n": l["name"], "g": l["game_name"], "a": l["area"], "addr": l["addr"],
         "lat": l["lat"], "lng": l["lng"], "c": l["confidence"],
+        "col": AREA_COLORS.get(l["area"], "#FF5FA2"),
         "slug": l["slug"], "url": CTX["url"](f'locations/{l["slug"]}/'),
         "gm": map_link(l["lat"], l["lng"]),
     } for l in items]
-    lst = "".join(
-        f'<a href="{p}locations/{l["slug"]}/"><em>{esc(l["area"])}</em><strong>{esc(l["name"])}</strong>'
-        f'<span>{esc(l["addr"])}</span></a>' for l in items)
+    chips = [f'<button type="button" data-area="all" aria-pressed="true">All places <small>{len(items)}</small></button>']
+    for a in areas:
+        chips.append(f'<button type="button" data-area="{esc(a)}" aria-pressed="false">{esc(a)} <small>{counts[a]}</small></button>')
+    legend = "".join(
+        f'<span><i style="background:{AREA_COLORS.get(a, "#FF5FA2")}"></i>{esc(a)} <b>{counts[a]}</b></span>'
+        for a in areas)
+    lst = ""
+    for i, l in enumerate(items):
+        lst += (f'<div class="map-item" data-area="{esc(l["area"])}" data-i="{i}">'
+                f'<em>{esc(l["area"])}</em>'
+                f'<a href="{p}locations/{l["slug"]}/"><strong>{esc(l["name"])}</strong></a>'
+                f'<span>{esc(l["addr"])}</span>'
+                f'<button type="button" class="map-focus" data-i="{i}" aria-label="Show {esc(l["name"])} on the map">Show on map</button>'
+                f'</div>')
     graph = [
         CTX["org"](),
         {"@type": "WebSite", "@id": CTX["SITE_ID"], "url": CTX["url"](), "name": CTX["BRAND"]},
@@ -651,25 +713,124 @@ def build_map(locs):
                   ("meta", "An interactive map of every real South Florida place matched to its in-game counterpart, with addresses, coordinates and a page for each one.")],
           graph)
     extra = CTX["ld"](graph)
-    script = ('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>\n'
-              '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">\n')
+    script = ('<link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin>\n'
+              '<link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>\n'
+              f'<link rel="stylesheet" href="{p}assets/vendor/leaflet/leaflet.css">\n'
+              f'<script src="{p}assets/vendor/leaflet/leaflet.js" defer></script>\n')
     data = json.dumps(markers, ensure_ascii=False).replace("</", "<\\/")
     js = """
 <script>window.__LOCS=__DATA__;</script>
 <script>
-document.addEventListener('DOMContentLoaded', function(){
-  if (!window.L || !document.getElementById('map')) return;
-  var m = L.map('map', {scrollWheelZoom:false}).setView([25.79,-80.20], 10);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    {attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:19}).addTo(m);
-  var icon = L.divIcon({className:'lm', html:'<span></span>', iconSize:[26,26], iconAnchor:[13,26], popupAnchor:[0,-24]});
-  window.__LOCS.forEach(function(o){
-    var mk = L.marker([o.lat, o.lng], {icon:icon}).addTo(m);
-    mk.bindPopup('<strong>'+o.n+'</strong><br>'+o.addr+'<br><em>'+o.c+'</em><br>'
-      + '<a href="'+o.url+'">Read the page</a> &middot; <a href="'+o.gm+'" rel="nofollow noopener">Google Maps</a>');
+function initMap(){
+  if(window.__LEONIDA_MAP_READY) return;
+  window.__LEONIDA_MAP_READY = true;
+  var ITEMS = window.__LOCS || [];
+  var mapEl = document.getElementById('map');
+  if(!mapEl) return;
+  var fallback = document.getElementById('mapFallback');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#mapFilter button[data-area]'));
+  var listItems = Array.prototype.slice.call(document.querySelectorAll('#mapList .map-item'));
+  var countEl = document.getElementById('mapCount');
+  var state = 'all';
+  var map = null;
+  var markers = [];
+
+  function label(a,n){ return a==='all' ? 'Showing all '+n+' places' : 'Showing '+n+' place'+(n===1?'':'s')+' in '+a; }
+  function setCount(n){ if(countEl) countEl.textContent = label(state,n); }
+
+  function highlight(i){
+    listItems.forEach(function(el){ el.classList.remove('on'); });
+    var el = listItems[i];
+    if(el){ el.classList.add('on'); try{ el.scrollIntoView({block:'nearest',behavior:'smooth'}); }catch(e){} }
+  }
+  function focus(i){
+    var o = ITEMS[i];
+    if(!o) return;
+    highlight(i);
+    try{ mapEl.scrollIntoView({block:'center', behavior:'smooth'}); }catch(e){}
+    if(!map) return;
+    try{ map.flyTo([o.lat,o.lng], Math.max(map.getZoom(),13), {duration:.6}); }catch(e){}
+    var mk = markers[i];
+    if(mk){ try{ mk.openPopup(); }catch(e){} }
+  }
+  function apply(a){
+    state = a;
+    chips.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.area===a)); });
+    var shown = 0;
+    ITEMS.forEach(function(o,i){
+      var ok = (a==='all' || o.a===a);
+      var mk = markers[i];
+      if(mk && map){
+        try{
+          if(ok){ if(!map.hasLayer(mk)) mk.addTo(map); }
+          else if(map.hasLayer(mk)) map.removeLayer(mk);
+        }catch(e){}
+      }
+      if(listItems[i]) listItems[i].hidden = !ok;
+      if(ok) shown++;
+    });
+    setCount(shown);
+    if(map){
+      try{
+        if(a==='all'){ map.setView([25.79,-80.20], 10); }
+        else{
+          var b = L.latLngBounds([]);
+          ITEMS.forEach(function(o,i){ if(o.a===a && markers[i]) b.extend(markers[i].getLatLng()); });
+          if(b.isValid()) map.fitBounds(b.pad(0.3));
+        }
+      }catch(e){}
+      setTimeout(function(){ try{ map.invalidateSize(); }catch(e){} }, 250);
+    }
+  }
+
+  chips.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.area); }); });
+  Array.prototype.forEach.call(document.querySelectorAll('#mapList .map-focus'), function(btn){
+    btn.addEventListener('click', function(){ focus(parseInt(btn.dataset.i,10)); });
   });
-  setTimeout(function(){ m.invalidateSize(); }, 300);
-});
+
+  if(!window.L){
+    mapEl.style.display='none';
+    if(fallback) fallback.hidden=false;
+    setCount(ITEMS.length);
+    return;
+  }
+  try{
+    map = L.map(mapEl, {scrollWheelZoom:false, zoomControl:true, attributionControl:true}).setView([25.79,-80.20],10);
+    var dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+      {attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:19, subdomains:'abcd', crossOrigin:true});
+    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {attribution:'&copy; OpenStreetMap contributors', maxZoom:19, crossOrigin:true});
+    var swapped = false;
+    dark.on('tileerror', function(){
+      if(swapped) return;
+      swapped = true;
+      try{ map.removeLayer(dark); osm.addTo(map); }catch(e){}
+    });
+    dark.addTo(map);
+    ITEMS.forEach(function(o,i){
+      var mk = L.marker([o.lat,o.lng], {icon: L.divIcon({
+        className:'lm-num',
+        html:'<span style="background:'+o.col+'">'+(i+1)+'</span>',
+        iconSize:[30,30], iconAnchor:[15,15], popupAnchor:[0,-16]})});
+      mk.bindPopup('<strong>'+o.n+'</strong><br>'+o.addr+'<br><em>'+o.a+' &middot; '+o.c+'</em><br>'
+        + '<a href="'+o.url+'">Read the page</a> &middot; <a href="'+o.gm+'" rel="nofollow noopener">Google Maps</a>');
+      mk.on('click', function(){ highlight(i); });
+      mk.addTo(map);
+      markers[i]=mk;
+    });
+    setTimeout(function(){ try{ map.invalidateSize(); }catch(e){} }, 350);
+    window.addEventListener('load', function(){ setTimeout(function(){ try{ map.invalidateSize(); }catch(e){} }, 200); });
+  }catch(e){
+    mapEl.style.display='none';
+    if(fallback) fallback.hidden=false;
+  }
+}
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded', initMap);
+  window.addEventListener('load', function(){ setTimeout(initMap, 0); });
+}else{
+  initMap();
+}
 </script>
 """
     js = js.replace("__DATA__", data)
@@ -681,9 +842,22 @@ document.addEventListener('DOMContentLoaded', function(){
            "</head>\n<body>\n" + CTX["GTM_BODY"] + nav(p, "map/") +
            '<main><div class="wrap ahead"><div class="kicker">Field guide<span class="dot"></span>'
            f'{len(items)} mapped places</div><h1>The real places, on a map</h1>'
-           '<p class="lede">Every location on this map is a real, publicly accessible place in South Florida, with coordinates you can check. Click a pin, or pick a place from the list.</p></div>'
-           f'<section><div class="wrap map-grid"><div id="map" role="img" aria-label="Map of {len(items)} real South Florida locations"></div>'
-           f'<div class="map-list">{lst}</div></div></section>'
+           '<p class="lede">Every location on this map is a real, publicly accessible place in South Florida, with coordinates you can check. '
+           'Pick an area to narrow the map, click a numbered pin for details, or pick a place from the list.</p>'
+           '<div class="tag-row"><span class="tag"><a href="../locations/" style="color:inherit;text-decoration:none">Browse the list</a></span>'
+           '<span class="tag"><a href="../blog/gta-6-locations-in-real-life/" style="color:inherit;text-decoration:none">Read the full guide</a></span></div>'
+           '</div>'
+           '<section><div class="wrap">'
+           '<div class="loc-bar">'
+           f'<div class="ride-toggle" role="group" aria-label="Filter map places by area" id="mapFilter">{"".join(chips)}</div>'
+           f'<p class="loc-count" id="mapCount" role="status">Showing all {len(items)} places</p>'
+           '</div>'
+           '<div class="map-legend">' + legend + '</div>'
+           '</div></section>'
+           f'<section><div class="wrap map-grid"><div class="map-panel"><div id="map" role="img" aria-label="Map of {len(items)} real South Florida locations"></div>'
+           '<div class="map-fallback" id="mapFallback" hidden><strong>The interactive map did not load.</strong>'
+           '<span>Every place is still listed next to this panel with its address, coordinates and a link to the full page.</span></div></div>'
+           f'<div class="map-list" id="mapList">{lst}</div></div></section>'
            '<section><div class="wrap"><h2>How to read this map</h2>'
            '<div class="prose"><p>The map covers Miami Beach and Downtown, the causeway, Little Havana and Wynwood, the Everglades and the Florida Keys. '
            'Each pin links to a page with the full address, the coordinates, how confident we are about the match and which tour stops there.</p>'
@@ -755,7 +929,7 @@ def build_llms_full(posts, locs, statics):
     L.append("")
     L.append("> Independent South Florida tour company running small-group and private tours to the real Miami, "
              "Everglades and Florida Keys places. Reservations are free with nothing to pay upfront. "
-             "Not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive. "
+             "Not affiliated with, endorsed by or sponsored by any game publisher. "
              "All game names are used only to identify real-world locations.")
     L.append("")
     L.append(f"Site: {CTX['url']()}  |  Email: {CTX['EMAIL']}  |  Base: Ocean Drive, Miami Beach, Florida")

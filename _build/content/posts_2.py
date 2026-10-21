@@ -5,7 +5,7 @@ POSTS = [
 {
  "slug": "gta-6-florida-keys-leonida-keys",
  "title": "Leonida Keys Is the Florida Keys: The Seven Mile Bridge",
- "meta": "The game's Leonida Keys is the Florida Keys. Rockstar's official copy, the real island chain, the Rusty Anchor and Wonder Whale.",
+ "meta": "The game's Leonida Keys is the Florida Keys. The official copy, the real island chain, the Rusty Anchor and Wonder Whale.",
  "kicker": "Region guide",
  "cat": "Locations",
  "date": "2026-10-14",
@@ -14,7 +14,7 @@ POSTS = [
  "excerpt": "The game's southern archipelago is the Florida Keys, down to the Seven Mile Bridge and the bar where the boat owners keep their slips. Here is the real route, and how long it really takes.",
  "featured": False,
  "body": [
-  {"p": ["Rockstar describes its Leonida Keys as \"the dress code is casual, the bars are loaded\", a \"tropical archipelago\" on the doorstep of \"some of the most beautiful and dangerous waters in all of America\". There is one archipelago in Florida that fits that sentence exactly, and it is about a hundred miles south of Miami on a single road."]},
+  {"p": ["The official description calls the region \"the dress code is casual, the bars are loaded\", a \"tropical archipelago\" on the doorstep of \"some of the most beautiful and dangerous waters in all of America\". There is one archipelago in Florida that fits that sentence exactly, and it is about a hundred miles south of Miami on a single road."]},
   {"h2": "The official copy, in full", "id": "official-copy"},
   {"p": ["<strong>Heading: \"Gateway to Paradise.\" Standfirst: \"Life is a beach, but not quite.\"</strong> \"The dress code is casual, the bars are loaded. Life in this tropical archipelago isn't flashy but it's easy. Get your buzz on and pull up a deck chair but look out, you are right on the doorstep of some of the most beautiful and dangerous waters in all of America.\""]},
   {"p": ["Every element of that paragraph has a real referent. The casual dress code is the Keys in winter, when the locals wear flip-flops to dinner. The loaded bars are the dockside places on Key Largo and Islamorada. And the \"beautiful and dangerous waters\" are not decoration: the Florida Reef runs 120 miles offshore and carries genuine Florida reef, with its own currents and its own weather."]},
@@ -47,14 +47,14 @@ POSTS = [
   {"h2": "The boat instead of the drive", "id": "the-boat"},
   {"p": ["There is another way to do the Keys, and it is the better one if you only have a few hours: come by water. A boat leaves Miami Marina, runs south through Biscayne Bay and out past Government Cut into the Atlantic, and delivers you to Key Largo and Islamorada in about 90 minutes with no traffic at all. You see the reef and the marine wildlife on the way, and you arrive where the boats are kept."]},
   {"p": ["Our Key Largo boat trip runs exactly that route, with an hour on the water in Islamorada, lunch, and a stop at a working marina. It is the version of the Keys that fits into a single day without turning into a four-hour drive each way."]},
-  {"note": {"title": "Trademark note", "text": "Grand Theft Auto, GTA, Leonida and Vice City are trademarks of Take-Two Interactive and its affiliates, used here for identification and commentary only. Leonida Tours is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive."}}
+  {"note": {"title": "Trademark note", "text": "Grand Theft Auto, GTA, Leonida and Vice City are trademarks of Take-Two Interactive and its affiliates, used here for identification and commentary only. Leonida Tours is not affiliated with, endorsed by or sponsored by any game publisher."}}
  ],
  "faq": [
-  ["Is the Leonida Keys in GTA 6 the Florida Keys?", "Yes. Rockstar's official description names a tropical archipelago with loaded bars and dangerous water, which matches the Florida Keys uniquely. The Seven Mile Bridge in the game sits where the real one is."],
+  ["Is the Leonida Keys in GTA 6 the Florida Keys?", "Yes. The official description names a tropical archipelago with loaded bars and dangerous water, which matches the Florida Keys uniquely. The Seven Mile Bridge in the game sits where the real one is."],
   ["How long does it take to drive from Miami to Key West?", "About four hours each way, 160 miles. The distance looks short on a map but the Overseas Highway is slow, with 42 bridges and heavy weekend traffic."],
   ["Can you walk the Seven Mile Bridge?", "Yes. The old bridge was retired in 1982 and is now a pedestrian and cycle bridge, free to walk, with a gravel trail beside the old road. The parallel span carries the traffic."],
   ["What is the giant lobster in the Keys?", "Betsy the Lobster, a roughly 30-foot concrete lobster standing at Rain Barrel Village in Islamorada. It is the community's match for the game's Wonder Whale and it has been there since the 1950s."],
-  ["What is the Rusty Anchor in GTA 6 based on?", "The strongest community match is the Caribbean Club on Key Largo, a well-known dockside dive bar. It has not been officially confirmed by Rockstar."],
+  ["What is the Rusty Anchor in GTA 6 based on?", "The strongest community match is the Caribbean Club on Key Largo, a well-known dockside dive bar. It has not been officially confirmed."],
   ["Is it better to drive to the Keys or take a boat?", "For a single day, the boat. It is 90 minutes against four hours of driving, with no traffic and wildlife on the way. The drive wins only if you want to stop in Marathon and Key West."]
  ],
  "related": ["gta-6-map-and-regions", "gta-6-locations-in-real-life", "miami-in-3-days-itinerary", "miami-sunset-cruise-guide"]

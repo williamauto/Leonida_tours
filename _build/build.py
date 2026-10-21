@@ -142,7 +142,7 @@ ITIN = {"vc-van": LAND, "vc-car": LAND, "vc-jeep": LAND, "vc-boat": WATER,
                  dict(name="Seven Mile Bridge", irl="the bridge shot", img="keys", p="Photo stop at the bridge that runs to the horizon."),
                  dict(name="State park beach", irl="beach time", img="keysaerial", p="Swim and turquoise water before the drive back.")]}
 FAQ = [
- ("Is this an official game tour?", "No. Leonida Tours is an independent South Florida tour company running unofficial tours. We take you IRL to the real places that inspired the game's world. We are not affiliated with, endorsed or sponsored by Rockstar Games or Take-Two Interactive."),
+ ("Is this an official game tour?", "No. Leonida Tours is an independent South Florida tour company running unofficial tours. We take you IRL to the real places that inspired the game's world. We are not affiliated with, endorsed or sponsored by any game publisher."),
  ("Why do you use names like Leonida?", "Fans know these places by their in-game nicknames, so we use them to point you to the real spots that inspired them. Every stop is a real, public place in Miami, the Everglades or the Florida Keys."),
  ("Do I need to be a gamer?", "Not at all. Fans get the scene-by-scene details. Everyone else gets Miami Beach, downtown, Wynwood, Little Haiti, Little Havana, the Everglades and the Keys with a great local guide."),
  ("What does reserving mean?", "It's free and there's no payment today. We email you to confirm your date before public booking opens, plus 20% off your first tour."),
@@ -151,7 +151,7 @@ FAQ = [
  ("How does the City Pass work?", "One pass covers the Miami Vice City small-group tour, the boat tour and the Grasslands airboat. Book each date whenever you like during your stay."),
  ("What if it rains?", "Every route has covered stops. If a storm cancels your tour, rebook for free or get a full refund."),
 ]
-DISCLAIMER = ("<strong>Unofficial tours.</strong> Leonida Tours is an independent tour company. Our tours are not affiliated with, endorsed, sponsored, licensed or authorized by Rockstar Games, Inc., Take-Two Interactive Software, Inc. or any of their affiliates. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to describe the real-world locations that inspired them. Every stop on our tours is a real, publicly accessible place. Photography via Unsplash.")
+DISCLAIMER = ("<strong>Unofficial tours.</strong> Leonida Tours is an independent tour company. Our tours are not affiliated with, endorsed, sponsored or licensed by any game publisher or their affiliates. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to describe the real-world locations that inspired them. Every stop on our tours is a real, publicly accessible place. Photography via Unsplash.")
 
 url = lambda path="": SITE + "/" + path
 turl = lambda k: url(f"tours/{SEO[k]['slug']}/")
@@ -331,8 +331,8 @@ def build_index():
     # modal: link to the full tour page
     body = body.replace("const modal=$('#tourModal');",
         "const TOUR_URL=" + json.dumps({k: f"tours/{SEO[k]['slug']}/" for k in ORDER}) + ";\nconst modal=$('#tourModal');")
-    body = body.replace('<a class="btn btn-primary btn-sm" href="#preregister" data-pick="${k}" data-close="1">Reserve</a>',
-        '<a class="btn btn-glass btn-sm" href="${TOUR_URL[k]}">Tour page</a><a class="btn btn-primary btn-sm" href="#preregister" data-pick="${k}" data-close="1">Reserve</a>')
+    body = body.replace('<a class="btn btn-primary btn-sm" href="#preregister" data-pick="${k}" data-close="1">Reserve now</a>',
+        '<a class="btn btn-glass btn-sm" href="${TOUR_URL[k]}">Tour page</a><a class="btn btn-primary btn-sm" href="#preregister" data-pick="${k}" data-close="1">Reserve now</a>')
 
     # ?tour=key preselects the form (used by tour-page Reserve buttons)
     body = body.replace("gs.addEventListener('change',syncSize); syncSize();",
@@ -479,7 +479,7 @@ def build_tour(k):
 </head>
 <body>
 {GTM_BODY}<header class="nav"><div class="wrap"><a class="logo" href="{p}"><i>{PIN}</i>LEONIDA <span class="grad">TOURS</span></a>
-<a class="btn btn-primary btn-sm" href="{reserve}">Reserve free</a></div></header>
+<a class="btn btn-primary btn-sm" href="{reserve}">Reserve Now</a></div></header>
 <main>
 <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="{p}">Home</a></li><li><a href="{p}#map">Tours</a></li><li aria-current="page">{esc(T["title"])}</li></ol></nav></div>
 <div class="wrap hero">
@@ -488,7 +488,7 @@ def build_tour(k):
     <h1>{esc(T["title"])}</h1>
     <p class="lede">{esc(S["intro"])}</p>
     <div class="price">{money(T["price"])}<small>per {esc(T["unit"])} · launch price, tours from mid-November 2026</small></div>
-    <div class="row"><a class="btn btn-primary" href="{reserve}">Reserve free, pay later</a><a class="btn btn-glass" href="{p}#map">See all tours</a></div>
+    <div class="row"><a class="btn btn-primary" href="{reserve}">Reserve now, pay later</a><a class="btn btn-glass" href="{p}#map">See all tours</a></div>
   </div>
   <div class="ph"><img src="{p}img/{T["img"]}.jpg" alt="{esc(ALT[T["img"]])}" fetchpriority="high" {img_attrs(T["img"])}></div>
 </div>
@@ -504,7 +504,7 @@ def build_tour(k):
 {"" if not T.get("opts") else '<section><div class="wrap"><h2>Optional add-ons</h2><ul class="ticks">' + "".join(f"<li>{esc(o[0])} <strong>{esc(o[1])}</strong></li>" for o in T["opts"]) + "</ul></div></section>"}
 {itin}
 <section class="faq"><div class="wrap"><h2>Questions about this tour</h2>{faq_html}</div></section>
-<section><div class="wrap cta"><span class="eyebrow">Free reservation · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
+<section><div class="wrap cta"><span class="eyebrow">Reserve now · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
 <section><div class="wrap"><h2>You might also like</h2><div class="related">{rel}</div></div></section>
 </main>
 <footer><div class="wrap"><ul>{foot}</ul><p>© 2026 {BRAND} · <a href="mailto:{EMAIL}">{EMAIL}</a> · Ocean Drive, Miami Beach, FL</p><p class="legal">{DISCLAIMER}</p></div></footer>
@@ -665,7 +665,7 @@ def build_crawl_files(extra_pages=()):
     lines = [f"# {BRAND}", "",
              "> Independent South Florida tour company running unofficial small-group and private tours to the real Miami, "
              "Everglades and Florida Keys places that inspired the game world of Leonida (Vice City). Tours start mid-November 2026 "
-             f"(launch day {LAUNCH}). Reservations are free with nothing to pay upfront. Not affiliated with Rockstar Games or Take-Two Interactive.", "",
+             f"(launch day {LAUNCH}). Reservations are free with nothing to pay upfront. Not affiliated with any game publisher.", "",
              f"- Home base: Ocean Drive, Miami Beach, Florida, USA", f"- Email: {EMAIL}", "- Instagram / TikTok: @leonidatours",
              f"- Reserve: {url('#preregister')}", f"- Full text of every page: {url('llms-full.txt')}", f"- RSS feed: {url('feed.xml')}", "", "## Tours", ""]
     for k in ORDER:

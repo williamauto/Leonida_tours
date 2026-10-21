@@ -1,6 +1,6 @@
 # Leonida Tours: full site text for AI assistants
 
-> Independent South Florida tour company running small-group and private tours to the real Miami, Everglades and Florida Keys places. Reservations are free with nothing to pay upfront. Not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive. All game names are used only to identify real-world locations.
+> Independent South Florida tour company running small-group and private tours to the real Miami, Everglades and Florida Keys places. Reservations are free with nothing to pay upfront. Not affiliated with, endorsed by or sponsored by any game publisher. All game names are used only to identify real-world locations.
 
 Site: https://leonidatours.com/  |  Email: hello@leonidatours.com  |  Base: Ocean Drive, Miami Beach, Florida
 
@@ -58,7 +58,7 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 - In the game as: Ocean View Hotel  |  Confidence: Strong
 - Where it is seen: Trailer 1 (0:33) and Trailer 2 (2:34)
 - The in-game Ocean View Hotel is the Clevelander, the pink-neon Art Deco hotel on Ocean Drive in South Beach. The facade, the corner sign and the pool-bar frontage in the trailer all match a building that has stood at 1020 Ocean Drive since 1938. It is a working hotel, a bar and a landmark most people walk past without knowing what it is.
-- Q: Is the Ocean View Hotel in GTA 6 the Clevelander? A: Almost certainly. The Clevelander's pink Art Deco facade and rooftop neon sign appear in the trailer in the same position as the in-game hotel. It is the most widely repeated identification in the community, though Rockstar has never published an official list of real-world inspirations.
+- Q: Is the Ocean View Hotel in GTA 6 the Clevelander? A: Almost certainly. The Clevelander's pink Art Deco facade and rooftop neon sign appear in the trailer in the same position as the in-game hotel. It is the most widely repeated identification in the community, though no official list of real-world inspirations has ever been published.
 - Q: Can you stay at the Clevelander? A: Yes. It operates as a hotel, a bar and an event venue. Rooms and the rooftop pool deck are for guests; the street outside is for everyone.
 - Q: Is it on the tour? A: Yes. It is stop one on the Miami Vice City small-group tour and the first stop on both private routes.
 
@@ -67,8 +67,8 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 - Address: SW 8th Street, Little Havana, Miami, FL 33135  |  Coordinates: 25.76704, -80.21702
 - In the game as: Little Cuba  |  Confidence: Official naming
 - Where it is seen: Trailer 2 (1:02) and the official Vice City region page
-- Little Cuba is the real Little Havana. Rockstar's own description of Vice City names it directly: "the bustling panederias of Little Cuba," alongside Ocean Beach's pastel Art Deco hotels and the VC Port. The real district runs along Calle Ocho, SW 8th Street, and its centrepiece is Máximo Gómez Park, the small square of domino tables that the game turns into its main street.
-- Q: Is Little Cuba in GTA 6 the same as Little Havana? A: Yes. Rockstar's official Vice City page names "Little Cuba" as one of the city's neighbourhoods. Little Cuba is the nickname for the real Little Havana district, centred on SW 8th Street, so the game's district and the real one are the same place under two names.
+- Little Cuba is the real Little Havana. The official Vice City description names it directly: "the bustling panederias of Little Cuba," alongside Ocean Beach's pastel Art Deco hotels and the VC Port. The real district runs along Calle Ocho, SW 8th Street, and its centrepiece is Máximo Gómez Park, the small square of domino tables that the game turns into its main street.
+- Q: Is Little Cuba in GTA 6 the same as Little Havana? A: Yes. The official Vice City page names "Little Cuba" as one of the city's neighbourhoods. Little Cuba is the nickname for the real Little Havana district, centred on SW 8th Street, so the game's district and the real one are the same place under two names.
 - Q: What is Máximo Gómez Park? A: It is the small plaza at SW 8th Street and Miami Avenue that locals call Domino Park. The open-air domino games there have been running for decades, and they are the clearest real-world parallel to the game's Little Cuba street scenes.
 - Q: Do you stop there on the tour? A: Yes, stop seven on the Miami Vice City small-group tour, with a cafecito and pastelito stop included.
 
@@ -107,8 +107,8 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 - Address: 1100 NW 6th St, Miami, FL 33133  |  Coordinates: 25.77806, -80.1733
 - In the game as: PortViceCity  |  Confidence: Strong
 - Where it is seen: Trailer 1 (0:24) and Trailer 2 (2:27)
-- The in-game PortViceCity is PortMiami, the container and cruise terminal on Dodge Island. Rockstar's own Vice City description calls it "the cruise ship capital of the world," which is Miami's port, and the trailer's speedboat chase and the gantry cranes are the terminals you can still see from the causeway and from the water.
-- Q: Is PortViceCity in GTA 6 PortMiami? A: Yes. The trailer's speedboat chase and the row of container gantry cranes match PortMiami on Dodge Island, and Rockstar's official Vice City description refers to "the VC Port, the cruise ship capital of the world," which is Miami's port.
+- The in-game PortViceCity is PortMiami, the container and cruise terminal on Dodge Island. The official Vice City description calls it "the cruise ship capital of the world," which is Miami's port, and the trailer's speedboat chase and the gantry cranes are the terminals you can still see from the causeway and from the water.
+- Q: Is PortViceCity in GTA 6 PortMiami? A: Yes. The trailer's speedboat chase and the row of container gantry cranes match PortMiami on Dodge Island, and The official Vice City description refers to "the VC Port, the cruise ship capital of the world," which is Miami's port.
 - Q: Can you go inside the port? A: Not as a visitor. It is a secured federal facility. The cruise terminal promenade and the public causeway viewpoints are open and are where you get the photographs.
 - Q: Which tour sees the cranes best? A: The boat tour, from the water. On land you pass them quickly on the MacArthur Causeway between Downtown and Brickell.
 
@@ -137,8 +137,8 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 - Address: 40001 State Road 6, Homestead, FL 33034  |  Coordinates: 25.2866, -80.8986
 - In the game as: Grassrivers  |  Confidence: Official region + community match
 - Where it is seen: Trailer 1 (0:20), Trailer 2 (2:18) and the official Grassrivers region page
-- Rockstar calls the state's wetland region Grassrivers, and its official description names the alligators and the mangroves. The real place is the Everglades: a 1.5-million-acre wetland that runs from Lake Okeechobee south to the Gulf, 40 miles from the neon strip where the rest of Leonida Tours runs.
-- Q: Is Grassrivers in GTA 6 the Everglades? A: Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland region of that scale and character in Florida. It is the most confident regional match in the game.
+- The state's wetland region was named Grassrivers, and its official description names the alligators and the mangroves. The real place is the Everglades: a 1.5-million-acre wetland that runs from Lake Okeechobee south to the Gulf, 40 miles from the neon strip where the rest of Leonida Tours runs.
+- Q: Is Grassrivers in GTA 6 the Everglades? A: Yes. The official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland region of that scale and character in Florida. It is the most confident regional match in the game.
 - Q: How far is the Everglades from Miami? A: About 45 miles, roughly an hour and a half of driving from Downtown Miami, depending on traffic. The park entrance is off the Tamiami Trail, and the drive itself is one of the best parts.
 - Q: Will you actually see alligators? A: Your wildlife guide takes you to the places gators are most often seen, and on a good day you will see them. Sightings are never guaranteed, because they are wild animals in a huge place.
 
@@ -177,8 +177,8 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 - Address: 500 NW 2nd Ave, Miami, FL 33128  |  Coordinates: 25.8065, -80.217
 - In the game as: Little Haiti  |  Confidence: Official naming
 - Where it is seen: Trailer 2 (1:02)
-- Little Haiti is the real Little Haiti, the Caribbean neighbourhood north of Downtown Miami. Rockstar names it directly in Trailer 2, and it is the one in-game district on our route whose real-world name is completely unchanged, which makes it the easiest place in the game to stand in and confirm.
-- Q: Is Little Haiti in GTA 6 the same as the real Little Haiti? A: Yes. Unlike most in-game names, Rockstar left this one unchanged, and Trailer 2 shows the district in Vice City. The real Little Haiti is the Caribbean neighbourhood north of Downtown Miami, centred on NW 2nd Avenue.
+- Little Haiti is the real Little Haiti, the Caribbean neighbourhood north of Downtown Miami. It is named directly in Trailer 2, and it is the one in-game district on our route whose real-world name is completely unchanged, which makes it the easiest place in the game to stand in and confirm.
+- Q: Is Little Haiti in GTA 6 the same as the real Little Haiti? A: Yes. Unlike most in-game names, this one was left unchanged, and Trailer 2 shows the district in Vice City. The real Little Haiti is the Caribbean neighbourhood north of Downtown Miami, centred on NW 2nd Avenue.
 - Q: What is the most photographed spot there? A: The mural at NW 2nd Avenue and NW 21st Street, and the Caribbean cultural centre and plaza next to it, which is where the community's gatherings happen.
 - Q: Do you stop there on the tour? A: Yes, stop six on the Miami Vice City small-group tour, including a cultural centre stop and a patty.
 
@@ -197,8 +197,8 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 - Address: West of Miami International Airport, near the NW 25th St runway approach, Miami, FL 33142  |  Coordinates: 25.7906, -80.2851
 - In the game as: Vice City Sign  |  Confidence: Community identification
 - Where it is seen: Trailer 1 and Trailer 2
-- Every open-world game needs one sign that says the place name, and GTA VI has the VICE sign: the tall illuminated letters on a metal frame beside the airport. Rockstar has shown it in official material, and mapping projects place it on the western edge of the city near the airport's runway approach, where a driver would pass it on the way in.
-- Q: Where is the real VICE sign? A: Nobody knows for certain. Rockstar shows it in official footage near the airport, and mapping projects place it on the western edge of the city near the airport's runway approach, but no official real-world address has been published. We treat it as a community identification, not a confirmed match.
+- Every open-world game needs one sign that says the place name, and GTA VI has the VICE sign: the tall illuminated letters on a metal frame beside the airport. It has been shown in official material, and mapping projects place it on the western edge of the city near the airport's runway approach, where a driver would pass it on the way in.
+- Q: Where is the real VICE sign? A: Nobody knows for certain. It is shown in official footage near the airport, and mapping projects place it on the western edge of the city near the airport's runway approach, but no official real-world address has been published. We treat it as a community identification, not a confirmed match.
 - Q: Why is this less certain than the other entries? A: Because there is a single object with no building behind it to match against. The other landmarks on this page are confirmed by architecture, position and surrounding context; a roadside sign has only its shape and its position to go on.
 - Q: What is the closest confirmed match? A: The Clevelander on Ocean Drive, which carries the neon identity of Vice Beach, and the real signage on Ocean Drive itself.
 
@@ -207,18 +207,18 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 ### GTA 6 Release Date: November 19, 2026 and What to Do in Miami
 - URL: https://leonidatours.com/blog/gta-6-release-date/  |  Published: 2026-10-20  |  Category: Release
 - The date is locked: November 19, 2026, on PlayStation 5 and Xbox Series X|S. Here is the confirmed timeline, what changed twice on the way, and the smartest way to spend launch week if you are already in South Florida.
-Grand Theft Auto VI releases on November 19, 2026, on PlayStation 5 and Xbox Series X|S. That date is confirmed by Rockstar Games and Take-Two Interactive, and it has survived two delays. It is also, almost exactly, the date our first tours begin running: we open on the same weekend, because the single best thing a visitor to South Florida can do that week is see the city the game is built from.
+Grand Theft Auto VI releases on November 19, 2026, on PlayStation 5 and Xbox Series X|S. That date is confirmed by the publisher, and it has survived two delays. It is also, almost exactly, the date our first tours begin running: we open on the same weekend, because the single best thing a visitor to South Florida can do that week is see the city the game is built from.
 
 ## The confirmed release date
-Rockstar's own site lists the release date and the platforms, and Take-Two has confirmed it in its financial communications. There is no PC version listed on any official Rockstar or PlayStation or Microsoft page as of writing. If you are planning to play on PC, plan around that gap rather than assuming a later date.
+The publisher's own site lists the release date and the platforms, and its parent company has confirmed it in its financial communications. There is no PC version listed on any official publisher, PlayStation or Microsoft page as of writing. If you are planning to play on PC, plan around that gap rather than assuming a later date.
 | Platform | Status | Notes |
 |---|---|---|
 | PlayStation 5 | Confirmed | Pre-order open |
 | Xbox Series X|S | Confirmed | Pre-order open |
-| PC / Windows | Not announced | No official date on any Rockstar or publisher page |
+| PC / Windows | Not announced | No official date on any publisher page |
 
 ## How the date moved, and why that matters
-The release date has been pushed twice, and both moves were announced with an unusual public apology. The pattern matters if you are trying to judge whether November 19 is safe: Rockstar moved it once to a date it then moved again, and both announcements were framed around finishing the game to a standard rather than around any production problem.
+The release date has been pushed twice, and both moves were announced with an unusual public apology. The pattern matters if you are trying to judge whether November 19 is safe: the publisher moved it once to a date it then moved again, and both announcements were framed around finishing the game to a standard rather than around any production problem.
 | Announced | Date at the time | Change |
 |---|---|---|
 | December 2023 | 2025 | First public date, revealed with Trailer 1 |
@@ -227,10 +227,10 @@ The release date has been pushed twice, and both moves were announced with an un
 The final date is a Friday. That is deliberate: Friday release dates let the first weekend be a full three days of play, and let the game's opening weekend be the first one that counts for review aggregators and for people deciding what to buy.
 
 ## What time does it unlock
-Rockstar has not published a per-timezone unlock schedule for launch, so treat any precise hour as speculation rather than fact. Historically, Rockstar releases have unlocked at midnight Eastern Time, which is 9pm Pacific on the previous evening. If you are planning a watch party on the West Coast, plan for the evening of November 18, not the night of the 19th.
+No per-timezone unlock schedule has been published for launch, so treat any precise hour as speculation rather than fact. Historically, releases have unlocked at midnight Eastern Time, which is 9pm Pacific on the previous evening. If you are planning a watch party on the West Coast, plan for the evening of November 18, not the night of the 19th.
 
 ## Pre-order editions
-Pre-orders are open for the standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack. The exact contents of each edition are on the Rockstar store pages and change more often than you would expect, so check there rather than trusting a wiki summary. Whichever you pick, the game itself is the same game.
+Pre-orders are open for the standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack. The exact contents of each edition are on the official store pages and change more often than you would expect, so check there rather than trusting a wiki summary. Whichever you pick, the game itself is the same game.
 
 ## What to do in Miami at launch
 If you are in South Florida for launch week, you are in the best possible place, because you are standing in the city the game is modelled on. The neon strip, the causeway, the murals, the bay and the swamp are all within an hour of each other, and they are all still there in November.
@@ -240,19 +240,19 @@ Go west, out of the city, for half a day. Grassrivers is the Everglades, and the
 Do the Keys if you have the day. The Leonida Keys are the Florida Keys, and the Seven Mile Bridge is exactly where the game puts it.
 > Our tours launch the same week: Leonida Tours begins running on November 19, 2026. Reserving is free, there is nothing to pay today, and we confirm your date by email before public booking opens, with 20% off your first tour.
 
-## What Rockstar has not announced
-Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming Rockstar has confirmed that a specific building is a specific in-game location is overstating what has been published.
-What Rockstar has published is the official region copy for the six areas of Leonida, and that copy is the highest-quality primary source available. We quote it directly wherever it matters, and we separate it clearly from the community's location matching.
-- Q: What is the GTA 6 release date? A: November 19, 2026, confirmed by Rockstar Games and Take-Two Interactive, on PlayStation 5 and Xbox Series X|S. There is no announced PC version. The date was announced on November 6, 2025, after two previous delays.
-- Q: Is GTA 6 coming to PC? A: No PC version has been announced. There is no PC release date on any official Rockstar Games, PlayStation or Microsoft page as of writing. Announcements have historically come late, so check the official store pages rather than assuming.
-- Q: What time does GTA 6 release on November 19? A: Rockstar has not published a per-timezone unlock schedule. Rockstar releases have historically unlocked at midnight Eastern Time, which would be 9pm Pacific on November 18. Treat any specific hour as provisional until Rockstar confirms it.
+## What has not been announced
+Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming the publisher has confirmed that a specific building is a specific in-game location is overstating what has been published.
+What has been published is the official region copy for the six areas of Leonida, and that copy is the highest-quality primary source available. We quote it directly wherever it matters, and we separate it clearly from the community's location matching.
+- Q: What is the GTA 6 release date? A: November 19, 2026, confirmed by the publisher, on PlayStation 5 and Xbox Series X|S. There is no announced PC version. The date was announced on November 6, 2025, after two previous delays.
+- Q: Is GTA 6 coming to PC? A: No PC version has been announced. There is no PC release date on any official publisher, PlayStation or Microsoft page as of writing. Announcements have historically come late, so check the official store pages rather than assuming.
+- Q: What time does GTA 6 release on November 19? A: No per-timezone unlock schedule has been published. Releases have historically unlocked at midnight Eastern Time, which would be 9pm Pacific on November 18. Treat any specific hour as provisional until the publisher confirms it.
 - Q: Are Leonida Tours tours running on release day? A: Yes. We launch on November 19, 2026, and run the Miami Vice City small-group tour daily, with a sunset and night departure at 6:30pm.
-- Q: What editions are available to pre-order? A: The standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack are all open for pre-order. Contents and pricing are on the official Rockstar store pages and change, so check there before buying.
+- Q: What editions are available to pre-order? A: The standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack are all open for pre-order. Contents and pricing are on the official store pages and change, so check there before buying.
 
 ### GTA 6 Locations in Real Life: 24 Miami and Florida Places
 - URL: https://leonidatours.com/blog/gta-6-locations-in-real-life/  |  Published: 2026-10-19  |  Category: Locations
 - Twenty-four places, from the Ocean View Hotel to the Everglades airboat, each matched to a real address with coordinates and a confidence rating. This is the list to take with you.
-Rockstar has never published a list of the real places behind GTA VI, and it never will: the studio does not annotate its own work. Everything below comes from trailer frames, from the official region descriptions on Rockstar's own site, and from the mapping community's frame-by-frame analysis. We label how confident each match is, because a list that treats all twenty-four as equal is worth much less than one that does not.
+No official list of the real places behind GTA VI has ever been published, and none ever will be: the studio does not annotate its own work. Everything below comes from trailer frames, from the official region descriptions on the publisher's own site, and from the mapping community's frame-by-frame analysis. We label how confident each match is, because a list that treats all twenty-four as equal is worth much less than one that does not.
 
 ## The 24 places, at a glance
 | In the game | The real place | Where | Confidence |
@@ -284,11 +284,11 @@ Rockstar has never published a list of the real places behind GTA VI, and it nev
 
 ## How to read the confidence column
 Four labels, and the difference between them is the difference between a fact and an inference.
-Official naming. Rockstar itself uses the real place's name in the game or in its own official copy. Little Cuba and Little Haiti are the clearest cases: the in-game name is the real name, or the game's own regional description uses it.
+Official naming. The publisher uses the real place's name in the game or in its own official copy. Little Cuba and Little Haiti are the clearest cases: the in-game name is the real name, or the game's own regional description uses it.
 Strong. At least three independent pieces of evidence agree: the architecture, the position on the map, and the surrounding context. The Clevelander, the Kaseya Center and the Seven Mile Bridge are all in this category.
 Community match. One or two good pieces of evidence, generally a distinctive detail, with no official confirmation and no way to check. The Rusty Anchor and the Caribbean Club are good examples: the reasoning is sound but it is not proven.
 Community, weak. A single object with nothing to match it against beyond shape and position. We include it because excluding it would look like we had cherry-picked, but we would not build a trip around it.
-> The honest caveat: None of this is official. Rockstar has never confirmed a single real-world location, and fan pages that present a complete location list as settled fact are reading too much into community consensus. Where we say "strong", we mean multiple independent lines of evidence agree, not that the studio confirmed it.
+> The honest caveat: None of this is official. The publisher has never confirmed a single real-world location, and fan pages that present a complete location list as settled fact are reading too much into community consensus. Where we say "strong", we mean multiple independent lines of evidence agree, not that the studio confirmed it.
 
 ## The Miami cluster
 Most of the identifiable places are in a tight cluster, and that is the single most useful fact for anyone visiting. The game's Vice City is built on real Miami geography: a barrier island across the bay from Downtown, a causeway between them, a port on an island of its own, and an arts district two miles north of the river.
@@ -300,7 +300,7 @@ The real reason to care, though, is simpler. These are not obscure locations. Th
 
 ## How we verify a match
 Our process is written down and identical for every location, because a site that tells you how it reaches its conclusions is worth more than one that simply states them.
-Start with the official copy. Rockstar's own Only in Leonida page gives a heading, a standfirst and a paragraph for each region. We quote it verbatim and treat it as the primary source.
+Start with the official copy. The official Only in Leonida page gives a heading, a standfirst and a paragraph for each region. We quote it verbatim and treat it as the primary source.
 Find the frame. A match has to appear in an official video, with a timestamp we can point at, so you can check it yourself.
 Check the context, not just the object. The strongest matches are confirmed by the company the object keeps: the arena, the wheel and the cranes together; the obelisk visible from the water; the toll plaza's lane count.
 Publish the coordinates. Every location we list has a latitude and longitude, so the claim is falsifiable rather than a vibe.
@@ -308,24 +308,24 @@ Say when we are unsure. Where the evidence is thin, we say so on the page, not i
 
 ## Go and stand in them
 A map is the limit of what a reference site can do for you. Every location on this list is a real, publicly accessible place, and most of them are within a short drive of each other. Our small-group tour covers nine of the Miami locations in a three-hour loop, the boat tour covers the port and Star Island from the water, and the Keys trip covers the Seven Mile Bridge.
-> Independent and unofficial: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed or sponsored by Rockstar Games or Take-Two Interactive. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to identify the real-world locations that inspired them.
+> Independent and unofficial: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed or sponsored by any game publisher. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to identify the real-world locations that inspired them.
 - Q: What real locations are in GTA 6? A: The most reliably identified are the Clevelander (Ocean View Hotel) on Ocean Drive, Calle Ocho in Little Havana (Little Cuba), Wynwood (the Stockyard), the Kaseya Center (Sahara Arena), E11EVEN (NINE1NINE), PortMiami (PortViceCity), Miami International Airport (Vice City International Airport), the Bayside Marketplace wheel, Star Island and the Flagler Memorial, the Jade Ocean tower, the Venetian Causeway toll plaza, Little Haiti, the Seven Mile Bridge and the Everglades (Grassrivers).
-- Q: Has Rockstar confirmed any GTA 6 locations? A: No. Rockstar has never published a list of real-world inspirations and has not confirmed any individual building. Every match is either the community's reading of official footage or, in a few cases, a name Rockstar itself uses in its own regional copy.
+- Q: Has the publisher confirmed any GTA 6 locations? A: No. The publisher has never published a list of real-world inspirations and has not confirmed any individual building. Every match is either the community's reading of official footage or, in a few cases, a name the publisher itself uses in its own regional copy.
 - Q: Where is the Ocean View Hotel in GTA 6 in real life? A: The Clevelander, at 1020 Ocean Drive, Miami Beach, Florida. Its pink Art Deco facade and rooftop neon sign are what the trailer shows behind the Vice Beach police stop.
-- Q: Are the GTA 6 Everglades really the Everglades? A: Yes. Rockstar's own Grassrivers description names gators and mangroves and calls the region a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida.
+- Q: Are the GTA 6 Everglades really the Everglades? A: Yes. The official Grassrivers description names gators and mangroves and calls the region a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida.
 - Q: How many locations does GTA 6 have? A: Mapping projects have charted hundreds of named points across Leonida. The 24 on this page are the ones with enough independent evidence to stand behind, and we have deliberately left out the long tail of weak or single-frame guesses.
 
 ### Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida
 - URL: https://leonidatours.com/blog/is-gta-6-set-in-miami/  |  Published: 2026-10-18  |  Category: Guide
 - Partly. Vice City is Miami, but Leonida is a whole invented state, and the differences matter for anyone planning a trip or writing about the game.
-The short answer is: GTA 6 is set in a fictional American state called Leonida, and its biggest city, Vice City, is Miami with the serial numbers filed off. Rockstar's own copy for the city names the real neighbourhoods, so the answer is not ambiguous in the way that "it is based on Miami" usually is.
+The short answer is: GTA 6 is set in a fictional American state called Leonida, and its biggest city, Vice City, is Miami with the serial numbers filed off. The official copy for the city names the real neighbourhoods, so the answer is not ambiguous in the way that "it is based on Miami" usually is.
 
-## What Rockstar actually says
-The official description of Vice City on Rockstar's site reads: "We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world."
+## What the publisher actually says
+The official description of Vice City on the publisher's site reads: "We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world."
 Four real Miami identifiers are in that paragraph. Ocean Beach is Miami Beach. Little Cuba is Little Havana. The VC Port is PortMiami. And "the pastel art deco hotels and bright white sands" is a description of South Beach that you could write without ever having seen the game.
 
 ## Leonida is not Florida, and it is not Miami either
-The distinction that trips up most articles is between the state and the city. Leonida is an invented state that borrows from all of Florida, not a renamed Miami-Dade County. Rockstar has published six regions for it, and only one of them, Vice City, is the Miami analogue.
+The distinction that trips up most articles is between the state and the city. Leonida is an invented state that borrows from all of Florida, not a renamed Miami-Dade County. Six regions have been published for it, and only one of them, Vice City, is the Miami analogue.
 | Region | The real place behind it | Where it is |
 |---|---|---|
 | Vice City | Miami and Miami Beach | South-east Florida |
@@ -344,13 +344,13 @@ The tiki and pastel palette. The colour grading of the game's Vice City, saturat
 The port on its own island. Dodge Island, holding the container cranes and the cruise terminal, is an unusual enough real layout that the game reproducing it is a deliberate signal.
 
 ## What is Miami and what is not
-Even inside Vice City, not everything is a one-to-one match, and pretending otherwise is how fan sites end up confidently wrong. Rockstar reorders geography constantly. In the real city the airport is 20 miles west of Downtown; in the game it is close enough to see from the approach. In the real city the Jade Ocean is 10 miles north of Miami Beach; in the game it has moved south to sit inside Vice Beach.
+Even inside Vice City, not everything is a one-to-one match, and pretending otherwise is how fan sites end up confidently wrong. The publisher reorders geography constantly. In the real city the airport is 20 miles west of Downtown; in the game it is close enough to see from the approach. In the real city the Jade Ocean is 10 miles north of Miami Beach; in the game it has moved south to sit inside Vice Beach.
 The honest summary is that GTA 6's Vice City is a Miami you have already visited, compressed and re-lit, with a few deliberate rearrangements so that the game reads well rather than accurately.
 
 ## Coming to South Florida for the launch
 If you are coming for launch week, the game is a better guide to this city than most travel guides, because it points at the parts that are visually distinctive and ignores the parts that are not. Ocean Drive, the causeway, Wynwood, Little Havana, the bay and the swamp: all of it is real, all of it is reachable, and all of it looks the way you have seen it.
-> Trademark note: Grand Theft Auto, GTA, Vice City and Leonida are trademarks of Take-Two Interactive and its affiliates. We use them here for identification and commentary, in line with our editorial policy. We are not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive, and we use no game art, logos, characters or screenshots.
-- Q: Is GTA 6 set in Miami? A: Vice City in GTA 6 is modelled on Miami, Florida, and Rockstar's own official description names real Miami neighbourhoods including Little Cuba, Ocean Beach and the VC Port. The game as a whole is set in Leonida, an invented state that also takes in the Florida Keys, the Everglades, the Panhandle, the sugar belt and part of Georgia.
+> Trademark note: Grand Theft Auto, GTA, Vice City and Leonida are trademarks of the publisher's parent company and its affiliates. We use them here for identification and commentary, in line with our editorial policy. We are not affiliated with, endorsed by or sponsored by any game publisher, and we use no game art, logos, characters or screenshots.
+- Q: Is GTA 6 set in Miami? A: Vice City in GTA 6 is modelled on Miami, Florida, and The official description names real Miami neighbourhoods including Little Cuba, Ocean Beach and the VC Port. The game as a whole is set in Leonida, an invented state that also takes in the Florida Keys, the Everglades, the Panhandle, the sugar belt and part of Georgia.
 - Q: Is Leonida just Florida with a different name? A: No. Leonida is a fictional state that borrows from several real places. It contains the Florida Keys and the Everglades as themselves, but also pulls in Panama City, Clewiston in the sugar belt and Providence Canyon in Georgia, and compresses them into one map.
 - Q: Which GTA 6 city is Miami? A: Vice City, and specifically the Miami area: the game maps Downtown Miami, Miami Beach, Little Havana, Wynwood, Little Haiti, the port on Dodge Island and the airport to the west of the bay.
 - Q: Does GTA 6 get the Miami neighbourhoods right? A: Mostly, with deliberate rearrangements. The barrier island, the one-way grid, the toll plaza and the port all match reality closely, while places like the Jade Ocean tower have been moved for dramatic effect.
@@ -359,7 +359,7 @@ If you are coming for launch week, the game is a better guide to this city than 
 ### GTA 6 Map: The Six Regions of Leonida and Where They Are
 - URL: https://leonidatours.com/blog/gta-6-map-and-regions/  |  Published: 2026-10-17  |  Category: Locations
 - Six official regions, one fictional state, and a surprising amount of real Florida underneath. Here is the official copy for each region next to the geography it borrows from.
-Rockstar has published six regions for Leonida, each with its own heading, standfirst and paragraph on the official Only in Leonida page. That copy is the best primary source available, and quoting it is more useful than paraphrasing it, because the copy is written as atmosphere while the geography underneath is quietly specific.
+Six regions have been published for Leonida, each with its own heading, standfirst and paragraph on the official Only in Leonida page. That copy is the best primary source available, and quoting it is more useful than paraphrasing it, because the copy is written as atmosphere while the geography underneath is quietly specific.
 
 ## The six regions, with the official copy
 ### Vice City
@@ -382,7 +382,7 @@ The real place: Clewiston and the U.S. Sugar mill on Lake Okeechobee. Why: a com
 The real place: Providence Canyon State Park in south-west Georgia. Why: the canyon's eroded red clay walls are the visual match, and the park's remoteness matches the copy's geography. This is the one region where the prototype is outside Florida entirely.
 
 ## Reading the six together
-The structure is consistent. Every region gets an economic base and a source of danger, and the copy is careful never to describe a mechanic. Rockstar writes "offers prime hunting, fishing, and off-road trails", which describes the park as a place; it does not announce a hunting system, and no official page describes how anything works.
+The structure is consistent. Every region gets an economic base and a source of danger, and the copy is careful never to describe a mechanic. The publisher writes "offers prime hunting, fishing, and off-road trails", which describes the park as a place; it does not announce a hunting system, and no official page describes how anything works.
 | Region | Economic base | The danger | Real place |
 |---|---|---|---|
 | Vice City | Tourism and crime | The criminal economy | Miami |
@@ -391,7 +391,7 @@ The structure is consistent. Every region gets an economic base and a source of 
 | Port Gellhorn | A post-tourism economy | Cheap intoxicants | Panama City |
 | Ambrosia | The Allied Crystal refinery | The biker gang | Clewiston |
 | Mount Kalaga | None given | Hermits and radicals | Georgia |
-That table is our editorial arrangement, not Rockstar's taxonomy, and it is useful as a filter: any claim about a region's character that falls outside those lines is almost certainly inference rather than something the studio has written down.
+That table is our editorial arrangement, not the publisher's taxonomy, and it is useful as a filter: any claim about a region's character that falls outside those lines is almost certainly inference rather than something the studio has written down.
 
 ## The county grid underneath
 Beneath the six regions sits a second layer: a Florida-style county grid. Three county names have actually been seen on screen in official footage: Vice-Dale, on a police seal in the in-game Mega Noticias newscast in Trailer 2; Kelly County, read from roadside signage; and Leonard County, on a police vehicle in an in-game social media post. The remaining county names are community reconstruction.
@@ -405,9 +405,9 @@ If you are planning a trip based on the game's geography, this is the part that 
 Vice City and Leonida Keys are the two you will want most, and both are within a short drive of Miami.
 Grassrivers is a half-day from Downtown Miami and is the single easiest region to verify, because the Everglades is unmistakable from the first minute of an airboat ride.
 Port Gellhorn, Ambrosia and Mount Kalaga are all real, all visitable, and all a serious drive: Panama City is about eight hours from Miami, Clewiston about three, and Providence Canyon is further still.
-- Q: How many regions are in GTA 6's Leonida? A: Six, according to Rockstar's official Only in Leonida page: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.
+- Q: How many regions are in GTA 6's Leonida? A: Six, according to the official Only in Leonida page: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.
 - Q: What is Mount Kalaga National Park based on? A: The community match is Providence Canyon State Park in south-west Georgia, whose eroded clay canyon walls match the game's rock formations. It is the only region whose prototype is not in Florida.
-- Q: What is Ambrosia in GTA 6 based on? A: Clewiston, Florida, on Lake Okeechobee, where the U.S. Sugar mill has been the town's economic centre since the 1920s. Rockstar's Allied Crystal refinery is a renamed version of it.
+- Q: What is Ambrosia in GTA 6 based on? A: Clewiston, Florida, on Lake Okeechobee, where the U.S. Sugar mill has been the town's economic centre since the 1920s. The Allied Crystal refinery is a renamed version of it.
 - Q: Is Port Gellhorn Panama City? A: That is the strongest community identification: a once-popular Gulf resort town with shut-down attractions and empty strip malls matches Panama City's beach strip closely. It has not been officially confirmed.
 - Q: How big is Leonida compared to Florida? A: Smaller in area but far more compressed in practice. The game's map holds the Keys, the Everglades, the Panhandle, the sugar belt and north Georgia, which in reality are spread across roughly 400 miles.
 
@@ -452,7 +452,7 @@ Nearly twice as long as the first trailer and much closer to the story. It broug
 2:33 / 2:34 - the rooftop helipad tower. Jade Ocean, Sunny Isles.
 
 ## An Extended Look: August 27, 2026
-Twenty-six minutes and forty-eight seconds of actual gameplay, streamed on Netflix before it went to YouTube and Rockstar's own site. Rockstar never called it a trailer, and in August a lot of people called it Trailer 3 anyway.
+Twenty-six minutes and forty-eight seconds of actual gameplay, streamed on Netflix before it went to YouTube and the publisher's own site. It was never called a trailer, and in August a lot of people called it Trailer 3 anyway.
 8:10 - driving across Vice City, which is the cleanest continuous look at the Downtown and Brickell road layout in official footage.
 9:29 - the armoured truck robbery, in a city block with an arcade frontage that matches the real Downtown Miami streets.
 10:41 - the rooftop bar with the city behind it.
@@ -477,21 +477,21 @@ Ninety seconds, captured entirely in-game on PlayStation 5, set to "Flower in a 
 Two practical notes, because this is more useful than it first appears.
 Watch for the context, not the object. The single most useful frame in Trailer 2 is the arena at 1:40, because it contains three separate real landmarks in one composition. When you match an object you get an opinion; when you match a set of objects you get a fix.
 Traffic moves the same way. The game's one-way grid in Downtown Miami, the causeway approach and the US-1 strip all follow real street patterns. If you know what the real road does, you can often predict what the game is showing.
-> Watching the trailers: All four are on Rockstar's own site, and the YouTube uploads carry official subtitles. The Extended Look is age-restricted on YouTube, so watch it on Rockstar's site if you cannot sign in. We do not re-upload or mirror any footage.
-- Q: How many GTA 6 trailers are there? A: Three trailers and one gameplay showcase: Trailer 1 (December 4, 2023), Trailer 2 (May 6, 2025), An Extended Look (August 27, 2026) and the Launch Trailer (October 15, 2026). Rockstar calls the last one the Launch Trailer, though it is the third trailer by count.
+> Watching the trailers: All four are on the publisher's own site, and the YouTube uploads carry official subtitles. The Extended Look is age-restricted on YouTube, so watch it on the official site if you cannot sign in. We do not re-upload or mirror any footage.
+- Q: How many GTA 6 trailers are there? A: Three trailers and one gameplay showcase: Trailer 1 (December 4, 2023), Trailer 2 (May 6, 2025), An Extended Look (August 27, 2026) and the Launch Trailer (October 15, 2026). The publisher calls the last one the Launch Trailer, though it is the third trailer by count.
 - Q: Where is the Ocean View Hotel in Trailer 1? A: At 0:33, the neon strip at night. The pink Art Deco facade and the rooftop sign are the Clevelander at 1020 Ocean Drive, Miami Beach.
 - Q: Which trailer shows the most real locations? A: Trailer 2, by a wide margin. It contains at least fourteen identifiable real locations, including a single frame at 1:40 that shows the arena, the observation wheel and the port cranes together.
-- Q: Can I watch the GTA 6 Extended Look? A: Yes, on Rockstar's own site or on YouTube. YouTube age-restricts it, so you may need to sign in. It is 26 minutes of gameplay and it is the most useful official footage for location matching after Trailer 2.
-- Q: Does Rockstar confirm the locations shown in its trailers? A: No. The trailers are promotional. Every real-world identification is the community's reading of the footage, and we label how strong each one is on our location pages.
+- Q: Can I watch the GTA 6 Extended Look? A: Yes, on the publisher's own site or on YouTube. YouTube age-restricts it, so you may need to sign in. It is 26 minutes of gameplay and it is the most useful official footage for location matching after Trailer 2.
+- Q: Does the publisher confirm the locations shown in its trailers? A: No. The trailers are promotional. Every real-world identification is the community's reading of the footage, and we label how strong each one is on our location pages.
 
 ### Grassrivers Is the Everglades: Seeing GTA 6's Swamp for Real
 - URL: https://leonidatours.com/blog/gta-6-everglades-grassrivers/  |  Published: 2026-10-15  |  Category: Locations
 - There is no serious alternative: the game's wetland region is the Everglades. Here is the official copy, the geography, and what the airboat ride is actually like.
-Rockstar named its wetland region Grassrivers and described it as "the untamable jewel of Leonida's crown", full of gators and mangroves and things that are "far deadlier". There is exactly one candidate for that description in the state, and it is the largest subtropical wilderness in the United States.
+The wetland region was named Grassrivers and described as "the untamable jewel of Leonida's crown", full of gators and mangroves and things that are "far deadlier". There is exactly one candidate for that description in the state, and it is the largest subtropical wilderness in the United States.
 
 ## The official copy, in full
 Heading: "Welcome to the Wetlands." Standfirst: "The untamable jewel of Leonida's crown." "You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves."
-One of Rockstar's own image captions carries the only hard spatial fact in the entire description: a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That establishes that the wetland region is close enough to the city to see it. It does not give a distance, and nobody else does either.
+One of the official image captions carries the only hard spatial fact in the entire description: a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That establishes that the wetland region is close enough to the city to see it. It does not give a distance, and nobody else does either.
 
 ## Why the Everglades and nothing else
 Scale. The Everglades is about 1.5 million acres. It is the only place in the country where you can stand on a paved road and see sawgrass running unbroken to the horizon in every direction.
@@ -522,7 +522,7 @@ There is a second, smaller one worth knowing about: the Fuzzard Power Station, s
 ## Where to go
 Our Grasslands airboat tour shuttles you from Miami to the edge of the park, runs you on the water with a wildlife guide, and adds a boardwalk and viewing tower stop. It runs on set days each week and works for ages five and up, and it is the one route we run that does not start on Ocean Drive.
 If you are building a GTA 6 launch trip, the most effective order is swamp first, city second. It is the same contrast the game is built on, and doing it in that order makes the neon land harder.
-- Q: Is Grassrivers the Everglades in GTA 6? A: Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida. It is the most confident regional match in the game.
+- Q: Is Grassrivers the Everglades in GTA 6? A: Yes. The official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida. It is the most confident regional match in the game.
 - Q: How far is the Everglades from Miami? A: About 45 miles from Downtown Miami, roughly 75 km and an hour and a half in traffic. Our airboat tour includes the shuttle from Miami, so the travel is handled for you.
 - Q: Will I definitely see alligators? A: No sighting is guaranteed, but they are the most commonly seen animal in the park and a good guide will usually find them. Winter is best, when they bask.
 - Q: What does an Everglades airboat ride cost and last? A: On our tour the airboat run is 30 minutes as part of a four-hour trip including the shuttle, the boardwalk and the viewing tower. The total is $79 per person.
@@ -531,7 +531,7 @@ If you are building a GTA 6 launch trip, the most effective order is swamp first
 ### Leonida Keys Is the Florida Keys: The Seven Mile Bridge
 - URL: https://leonidatours.com/blog/gta-6-florida-keys-leonida-keys/  |  Published: 2026-10-14  |  Category: Locations
 - The game's southern archipelago is the Florida Keys, down to the Seven Mile Bridge and the bar where the boat owners keep their slips. Here is the real route, and how long it really takes.
-Rockstar describes its Leonida Keys as "the dress code is casual, the bars are loaded", a "tropical archipelago" on the doorstep of "some of the most beautiful and dangerous waters in all of America". There is one archipelago in Florida that fits that sentence exactly, and it is about a hundred miles south of Miami on a single road.
+The official description calls the region "the dress code is casual, the bars are loaded", a "tropical archipelago" on the doorstep of "some of the most beautiful and dangerous waters in all of America". There is one archipelago in Florida that fits that sentence exactly, and it is about a hundred miles south of Miami on a single road.
 
 ## The official copy, in full
 Heading: "Gateway to Paradise." Standfirst: "Life is a beach, but not quite." "The dress code is casual, the bars are loaded. Life in this tropical archipelago isn't flashy but it's easy. Get your buzz on and pull up a deck chair but look out, you are right on the doorstep of some of the most beautiful and dangerous waters in all of America."
@@ -571,12 +571,12 @@ Go in winter. From December to March the Keys are at their best: low humidity, c
 ## The boat instead of the drive
 There is another way to do the Keys, and it is the better one if you only have a few hours: come by water. A boat leaves Miami Marina, runs south through Biscayne Bay and out past Government Cut into the Atlantic, and delivers you to Key Largo and Islamorada in about 90 minutes with no traffic at all. You see the reef and the marine wildlife on the way, and you arrive where the boats are kept.
 Our Key Largo boat trip runs exactly that route, with an hour on the water in Islamorada, lunch, and a stop at a working marina. It is the version of the Keys that fits into a single day without turning into a four-hour drive each way.
-> Trademark note: Grand Theft Auto, GTA, Leonida and Vice City are trademarks of Take-Two Interactive and its affiliates, used here for identification and commentary only. Leonida Tours is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.
-- Q: Is the Leonida Keys in GTA 6 the Florida Keys? A: Yes. Rockstar's official description names a tropical archipelago with loaded bars and dangerous water, which matches the Florida Keys uniquely. The Seven Mile Bridge in the game sits where the real one is.
+> Trademark note: Grand Theft Auto, GTA, Leonida and Vice City are trademarks of Take-Two Interactive and its affiliates, used here for identification and commentary only. Leonida Tours is not affiliated with, endorsed by or sponsored by any game publisher.
+- Q: Is the Leonida Keys in GTA 6 the Florida Keys? A: Yes. The official description names a tropical archipelago with loaded bars and dangerous water, which matches the Florida Keys uniquely. The Seven Mile Bridge in the game sits where the real one is.
 - Q: How long does it take to drive from Miami to Key West? A: About four hours each way, 160 miles. The distance looks short on a map but the Overseas Highway is slow, with 42 bridges and heavy weekend traffic.
 - Q: Can you walk the Seven Mile Bridge? A: Yes. The old bridge was retired in 1982 and is now a pedestrian and cycle bridge, free to walk, with a gravel trail beside the old road. The parallel span carries the traffic.
 - Q: What is the giant lobster in the Keys? A: Betsy the Lobster, a roughly 30-foot concrete lobster standing at Rain Barrel Village in Islamorada. It is the community's match for the game's Wonder Whale and it has been there since the 1950s.
-- Q: What is the Rusty Anchor in GTA 6 based on? A: The strongest community match is the Caribbean Club on Key Largo, a well-known dockside dive bar. It has not been officially confirmed by Rockstar.
+- Q: What is the Rusty Anchor in GTA 6 based on? A: The strongest community match is the Caribbean Club on Key Largo, a well-known dockside dive bar. It has not been officially confirmed.
 - Q: Is it better to drive to the Keys or take a boat? A: For a single day, the boat. It is 90 minutes against four hours of driving, with no traffic and wildlife on the way. The drive wins only if you want to stop in Marathon and Key West.
 
 ### Best Things to Do in Miami Beach in One Day (2026)
@@ -925,7 +925,7 @@ We also make a small amount from hotel and ticket affiliate links on this site, 
 
 ## Who owns the words on this site
 We write everything ourselves and we do not use generated text for our guides, our location descriptions or our itineraries. Where we describe a game, a film or a television show, we use the names only to identify real places, and our editorial policy explains exactly how that works.
-> We are not affiliated with any game publisher: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed by or sponsored by Rockstar Games, Take-Two Interactive or any other game publisher, and we use no game art, logos, characters, screenshots or audio.
+> We are not affiliated with any game publisher: Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed by or sponsored by any game publisher, and we use no game art, logos, characters, screenshots or audio.
 
 ## Get in touch
 Email is the fastest way to reach us and the right way to reach us for anything complicated: a group booking, a mobility requirement, a dietary need, or a question about which tour suits a particular kind of trip.

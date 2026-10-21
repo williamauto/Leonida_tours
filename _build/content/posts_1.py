@@ -14,24 +14,24 @@ POSTS = [
  "excerpt": "The date is locked: November 19, 2026, on PlayStation 5 and Xbox Series X|S. Here is the confirmed timeline, what changed twice on the way, and the smartest way to spend launch week if you are already in South Florida.",
  "featured": True,
  "body": [
-  {"p": ["Grand Theft Auto VI releases on <strong>November 19, 2026</strong>, on PlayStation 5 and Xbox Series X|S. That date is confirmed by Rockstar Games and Take-Two Interactive, and it has survived two delays. It is also, almost exactly, the date our first tours begin running: we open on the same weekend, because the single best thing a visitor to South Florida can do that week is see the city the game is built from."]},
+  {"p": ["Grand Theft Auto VI releases on <strong>November 19, 2026</strong>, on PlayStation 5 and Xbox Series X|S. That date is confirmed by the publisher, and it has survived two delays. It is also, almost exactly, the date our first tours begin running: we open on the same weekend, because the single best thing a visitor to South Florida can do that week is see the city the game is built from."]},
   {"h2": "The confirmed release date", "id": "the-date"},
-  {"p": ["Rockstar's own site lists the release date and the platforms, and Take-Two has confirmed it in its financial communications. There is no PC version listed on any official Rockstar or PlayStation or Microsoft page as of writing. If you are planning to play on PC, plan around that gap rather than assuming a later date."]},
+  {"p": ["The publisher's own site lists the release date and the platforms, and its parent company has confirmed it in its financial communications. There is no PC version listed on any official publisher, PlayStation or Microsoft page as of writing. If you are planning to play on PC, plan around that gap rather than assuming a later date."]},
   {"table": {"head": ["Platform", "Status", "Notes"], "rows": [
     ["PlayStation 5", "Confirmed", "Pre-order open"],
     ["Xbox Series X|S", "Confirmed", "Pre-order open"],
-    ["PC / Windows", "Not announced", "No official date on any Rockstar or publisher page"]]}},
+    ["PC / Windows", "Not announced", "No official date on any publisher page"]]}},
   {"h2": "How the date moved, and why that matters", "id": "the-delays"},
-  {"p": ["The release date has been pushed twice, and both moves were announced with an unusual public apology. The pattern matters if you are trying to judge whether November 19 is safe: Rockstar moved it once to a date it then moved again, and both announcements were framed around finishing the game to a standard rather than around any production problem."]},
+  {"p": ["The release date has been pushed twice, and both moves were announced with an unusual public apology. The pattern matters if you are trying to judge whether November 19 is safe: the publisher moved it once to a date it then moved again, and both announcements were framed around finishing the game to a standard rather than around any production problem."]},
   {"table": {"head": ["Announced", "Date at the time", "Change"], "rows": [
     ["December 2023", "2025", "First public date, revealed with Trailer 1"],
     ["May 2, 2025", "May 26, 2026", "Pushed forward roughly seven months"],
     ["November 6, 2025", "November 19, 2026", "Pushed back roughly six months, to a Friday"]]}},
   {"p": ["The final date is a Friday. That is deliberate: Friday release dates let the first weekend be a full three days of play, and let the game's opening weekend be the first one that counts for review aggregators and for people deciding what to buy."]},
   {"h2": "What time does it unlock", "id": "unlock-time"},
-  {"p": ["Rockstar has not published a per-timezone unlock schedule for launch, so treat any precise hour as speculation rather than fact. Historically, Rockstar releases have unlocked at midnight Eastern Time, which is 9pm Pacific on the previous evening. If you are planning a watch party on the West Coast, plan for the evening of November 18, not the night of the 19th."]},
+  {"p": ["No per-timezone unlock schedule has been published for launch, so treat any precise hour as speculation rather than fact. Historically, releases have unlocked at midnight Eastern Time, which is 9pm Pacific on the previous evening. If you are planning a watch party on the West Coast, plan for the evening of November 18, not the night of the 19th."]},
   {"h2": "Pre-order editions", "id": "pre-order"},
-  {"p": ["Pre-orders are open for the standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack. The exact contents of each edition are on the Rockstar store pages and change more often than you would expect, so check there rather than trusting a wiki summary. Whichever you pick, the game itself is the same game."]},
+  {"p": ["Pre-orders are open for the standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack. The exact contents of each edition are on the official store pages and change more often than you would expect, so check there rather than trusting a wiki summary. Whichever you pick, the game itself is the same game."]},
   {"h2": "What to do in Miami at launch", "id": "miami-launch"},
   {"p": ["If you are in South Florida for launch week, you are in the best possible place, because you are standing in the city the game is modelled on. The neon strip, the causeway, the murals, the bay and the swamp are all within an hour of each other, and they are all still there in November."]},
   {"ol": [
@@ -40,16 +40,16 @@ POSTS = [
     "Go west, out of the city, for half a day. Grassrivers is the Everglades, and the contrast between the swamp and the strip is the whole point of the game.",
     "Do the Keys if you have the day. The Leonida Keys are the Florida Keys, and the Seven Mile Bridge is exactly where the game puts it."]},
   {"note": {"title": "Our tours launch the same week", "text": "Leonida Tours begins running on November 19, 2026. Reserving is free, there is nothing to pay today, and we confirm your date by email before public booking opens, with 20% off your first tour."}},
-  {"h2": "What Rockstar has not announced", "id": "not-announced"},
-  {"p": ["Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming Rockstar has confirmed that a specific building is a specific in-game location is overstating what has been published."]},
-  {"p": ["What Rockstar has published is the official region copy for the six areas of Leonida, and that copy is the highest-quality primary source available. We quote it directly wherever it matters, and we separate it clearly from the community's location matching."]}
+  {"h2": "What has not been announced", "id": "not-announced"},
+  {"p": ["Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming the publisher has confirmed that a specific building is a specific in-game location is overstating what has been published."]},
+  {"p": ["What has been published is the official region copy for the six areas of Leonida, and that copy is the highest-quality primary source available. We quote it directly wherever it matters, and we separate it clearly from the community's location matching."]}
  ],
  "faq": [
-  ["What is the GTA 6 release date?", "November 19, 2026, confirmed by Rockstar Games and Take-Two Interactive, on PlayStation 5 and Xbox Series X|S. There is no announced PC version. The date was announced on November 6, 2025, after two previous delays."],
-  ["Is GTA 6 coming to PC?", "No PC version has been announced. There is no PC release date on any official Rockstar Games, PlayStation or Microsoft page as of writing. Announcements have historically come late, so check the official store pages rather than assuming."],
-  ["What time does GTA 6 release on November 19?", "Rockstar has not published a per-timezone unlock schedule. Rockstar releases have historically unlocked at midnight Eastern Time, which would be 9pm Pacific on November 18. Treat any specific hour as provisional until Rockstar confirms it."],
+  ["What is the GTA 6 release date?", "November 19, 2026, confirmed by the publisher, on PlayStation 5 and Xbox Series X|S. There is no announced PC version. The date was announced on November 6, 2025, after two previous delays."],
+  ["Is GTA 6 coming to PC?", "No PC version has been announced. There is no PC release date on any official publisher, PlayStation or Microsoft page as of writing. Announcements have historically come late, so check the official store pages rather than assuming."],
+  ["What time does GTA 6 release on November 19?", "No per-timezone unlock schedule has been published. Releases have historically unlocked at midnight Eastern Time, which would be 9pm Pacific on November 18. Treat any specific hour as provisional until the publisher confirms it."],
   ["Are Leonida Tours tours running on release day?", "Yes. We launch on November 19, 2026, and run the Miami Vice City small-group tour daily, with a sunset and night departure at 6:30pm."],
-  ["What editions are available to pre-order?", "The standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack are all open for pre-order. Contents and pricing are on the official Rockstar store pages and change, so check there before buying."]
+  ["What editions are available to pre-order?", "The standard edition, the Ultimate Edition, and a bundle with the Vintage Vice City pack are all open for pre-order. Contents and pricing are on the official store pages and change, so check there before buying."]
  ],
  "related": ["gta-6-locations-in-real-life", "is-gta-6-set-in-miami", "miami-launch-week-guide", "gta-6-trailers-timestamped"]
 },
@@ -65,7 +65,7 @@ POSTS = [
  "excerpt": "Twenty-four places, from the Ocean View Hotel to the Everglades airboat, each matched to a real address with coordinates and a confidence rating. This is the list to take with you.",
  "featured": True,
  "body": [
-  {"p": ["Rockstar has never published a list of the real places behind GTA VI, and it never will: the studio does not annotate its own work. Everything below comes from trailer frames, from the official region descriptions on Rockstar's own site, and from the mapping community's frame-by-frame analysis. We label how confident each match is, because a list that treats all twenty-four as equal is worth much less than one that does not."]},
+  {"p": ["No official list of the real places behind GTA VI has ever been published, and none ever will be: the studio does not annotate its own work. Everything below comes from trailer frames, from the official region descriptions on the publisher's own site, and from the mapping community's frame-by-frame analysis. We label how confident each match is, because a list that treats all twenty-four as equal is worth much less than one that does not."]},
   {"h2": "The 24 places, at a glance", "id": "the-list"},
   {"table": {"head": ["In the game", "The real place", "Where", "Confidence"], "rows": [
     ["Ocean View Hotel", "The Clevelander", "1020 Ocean Dr, Miami Beach", "Strong"],
@@ -95,11 +95,11 @@ POSTS = [
   {"h2": "How to read the confidence column", "id": "confidence"},
   {"p": ["Four labels, and the difference between them is the difference between a fact and an inference."]},
   {"ul": [
-    "<strong>Official naming.</strong> Rockstar itself uses the real place's name in the game or in its own official copy. Little Cuba and Little Haiti are the clearest cases: the in-game name is the real name, or the game's own regional description uses it.",
+    "<strong>Official naming.</strong> The publisher uses the real place's name in the game or in its own official copy. Little Cuba and Little Haiti are the clearest cases: the in-game name is the real name, or the game's own regional description uses it.",
     "<strong>Strong.</strong> At least three independent pieces of evidence agree: the architecture, the position on the map, and the surrounding context. The Clevelander, the Kaseya Center and the Seven Mile Bridge are all in this category.",
     "<strong>Community match.</strong> One or two good pieces of evidence, generally a distinctive detail, with no official confirmation and no way to check. The Rusty Anchor and the Caribbean Club are good examples: the reasoning is sound but it is not proven.",
     "<strong>Community, weak.</strong> A single object with nothing to match it against beyond shape and position. We include it because excluding it would look like we had cherry-picked, but we would not build a trip around it."]},
-  {"note": {"title": "The honest caveat", "text": "None of this is official. Rockstar has never confirmed a single real-world location, and fan pages that present a complete location list as settled fact are reading too much into community consensus. Where we say \"strong\", we mean multiple independent lines of evidence agree, not that the studio confirmed it."}},
+  {"note": {"title": "The honest caveat", "text": "None of this is official. The publisher has never confirmed a single real-world location, and fan pages that present a complete location list as settled fact are reading too much into community consensus. Where we say \"strong\", we mean multiple independent lines of evidence agree, not that the studio confirmed it."}},
   {"h2": "The Miami cluster", "id": "miami-cluster"},
   {"p": ["Most of the identifiable places are in a tight cluster, and that is the single most useful fact for anyone visiting. The game's Vice City is built on real Miami geography: a barrier island across the bay from Downtown, a causeway between them, a port on an island of its own, and an arts district two miles north of the river."]},
   {"p": ["That means the twelve Miami locations are not scattered across a map. You can see nearly all of them in a single afternoon, because the real distances are short: Ocean Drive to Brickell is about four miles, Brickell to Wynwood is two, and the port sits between them on the water."]},
@@ -109,20 +109,20 @@ POSTS = [
   {"h2": "How we verify a match", "id": "methodology"},
   {"p": ["Our process is written down and identical for every location, because a site that tells you how it reaches its conclusions is worth more than one that simply states them."]},
   {"ol": [
-    "<strong>Start with the official copy.</strong> Rockstar's own Only in Leonida page gives a heading, a standfirst and a paragraph for each region. We quote it verbatim and treat it as the primary source.",
+    "<strong>Start with the official copy.</strong> The official Only in Leonida page gives a heading, a standfirst and a paragraph for each region. We quote it verbatim and treat it as the primary source.",
     "<strong>Find the frame.</strong> A match has to appear in an official video, with a timestamp we can point at, so you can check it yourself.",
     "<strong>Check the context, not just the object.</strong> The strongest matches are confirmed by the company the object keeps: the arena, the wheel and the cranes together; the obelisk visible from the water; the toll plaza's lane count.",
     "<strong>Publish the coordinates.</strong> Every location we list has a latitude and longitude, so the claim is falsifiable rather than a vibe.",
     "<strong>Say when we are unsure.</strong> Where the evidence is thin, we say so on the page, not in a footnote."]},
   {"h2": "Go and stand in them", "id": "go-stand-in-them"},
   {"p": ["A map is the limit of what a reference site can do for you. Every location on this list is a real, publicly accessible place, and most of them are within a short drive of each other. Our small-group tour covers nine of the Miami locations in a three-hour loop, the boat tour covers the port and Star Island from the water, and the Keys trip covers the Seven Mile Bridge."]},
-  {"note": {"title": "Independent and unofficial", "text": "Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed or sponsored by Rockstar Games or Take-Two Interactive. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to identify the real-world locations that inspired them."}}
+  {"note": {"title": "Independent and unofficial", "text": "Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed or sponsored by any game publisher. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to identify the real-world locations that inspired them."}}
  ],
  "faq": [
   ["What real locations are in GTA 6?", "The most reliably identified are the Clevelander (Ocean View Hotel) on Ocean Drive, Calle Ocho in Little Havana (Little Cuba), Wynwood (the Stockyard), the Kaseya Center (Sahara Arena), E11EVEN (NINE1NINE), PortMiami (PortViceCity), Miami International Airport (Vice City International Airport), the Bayside Marketplace wheel, Star Island and the Flagler Memorial, the Jade Ocean tower, the Venetian Causeway toll plaza, Little Haiti, the Seven Mile Bridge and the Everglades (Grassrivers)."],
-  ["Has Rockstar confirmed any GTA 6 locations?", "No. Rockstar has never published a list of real-world inspirations and has not confirmed any individual building. Every match is either the community's reading of official footage or, in a few cases, a name Rockstar itself uses in its own regional copy."],
+  ["Has the publisher confirmed any GTA 6 locations?", "No. The publisher has never published a list of real-world inspirations and has not confirmed any individual building. Every match is either the community's reading of official footage or, in a few cases, a name the publisher itself uses in its own regional copy."],
   ["Where is the Ocean View Hotel in GTA 6 in real life?", "The Clevelander, at 1020 Ocean Drive, Miami Beach, Florida. Its pink Art Deco facade and rooftop neon sign are what the trailer shows behind the Vice Beach police stop."],
-  ["Are the GTA 6 Everglades really the Everglades?", "Yes. Rockstar's own Grassrivers description names gators and mangroves and calls the region a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida."],
+  ["Are the GTA 6 Everglades really the Everglades?", "Yes. The official Grassrivers description names gators and mangroves and calls the region a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida."],
   ["How many locations does GTA 6 have?", "Mapping projects have charted hundreds of named points across Leonida. The 24 on this page are the ones with enough independent evidence to stand behind, and we have deliberately left out the long tail of weak or single-frame guesses."]
  ],
  "related": ["is-gta-6-set-in-miami", "gta-6-map-and-regions", "gta-6-trailers-timestamped", "gta-6-everglades-grassrivers"]
@@ -139,12 +139,12 @@ POSTS = [
  "excerpt": "Partly. Vice City is Miami, but Leonida is a whole invented state, and the differences matter for anyone planning a trip or writing about the game.",
  "featured": False,
  "body": [
-  {"p": ["The short answer is: GTA 6 is set in a fictional American state called Leonida, and its biggest city, Vice City, is Miami with the serial numbers filed off. Rockstar's own copy for the city names the real neighbourhoods, so the answer is not ambiguous in the way that \"it is based on Miami\" usually is."]},
-  {"h2": "What Rockstar actually says", "id": "official"},
-  {"p": ["The official description of Vice City on Rockstar's site reads: \"We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world.\""]},
+  {"p": ["The short answer is: GTA 6 is set in a fictional American state called Leonida, and its biggest city, Vice City, is Miami with the serial numbers filed off. The official copy for the city names the real neighbourhoods, so the answer is not ambiguous in the way that \"it is based on Miami\" usually is."]},
+  {"h2": "What the publisher actually says", "id": "official"},
+  {"p": ["The official description of Vice City on the publisher's site reads: \"We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world.\""]},
   {"p": ["Four real Miami identifiers are in that paragraph. Ocean Beach is Miami Beach. Little Cuba is Little Havana. The VC Port is PortMiami. And \"the pastel art deco hotels and bright white sands\" is a description of South Beach that you could write without ever having seen the game."]},
   {"h2": "Leonida is not Florida, and it is not Miami either", "id": "leonida"},
-  {"p": ["The distinction that trips up most articles is between the state and the city. Leonida is an invented state that borrows from all of Florida, not a renamed Miami-Dade County. Rockstar has published six regions for it, and only one of them, Vice City, is the Miami analogue."]},
+  {"p": ["The distinction that trips up most articles is between the state and the city. Leonida is an invented state that borrows from all of Florida, not a renamed Miami-Dade County. Six regions have been published for it, and only one of them, Vice City, is the Miami analogue."]},
   {"table": {"head": ["Region", "The real place behind it", "Where it is"], "rows": [
     ["Vice City", "Miami and Miami Beach", "South-east Florida"],
     ["Leonida Keys", "The Florida Keys", "Off the southern tip"],
@@ -161,14 +161,14 @@ POSTS = [
     "<strong>The tiki and pastel palette.</strong> The colour grading of the game's Vice City, saturated coral and teal against pastel pink, is the specific palette of Miami Beach's Art Deco hotels, not a generic 1980s Miami.",
     "<strong>The port on its own island.</strong> Dodge Island, holding the container cranes and the cruise terminal, is an unusual enough real layout that the game reproducing it is a deliberate signal."]},
   {"h2": "What is Miami and what is not", "id": "miami-and-not"},
-  {"p": ["Even inside Vice City, not everything is a one-to-one match, and pretending otherwise is how fan sites end up confidently wrong. Rockstar reorders geography constantly. In the real city the airport is 20 miles west of Downtown; in the game it is close enough to see from the approach. In the real city the Jade Ocean is 10 miles north of Miami Beach; in the game it has moved south to sit inside Vice Beach."]},
+  {"p": ["Even inside Vice City, not everything is a one-to-one match, and pretending otherwise is how fan sites end up confidently wrong. The publisher reorders geography constantly. In the real city the airport is 20 miles west of Downtown; in the game it is close enough to see from the approach. In the real city the Jade Ocean is 10 miles north of Miami Beach; in the game it has moved south to sit inside Vice Beach."]},
   {"p": ["The honest summary is that GTA 6's Vice City is a Miami you have already visited, compressed and re-lit, with a few deliberate rearrangements so that the game reads well rather than accurately."]},
   {"h2": "Coming to South Florida for the launch", "id": "coming"},
   {"p": ["If you are coming for launch week, the game is a better guide to this city than most travel guides, because it points at the parts that are visually distinctive and ignores the parts that are not. Ocean Drive, the causeway, Wynwood, Little Havana, the bay and the swamp: all of it is real, all of it is reachable, and all of it looks the way you have seen it."]},
-  {"note": {"title": "Trademark note", "text": "Grand Theft Auto, GTA, Vice City and Leonida are trademarks of Take-Two Interactive and its affiliates. We use them here for identification and commentary, in line with our editorial policy. We are not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive, and we use no game art, logos, characters or screenshots."}}
+  {"note": {"title": "Trademark note", "text": "Grand Theft Auto, GTA, Vice City and Leonida are trademarks of the publisher's parent company and its affiliates. We use them here for identification and commentary, in line with our editorial policy. We are not affiliated with, endorsed by or sponsored by any game publisher, and we use no game art, logos, characters or screenshots."}}
  ],
  "faq": [
-  ["Is GTA 6 set in Miami?", "Vice City in GTA 6 is modelled on Miami, Florida, and Rockstar's own official description names real Miami neighbourhoods including Little Cuba, Ocean Beach and the VC Port. The game as a whole is set in Leonida, an invented state that also takes in the Florida Keys, the Everglades, the Panhandle, the sugar belt and part of Georgia."],
+  ["Is GTA 6 set in Miami?", "Vice City in GTA 6 is modelled on Miami, Florida, and The official description names real Miami neighbourhoods including Little Cuba, Ocean Beach and the VC Port. The game as a whole is set in Leonida, an invented state that also takes in the Florida Keys, the Everglades, the Panhandle, the sugar belt and part of Georgia."],
   ["Is Leonida just Florida with a different name?", "No. Leonida is a fictional state that borrows from several real places. It contains the Florida Keys and the Everglades as themselves, but also pulls in Panama City, Clewiston in the sugar belt and Providence Canyon in Georgia, and compresses them into one map."],
   ["Which GTA 6 city is Miami?", "Vice City, and specifically the Miami area: the game maps Downtown Miami, Miami Beach, Little Havana, Wynwood, Little Haiti, the port on Dodge Island and the airport to the west of the bay."],
   ["Does GTA 6 get the Miami neighbourhoods right?", "Mostly, with deliberate rearrangements. The barrier island, the one-way grid, the toll plaza and the port all match reality closely, while places like the Jade Ocean tower have been moved for dramatic effect."],
@@ -179,7 +179,7 @@ POSTS = [
 {
  "slug": "gta-6-map-and-regions",
  "title": "GTA 6 Map: The Six Regions of Leonida and Where They Are",
- "meta": "Rockstar's six Leonida regions, their official descriptions, and the real Florida, Georgia and panhandle locations each one is based on.",
+ "meta": "The six Leonida regions, their official descriptions, and the real Florida, Georgia and panhandle locations each one is based on.",
  "kicker": "Map guide",
  "cat": "Locations",
  "date": "2026-10-17",
@@ -188,7 +188,7 @@ POSTS = [
  "excerpt": "Six official regions, one fictional state, and a surprising amount of real Florida underneath. Here is the official copy for each region next to the geography it borrows from.",
  "featured": False,
  "body": [
-  {"p": ["Rockstar has published six regions for Leonida, each with its own heading, standfirst and paragraph on the official Only in Leonida page. That copy is the best primary source available, and quoting it is more useful than paraphrasing it, because the copy is written as atmosphere while the geography underneath is quietly specific."]},
+  {"p": ["Six regions have been published for Leonida, each with its own heading, standfirst and paragraph on the official Only in Leonida page. That copy is the best primary source available, and quoting it is more useful than paraphrasing it, because the copy is written as atmosphere while the geography underneath is quietly specific."]},
   {"h2": "The six regions, with the official copy", "id": "the-six"},
   {"h3": "Vice City"},
   {"p": ["<strong>\"Everything in Excess.\"</strong> \"We're a long way from the '80s, but Vice City is still the sun and fun capital of America. The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderias of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world.\""]},
@@ -209,7 +209,7 @@ POSTS = [
   {"p": ["<strong>\"Wild, Wild Country.\"</strong> \"Room to breathe on the state's northern fringes. A national landmark up against the state's northern border, Mount Kalaga offers prime hunting, fishing, and off-road trails. In the lush surrounding backwoods, hillbilly mystics and paranoid radicals live far from the prying eyes of the government.\""]},
   {"p": ["<strong>The real place:</strong> Providence Canyon State Park in south-west Georgia. <strong>Why:</strong> the canyon's eroded red clay walls are the visual match, and the park's remoteness matches the copy's geography. This is the one region where the prototype is outside Florida entirely."]},
   {"h2": "Reading the six together", "id": "reading"},
-  {"p": ["The structure is consistent. Every region gets an economic base and a source of danger, and the copy is careful never to describe a mechanic. Rockstar writes \"offers prime hunting, fishing, and off-road trails\", which describes the park as a place; it does not announce a hunting system, and no official page describes how anything works."]},
+  {"p": ["The structure is consistent. Every region gets an economic base and a source of danger, and the copy is careful never to describe a mechanic. The publisher writes \"offers prime hunting, fishing, and off-road trails\", which describes the park as a place; it does not announce a hunting system, and no official page describes how anything works."]},
   {"table": {"head": ["Region", "Economic base", "The danger", "Real place"], "rows": [
     ["Vice City", "Tourism and crime", "The criminal economy", "Miami"],
     ["Leonida Keys", "Bars and boats", "The water", "Florida Keys"],
@@ -217,7 +217,7 @@ POSTS = [
     ["Port Gellhorn", "A post-tourism economy", "Cheap intoxicants", "Panama City"],
     ["Ambrosia", "The Allied Crystal refinery", "The biker gang", "Clewiston"],
     ["Mount Kalaga", "None given", "Hermits and radicals", "Georgia"]]}},
-  {"p": ["That table is our editorial arrangement, not Rockstar's taxonomy, and it is useful as a filter: any claim about a region's character that falls outside those lines is almost certainly inference rather than something the studio has written down."]},
+  {"p": ["That table is our editorial arrangement, not the publisher's taxonomy, and it is useful as a filter: any claim about a region's character that falls outside those lines is almost certainly inference rather than something the studio has written down."]},
   {"h2": "The county grid underneath", "id": "counties"},
   {"p": ["Beneath the six regions sits a second layer: a Florida-style county grid. Three county names have actually been seen on screen in official footage: Vice-Dale, on a police seal in the in-game Mega Noticias newscast in Trailer 2; Kelly County, read from roadside signage; and Leonard County, on a police vehicle in an in-game social media post. The remaining county names are community reconstruction."]},
   {"p": ["The mapping community's reading lines Vice-Dade up with Miami-Dade, Leonard with Broward, Ambrosia with Hendry County, Kelly with a Collier and Panhandle blend, and Mariana with Monroe County, which covers the Keys and the Everglades together. It is a clean scheme, and it is inference rather than canon, but the three confirmed names all point the same way."]},
@@ -231,9 +231,9 @@ POSTS = [
     "<strong>Port Gellhorn</strong>, <strong>Ambrosia</strong> and <strong>Mount Kalaga</strong> are all real, all visitable, and all a serious drive: Panama City is about eight hours from Miami, Clewiston about three, and Providence Canyon is further still."]}
  ],
  "faq": [
-  ["How many regions are in GTA 6's Leonida?", "Six, according to Rockstar's official Only in Leonida page: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."],
+  ["How many regions are in GTA 6's Leonida?", "Six, according to the official Only in Leonida page: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."],
   ["What is Mount Kalaga National Park based on?", "The community match is Providence Canyon State Park in south-west Georgia, whose eroded clay canyon walls match the game's rock formations. It is the only region whose prototype is not in Florida."],
-  ["What is Ambrosia in GTA 6 based on?", "Clewiston, Florida, on Lake Okeechobee, where the U.S. Sugar mill has been the town's economic centre since the 1920s. Rockstar's Allied Crystal refinery is a renamed version of it."],
+  ["What is Ambrosia in GTA 6 based on?", "Clewiston, Florida, on Lake Okeechobee, where the U.S. Sugar mill has been the town's economic centre since the 1920s. The Allied Crystal refinery is a renamed version of it."],
   ["Is Port Gellhorn Panama City?", "That is the strongest community identification: a once-popular Gulf resort town with shut-down attractions and empty strip malls matches Panama City's beach strip closely. It has not been officially confirmed."],
   ["How big is Leonida compared to Florida?", "Smaller in area but far more compressed in practice. The game's map holds the Keys, the Everglades, the Panhandle, the sugar belt and north Georgia, which in reality are spread across roughly 400 miles."]
  ],
@@ -287,7 +287,7 @@ POSTS = [
     "<strong>2:27</strong> - the speedboat chased by police, with the port cranes in frame.",
     "<strong>2:33 / 2:34</strong> - the rooftop helipad tower. Jade Ocean, Sunny Isles."]},
   {"h2": "An Extended Look: August 27, 2026", "id": "extended-look"},
-  {"p": ["Twenty-six minutes and forty-eight seconds of actual gameplay, streamed on Netflix before it went to YouTube and Rockstar's own site. Rockstar never called it a trailer, and in August a lot of people called it Trailer 3 anyway."]},
+  {"p": ["Twenty-six minutes and forty-eight seconds of actual gameplay, streamed on Netflix before it went to YouTube and the publisher's own site. It was never called a trailer, and in August a lot of people called it Trailer 3 anyway."]},
   {"ul": [
     "<strong>8:10</strong> - driving across Vice City, which is the cleanest continuous look at the Downtown and Brickell road layout in official footage.",
     "<strong>9:29</strong> - the armoured truck robbery, in a city block with an arcade frontage that matches the real Downtown Miami streets.",
@@ -313,21 +313,21 @@ POSTS = [
   {"ul": [
     "<strong>Watch for the context, not the object.</strong> The single most useful frame in Trailer 2 is the arena at 1:40, because it contains three separate real landmarks in one composition. When you match an object you get an opinion; when you match a set of objects you get a fix.",
     "<strong>Traffic moves the same way.</strong> The game's one-way grid in Downtown Miami, the causeway approach and the US-1 strip all follow real street patterns. If you know what the real road does, you can often predict what the game is showing."]},
-  {"note": {"title": "Watching the trailers", "text": "All four are on Rockstar's own site, and the YouTube uploads carry official subtitles. The Extended Look is age-restricted on YouTube, so watch it on Rockstar's site if you cannot sign in. We do not re-upload or mirror any footage."}}
+  {"note": {"title": "Watching the trailers", "text": "All four are on the publisher's own site, and the YouTube uploads carry official subtitles. The Extended Look is age-restricted on YouTube, so watch it on the official site if you cannot sign in. We do not re-upload or mirror any footage."}}
  ],
  "faq": [
-  ["How many GTA 6 trailers are there?", "Three trailers and one gameplay showcase: Trailer 1 (December 4, 2023), Trailer 2 (May 6, 2025), An Extended Look (August 27, 2026) and the Launch Trailer (October 15, 2026). Rockstar calls the last one the Launch Trailer, though it is the third trailer by count."],
+  ["How many GTA 6 trailers are there?", "Three trailers and one gameplay showcase: Trailer 1 (December 4, 2023), Trailer 2 (May 6, 2025), An Extended Look (August 27, 2026) and the Launch Trailer (October 15, 2026). The publisher calls the last one the Launch Trailer, though it is the third trailer by count."],
   ["Where is the Ocean View Hotel in Trailer 1?", "At 0:33, the neon strip at night. The pink Art Deco facade and the rooftop sign are the Clevelander at 1020 Ocean Drive, Miami Beach."],
   ["Which trailer shows the most real locations?", "Trailer 2, by a wide margin. It contains at least fourteen identifiable real locations, including a single frame at 1:40 that shows the arena, the observation wheel and the port cranes together."],
-  ["Can I watch the GTA 6 Extended Look?", "Yes, on Rockstar's own site or on YouTube. YouTube age-restricts it, so you may need to sign in. It is 26 minutes of gameplay and it is the most useful official footage for location matching after Trailer 2."],
-  ["Does Rockstar confirm the locations shown in its trailers?", "No. The trailers are promotional. Every real-world identification is the community's reading of the footage, and we label how strong each one is on our location pages."]
+  ["Can I watch the GTA 6 Extended Look?", "Yes, on the publisher's own site or on YouTube. YouTube age-restricts it, so you may need to sign in. It is 26 minutes of gameplay and it is the most useful official footage for location matching after Trailer 2."],
+  ["Does the publisher confirm the locations shown in its trailers?", "No. The trailers are promotional. Every real-world identification is the community's reading of the footage, and we label how strong each one is on our location pages."]
  ],
  "related": ["gta-6-locations-in-real-life", "gta-6-release-date", "gta-6-map-and-regions", "is-gta-6-set-in-miami"]
 },
 {
  "slug": "gta-6-everglades-grassrivers",
  "title": "Grassrivers Is the Everglades: Seeing GTA 6's Swamp for Real",
- "meta": "Grassrivers in GTA 6 is the Everglades. Rockstar's official copy, why there is no alternative candidate, and what an airboat tour from Miami actually involves.",
+ "meta": "Grassrivers in GTA 6 is the Everglades. The official copy, why there is no alternative candidate, and what an airboat tour from Miami actually involves.",
  "kicker": "Region guide",
  "cat": "Locations",
  "date": "2026-10-15",
@@ -336,10 +336,10 @@ POSTS = [
  "excerpt": "There is no serious alternative: the game's wetland region is the Everglades. Here is the official copy, the geography, and what the airboat ride is actually like.",
  "featured": False,
  "body": [
-  {"p": ["Rockstar named its wetland region Grassrivers and described it as \"the untamable jewel of Leonida's crown\", full of gators and mangroves and things that are \"far deadlier\". There is exactly one candidate for that description in the state, and it is the largest subtropical wilderness in the United States."]},
+  {"p": ["The wetland region was named Grassrivers and described as \"the untamable jewel of Leonida's crown\", full of gators and mangroves and things that are \"far deadlier\". There is exactly one candidate for that description in the state, and it is the largest subtropical wilderness in the United States."]},
   {"h2": "The official copy, in full", "id": "official-copy"},
   {"p": ["<strong>Heading: \"Welcome to the Wetlands.\" Standfirst: \"The untamable jewel of Leonida's crown.\"</strong> \"You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves.\""]},
-  {"p": ["One of Rockstar's own image captions carries the only hard spatial fact in the entire description: a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That establishes that the wetland region is close enough to the city to see it. It does not give a distance, and nobody else does either."]},
+  {"p": ["One of the official image captions carries the only hard spatial fact in the entire description: a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That establishes that the wetland region is close enough to the city to see it. It does not give a distance, and nobody else does either."]},
   {"h2": "Why the Everglades and nothing else", "id": "why"},
   {"ul": [
     "<strong>Scale.</strong> The Everglades is about 1.5 million acres. It is the only place in the country where you can stand on a paved road and see sawgrass running unbroken to the horizon in every direction.",
@@ -366,7 +366,7 @@ POSTS = [
   {"p": ["If you are building a GTA 6 launch trip, the most effective order is swamp first, city second. It is the same contrast the game is built on, and doing it in that order makes the neon land harder."]}
  ],
  "faq": [
-  ["Is Grassrivers the Everglades in GTA 6?", "Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida. It is the most confident regional match in the game."],
+  ["Is Grassrivers the Everglades in GTA 6?", "Yes. The official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida. It is the most confident regional match in the game."],
   ["How far is the Everglades from Miami?", "About 45 miles from Downtown Miami, roughly 75 km and an hour and a half in traffic. Our airboat tour includes the shuttle from Miami, so the travel is handled for you."],
   ["Will I definitely see alligators?", "No sighting is guaranteed, but they are the most commonly seen animal in the park and a good guide will usually find them. Winter is best, when they bask."],
   ["What does an Everglades airboat ride cost and last?", "On our tour the airboat run is 30 minutes as part of a four-hour trip including the shuttle, the boardwalk and the viewing tower. The total is $79 per person."],

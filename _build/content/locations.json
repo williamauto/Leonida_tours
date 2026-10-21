@@ -104,7 +104,7 @@
    "faq": [
     [
      "Is the Ocean View Hotel in GTA 6 the Clevelander?",
-     "Almost certainly. The Clevelander's pink Art Deco facade and rooftop neon sign appear in the trailer in the same position as the in-game hotel. It is the most widely repeated identification in the community, though Rockstar has never published an official list of real-world inspirations."
+     "Almost certainly. The Clevelander's pink Art Deco facade and rooftop neon sign appear in the trailer in the same position as the in-game hotel. It is the most widely repeated identification in the community, though no official list of real-world inspirations has ever been published."
     ],
     [
      "Can you stay at the Clevelander?",
@@ -127,12 +127,12 @@
    "img": "havana",
    "img_alt": "Welcome to Little Havana mural with a rooster on Calle Ocho, Miami",
    "confidence": "Official naming",
-   "confidence_note": "Rockstar names Little Cuba in its own Vice City description, and Little Havana and Little Cuba are the same real district.",
+   "confidence_note": "The official Vice City description names Little Cuba, and Little Havana and Little Cuba are the same real district.",
    "seen": "Trailer 2 (1:02) and the official Vice City region page",
    "tour": "vc-van",
    "meta": "Calle Ocho and Maximo Gomez Park in Miami's Little Havana. The real heart of the game's Little Cuba district, with where to eat and which tour stops.",
    "title": "Calle Ocho and Maximo Gomez Park, Little Havana | Leonida Tours",
-   "lede": "Little Cuba is the real Little Havana. Rockstar's own description of Vice City names it directly: \"the bustling panederias of Little Cuba,\" alongside Ocean Beach's pastel Art Deco hotels and the VC Port. The real district runs along Calle Ocho, SW 8th Street, and its centrepiece is Máximo Gómez Park, the small square of domino tables that the game turns into its main street.",
+   "lede": "Little Cuba is the real Little Havana. The official Vice City description names it directly: \"the bustling panederias of Little Cuba,\" alongside Ocean Beach's pastel Art Deco hotels and the VC Port. The real district runs along Calle Ocho, SW 8th Street, and its centrepiece is Máximo Gómez Park, the small square of domino tables that the game turns into its main street.",
    "body": [
     {
      "p": [
@@ -224,7 +224,7 @@
    "faq": [
     [
      "Is Little Cuba in GTA 6 the same as Little Havana?",
-     "Yes. Rockstar's official Vice City page names \"Little Cuba\" as one of the city's neighbourhoods. Little Cuba is the nickname for the real Little Havana district, centred on SW 8th Street, so the game's district and the real one are the same place under two names."
+     "Yes. The official Vice City page names \"Little Cuba\" as one of the city's neighbourhoods. Little Cuba is the nickname for the real Little Havana district, centred on SW 8th Street, so the game's district and the real one are the same place under two names."
     ],
     [
      "What is Máximo Gómez Park?",
@@ -491,7 +491,7 @@
    "body": [
     {
      "p": [
-      "E11EVEN is a nightclub in the Northeast Downtown district, on NE 11th Street between NE 1st and NE 2nd Avenues, a couple of blocks from the arena. Rockstar's Trailer 2 shows a late-night club scene, and the community matched it to this address within days of the trailer dropping."
+      "E11EVEN is a nightclub in the Northeast Downtown district, on NE 11th Street between NE 1st and NE 2nd Avenues, a couple of blocks from the arena. Trailer 2 shows a late-night club scene, and the community matched it to this address within days of the trailer dropping."
      ]
     },
     {
@@ -500,7 +500,7 @@
     },
     {
      "p": [
-      "Rockstar does not translate names literally. They change them: Vice-Dale for Miami-Dade, Little Cuba for Little Havana, Sahara Arena for an arena that is not in the Sahara. E11EVEN breaks that rule, because the transformation is arithmetic rather than semantic: eleven becomes 9-1-1-9. It is the same joke, and it is why the match is considered strong."
+      "The publisher does not translate names literally. They change them: Vice-Dale for Miami-Dade, Little Cuba for Little Havana, Sahara Arena for an arena that is not in the Sahara. E11EVEN breaks that rule, because the transformation is arithmetic rather than semantic: eleven becomes 9-1-1-9. It is the same joke, and it is why the match is considered strong."
      ]
     },
     {
@@ -602,7 +602,7 @@
    "tour": "vc-boat",
    "meta": "PortMiami on Dodge Island, Miami. The real cruise port behind the game's PortViceCity, with address, what to see from the terminals and which tour goes there.",
    "title": "PortMiami on Dodge Island, Miami | Leonida Tours",
-   "lede": "The in-game PortViceCity is PortMiami, the container and cruise terminal on Dodge Island. Rockstar's own Vice City description calls it \"the cruise ship capital of the world,\" which is Miami's port, and the trailer's speedboat chase and the gantry cranes are the terminals you can still see from the causeway and from the water.",
+   "lede": "The in-game PortViceCity is PortMiami, the container and cruise terminal on Dodge Island. The official Vice City description calls it \"the cruise ship capital of the world,\" which is Miami's port, and the trailer's speedboat chase and the gantry cranes are the terminals you can still see from the causeway and from the water.",
    "body": [
     {
      "p": [
@@ -689,7 +689,7 @@
    "faq": [
     [
      "Is PortViceCity in GTA 6 PortMiami?",
-     "Yes. The trailer's speedboat chase and the row of container gantry cranes match PortMiami on Dodge Island, and Rockstar's official Vice City description refers to \"the VC Port, the cruise ship capital of the world,\" which is Miami's port."
+     "Yes. The trailer's speedboat chase and the row of container gantry cranes match PortMiami on Dodge Island, and The official Vice City description refers to \"the VC Port, the cruise ship capital of the world,\" which is Miami's port."
     ],
     [
      "Can you go inside the port?",
@@ -951,12 +951,12 @@
    "img": "glades",
    "img_alt": "Everglades wetland reflecting a golden sunset",
    "confidence": "Official region + community match",
-   "confidence_note": "Rockstar names the wetland region Grassrivers and describes gators and mangroves in its own copy; the Everglades is the only wetland of that scale in Florida.",
+   "confidence_note": "The wetland region was named Grassrivers and described in its own copy; the Everglades is the only wetland of that scale in Florida.",
    "seen": "Trailer 1 (0:20), Trailer 2 (2:18) and the official Grassrivers region page",
    "tour": "airboat",
    "meta": "Everglades National Park at 40001 SR 6, Homestead. The real wetland behind the game's Grassrivers region, with distances and which tour goes there.",
    "title": "Everglades National Park, Homestead, Florida | Leonida Tours",
-   "lede": "Rockstar calls the state's wetland region Grassrivers, and its official description names the alligators and the mangroves. The real place is the Everglades: a 1.5-million-acre wetland that runs from Lake Okeechobee south to the Gulf, 40 miles from the neon strip where the rest of Leonida Tours runs.",
+   "lede": "The state's wetland region was named Grassrivers, and its official description names the alligators and the mangroves. The real place is the Everglades: a 1.5-million-acre wetland that runs from Lake Okeechobee south to the Gulf, 40 miles from the neon strip where the rest of Leonida Tours runs.",
    "body": [
     {
      "p": [
@@ -964,7 +964,7 @@
      ]
     },
     {
-     "h2": "What Rockstar actually wrote",
+     "h2": "What the publisher actually wrote",
      "id": "official-copy"
     },
     {
@@ -975,7 +975,7 @@
     {
      "note": {
       "title": "The one spatial fact in the official copy",
-      "text": "Rockstar's own image caption for Grassrivers describes a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That is the game's own statement that the wetland region is close enough to the city to see it. It does not give a distance, and neither does anyone else."
+      "text": "The official image caption for Grassrivers describes a speedboat heading toward buildings on piers with the Vice City skyline visible in the distance. That is the game's own statement that the wetland region is close enough to the city to see it. It does not give a distance, and neither does anyone else."
      }
     },
     {
@@ -1052,7 +1052,7 @@
    "faq": [
     [
      "Is Grassrivers in GTA 6 the Everglades?",
-     "Yes. Rockstar's official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland region of that scale and character in Florida. It is the most confident regional match in the game."
+     "Yes. The official Grassrivers page describes gators, mangroves and a primordial wetland expanse, and the Everglades is the only wetland region of that scale and character in Florida. It is the most confident regional match in the game."
     ],
     [
      "How far is the Everglades from Miami?",
@@ -1438,12 +1438,12 @@
    "img": "laperle",
    "img_alt": "Colorful murals on a wall in Little Haiti, Miami",
    "confidence": "Official naming",
-   "confidence_note": "Rockstar names Little Haiti in Trailer 2 and in the character pages for the game's characters in Vice City.",
+   "confidence_note": "Trailer 2 names Little Haiti, as do the character pages for the game's characters in Vice City.",
    "seen": "Trailer 2 (1:02)",
    "tour": "vc-van",
    "meta": "Little Haiti on NW 2nd Avenue, Miami. The real Caribbean district north of Downtown, with address, what to see, where to eat and which tour stops there.",
    "title": "Little Haiti, NW 2nd Avenue, Miami | Leonida Tours",
-   "lede": "Little Haiti is the real Little Haiti, the Caribbean neighbourhood north of Downtown Miami. Rockstar names it directly in Trailer 2, and it is the one in-game district on our route whose real-world name is completely unchanged, which makes it the easiest place in the game to stand in and confirm.",
+   "lede": "Little Haiti is the real Little Haiti, the Caribbean neighbourhood north of Downtown Miami. It is named directly in Trailer 2, and it is the one in-game district on our route whose real-world name is completely unchanged, which makes it the easiest place in the game to stand in and confirm.",
    "body": [
     {
      "p": [
@@ -1535,7 +1535,7 @@
    "faq": [
     [
      "Is Little Haiti in GTA 6 the same as the real Little Haiti?",
-     "Yes. Unlike most in-game names, Rockstar left this one unchanged, and Trailer 2 shows the district in Vice City. The real Little Haiti is the Caribbean neighbourhood north of Downtown Miami, centred on NW 2nd Avenue."
+     "Yes. Unlike most in-game names, this one was left unchanged, and Trailer 2 shows the district in Vice City. The real Little Haiti is the Caribbean neighbourhood north of Downtown Miami, centred on NW 2nd Avenue."
     ],
     [
      "What is the most photographed spot there?",
@@ -1686,7 +1686,7 @@
    "seen": "Trailer 1 and Trailer 2",
    "tour": null,
    "meta": "The roadside VICE sign near Miami International Airport. How the weakest location identification on this list actually works, and where to find it.",
-   "lede": "Every open-world game needs one sign that says the place name, and GTA VI has the VICE sign: the tall illuminated letters on a metal frame beside the airport. Rockstar has shown it in official material, and mapping projects place it on the western edge of the city near the airport's runway approach, where a driver would pass it on the way in.",
+   "lede": "Every open-world game needs one sign that says the place name, and GTA VI has the VICE sign: the tall illuminated letters on a metal frame beside the airport. It has been shown in official material, and mapping projects place it on the western edge of the city near the airport's runway approach, where a driver would pass it on the way in.",
    "body": [
     {
      "p": [
@@ -1699,7 +1699,7 @@
     },
     {
      "p": [
-      "Confirmed: Rockstar's official material shows a large Vice City sign near the airport, and its placement in the game is fixed. Not confirmed: no official source has published the address of a real sign, and the coordinates below reflect the best-supported community placement rather than a confirmed prototype."
+      "Confirmed: official material shows a large Vice City sign near the airport, and its placement in the game is fixed. Not confirmed: no official source has published the address of a real sign, and the coordinates below reflect the best-supported community placement rather than a confirmed prototype."
      ]
     },
     {
@@ -1766,14 +1766,14 @@
     },
     {
      "p": [
-      "A sign that names the place is how an open world tells you where you are in the first ten seconds of play. Rockstar put a monumental version of it on the approach to the city, which means it is a landmark by design: something you drive towards, something that appears on the horizon before the skyline does."
+      "A sign that names the place is how an open world tells you where you are in the first ten seconds of play. A monumental version of it sits on the approach to the city, which means it is a landmark by design: something you drive towards, something that appears on the horizon before the skyline does."
      ]
     }
    ],
    "faq": [
     [
      "Where is the real VICE sign?",
-     "Nobody knows for certain. Rockstar shows it in official footage near the airport, and mapping projects place it on the western edge of the city near the airport's runway approach, but no official real-world address has been published. We treat it as a community identification, not a confirmed match."
+     "Nobody knows for certain. It is shown in official footage near the airport, and mapping projects place it on the western edge of the city near the airport's runway approach, but no official real-world address has been published. We treat it as a community identification, not a confirmed match."
     ],
     [
      "Why is this less certain than the other entries?",
