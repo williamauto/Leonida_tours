@@ -36,7 +36,7 @@ def load_alt():
     return {}
 
 
-BLOCK_KEYS = {"h2", "h3", "p", "ul", "ol", "table", "note", "quote", "image"}
+BLOCK_KEYS = {"h2", "h3", "p", "ul", "ol", "table", "note", "quote", "image", "form"}
 KNOWN_IMAGES = set(load_alt().keys())
 
 REQ = ["slug", "title", "meta", "kicker", "cat", "date", "img", "img_alt",
@@ -115,6 +115,9 @@ def check_body(where, body):
                 err(tag, "image needs img and alt")
             else:
                 check_image(tag, v["img"])
+        elif k == "form":
+            if not isinstance(v, dict):
+                err(tag, "form must be a dict")
     return words
 
 
@@ -131,9 +134,13 @@ def check_image(where, name):
     err(where, f"image file img/{name}.jpg not found")
 
 
-def check_faq(where, faq):
-    if not isinstance(faq, list) or not faq:
-        err(where, "faq must be a non-empty list")
+def check_faq(where, faq, required=True):
+    if not isinstance(faq, list):
+        err(where, "faq must be a list")
+        return
+    if not faq:
+        if required:
+            err(where, "faq must be a non-empty list")
         return
     for i, pair in enumerate(faq):
         if not isinstance(pair, (list, tuple)) or len(pair) != 2:
@@ -175,10 +182,17 @@ def check_record(where, r, seen_slugs):
         err(where, "img_alt must be a descriptive string")
     if "body" in r:
         w = check_body(where, r["body"])
-        if w < 600:
+        # A page built around a form carries its content in the fields, so it
+        # is short by design and does not need an FAQ either.
+        has_form = any(isinstance(b, dict) and "form" in b for b in r["body"])
+        if has_form:
+            if w < 40:
+                warn(where, f"body is only ~{w} words (target 40+ for a form page)")
+        elif w < 600:
             warn(where, f"body is only ~{w} words (target 600+)")
     if "faq" in r:
-        check_faq(where, r["faq"])
+        has_form = any(isinstance(b, dict) and "form" in b for b in r.get("body", []))
+        check_faq(where, r["faq"], required=not has_form)
 
 
 def load(path):

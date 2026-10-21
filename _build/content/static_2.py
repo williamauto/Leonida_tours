@@ -15,7 +15,7 @@ STATIC = [
  "body": [
    {"p": ["The most common reason a good trip goes badly is not the tour. It is the twenty minutes before it, spent on a street corner in Miami Beach looking for a minibus. Here is how pickup works, and what to do if you are fifteen minutes late."]},
    {"h2": "Your pickup point comes with your booking", "id": "pickup"},
-   {"p": ["We do not print meeting addresses on this site, and that is on purpose. Your exact pickup point is sent with your booking confirmation, once we know where you are staying, how many of you there are and whether you have luggage. It arrives with the date, the time, the driver's name and a WhatsApp thread for that booking."]},
+   {"p": ["We do not print meeting addresses on this site, and that is on purpose. Your exact pickup point is sent with your booking confirmation, once we know where you are staying, how many of you there are and whether you have luggage. It arrives with the date, the time, the driver's name and a message thread for that booking."]},
    {"ul": [
      "<strong>City tours:</strong> your hotel lobby, the kerb outside your building, or the nearest landmark we agree with you.",
      "<strong>Everglades and Keys:</strong> the same coverage on a short stop list, so an early start still works for everyone on it.",
@@ -35,7 +35,7 @@ STATIC = [
      "The vehicles are white air-conditioned minibuses with Leonida Tours on the side in pink and teal.",
      "Your host is in a pink lanyard and will be standing at the kerb.",
      "The bus is usually parked within a minute or two of your pickup point, with the Leonida Tours logo on the side.",
-     "If you cannot see it straight away, message the WhatsApp thread for your booking and the driver will come to you."]},
+     "If you cannot see it straight away, reply to the message thread for your booking and the driver will come to you."]},
    {"h2": "The boat tour meeting point", "id": "boat-tour"},
    {"p": ["Boats leave from the marina, not from a city street. We send the gate details with your booking: which gate to use, which side of the bridge it is on, and what the end of the boardwalk looks like. Boarding is from a floating dock with a step ladder, so wear closed shoes."]},
    {"ul": [
@@ -43,11 +43,11 @@ STATIC = [
      "Boarding is from a floating dock with a step ladder, so wear closed shoes.",
      "Arrive 20 minutes early. The gate closes five minutes before departure for the manifest."]},
    {"h2": "If you are running late", "id": "late"},
-   {"p": ["Call the number on your confirmation as soon as you know you have a problem. The practical rules are these."]},
+   {"p": ["Reply to the message thread on your confirmation as soon as you know you have a problem. The practical rules are these."]},
    {"table": {"head": ["How late", "What happens"], "rows": [
      ["Up to 20 minutes", "We hold the departure. No penalty."],
      ["20 to 45 minutes", "We will try to collect you, but the tour runs short by the time we pick you up."],
-     ["More than 45 minutes", "Treat it as a cancellation and call ahead. We will move you to another date at no charge."]]}},
+     ["More than 45 minutes", "Treat it as a cancellation and tell us ahead. We will move you to another date at no charge."]]}},
    {"p": ["Traffic is the usual reason. If you are coming from the airport, from Brickell during rush hour, or across the causeway at 5pm on a Friday, allow 25 minutes more than the map says. The map does not know about the drawbridges."]},
    {"h2": "What to bring", "id": "bring"},
    {"ul": [
@@ -64,9 +64,9 @@ STATIC = [
      "<strong>By bus:</strong> the Miami Beach Trolley runs the strip all evening, but it does not run early enough for the morning departures."]}
  ],
  "faq": [
-   ["Where do Leonida Tours meet for the city tour?", "Your exact pickup point is sent with your booking confirmation, along with the driver's name and a WhatsApp thread. We pick up across the greater Miami area: South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura."],
+   ["Where do Leonida Tours meet for the city tour?", "Your exact pickup point is sent with your booking confirmation, along with the driver's name and a message thread. We pick up across the greater Miami area: South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura."],
    ["Where do the boat tours leave from?", "From the marina. We send the gate details with your booking: which gate to use and how to find the floating dock. Boarding is from a step ladder, so wear closed shoes."],
-   ["How late can I be?", "Up to 20 minutes late we hold the departure with no penalty. Between 20 and 45 minutes we will try to collect you and the tour runs short. Beyond that, call and we will move you to another date at no charge."],
+   ["How late can I be?", "Up to 20 minutes late we hold the departure with no penalty. Between 20 and 45 minutes we will try to collect you and the tour runs short. Beyond that, tell us and we will move you to another date at no charge."],
    ["Is there parking at the meeting point?", "Your confirmation says whether the kerb is metered and where to leave the car. In South Beach and Downtown, parking is tight by mid-morning, so a rideshare to the landmark named in your booking is the easier option."],
    ["What should I bring on a tour?", "Sunscreen, water, closed shoes, a hat, and light rain protection in summer. We have water on board but a personal bottle is better."],
    ["Do the Everglades and Keys tours pick me up from my hotel?", "Yes, from a set of hotel stops listed in your booking confirmation, and we will collect you personally if you are outside the stop list. The bus needs to leave the last stop by 8:00am."]
@@ -86,7 +86,7 @@ STATIC = [
  "body": [
   {"p": ["We do not take a deposit on any tour, which means the default position is that you have not paid for anything until the day before. Here is the whole policy in plain terms."]},
   {"h2": "Free cancellation", "id": "free-cancellation"},
-  {"p": ["Cancel up to 24 hours before departure and you pay nothing. There is no deposit, no admin fee and no cancellation charge on any tour we run. Do it by replying to your confirmation email or calling the number on it."]},
+  {"p": ["Cancel up to 24 hours before departure and you pay nothing. There is no deposit, no admin fee and no cancellation charge on any tour we run. Do it by replying to your confirmation email, or by sending us a message through the contact page."]},
   {"p": ["You do not need a reason and you do not need to justify it. Most cancellations are a flight change or a sick child, and neither is our business."]},
   {"h2": "Inside 24 hours", "id": "inside-24"},
   {"table": {"head": ["Situation", "What happens"], "rows": [
@@ -113,20 +113,20 @@ STATIC = [
     "If the weather was poor and we ran it anyway, that is on us and we will refund it.",
     "If you simply did not enjoy the route, that is a legitimate answer and we will still look at it, but we are not obliged to refund a tour that ran as described."]},
   {"h2": "No-shows", "id": "no-shows"},
-  {"p": ["If you do not arrive and do not call, the seat is lost and there is no refund. We do not wait. The vehicle schedule and the boat bookings are committed, and the guide moves on."]},
+  {"p": ["If you do not arrive and do not tell us, the seat is lost and there is no refund. We do not wait. The vehicle schedule and the boat bookings are committed, and the guide moves on."]},
   {"p": ["If you cannot reach us because your phone is dead, and you were in the pickup area, we will make a reasonable attempt to find you. If we cannot, the outcome is the same as a no-show."]},
   {"h2": "Groups and private bookings", "id": "groups"},
   {"p": ["Groups of eight or more on a private departure follow a written quote, and the cancellation terms are on that quote. They are more flexible than the published policy, because a group booking is planned weeks ahead."]},
   {"p": ["For groups of eight or more, a 50% deposit is taken to hold the vehicle and, where relevant, the boat charter. That deposit is fully refundable up to 7 days before the date and transferable once to a new date."]},
   {"h2": "How to cancel", "id": "how-to-cancel"},
-  {"p": ["Reply to your confirmation email, or call +1 (305) 555-0148. Either works, and either gives us the booking reference we need to find your reservation. You will get a cancellation confirmation by email within a few hours, and the refund follows the payment method it came from."]}
+  {"p": ["Reply to your confirmation email, or send us a message through the contact page. Either way you give us the booking reference we need to find your reservation. You will get a cancellation confirmation by email within a few hours, and the refund follows the payment method it came from."]}
  ],
  "faq": [
-  ["Can I cancel my tour?", "Yes, free of charge, up to 24 hours before departure. There is no deposit and no admin fee on any tour we run. Reply to your confirmation email or call +1 (305) 555-0148."],
+  ["Can I cancel my tour?", "Yes, free of charge, up to 24 hours before departure. There is no deposit and no admin fee on any tour we run. Reply to your confirmation email, or send us a message through the contact page."],
   ["Can I reschedule instead of cancelling?", "Yes, rescheduling is free any number of times, including inside 24 hours, subject to availability. Tell us the new date and we will move the booking."],
   ["What happens if you cancel for weather?", "You get a full refund or a free move to another date, whichever you prefer, with no conditions attached. If we cancel, we tell you by 8am on the day."],
   ["Can I get a refund if I am ill?", "If you cancel inside 24 hours for a medical reason, contact us and send documentation and we will refund it. We do this routinely and we do not make it difficult."],
-  ["What happens if I miss the tour?", "There is no refund for a no-show, but we will move you to another date at no charge. Call us as soon as you know you are not going to make it."],
+  ["What happens if I miss the tour?", "There is no refund for a no-show, but we will move you to another date at no charge. Tell us as soon as you know you are not going to make it."],
   ["What is the deposit for private group bookings?", "Groups of eight or more on a private departure pay a 50% deposit to hold the vehicle and any boat charter. It is fully refundable up to 7 days before and transferable once to a new date."]
  ],
  "related": ["contact", "meeting-point", "about"]
@@ -174,7 +174,7 @@ STATIC = [
     "<strong>What is your wind limit, and what happens when you hit it?</strong> The answer should be a specific number and a specific action. An operator who cannot give you a number is guessing.",
     "<strong>Are there life jackets in child sizes, and how are they fitted?</strong> Not what sizes you have, but how they are fitted and by whom.",
     "<strong>Who is the captain, and what licence do they hold?</strong> On a passenger vessel that should be a USCG captain's licence, and you should be able to see it."]},
-  {"note": {"title": "If something goes wrong", "text": "In an emergency call 911 first, then our 24-hour line on +1 (305) 555-0148. Every vessel carries a VHF radio and the coast guard knows where we are, but a phone call from you still speeds things up enormously."}}
+  {"note": {"title": "If something goes wrong", "text": "In an emergency call 911 first, then send us a message through the contact page and mark it 'Emergency'. Every vessel carries a VHF radio and the coast guard knows where we are, but a message from you still speeds things up enormously."}}
  ],
  "faq": [
   ["Are Leonida Tours licensed in Florida?", "Yes. We operate under a Florida commercial tour operator licence, and every boat is US Coast Guard documented with the required safety equipment. Our licence number appears on every confirmation and invoice."],
@@ -182,7 +182,7 @@ STATIC = [
   ["Are life jackets provided for children?", "Yes, in child sizes, fitted by the crew. On the boat tours the crew will tell you when to wear yours, and it stays on when the captain calls for it."],
   ["What happens if the weather is too rough for the boat?", "The trip does not run. Every vessel has a documented wind and sea limit, and if the forecast exceeds it we cancel and refund in full, regardless of how good the day looks from the shore."],
   ["Are your guides trained in first aid?", "Yes, every guide holds current first aid and CPR certification, and every captain holds a US Coast Guard captain's licence. A float plan is filed with the coast guard before each departure."],
-  ["What is the emergency number?", "Call 911 first, then our 24-hour line on +1 (305) 555-0148. Every vessel carries a VHF radio and the coast guard knows where we are."]
+  ["What is the emergency number?", "Call 911 first, then send us a message through the contact page and mark it 'Emergency'. Every vessel carries a VHF radio and the coast guard knows where we are."]
  ],
  "related": ["about", "cancellation-policy", "contact"]
 },
@@ -228,7 +228,7 @@ STATIC = [
   {"h2": "Children's data", "id": "children"},
   {"p": ["Our site is a travel site and we do not knowingly collect data from children directly. Where a booking includes a child, the information is provided by an adult booking for them, and we hold it only for the duration of the booking and the period after it described above."]},
   {"h2": "Contact and changes", "id": "contact-privacy"},
-  {"p": ["Send us a message through our contact page and mark it 'Privacy', or call +1 (305) 555-0148. The date at the top of this page is the date it was last changed. If we make a material change, we will contact anyone who has booked with us in the last two years."]}
+  {"p": ["Send us a message through our contact page and mark it 'Privacy'. The date at the top of this page is the date it was last changed. If we make a material change, we will contact anyone who has booked with us in the last two years."]}
  ],
  "faq": [
   ["What personal data does Leonida Tours collect?", "Your name, email and phone for the booking, payment details handled by a PCI-compliant processor, and any dietary or mobility requirements you tell us about. We do not sell any of it."],

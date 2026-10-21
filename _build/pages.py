@@ -25,6 +25,91 @@ CONTENT = os.path.join(HERE, "content")
 CTX = {}
 
 
+# ---------------------------------------------------------------- contact form
+def contact_form():
+    """The contact form. No phone number, mailbox or street address is shown:
+    the visitor types a message, it is sent to the team by email, and the
+    team answers by email."""
+    topics = ["A booking or a question about a tour",
+              "A group, private or corporate booking",
+              "A change to a booking I already made",
+              "A correction to something on the site",
+              "Media, press or creator enquiry",
+              "Something else"]
+    opts = "".join(f"<option>{esc(t)}</option>" for t in topics)
+    return (
+        '<form class="cform" id="contact-form" novalidate>'
+        '<div class="cform-grid">'
+        '<label class="cf-label">Your name'
+        '<input type="text" name="name" autocomplete="name" placeholder="Alex Rivera" required></label>'
+        '<label class="cf-label">Your email'
+        '<input type="email" name="email" autocomplete="email" placeholder="alex@example.com" required></label>'
+        '</div>'
+        '<label class="cf-label">What is this about'
+        f'<select name="topic">{opts}</select></label>'
+        '<div class="cform-grid">'
+        '<label class="cf-label">Preferred date <span class="cf-opt">optional</span>'
+        '<input type="date" name="travel_date"></label>'
+        '<label class="cf-label">Group size <span class="cf-opt">optional</span>'
+        '<input type="number" name="group_size" min="1" max="60" placeholder="2"></label>'
+        '</div>'
+        '<label class="cf-label">Your message'
+        '<textarea name="message" rows="7" required '
+        'placeholder="Dates, how many of you there are, where you are staying, anything you need to know."></textarea></label>'
+        '<p class="cform-note">We answer by email, usually the same day. Nothing you write here is published, '
+        'and we never pass your details to anyone else.</p>'
+        '<button class="btn btn-primary" type="submit" id="cf-submit">Send message</button>'
+        '<p class="cform-msg" id="cf-msg" role="status"></p>'
+        '</form>'
+    )
+
+
+def contact_form_script():
+    """Client-side handler for the contact form.
+
+    Posts to the form service when one is configured. With no endpoint the
+    details are handed to the visitor's own mail client, so the message still
+    reaches the team by email. The team address is assembled at runtime, so
+    no page source contains it."""
+    return (
+        CTX["FORM_JS"] +
+        "var cf=document.getElementById('contact-form');\n"
+        "if(cf){\n"
+        "  var cfmsg=document.getElementById('cf-msg'), cfbtn=document.getElementById('cf-submit');\n"
+        "  function cfval(n){var el=cf.querySelector('[name='+n+']'); return el?el.value.trim():'';}\n"
+        "  cf.addEventListener('submit',function(ev){\n"
+        "    ev.preventDefault();\n"
+        "    var name=cfval('name'), email=cfval('email'), topic=cfval('topic'),\n"
+        "        date=cfval('travel_date'), size=cfval('group_size'), text=cfval('message');\n"
+        "    if(!name||!email||!text){cfmsg.className='cform-msg err';"
+        "cfmsg.textContent='Please add your name, your email and a short message.';return;}\n"
+        "    if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(email)){cfmsg.className='cform-msg err';"
+        "cfmsg.textContent='That email address does not look right. Check it and try again.';return;}\n"
+        "    cfbtn.disabled=true; cfmsg.className='cform-msg'; cfmsg.textContent='Sending your message...';\n"
+        "    var payload={name:name,email:email,topic:topic,travel_date:date,group_size:size,"
+        "message:text,source:'contact page'};\n"
+        "    ltSend(payload).then(function(channel){\n"
+        "      if(channel==='mail'){\n"
+        "        var body=['Name: '+name,'Email: '+email,'Topic: '+topic,"
+        "date?('Preferred date: '+date):'',size?('Group size: '+size):'','',text].filter(Boolean).join('\\n');\n"
+        "        window.location.href=ltMailto('Leonida Tours enquiry',body);\n"
+        "        cf.outerHTML='<div class=\"cform-done\"><span class=\"eyebrow\">Almost done</span>"
+        "<h3>Send it from your email app</h3>"
+        "<p>We have opened a new message with your details. Press send and we will answer by email, usually the same day.</p></div>';\n"
+        "      } else {\n"
+        "        cf.outerHTML='<div class=\"cform-done\"><span class=\"eyebrow\">Message sent</span>"
+        "<h3>Thank you, we have it</h3>"
+        "<p>A person reads these. We will answer by email, usually the same day.</p></div>';\n"
+        "      }\n"
+        "    }).catch(function(){\n"
+        "      cfbtn.disabled=false; cfmsg.className='cform-msg err';"
+        "cfmsg.textContent='That did not go through. Please try again in a moment.';\n"
+        "    });\n"
+        "  });\n"
+        "}\n"
+    )
+
+
 # ---------------------------------------------------------------- content loading
 def _load(name, path):
     import importlib.util
@@ -142,6 +227,8 @@ def render_blocks(blocks, p):
                 cap = f'<figcaption>{esc(v["caption"])}</figcaption>' if v.get("caption") else ""
                 out.append(f'<figure><img src="{p}img/{v["img"]}.jpg" alt="{esc(v.get("alt", ""))}" '
                            f'loading="lazy" decoding="async" {dims}>{cap}</figure>')
+            elif k == "form":
+                out.append(contact_form())
     return "\n".join(out)
 
 
@@ -188,7 +275,7 @@ def footer(p):
         '<footer><div class="wrap">'
         f'<nav aria-label="Tours"><ul>{tours}</ul></nav>'
         f'<nav aria-label="Site"><ul>{"".join(links)}</ul></nav>'
-        f"<p>© 2026 {CTX['BRAND']} · <a href=\"{p}contact/\">Contact us</a> · {CTX['PHONE']} (call or WhatsApp)</p>"
+        f"<p>© 2026 {CTX['BRAND']} · <a href=\"{p}contact/\">Contact us</a></p>"
         f'<p class="legal">{CTX["DISCLAIMER"]}</p>'
         "</div></footer>"
     )
@@ -608,14 +695,7 @@ def build_static(s, statics):
 
     extra_schema = {}
     if slug == "contact":
-        extra_schema = {"mainEntity": {
-            "@type": "Organization", "name": CTX["BRAND"],
-            "telephone": CTX["PHONE_E164"],
-            "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Miami Beach"},
-                           {"@type": "Place", "name": "Greater Miami area"}],
-            "contactPoint": {"@type": "ContactPoint", "contactType": "customer service",
-                             "telephone": CTX["PHONE_E164"],
-                             "availableLanguage": ["en", "es"]}}}
+        extra_schema = {"mainEntity": {"@id": CTX["ORG_ID"]}}
     if slug == "about":
         extra_schema = {"mainEntity": {"@id": CTX["ORG_ID"]}}
 
@@ -649,9 +729,10 @@ def build_static(s, statics):
            f'<section><div class="wrap prose">{render_blocks(s["body"], p)}</div></section>'
            + (f'<section class="faq"><div class="wrap"><h2>Frequently asked questions</h2>{faq_html}</div></section>'
               if faqs else "") +
-           (f'<section><div class="wrap"><h2>Related pages</h2><div class="card-grid">{relcards}</div></div></section>'
-              if relcards else "") +
-           "</main>" + footer(p) + "</body>\n</html>\n")
+            (f'<section><div class="wrap"><h2>Related pages</h2><div class="card-grid">{relcards}</div></div></section>'
+               if relcards else "") +
+            ("<script>" + contact_form_script() + "</script>" if slug == "contact" else "") +
+            "</main>" + footer(p) + "</body>\n</html>\n")
     write_html(slug, out)
 
 
@@ -932,8 +1013,9 @@ def build_llms_full(posts, locs, statics):
              "Not affiliated with, endorsed by or sponsored by any game publisher. "
              "All game names are used only to identify real-world locations.")
     L.append("")
-    L.append(f"Site: {CTX['url']()}  |  Contact: {CTX['url']('contact/')}  |  WhatsApp: {CTX['PHONE_E164']}  |  "
-             "No street address or mailbox is published: pickup points are sent with each booking, and we collect guests "
+    L.append(f"Site: {CTX['url']()}  |  Contact: {CTX['url']('contact/')}  |  "
+             "One form for enquiries, and we answer by email. "
+             "No street address, phone number or mailbox is published: pickup points are sent with each booking, and we collect guests "
              "across the greater Miami area.")
     L.append("")
     L.append("## Tours")

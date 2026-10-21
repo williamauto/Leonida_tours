@@ -17,10 +17,16 @@ HOST = urlparse(SITE).netloc
 IS_ROOT = urlparse(SITE).path in ("", "/")
 TODAY = datetime.date.today().isoformat()
 LAUNCH = "2026-11-19"
-PHONE = "+1 (305) 555-0148"
-PHONE_E164 = "+13055550148"
-WHATSAPP = "https://wa.me/13055550148"
 BRAND = "Leonida Tours"
+# No phone number, mailbox or street address is published anywhere on this site.
+# Enquiries are sent from the contact form by email.
+# CONTACT_ENDPOINT: a form service endpoint (e.g. https://formspree.io/f/xxxx) that
+# receives the form as JSON and forwards it to the team mailbox. Set it in the
+# environment at build time; the recipient address then lives in that service
+# and not in the site. With no endpoint the form falls back to the visitor's own
+# mail client, with the address assembled at runtime so it is never published.
+CONTACT_EMAIL = os.environ.get("CONTACT_EMAIL", "team@leonidatours.com")
+CONTACT_ENDPOINT = os.environ.get("CONTACT_ENDPOINT", "").strip()
 GTM_ID = os.environ.get("GTM_ID", "GTM-NLRJMFGL")
 GTM_HEAD = ("<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
             "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
@@ -198,6 +204,30 @@ def guard(page, fields, graph=None):
     if problems:
         raise SystemExit("trademark guard failed:\n  " + "\n  ".join(problems))
 
+def form_js():
+    """Shared client-side form plumbing for the contact and reservation forms.
+
+    No phone number, mailbox or street address is published on this site. The
+    team inbox is assembled at runtime from two parts, so no page source
+    contains it, and it is only ever used to send the visitor's message. If
+    CONTACT_ENDPOINT is set to a form service endpoint (built from
+    https://formspree.io/f/xxxx and similar), the details are posted straight
+    to the team instead and the address never reaches the browser at all.
+    """
+    user, _, domain = CONTACT_EMAIL.partition("@")
+    return (
+        "var LT_MAIL=[" + json.dumps(user) + "," + json.dumps(domain) + "];\n"
+        "var LT_ENDPOINT=" + json.dumps(CONTACT_ENDPOINT) + ";\n"
+        "function ltMailto(subject,body){return 'mailto:'+LT_MAIL[0]+'@'+LT_MAIL[1]"
+        "+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);}\n"
+        "function ltSend(payload){"
+        "if(LT_ENDPOINT){return fetch(LT_ENDPOINT,{method:'POST',"
+        "headers:{'Accept':'application/json','Content-Type':'application/json'},"
+        "body:JSON.stringify(payload)}).then(function(r){if(!r.ok)throw new Error('send failed');"
+        "return 'posted';});}"
+        "return Promise.resolve('mail');}\n"
+    )
+
 # ---------------------------------------------------------------- schema
 ORG_ID, SITE_ID = url("#organization"), url("#website")
 def org():
@@ -210,8 +240,6 @@ def org():
              "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Miami Beach"},
                             {"@type": "Place", "name": "Greater Miami area"},
                             {"@type": "Place", "name": "Everglades National Park"}, {"@type": "Place", "name": "Florida Keys"}],
-             "contactPoint": {"@type": "ContactPoint", "contactType": "customer service",
-                              "telephone": PHONE_E164, "availableLanguage": ["en", "es"]},
             "knowsAbout": ["Miami tours", "Ocean Drive", "Wynwood", "Little Havana", "Everglades airboat tours",
                            "Florida Keys day trips", "Biscayne Bay boat tours", "Vice City", "Leonida"],
             "sameAs": SOCIAL}
@@ -345,26 +373,14 @@ def build_index():
         "gs.addEventListener('change',syncSize); syncSize();\n"
         "setTimeout(()=>{try{const q=new URLSearchParams(location.search).get('tour'); if(q&&TOURS[q]) pick(q);}catch(e){}},0);", 1)
 
-    # form: Netlify only when hosted there; otherwise hand the details to WhatsApp.
-    # No email address is published anywhere on this site, so there is no mailto fallback.
-    old = "  const bodyStr=new URLSearchParams({'form-name':'waitlist',...entry,consent:'yes'}).toString();"
+    # form plumbing: the team inbox is assembled at runtime (so it is never
+    # published) and the form service endpoint is injected when one is set.
+    old = "/*__LT_MAIL__*/\nconst FORM_ENDPOINT=/*__LT_ENDPOINT__*/'';"
     assert old in body
-    body = body.replace(old,
-        "  if(!/netlify\\.app$/.test(location.hostname)){\n"
-        "    const T=TOURS[entry.tour]||{};\n"
-        "    const nm=entry.tour==='updates'?'New routes & offers':(T.title||entry.tour);\n"
-        "    const lines=['Hi Leonida Tours, I would like to reserve a spot.',\n"
-        "      'Experience: '+nm,\n"
-        "      'Date: '+entry.travel_date,\n"
-        "      'Group size: '+entry.group_size,\n"
-        "      entry.loadout?('Loadout: '+entry.loadout):'',\n"
-        "      'Email: '+entry.email,\n"
-        "      'Please confirm my spot and send my pickup point.'].filter(Boolean);\n"
-        "    const wa=encodeURIComponent(lines.join('\\n'));\n"
-        f"    window.location.href='{WHATSAPP}?text='+wa; return true;\n  }}\n" + old)
+    body = body.replace(old, form_js() + "const FORM_ENDPOINT=" + json.dumps(CONTACT_ENDPOINT) + ";")
 
     # GTM conversion event when a reservation is saved
-    old_save = "    await save(entry);"
+    old_save = "    const channel=await save(entry);"
     assert old_save in body
     body = body.replace(old_save, old_save + "\n    try{(window.dataLayer=window.dataLayer||[]).push({event:'generate_lead',form_name:'reservation',tour:entry.tour,travel_date:entry.travel_date,group_size:Number(entry.group_size),currency:'USD',value:(TOURS[entry.tour]||{}).price||0});}catch(e){}", 1)
     # image dimensions + async decoding for CLS / LCP
@@ -522,7 +538,7 @@ def build_tour(k):
 <section><div class="wrap cta"><span class="eyebrow">Reserve now · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
 <section><div class="wrap"><h2>You might also like</h2><div class="related">{rel}</div></div></section>
 </main>
-<footer><div class="wrap"><ul>{foot}</ul><p>© 2026 {BRAND} · <a href="{p}contact/">Contact us</a> · {PHONE} (call or WhatsApp)</p><p class="legal">{DISCLAIMER}</p></div></footer>
+<footer><div class="wrap"><ul>{foot}</ul><p>© 2026 {BRAND} · <a href="{p}contact/">Contact us</a></p><p class="legal">{DISCLAIMER}</p></div></footer>
 </body>
 </html>
 """
@@ -640,7 +656,8 @@ def build_content():
     P.CTX = {
         "esc": esc, "money": money, "url": url, "ld": ld, "org": org, "head_common": head_common,
         "img_attrs": img_attrs, "ALT": ALT, "SIZE": SIZE, "TOURS": TOURS, "SEO": SEO, "ORDER": ORDER,
-        "BRAND": BRAND, "PHONE": PHONE, "PHONE_E164": PHONE_E164, "WHATSAPP": WHATSAPP,
+        "BRAND": BRAND, "CONTACT_EMAIL": CONTACT_EMAIL, "CONTACT_ENDPOINT": CONTACT_ENDPOINT,
+        "FORM_JS": form_js(),
         "DISCLAIMER": DISCLAIMER, "TODAY": TODAY, "PIN": PIN,
         "ORG_ID": ORG_ID, "SITE_ID": SITE_ID, "GTM_BODY": GTM_BODY, "guard": guard,
     }
@@ -683,7 +700,8 @@ def build_crawl_files(extra_pages=()):
              "Everglades and Florida Keys places that inspired the game world of Leonida (Vice City). Tours start mid-November 2026 "
              f"(launch day {LAUNCH}). Reservations are free with nothing to pay upfront. Not affiliated with any game publisher.", "",
              "- Service area: the greater Miami area - South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura",
-             f"- Contact: {url('contact/')} and WhatsApp {PHONE_E164}. No street address or mailbox is published; pickup points are sent with each booking.",
+             f"- Contact: {url('contact/')} - one form for bookings, changes, groups and corrections. We answer by email.",
+             "- No street address, phone number or mailbox is published: pickup points are sent with each booking.",
              "- Instagram / TikTok: @leonidatours",
              f"- Reserve: {url('#preregister')}", f"- Full text of every page: {url('llms-full.txt')}", f"- RSS feed: {url('feed.xml')}", "", "## Tours", ""]
     for k in ORDER:

@@ -75,13 +75,13 @@ STATIC = [
   {"h2": "Who owns the words on this site", "id": "editorial"},
   {"p": ["We write everything ourselves and we do not use generated text for our guides, our location descriptions or our itineraries. Where we describe a game, a film or a television show, we use the names only to identify real places, and our editorial policy explains exactly how that works."]},
   {"note": {"title": "We are not affiliated with any game publisher", "text": "Leonida Tours is an independent South Florida tour company. We are not affiliated with, endorsed by, licensed by or sponsored by any game publisher, and we use no game art, logos, characters, screenshots or audio."}},
-  {"h2": "Get in touch", "id": "contact"},
-  {"p": ["We do not publish a street address or a mailbox, and we would rather you did not have to hunt for one. Everything starts on our contact page: tell us your dates, your group size and where you are staying, and a person answers."]},
-  {"ul": [
-    "Contact page: the one place to send an enquiry, a group booking or a correction.",
-    "Phone and WhatsApp: +1 (305) 555-0148, for same-day questions.",
-    "No address to visit: pickup points are shared after you book, not published.",
-    "Tours run every day of the year, from 19 November 2026."]}
+   {"h2": "Get in touch", "id": "contact"},
+   {"p": ["We do not publish a street address, a phone number or a mailbox, and we would rather you did not have to hunt for one. Everything starts on our contact page: one form, tell us your dates, your group size and where you are staying, and a person answers by email."]},
+   {"ul": [
+     "Contact page: the one place to send an enquiry, a group booking or a correction.",
+     "One form: it reaches the team, and we answer by email, usually the same day.",
+     "No address to visit: pickup points are shared after you book, not published.",
+     "Tours run every day of the year, from 19 November 2026."]}
  ],
  "faq": [
    ["Who actually runs a Leonida Tours tour?", "Local operators we have vetted and partnered with run the routes they know best, and a Leonida host is on the tour with you. We handle the booking, the pickup, the host and the standard of service."],
@@ -161,69 +161,19 @@ STATIC = [
 },
 {
  "slug": "contact",
- "title": "Contact Leonida Tours: Reach a Real Person in Miami",
- "meta": "Reach Leonida Tours: phone, WhatsApp and our contact page, with hours, response times and pickup coverage across the greater Miami area.",
+ "title": "Contact Leonida Tours: Send Us a Message",
+ "meta": "One form for booking questions, group and private tours, corrections and press. We answer by email, usually the same day.",
  "kicker": "Contact",
  "cat": "Company",
  "date": "2026-10-21",
  "img": "tour_crowd_bus",
  "img_alt": "Guests seated on a tour bus before departure",
- "excerpt": "A small team, so you will get a person, not a ticket number. Here is how to reach us, where we pick you up, and what happens after you get in touch.",
+ "excerpt": "One form reaches the whole team. Booking, changes, group and private tours, corrections or press: write it here and we answer by email, usually the same day.",
  "body": [
-   {"p": ["We are a small team and we answer our own messages. That means you get a reply from someone who can actually change your booking, and it also means we are sometimes on a boat. Phone and WhatsApp are the fastest; the reservation form on our home page is the most complete, because it tells us your date, your group size and where you are staying in one go."]},
-   {"h2": "How to reach us", "id": "reach"},
-   {"table": {"head": ["Channel", "Details", "Best for"], "rows": [
-     ["Phone and WhatsApp", "+1 (305) 555-0148", "Same-day questions, changes, groups of six or more"],
-     ["Reservations and enquiries", "<a href=\"../#preregister\">Reserve on the home page</a> - it reaches the same team", "Bookings, special requests, receipts, anything with detail"],
-     ["Corrections and press", "Message us through the same form and say what it is about", "Broken links, wrong locations, media and creator enquiries"],
-     ["Office hours", "9am to 6pm Monday to Saturday, 10am to 4pm on Sunday", "The phone is answered during these hours"]]}},
-   {"p": ["Outside those hours, WhatsApp still reaches us and we usually reply the next morning. We do not publish a street address or a mailbox: everything starts here, and pickup points are sent with your booking rather than printed here."]},
-   {"h2": "Where we pick you up", "id": "pickup"},
-   {"p": ["We collect guests across the greater Miami area, and pickup is included in the price on the city tour, the boat day, the Everglades trip and the Keys drive."]},
-   {"ul": [
-     "<strong>South Beach and Miami Beach:</strong> hotel lobby, the kerb outside your building, or the nearest landmark you agree with us.",
-     "<strong>Brickell and Downtown:</strong> lobby pickup, including condo and apartment buildings, with the loading point named in your confirmation.",
-     "<strong>Coral Gables, Coconut Grove and Key Biscayne:</strong> on request, usually on the way in, at no extra cost.",
-     "<strong>Hialeah, Doral and Aventura:</strong> included on the city route, and on the Everglades and Keys trips for guests who ask when they book.",
-     "<strong>Airport:</strong> available for groups. Send us your flight number and we will time the pickup to the landing.",
-     "<strong>Somewhere else in Miami-Dade or Broward:</strong> ask. We will say yes or no honestly."]},
-   {"p": ["Your exact pickup point is sent with your booking confirmation, together with the driver's name and a WhatsApp thread for that booking. It is not published on this site, and that is deliberate."]},
-   {"h2": "What happens after you get in touch", "id": "after"},
-   {"ol": [
-     "<strong>Within a few hours:</strong> you get a reply from a person, with availability and a link to reserve.",
-     "<strong>At confirmation:</strong> we send your date, time, the exact pickup point for your address, and a WhatsApp thread for that booking.",
-     "<strong>24 hours before:</strong> you get a reminder with the pickup point, what to bring, and the weather forecast.",
-     "<strong>After the tour:</strong> you get a thank-you and an honest request for a review, if you want to leave one."]},
-   {"h2": "Groups, private bookings and accessibility", "id": "groups"},
-   {"ul": [
-     "<strong>Groups of six or more:</strong> message rather than call, and we can arrange a private departure on most routes for groups of eight or more.",
-     "<strong>Wheelchair access:</strong> the city tour minibus has a ramp and can carry two wheelchairs. Tell us when you book so we send the accessible vehicle rather than a standard one.",
-     "<strong>Children and infants:</strong> under-fives cannot do the airboat. Tell us ages when booking and we will route you to the right tour.",
-     "<strong>Dietary needs:</strong> the Keys trip includes lunch, so tell us what you need and we will pass it to the restaurant.",
-     "<strong>Walking difficulty:</strong> the city tour has a walking component of roughly two miles with frequent stops. We can shorten it on request."]},
-   {"h2": "Before you book, the questions we get", "id": "questions"},
-   {"h3": "Can we take a walk-in?"},
-   {"p": ["Yes, if there is a seat. Some departures take walk-ups up to 30 minutes before departure, and the bus tours are the easiest to join on the day. The boat tours sell out first."]},
-   {"h3": "How far in advance should we book?"},
-   {"p": ["A few days is normally fine for the city tour. For the boat, the Keys trip and anything in November or December, book a week or more out. For groups of ten or more, two weeks is sensible."]},
-   {"h3": "Do you run tours on holidays?"},
-   {"p": ["Every day of the year, including Thanksgiving, Christmas and New Year's Eve. On New Year's Eve the sunset departure leaves at 4pm instead of 6:30pm so that you are back for the fireworks, and it sells out weeks ahead."]},
-   {"h3": "What if our flight is delayed?"},
-   {"p": ["Tell us as soon as you know. We hold the tour for 20 minutes past departure without a fee, and if you cannot make it at all we move you to another date at no charge."]},
-   {"h3": "Do you pick up from the airport?"},
-   {"p": ["We can, for a fee, for groups. Miami International is 20 to 45 minutes from the beach depending on traffic, and airport waiting time makes a shared pickup slow, so for individuals the taxi is faster and cheaper."]},
-   {"h2": "Why there is no address on this page", "id": "no-address"},
-   {"p": ["Two reasons, both practical. First, we move: the operators we work with run their routes out of depots, marinas and hangars across the county, so a single street address would be a fiction dressed up as a fact. Second, an address printed on every page is an address that ends up on a spam list, a screenshot and somebody's doorstep. So the exact pickup point travels with your booking instead, where it is useful and where it is private."]}
+   {"p": ["We are a small team and we answer our own messages, so you get a reply from someone who can actually change your booking. Tell us what you need below, and leave the rest blank if you are not sure yet."]},
+   {"form": {}}
  ],
- "faq": [
-   ["How do I contact Leonida Tours?", "Call or WhatsApp +1 (305) 555-0148, or send your enquiry from the reservation form on our home page. Both reach the same small team, and there is no address to visit."],
-   ["Do you publish your street address or email address?", "No. There is no street address and no mailbox anywhere on this site. Your pickup and meeting points are sent with your booking confirmation, and we pick up across the greater Miami area."],
-   ["How quickly do you reply?", "Usually within a few hours during opening hours, which are 9am to 6pm Monday to Saturday and 10am to 4pm on Sunday, and by the next morning if you message overnight."],
-   ["Can I book a tour on the day?", "Yes, if there is a seat. Some departures take walk-ups up to 30 minutes before departure. The boat tours sell out first, so those need advance booking."],
-   ["Are your tours wheelchair accessible?", "The city tour minibus has a ramp and can carry two wheelchairs. Tell us when you reserve so we send the accessible vehicle. The Everglades van tour is the most accessible of the day trips."],
-   ["What is your cancellation policy?", "Free cancellation up to 24 hours before departure, and a full refund if we cancel. Inside 24 hours we cannot refund, but we will move you to another date at no charge."],
-   ["Do you run tours on holidays?", "Every day of the year, including Thanksgiving and Christmas. The New Year's Eve sunset departure leaves at 4pm so you are back for the fireworks."]
-  ],
+ "faq": [],
  "related": ["about", "cancellation-policy", "meeting-point"]
 }
 ]
