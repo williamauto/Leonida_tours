@@ -17,7 +17,9 @@ HOST = urlparse(SITE).netloc
 IS_ROOT = urlparse(SITE).path in ("", "/")
 TODAY = datetime.date.today().isoformat()
 LAUNCH = "2026-11-19"
-EMAIL = "hello@leonidatours.com"
+PHONE = "+1 (305) 555-0148"
+PHONE_E164 = "+13055550148"
+WHATSAPP = "https://wa.me/13055550148"
 BRAND = "Leonida Tours"
 GTM_ID = os.environ.get("GTM_ID", "GTM-NLRJMFGL")
 GTM_HEAD = ("<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
@@ -70,6 +72,8 @@ ALT = {
     "pm_bridge": "Guest on a boat watching the Brickell skyline at sunset",
     "pm_graffiti": "Woman posing against a colorful graffiti wall in Wynwood",
     "pm_tower": "Friends sitting under a pink lifeguard tower on Miami Beach",
+    "miami_tour_bus": "A tour bus driving down a street in Miami Beach, Florida",
+    "tour_crowd_bus": "Guests seated on a tour bus before departure",
 }
 SIZE = {f[:-4]: Image.open(os.path.join(ROOT, "img", f)).size
         for f in os.listdir(os.path.join(ROOT, "img")) if f.endswith(".jpg")}
@@ -80,7 +84,7 @@ SEO = {
   title="Miami Vice City Small-Group Tour (3h, $79) | Leonida Tours",
   meta="3-hour small-group tour of the real Miami spots behind the trailers: Ocean Drive, Lummus Park, Wynwood, Little Haiti, Little Havana & Brickell. $79.",
   intro="This is the signature Leonida Tours loop: eight real Miami stops in three hours, ridden in an air-conditioned minibus with a local host who knows which corner matches which scene. It works just as well as a first-time Miami city tour, game fan or not.",
-  faq=[("How long is the Miami Vice City tour?","About 3 hours, starting and ending on Ocean Drive in Miami Beach. Day departures leave at 10am and 2pm, and the sunset + night departure leaves at 6:30pm."),
+  faq=[("How long is the Miami Vice City tour?","About 3 hours, with pickup anywhere in the greater Miami area. Day departures leave at 10am and 2pm, and the sunset + night departure leaves at 6:30pm."),
        ("Which neighborhoods does it visit?","Ocean Drive and Lummus Park in Miami Beach, the Venetian Causeway, Downtown and Biscayne Boulevard, Wynwood, Little Haiti, Little Havana and Brickell."),
        ("How big are the groups?","Up to 12 guests per minibus, with one host.")]),
  "vc-car": dict(slug="private-classic-convertible-tour-miami", type="Private Miami tour",
@@ -88,14 +92,14 @@ SEO = {
   meta="Up to 3 guests in a top-down vintage convertible with a driver-guide: Ocean Drive, Wynwood, Little Havana and Brickell at golden hour. $600 per car.",
   intro="The most cinematic way to see Miami: a vintage convertible with the top down, a driver-guide who knows every camera angle, and the full eight-stop route at your own pace. Built for couples, birthdays, proposals and content shoots.",
   faq=[("How many people fit in the classic car?","Up to 3 guests plus your driver-guide. The $600 price is per car, not per person."),
-       ("Where does the private tour start?","We pick you up in Miami Beach, Downtown or Brickell at the time you choose."),
+       ("Where does the private tour start?","We pick you up anywhere in the greater Miami area, at your door or your hotel, at the time you choose."),
        ("Can we film or shoot photos?","Yes. The route includes a golden-hour photo stop on the causeway, and drone shots can be added.")]),
  "vc-jeep": dict(slug="private-jeep-tour-miami", type="Private Miami tour",
   title="Private Open-Top Jeep Tour of Miami ($450) | Leonida Tours",
   meta="Roof off: a private open-top Jeep tour of Miami for up to 3, with a driver-guide, sunset photo stops and the full Ocean Drive to Brickell loop. Hotel pickup.",
   intro="An open-top Jeep, your crew and a driver-guide running the full Miami loop, from the Ocean Drive neon to the Brickell skyline. The best-value private option on the map.",
   faq=[("How is the Jeep tour different from the classic car?","Same private route and guide, in an open-top Jeep instead of a vintage convertible, for $450 per Jeep."),
-       ("How long does it take?","About 2.5 hours, starting from your hotel in Miami Beach, Downtown or Brickell.")]),
+       ("How long does it take?","About 2.5 hours, with pickup from your hotel anywhere in the greater Miami area.")]),
  "vc-boat": dict(slug="miami-boat-tour-biscayne-bay", type="Miami boat tour",
   title="Millionaire's Row Boat Tour Miami: Star Island | Leonida Tours",
   meta="2-hour Millionaire's Row boat tour from Bayside: PortMiami, Fisher Island, megayachts, Star, Palm & Hibiscus Island mansions and a sunset skyline. $79.",
@@ -115,13 +119,13 @@ SEO = {
   title="Everglades Sunset Airboat & Stargazing | Leonida Tours",
   meta="Evening trip from Miami: a sunset airboat ride in the Everglades, then stargazing with a sky guide in a dark-sky preserve. $129 per person.",
   intro="An evening in the Grasslands: a sunset airboat ride in the Everglades, then on to a dark-sky preserve for stargazing with a sky guide and an open-air projector screening of real-versus-game scenes.",
-  faq=[("What time does the night sky tour leave?","3pm pickup in Miami, for about 6 hours in total."),
+  faq=[("What time does the night sky tour leave?","3pm pickup across the greater Miami area, for about 6 hours in total."),
        ("Who is it for?","Night owls, nature and photo fans, ages 12 and up.")]),
  "keys": dict(slug="florida-keys-day-trip-from-miami", type="Florida Keys day trip",
   title="Florida Keys Day Trip from Miami | Leonida Tours",
   meta="Full-day small-group road trip from Miami down the Overseas Highway: Key Largo, Islamorada, the Seven Mile Bridge and beach time. $149 per person.",
   intro="The island road that inspired the Leonida Keys. A small-group minibus takes you down the Overseas Highway through Key Largo and Islamorada to the Seven Mile Bridge, with beach time at a state park and a seafood lunch stop.",
-  faq=[("How long is the Florida Keys day trip?","A full day, with a 7:30am pickup in Miami."),
+  faq=[("How long is the Florida Keys day trip?","A full day, with a 7:30am pickup across the greater Miami area."),
        ("Do we go to Key West?","No. The route covers Key Largo, Islamorada and the Seven Mile Bridge, which leaves time for the beach instead of a long day on the road.")]),
  "pass": dict(slug="leonida-city-pass", type="Miami tour pass",
   title="Leonida City Pass: 3 Miami Tours for $199 | Leonida Tours",
@@ -145,8 +149,9 @@ FAQ = [
  ("Is this an official game tour?", "No. Leonida Tours is an independent South Florida tour company running unofficial tours. We take you IRL to the real places that inspired the game's world. We are not affiliated with, endorsed or sponsored by any game publisher."),
  ("Why do you use names like Leonida?", "Fans know these places by their in-game nicknames, so we use them to point you to the real spots that inspired them. Every stop is a real, public place in Miami, the Everglades or the Florida Keys."),
  ("Do I need to be a gamer?", "Not at all. Fans get the scene-by-scene details. Everyone else gets Miami Beach, downtown, Wynwood, Little Haiti, Little Havana, the Everglades and the Keys with a great local guide."),
- ("What does reserving mean?", "It's free and there's no payment today. We email you to confirm your date before public booking opens, plus 20% off your first tour."),
- ("When do tours start?", "Mid-November 2026. Miami tours run daily; the Grasslands (Everglades) and Leonida Keys trips run on set days each week."),
+ ("What does reserving mean?", "It's free and there's no payment today. We confirm your date with you personally before public booking opens, plus 20% off your first tour."),
+ ("When do tours start?", "19 November 2026, and every day of the year after that. Miami tours run daily; the Grasslands (Everglades) and Leonida Keys trips run on set days each week."),
+ ("Do you pick me up from my hotel?", "Yes, across the greater Miami area: South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura. Your exact pickup point is sent with your booking, not published on the site."),
  ("What's the difference between small group and private?", "Small-group tours ride in a minibus with up to 12 guests and a host. Private tours are just your crew, up to 3 people, in a classic convertible ($600) or a Jeep convertible ($450) with a driver-guide."),
  ("How does the City Pass work?", "One pass covers the Miami Vice City small-group tour, the boat tour and the Grasslands airboat. Book each date whenever you like during your stay."),
  ("What if it rains?", "Every route has covered stops. If a storm cancels your tour, rebook for free or get a full refund."),
@@ -198,14 +203,15 @@ ORG_ID, SITE_ID = url("#organization"), url("#website")
 def org():
     return {"@type": "TravelAgency", "@id": ORG_ID, "name": BRAND, "url": url(),
             "logo": {"@type": "ImageObject", "url": url("assets/icon-512.png"), "width": 512, "height": 512},
-            "image": url("assets/og-home.jpg"), "email": EMAIL,
-            "description": "Independent South Florida tour company running unofficial small-group and private tours to the real Miami, Everglades and Florida Keys locations that inspired the game world of Leonida.",
-            "slogan": "Leonida is real. Play it IRL.", "priceRange": "$79–$600", "currenciesAccepted": "USD",
-            "address": {"@type": "PostalAddress", "streetAddress": "Ocean Drive", "addressLocality": "Miami Beach",
-                        "addressRegion": "FL", "addressCountry": "US"},
-            "geo": {"@type": "GeoCoordinates", "latitude": 25.7781, "longitude": -80.1310},
-            "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Miami Beach"},
-                           {"@type": "Place", "name": "Everglades National Park"}, {"@type": "Place", "name": "Florida Keys"}],
+             "image": url("assets/og-home.jpg"),
+             "description": "Miami hospitality team partnering with vetted local tour operators to run unofficial small-group and private tours to the real Miami, Everglades and Florida Keys locations that inspired the game world of Leonida.",
+             "slogan": "Leonida is real. Play it IRL.", "priceRange": "$79–$600", "currenciesAccepted": "USD",
+             "geo": {"@type": "GeoCoordinates", "latitude": 25.7617, "longitude": -80.1918},
+             "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Miami Beach"},
+                            {"@type": "Place", "name": "Greater Miami area"},
+                            {"@type": "Place", "name": "Everglades National Park"}, {"@type": "Place", "name": "Florida Keys"}],
+             "contactPoint": {"@type": "ContactPoint", "contactType": "customer service",
+                              "telephone": PHONE_E164, "availableLanguage": ["en", "es"]},
             "knowsAbout": ["Miami tours", "Ocean Drive", "Wynwood", "Little Havana", "Everglades airboat tours",
                            "Florida Keys day trips", "Biscayne Bay boat tours", "Vice City", "Leonida"],
             "sameAs": SOCIAL}
@@ -267,8 +273,8 @@ def head_common(title, desc, canonical, og_img, og_alt, prefix, extra="", og_typ
 <meta name="theme-color" content="#0A0910">
 <meta name="color-scheme" content="dark">
 <meta name="format-detection" content="telephone=no">
-<meta name="geo.region" content="US-FL"><meta name="geo.placename" content="Miami Beach">
-<meta name="geo.position" content="25.7781;-80.1310"><meta name="ICBM" content="25.7781, -80.1310">
+<meta name="geo.region" content="US-FL"><meta name="geo.placename" content="Miami, Florida">
+<meta name="geo.position" content="25.7617;-80.1918"><meta name="ICBM" content="25.7617, -80.1918">
 <link rel="alternate" hreflang="en-us" href="{canonical}"><link rel="alternate" hreflang="x-default" href="{canonical}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{BRAND}">
@@ -339,14 +345,23 @@ def build_index():
         "gs.addEventListener('change',syncSize); syncSize();\n"
         "setTimeout(()=>{try{const q=new URLSearchParams(location.search).get('tour'); if(q&&TOURS[q]) pick(q);}catch(e){}},0);", 1)
 
-    # form: Netlify only when hosted there; otherwise open a pre-filled email until FORM_ENDPOINT is set
+    # form: Netlify only when hosted there; otherwise hand the details to WhatsApp.
+    # No email address is published anywhere on this site, so there is no mailto fallback.
     old = "  const bodyStr=new URLSearchParams({'form-name':'waitlist',...entry,consent:'yes'}).toString();"
     assert old in body
     body = body.replace(old,
         "  if(!/netlify\\.app$/.test(location.hostname)){\n"
-        f"    const sub=encodeURIComponent('Leonida Tours reservation: '+entry.tour+' on '+entry.travel_date);\n"
-        "    const msgBody=encodeURIComponent(Object.entries(entry).map(([a,b])=>a+': '+b).join('\\n'));\n"
-        f"    window.location.href='mailto:{EMAIL}?subject='+sub+'&body='+msgBody; return true;\n  }}\n" + old)
+        "    const T=TOURS[entry.tour]||{};\n"
+        "    const nm=entry.tour==='updates'?'New routes & offers':(T.title||entry.tour);\n"
+        "    const lines=['Hi Leonida Tours, I would like to reserve a spot.',\n"
+        "      'Experience: '+nm,\n"
+        "      'Date: '+entry.travel_date,\n"
+        "      'Group size: '+entry.group_size,\n"
+        "      entry.loadout?('Loadout: '+entry.loadout):'',\n"
+        "      'Email: '+entry.email,\n"
+        "      'Please confirm my spot and send my pickup point.'].filter(Boolean);\n"
+        "    const wa=encodeURIComponent(lines.join('\\n'));\n"
+        f"    window.location.href='{WHATSAPP}?text='+wa; return true;\n  }}\n" + old)
 
     # GTM conversion event when a reservation is saved
     old_save = "    await save(entry);"
@@ -494,7 +509,7 @@ def build_tour(k):
 </div>
 <section><div class="wrap">
   <h2>At a glance</h2>
-  <dl class="specs"><div><dt>Duration</dt><dd>{esc(T["dur"])}</dd></div><div><dt>Group</dt><dd>{esc(T["group"])}</dd></div><div><dt>Departs</dt><dd>{esc(T["departs"])}</dd></div><div><dt>Meeting point</dt><dd>{esc(T["meet"])}</dd></div></dl>
+  <dl class="specs"><div><dt>Duration</dt><dd>{esc(T["dur"])}</dd></div><div><dt>Group</dt><dd>{esc(T["group"])}</dd></div><div><dt>Departs</dt><dd>{esc(T["departs"])}</dd></div><div><dt>Pickup</dt><dd>{esc(T["meet"])}</dd></div></dl>
   <p class="lede" style="margin-top:22px">{esc(T["desc"])}</p>
 </div></section>
 <section><div class="wrap cols">
@@ -507,7 +522,7 @@ def build_tour(k):
 <section><div class="wrap cta"><span class="eyebrow">Reserve now · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
 <section><div class="wrap"><h2>You might also like</h2><div class="related">{rel}</div></div></section>
 </main>
-<footer><div class="wrap"><ul>{foot}</ul><p>© 2026 {BRAND} · <a href="mailto:{EMAIL}">{EMAIL}</a> · Ocean Drive, Miami Beach, FL</p><p class="legal">{DISCLAIMER}</p></div></footer>
+<footer><div class="wrap"><ul>{foot}</ul><p>© 2026 {BRAND} · <a href="{p}contact/">Contact us</a> · {PHONE} (call or WhatsApp)</p><p class="legal">{DISCLAIMER}</p></div></footer>
 </body>
 </html>
 """
@@ -625,7 +640,8 @@ def build_content():
     P.CTX = {
         "esc": esc, "money": money, "url": url, "ld": ld, "org": org, "head_common": head_common,
         "img_attrs": img_attrs, "ALT": ALT, "SIZE": SIZE, "TOURS": TOURS, "SEO": SEO, "ORDER": ORDER,
-        "BRAND": BRAND, "EMAIL": EMAIL, "DISCLAIMER": DISCLAIMER, "TODAY": TODAY, "PIN": PIN,
+        "BRAND": BRAND, "PHONE": PHONE, "PHONE_E164": PHONE_E164, "WHATSAPP": WHATSAPP,
+        "DISCLAIMER": DISCLAIMER, "TODAY": TODAY, "PIN": PIN,
         "ORG_ID": ORG_ID, "SITE_ID": SITE_ID, "GTM_BODY": GTM_BODY, "guard": guard,
     }
     P.build_all()
@@ -666,7 +682,9 @@ def build_crawl_files(extra_pages=()):
              "> Independent South Florida tour company running unofficial small-group and private tours to the real Miami, "
              "Everglades and Florida Keys places that inspired the game world of Leonida (Vice City). Tours start mid-November 2026 "
              f"(launch day {LAUNCH}). Reservations are free with nothing to pay upfront. Not affiliated with any game publisher.", "",
-             f"- Home base: Ocean Drive, Miami Beach, Florida, USA", f"- Email: {EMAIL}", "- Instagram / TikTok: @leonidatours",
+             "- Service area: the greater Miami area - South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura",
+             f"- Contact: {url('contact/')} and WhatsApp {PHONE_E164}. No street address or mailbox is published; pickup points are sent with each booking.",
+             "- Instagram / TikTok: @leonidatours",
              f"- Reserve: {url('#preregister')}", f"- Full text of every page: {url('llms-full.txt')}", f"- RSS feed: {url('feed.xml')}", "", "## Tours", ""]
     for k in ORDER:
         T = TOURS[k]

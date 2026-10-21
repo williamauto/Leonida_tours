@@ -39,7 +39,7 @@ SITE_URL=https://leonidatours.com python3 _build/build.py
 
 1. **GitHub Pages:** repo Settings → Pages → Source: *Deploy from a branch*, branch `main`, folder `/ (root)`.
 2. **Custom domain (recommended):** at your domain registrar, add four `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, and a `CNAME` for `www` → `<your-username>.github.io`. Then tick *Enforce HTTPS* in Pages settings. `robots.txt` and the sitemap only count at a domain root, so a custom domain matters for SEO.
-3. **Reservation form:** GitHub Pages can't receive form posts. Create a free form at formspree.io and paste its URL into `FORM_ENDPOINT` in `_build/index.src.html`, then rebuild. Until then, the form opens a pre-filled email to hello@leonidatours.com.
+3. **Reservation form:** GitHub Pages can't receive form posts. Create a free form at formspree.io and paste its URL into `FORM_ENDPOINT` in `_build/index.src.html`, then rebuild. Until then, the form opens WhatsApp with the enquiry pre-filled to +1 (305) 555-0148. The site publishes no mailbox and no street address: enquiries go to the WhatsApp number, the phone, or `/contact/`, and the exact pickup point is sent with the booking.
 4. **Google Search Console:** add the domain property, verify by DNS, then submit `sitemap.xml`.
 5. **Bing Webmaster Tools:** import from Search Console (one click) and submit `sitemap.xml`. Bing powers ChatGPT search and Copilot results.
 6. **Google Business Profile:** create one as a tour operator in Miami Beach once you have an address you can verify. It's the biggest lever for "tours near me" searches.

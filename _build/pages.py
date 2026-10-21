@@ -188,7 +188,7 @@ def footer(p):
         '<footer><div class="wrap">'
         f'<nav aria-label="Tours"><ul>{tours}</ul></nav>'
         f'<nav aria-label="Site"><ul>{"".join(links)}</ul></nav>'
-        f"<p>© 2026 {CTX['BRAND']} · <a href=\"mailto:{CTX['EMAIL']}\">{CTX['EMAIL']}</a> · Ocean Drive, Miami Beach, FL</p>"
+        f"<p>© 2026 {CTX['BRAND']} · <a href=\"{p}contact/\">Contact us</a> · {CTX['PHONE']} (call or WhatsApp)</p>"
         f'<p class="legal">{CTX["DISCLAIMER"]}</p>'
         "</div></footer>"
     )
@@ -609,12 +609,12 @@ def build_static(s, statics):
     extra_schema = {}
     if slug == "contact":
         extra_schema = {"mainEntity": {
-            "@type": "Organization", "name": CTX["BRAND"], "email": CTX["EMAIL"],
-            "telephone": "+1-305-555-0148",
-            "address": {"@type": "PostalAddress", "streetAddress": "1200 Ocean Drive",
-                        "addressLocality": "Miami Beach", "addressRegion": "FL", "addressCountry": "US"},
+            "@type": "Organization", "name": CTX["BRAND"],
+            "telephone": CTX["PHONE_E164"],
+            "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Miami Beach"},
+                           {"@type": "Place", "name": "Greater Miami area"}],
             "contactPoint": {"@type": "ContactPoint", "contactType": "customer service",
-                             "telephone": "+1-305-555-0148", "email": CTX["EMAIL"],
+                             "telephone": CTX["PHONE_E164"],
                              "availableLanguage": ["en", "es"]}}}
     if slug == "about":
         extra_schema = {"mainEntity": {"@id": CTX["ORG_ID"]}}
@@ -932,7 +932,9 @@ def build_llms_full(posts, locs, statics):
              "Not affiliated with, endorsed by or sponsored by any game publisher. "
              "All game names are used only to identify real-world locations.")
     L.append("")
-    L.append(f"Site: {CTX['url']()}  |  Email: {CTX['EMAIL']}  |  Base: Ocean Drive, Miami Beach, Florida")
+    L.append(f"Site: {CTX['url']()}  |  Contact: {CTX['url']('contact/')}  |  WhatsApp: {CTX['PHONE_E164']}  |  "
+             "No street address or mailbox is published: pickup points are sent with each booking, and we collect guests "
+             "across the greater Miami area.")
     L.append("")
     L.append("## Tours")
     L.append("")

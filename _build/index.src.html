@@ -842,8 +842,8 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
       <details open><summary>Is this an official game tour?</summary><p>No. Leonida Tours is an independent South Florida tour company running unofficial tours. We take you IRL to the real places that inspired the game’s world. We are not affiliated with, endorsed or sponsored by any game publisher.</p></details>
       <details><summary>Why do you use names like Leonida?</summary><p>Fans know these places by their in-game nicknames, so we use them to point you to the real spots that inspired them. Every stop is a real, public place in Miami, the Everglades or the Florida Keys.</p></details>
       <details><summary>Do I need to be a gamer?</summary><p>Not at all. Fans get the scene-by-scene details. Everyone else gets Miami Beach, downtown, Wynwood, Little Haiti, Little Havana, the Everglades and the Keys with a great local guide.</p></details>
-      <details><summary>What does reserving mean?</summary><p>It’s free and there’s no payment today. We email you to confirm your date before public booking opens, plus 20% off your first tour.</p></details>
-      <details><summary>When do tours start?</summary><p>Mid-November 2026. Miami tours run daily, with day departures and a sunset + night run; the Grasslands (Everglades) and Leonida Keys trips run on set days each week.</p></details>
+      <details><summary>What does reserving mean?</summary><p>It’s free and there’s no payment today. We confirm your date with you personally before public booking opens, plus 20% off your first tour.</p></details>
+      <details><summary>When do tours start?</summary><p>19 November 2026, and every day of the year after that. Miami tours run daily, with day departures and a sunset + night run; the Grasslands (Everglades) and Leonida Keys trips run on set days each week.</p></details>
       <details><summary>What’s the difference between small group and private?</summary><p>Small-group tours ride in a minibus with up to 12 guests and a host. Private tours are just your crew, up to 3 people, in a classic convertible ($600) or a Jeep convertible ($450) with a driver-guide.</p></details>
       <details><summary>How does the City Pass work?</summary><p>One pass covers the Miami Vice City small-group tour, the boat tour and the Grasslands airboat. Book each date whenever you like during your stay.</p></details>
       <details><summary>What if it rains?</summary><p>Every route has covered stops. If a storm cancels your tour, rebook for free or get a full refund.</p></details>
@@ -859,9 +859,10 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
       <p class="lede">Planning a bachelor weekend, a content shoot or a company launch night? Tell us what you have in mind and we’ll build a private route.</p>
     </div>
     <div class="contact-grid">
-      <div><span class="k">Email</span><span class="val" id="mailVal">hello@leonidatours.com</span><button class="copy" type="button" data-copy="mailVal">Copy email</button></div>
+      <div><span class="k">Phone · WhatsApp</span><span class="val" id="phoneVal">+1 (305) 555-0148</span><button class="copy" type="button" data-copy="phoneVal">Copy number</button></div>
+      <div><span class="k">Enquiries</span><span class="val"><a href="contact/">Contact page</a></span><span class="sub">Every message reaches the team. No mailbox to guess at.</span></div>
+      <div><span class="k">Pickup</span><span class="val">Greater Miami area</span><span class="sub">Your exact pickup point is sent after you book.</span></div>
       <div><span class="k">Instagram · TikTok</span><span class="val">@leonidatours</span><span class="sub">Real-vs-game comparisons every week until launch.</span></div>
-      <div><span class="k">Home base</span><span class="val">Ocean Drive, Miami Beach</span><span class="sub">Tours run daily from launch week.</span></div>
     </div>
   </div>
 </section>
@@ -1326,7 +1327,7 @@ form.addEventListener('submit',async e=>{
     toast('Achievement unlocked','Spot reserved · −20% first tour','★');
   }catch(err){
     btn.disabled=false; btn.textContent='Reserve';
-    msg.className='form-msg err'; msg.textContent='We couldn’t save your spot just now. Try again in a moment, or email hello@leonidatours.com.';
+    msg.className='form-msg err'; msg.textContent='We couldn’t save your spot just now. Try again in a moment, or message us on WhatsApp or the contact page.';
   }
 });
 
@@ -1357,7 +1358,7 @@ addEventListener('scroll',onScroll,{passive:true}); onScroll();
 /* copy */
 document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
   const el=document.getElementById(b.dataset.copy);
-  const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy email',1600);};
+  const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy number',1600);};
   const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);};
   if(navigator.clipboard){navigator.clipboard.writeText(el.textContent).then(done).catch(sel);} else sel();
 }));

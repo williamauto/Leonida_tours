@@ -11,7 +11,7 @@
    "dur": "3 hours · day or night",
    "group": "Up to 12",
    "departs": "Day 10a & 2p · Night 6:30p",
-   "meet": "Ocean Drive",
+   "meet": "Confirmed after booking",
    "desc": "Our signature tour, by day or by night. Take a daytime departure, or the sunset + night run that starts at golden hour and finishes as the neon switches on. The spots that inspired eight trailer scenes, in one loop: the Ocean Drive neon, the Venetian Causeway, downtown, the Wynwood murals, Little Haiti, Little Havana and the Brickell skyline.",
    "incl": [
     "Local host with scene-by-scene commentary",
@@ -37,7 +37,7 @@
    "dur": "2.5 hours",
    "group": "Up to 3",
    "departs": "Your time",
-   "meet": "Hotel pickup",
+   "meet": "Pickup anywhere in greater Miami",
    "priv": true,
    "desc": "The most cinematic way to see it. Just your crew in a top-down vintage convertible with a driver-guide who knows every angle. Same stops as the signature tour, at your pace.",
    "incl": [
@@ -45,7 +45,7 @@
     "Vintage convertible, top down",
     "Golden-hour photo stop on the causeway",
     "Crew Souvenir Map + bandana",
-    "Pickup in Miami Beach, Downtown or Brickell"
+    "Pickup anywhere in the greater Miami area"
    ],
    "good": [
     "Couples and small crews",
@@ -64,7 +64,7 @@
    "dur": "2.5 hours",
    "group": "Up to 3",
    "departs": "Your time",
-   "meet": "Hotel pickup",
+   "meet": "Pickup anywhere in greater Miami",
    "priv": true,
    "desc": "Roof off, wind in. Your crew in an open-top Jeep with a driver-guide, running the full Miami loop from the Ocean Drive neon to the Brickell skyline.",
    "incl": [
@@ -72,7 +72,7 @@
     "Open-top Jeep convertible",
     "Sunset photo stops",
     "Crew Souvenir Map + bandana",
-    "Pickup in Miami Beach, Downtown or Brickell"
+    "Pickup anywhere in the greater Miami area"
    ],
    "good": [
     "Small crews",
@@ -91,7 +91,7 @@
    "dur": "2 hours",
    "group": "Up to 12",
    "departs": "11a · 4p · sunset",
-   "meet": "Bayside Marina",
+   "meet": "Confirmed after booking",
    "desc": "Our Millionaire’s Row cruise. Loop out of Bayside past PortMiami, Fisher Island and the Miami Beach Marina megayachts, then the celebrity mansions of Star, Palm and Hibiscus Islands and the Venetian Islands, before a golden-hour hold on the skyline.",
    "incl": [
     "Licensed captain and host",
@@ -117,7 +117,7 @@
    "dur": "4 hours",
    "group": "Up to 20",
    "departs": "9a · 1p",
-   "meet": "Pickup in Miami",
+   "meet": "Pickup across greater Miami",
    "opts": [
     [
      "Alligator farm visit",
@@ -130,7 +130,7 @@
    ],
    "desc": "Leave the neon behind for the swamp that inspired the game’s wetlands. Round-trip shuttle from Miami, then an airboat run through the Everglades sawgrass with a wildlife guide. Add an alligator farm visit, or stay for a glow-in-the-dark ATV ride after sunset.",
    "incl": [
-    "Round-trip shuttle from Miami",
+    "Round-trip shuttle with pickup across greater Miami",
     "30-minute airboat ride",
     "Wildlife guide and gator spotting",
     "Boardwalk and viewing tower stop",
@@ -153,7 +153,7 @@
    "dur": "Full day",
    "group": "Up to 12",
    "departs": "7:30a",
-   "meet": "Pickup in Miami",
+   "meet": "Pickup across greater Miami",
    "desc": "The island road that inspired the game’s Keys. Drive the Overseas Highway through Key Largo and Islamorada to the Seven Mile Bridge, with beach time and a seafood lunch stop.",
    "incl": [
     "Air-conditioned minibus and host",

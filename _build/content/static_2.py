@@ -4,66 +4,73 @@
 STATIC = [
 {
  "slug": "meeting-point",
- "title": "Meeting Point: Where Every Tour Starts and How to Find Us",
- "meta": "The exact meeting point for every Leonida Tours departure: the Ocean Drive address, the marina gate, what the vehicles look like, and how late you can arrive.",
+ "title": "Pickup and Meeting Points: How Every Tour Starts",
+ "meta": "How Leonida Tours pickup works: where we collect you, when your exact pickup point arrives, and what to do if you are running late.",
  "kicker": "Practical",
  "cat": "Company",
- "date": "2026-09-20",
+ "date": "2026-10-21",
  "img": "causeway",
  "img_alt": "Causeway bridge and Miami skyline lit up at night",
- "excerpt": "One address for the city tours, one gate for the boats, and what to do if you are fifteen minutes late. Written down, so you do not spend launch week wandering.",
+ "excerpt": "We do not publish a street address. Your exact pickup point is sent with your booking, and we collect guests across the whole greater Miami area.",
  "body": [
-  {"p": ["The most common reason a good trip goes badly is not the tour. It is the twenty minutes before it, spent on a street corner in Miami Beach looking for a minibus. Here is everything, in one place."]},
-  {"h2": "The city tour meeting point", "id": "city-tour"},
-  {"p": ["<strong>1200 Ocean Drive, Miami Beach, FL 33139.</strong> That is the Moorington Hotel, the pale pink Art Deco building on the north side of the street between 12th and 13th Street, opposite the CVS. It has a coffee shop on the ground floor and the street parking outside it is metered."]},
-  {"ul": [
-    "The vehicles are white air-conditioned minibuses with Leonida Tours on the side in pink and teal.",
-    "Your guide is in a pink lanyard and will be standing at the kerb.",
-    "Come to the corner of Ocean Drive and 12th Street if the hotel entrance is hard to find.",
-    "The bus is usually parked a few doors down from the hotel on Ocean Drive itself, facing north."]},
-  {"h2": "The boat tour meeting point", "id": "boat-tour"},
-  {"p": ["Boats leave from the marina, not from Ocean Drive. The gate is at the end of the parking area on the island side of the bridge, and the address to put in your maps is the Miami Beach Marina on the causeway. Follow the road across the bridge until it ends, and turn into the marina on your left."]},
-  {"ul": [
-    "Look for the marina office building and the fuel dock. The boat is tied up beyond it.",
-    "Boarding is from a floating dock with a step ladder, so wear closed shoes.",
-    "Arrive 20 minutes early. The gate closes five minutes before departure for the manifest.",
-    "The walk from an Ocean Drive hotel to the marina gate is about 12 minutes on foot along the boardwalk, or a five-minute drive."]},
-  {"h2": "The Everglades and Keys meeting points", "id": "day-trips"},
-  {"p": ["Both day trips use a shuttle, and the pickup is from a set of hotel stops rather than a single address, because it makes the route work for everyone."]},
-  {"ul": [
-    "Hotel pickup is from the lobby or the kerb outside the main entrance, whichever the driver prefers.",
-    "The stop list is in your confirmation email with times, and the bus usually has to leave the last stop by 8:00am.",
-    "If you are staying outside the pickup area, meet at the marina gate office and you will be collected there.",
-    "Do not be late. The Everglades drive is timed against the boat operators, and a late bus means a shorter ride."]},
-  {"h2": "If you are running late", "id": "late"},
-  {"p": ["Call the number on your confirmation as soon as you know you have a problem. The practical rules are these."]},
-  {"table": {"head": ["How late", "What happens"], "rows": [
-    ["Up to 20 minutes", "We hold the departure. No penalty."],
-    ["20 to 45 minutes", "We will try to collect you, but the tour runs short by the time we pick you up."],
-    ["More than 45 minutes", "Treat it as a cancellation and call ahead. We will move you to another date at no charge."]]}},
-  {"p": ["Traffic is the usual reason. If you are coming from the airport, from Brickell during rush hour, or across the causeway at 5pm on a Friday, allow 25 minutes more than the map says. The map does not know about the drawbridges."]},
-  {"h2": "What to bring", "id": "bring"},
-  {"ul": [
-    "<strong>Sunscreen.</strong> Required on every outdoor tour and not optional in Miami in any month.",
-    "<strong>Water.</strong> We have it on board, but a personal bottle is better.",
-    "<strong>Closed shoes.</strong> Especially for the boats and the Everglades boardwalk.",
-    "<strong>A hat or a cap.</strong> The city tour has shade on the bus and almost none on the walk.",
-    "<strong>Light rain protection</strong> from June to September. It is usually a fifteen-minute downpour and then it stops."]},
-  {"h2": "Getting there", "id": "getting-there"},
-  {"ul": [
-    "<strong>By car:</strong> Ocean Drive parking is metered and fills by 10am. There is a public garage on 13th Street and one on 12th, both a two-minute walk from the meeting point.",
-    "<strong>By rideshare:</strong> set the drop to Ocean Drive and 12th Street. Do not set it to the hotel name; the drop-off on Ocean Drive can be a long way round.",
-    "<strong>On foot:</strong> if you are on the strip, everything on this page is walkable.",
-    "<strong>By bus:</strong> the Miami Beach Trolley runs the strip all evening and stops on Ocean Drive, but it does not run early enough for the morning departures."]}
+   {"p": ["The most common reason a good trip goes badly is not the tour. It is the twenty minutes before it, spent on a street corner in Miami Beach looking for a minibus. Here is how pickup works, and what to do if you are fifteen minutes late."]},
+   {"h2": "Your pickup point comes with your booking", "id": "pickup"},
+   {"p": ["We do not print meeting addresses on this site, and that is on purpose. Your exact pickup point is sent with your booking confirmation, once we know where you are staying, how many of you there are and whether you have luggage. It arrives with the date, the time, the driver's name and a WhatsApp thread for that booking."]},
+   {"ul": [
+     "<strong>City tours:</strong> your hotel lobby, the kerb outside your building, or the nearest landmark we agree with you.",
+     "<strong>Everglades and Keys:</strong> the same coverage on a short stop list, so an early start still works for everyone on it.",
+     "<strong>Private tours:</strong> your door, your driveway or your lobby. You choose when you book.",
+     "<strong>Boat tours:</strong> the marina gate, with boarding from the floating dock. We send the gate instructions with your booking."]},
+   {"h2": "Where we pick up", "id": "areas"},
+   {"p": ["Pickup is included in the price, and we cover the whole greater Miami area rather than a single neighbourhood."]},
+   {"ul": [
+     "South Beach and Miami Beach, including the hotels along the strip.",
+     "Brickell and Downtown Miami, including condo and apartment buildings.",
+     "Coral Gables, Coconut Grove and Key Biscayne.",
+     "Hialeah, Doral and Aventura, on the city route and the day trips.",
+     "Miami International Airport, for groups, with pickup timed to your flight.",
+     "Somewhere else in Miami-Dade or Broward. Ask, and we will tell you honestly."]},
+   {"h2": "What the vehicles look like", "id": "vehicles"},
+   {"ul": [
+     "The vehicles are white air-conditioned minibuses with Leonida Tours on the side in pink and teal.",
+     "Your host is in a pink lanyard and will be standing at the kerb.",
+     "The bus is usually parked within a minute or two of your pickup point, with the Leonida Tours logo on the side.",
+     "If you cannot see it straight away, message the WhatsApp thread for your booking and the driver will come to you."]},
+   {"h2": "The boat tour meeting point", "id": "boat-tour"},
+   {"p": ["Boats leave from the marina, not from a city street. We send the gate details with your booking: which gate to use, which side of the bridge it is on, and what the end of the boardwalk looks like. Boarding is from a floating dock with a step ladder, so wear closed shoes."]},
+   {"ul": [
+     "Look for the marina office building and the fuel dock. The boat is tied up beyond it.",
+     "Boarding is from a floating dock with a step ladder, so wear closed shoes.",
+     "Arrive 20 minutes early. The gate closes five minutes before departure for the manifest."]},
+   {"h2": "If you are running late", "id": "late"},
+   {"p": ["Call the number on your confirmation as soon as you know you have a problem. The practical rules are these."]},
+   {"table": {"head": ["How late", "What happens"], "rows": [
+     ["Up to 20 minutes", "We hold the departure. No penalty."],
+     ["20 to 45 minutes", "We will try to collect you, but the tour runs short by the time we pick you up."],
+     ["More than 45 minutes", "Treat it as a cancellation and call ahead. We will move you to another date at no charge."]]}},
+   {"p": ["Traffic is the usual reason. If you are coming from the airport, from Brickell during rush hour, or across the causeway at 5pm on a Friday, allow 25 minutes more than the map says. The map does not know about the drawbridges."]},
+   {"h2": "What to bring", "id": "bring"},
+   {"ul": [
+     "<strong>Sunscreen.</strong> Required on every outdoor tour and not optional in Miami in any month.",
+     "<strong>Water.</strong> We have it on board, but a personal bottle is better.",
+     "<strong>Closed shoes.</strong> Especially for the boats and the Everglades boardwalk.",
+     "<strong>A hat or a cap.</strong> The city tour has shade on the bus and almost none on the walk.",
+     "<strong>Light rain protection</strong> from June to September. It is usually a fifteen-minute downpour and then it stops."]},
+   {"h2": "Getting there", "id": "getting-there"},
+   {"ul": [
+     "<strong>By car:</strong> if you are driving to a pickup point, do not circle the block. Your confirmation says where to stop and whether the kerb is metered.",
+     "<strong>By rideshare:</strong> set the drop to the landmark named in your confirmation, unless it names a hotel entrance, in which case use the address exactly as written.",
+     "<strong>On foot:</strong> in South Beach, Brickell and Downtown most pickup points are a short walk from where you are staying.",
+     "<strong>By bus:</strong> the Miami Beach Trolley runs the strip all evening, but it does not run early enough for the morning departures."]}
  ],
  "faq": [
-  ["Where do Leonida Tours meet for the city tour?", "1200 Ocean Drive, Miami Beach, at the Moorington Hotel on the north side between 12th and 13th Street, opposite the CVS. Your guide is in a pink lanyard at the kerb."],
-  ["Where do the boat tours leave from?", "From the Miami Beach Marina, at the end of the road across the causeway. Turn left into the marina past the fuel dock. Boarding is from a floating dock with a step ladder."],
-  ["How late can I be?", "Up to 20 minutes late we hold the departure with no penalty. Between 20 and 45 minutes we will try to collect you and the tour runs short. Beyond that, call and we will move you to another date at no charge."],
-  ["Is there parking at the meeting point?", "Ocean Drive parking is metered and full by 10am. There are public garages on 12th and 13th Street, both a two-minute walk from the meeting point."],
-  ["What should I bring on a tour?", "Sunscreen, water, closed shoes, a hat, and light rain protection in summer. We have water on board but a personal bottle is better."],
-  ["Do the Everglades and Keys tours pick me up from my hotel?", "Yes, from a set of hotel stops listed in your confirmation email, and from the marina gate office if you are outside that area. The bus needs to leave the last stop by 8:00am."]
- ],
+   ["Where do Leonida Tours meet for the city tour?", "Your exact pickup point is sent with your booking confirmation, along with the driver's name and a WhatsApp thread. We pick up across the greater Miami area: South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura."],
+   ["Where do the boat tours leave from?", "From the marina. We send the gate details with your booking: which gate to use and how to find the floating dock. Boarding is from a step ladder, so wear closed shoes."],
+   ["How late can I be?", "Up to 20 minutes late we hold the departure with no penalty. Between 20 and 45 minutes we will try to collect you and the tour runs short. Beyond that, call and we will move you to another date at no charge."],
+   ["Is there parking at the meeting point?", "Your confirmation says whether the kerb is metered and where to leave the car. In South Beach and Downtown, parking is tight by mid-morning, so a rideshare to the landmark named in your booking is the easier option."],
+   ["What should I bring on a tour?", "Sunscreen, water, closed shoes, a hat, and light rain protection in summer. We have water on board but a personal bottle is better."],
+   ["Do the Everglades and Keys tours pick me up from my hotel?", "Yes, from a set of hotel stops listed in your booking confirmation, and we will collect you personally if you are outside the stop list. The bus needs to leave the last stop by 8:00am."]
+  ],
  "related": ["contact", "cancellation-policy", "about"]
 },
 {
@@ -213,22 +220,22 @@ STATIC = [
   {"p": ["We will disclose data if we are legally required to, for example to a court or to law enforcement. We will tell you, unless we are legally prevented from doing so."]},
   {"h2": "Your rights", "id": "rights"},
   {"ul": [
-    "<strong>Ask what we hold.</strong> Email us and we will tell you, within 30 days, exactly what personal data we hold about you.",
+    "<strong>Ask what we hold.</strong> Message us and we will tell you, within 30 days, exactly what personal data we hold about you.",
     "<strong>Ask us to correct it.</strong> If something is wrong, we will fix it.",
     "<strong>Ask us to delete it.</strong> We will delete your booking data within 30 days, except for the records we are legally required to keep for tax and accounting.",
     "<strong>Ask us to stop emailing you.</strong> Every marketing email has a one-click unsubscribe link, and unsubscribing does not affect emails about a booking you have made.",
-    "<strong>Complain.</strong> If you are unhappy, email us first. If that does not resolve it, you can complain to the relevant authority in your own country."]},
+    "<strong>Complain.</strong> If you are unhappy, message us first. If that does not resolve it, you can complain to the relevant authority in your own country."]},
   {"h2": "Children's data", "id": "children"},
   {"p": ["Our site is a travel site and we do not knowingly collect data from children directly. Where a booking includes a child, the information is provided by an adult booking for them, and we hold it only for the duration of the booking and the period after it described above."]},
   {"h2": "Contact and changes", "id": "contact-privacy"},
-  {"p": ["Write to us at hello@leonidatours.com with 'Privacy' in the subject line, or call +1 (305) 555-0148. The date at the top of this page is the date it was last changed. If we make a material change, we will email anyone who has booked with us in the last two years."]}
+  {"p": ["Send us a message through our contact page and mark it 'Privacy', or call +1 (305) 555-0148. The date at the top of this page is the date it was last changed. If we make a material change, we will contact anyone who has booked with us in the last two years."]}
  ],
  "faq": [
   ["What personal data does Leonida Tours collect?", "Your name, email and phone for the booking, payment details handled by a PCI-compliant processor, and any dietary or mobility requirements you tell us about. We do not sell any of it."],
   ["Do you use advertising trackers?", "No. There are no third-party advertising cookies and no cross-site tracking on this site. We use aggregate analytics only, so we know which pages are useful."],
   ["How long do you keep my data?", "Two years after your last booking for contact and booking data, seven years for payment records as required by law, and six months for dietary or accessibility requirements."],
   ["Do you share my details with anyone?", "Only with our payment processor, our booking platform and our email provider, all of which process data on our instructions under a written agreement."],
-  ["Can I request deletion of my data?", "Yes. Email hello@leonidatours.com and we will delete your booking data within 30 days, except for the tax and accounting records we are legally required to keep."]
+  ["Can I request deletion of my data?", "Yes. Message us through our contact page and we will delete your booking data within 30 days, except for the tax and accounting records we are legally required to keep."]
  ],
  "related": ["terms", "contact", "about"]
 },
@@ -245,7 +252,7 @@ STATIC = [
  "body": [
   {"p": ["These terms form the contract between you and Leonida Tours when you book. They are written to be readable, and if anything here is unclear, ask us before you book and we will explain it."]},
   {"h2": "Your booking", "id": "booking"},
-  {"p": ["A booking is confirmed when we send you a confirmation email with the date, the time and the meeting point. Until that email arrives, the reservation is provisional. Where a tour has limited seats, we hold a seat for 24 hours while payment is completed."]},
+  {"p": ["A booking is confirmed when we send you a confirmation with the date, the time and your exact pickup point. Until that confirmation arrives, the reservation is provisional. Where a tour has limited seats, we hold a seat for 24 hours while payment is completed."]},
   {"p": ["You are responsible for the accuracy of the information you give us at booking. In particular, tell us about mobility requirements, dietary needs, allergies, medical conditions relevant to the activity, the ages of children, and anything that affects your safety on the tour. We cannot reserve the right to provide an activity you have told us would be unsafe for you."]},
   {"h2": "Your responsibilities", "id": "responsibilities"},
   {"ul": [
@@ -268,7 +275,7 @@ STATIC = [
   {"note": {"title": "Nothing here limits your statutory rights", "text": "Nothing in these terms limits your rights under the consumer law of the country you are travelling in, including any right to a refund for a service that is not provided as described. Where a term here conflicts with your statutory rights, your statutory rights prevail."}},
   {"h2": "Accessibility", "id": "accessibility"},
   {"p": ["We run a minibus with a ramp and can carry two wheelchairs on the city tour. The Everglades van tour is the most accessible of the day trips. Some activities, including the airboat ride and boarding via a floating dock, are not suitable for everyone, and we would rather tell you that in advance than on the day."]},
-  {"p": ["If you have an access requirement, email us before booking and we will tell you honestly which tours suit it. We will never book you onto an activity we think is unsafe for you."]},
+  {"p": ["If you have an access requirement, message us before booking and we will tell you honestly which tours suit it. We will never book you onto an activity we think is unsafe for you."]},
   {"h2": "Governing law", "id": "law"},
   {"p": ["These terms are governed by the laws of the State of Florida and the United States, and the courts of Miami-Dade County, Florida have jurisdiction, without affecting any mandatory consumer protection you have where you live."]},
   {"h2": "Changes to these terms", "id": "changes-to-terms"},
