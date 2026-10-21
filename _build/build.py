@@ -54,6 +54,14 @@ ALT = {
     "pm_beach": "Friends laughing on South Beach with the Miami Beach skyline behind",
     "pm_palms": "Visitor snapping a photo of tall palm trees against a blue sky",
     "pm_wynwood": "Two friends posing in front of a graffiti wall in Wynwood",
+    "b_fisher": "Aerial view of Fisher Island and the turquoise water off Miami Beach",
+    "b_marina": "White superyacht docked at Miami Beach Marina",
+    "b_palm": "Palm-lined island estates on Biscayne Bay with the Miami skyline behind",
+    "b_star": "Waterfront mansion and palm trees on Star Island, Miami",
+    "pm_boat": "Couple relaxing on a boat on Biscayne Bay with Miami towers behind",
+    "pm_bridge": "Guest on a boat watching the Brickell skyline at sunset",
+    "pm_graffiti": "Woman posing against a colorful graffiti wall in Wynwood",
+    "pm_tower": "Friends sitting under a pink lifeguard tower on Miami Beach",
 }
 SIZE = {f[:-4]: Image.open(os.path.join(ROOT, "img", f)).size
         for f in os.listdir(os.path.join(ROOT, "img")) if f.endswith(".jpg")}
@@ -81,17 +89,19 @@ SEO = {
   faq=[("How is the Jeep tour different from the classic car?","Same private route and guide, in an open-top Jeep instead of a vintage convertible, for $450 per Jeep."),
        ("How long does it take?","About 2.5 hours, starting from your hotel in Miami Beach, Downtown or Brickell.")]),
  "vc-boat": dict(slug="miami-boat-tour-biscayne-bay", type="Miami boat tour",
-  title="Miami Boat Tour: Skyline, Port & Mansions | Leonida Tours",
-  meta="2-hour boat tour from Bayside Marina past PortMiami, Star Island mansions and the Venetian Islands, ending on the Brickell skyline at sunset. $79.",
-  intro="See Miami the way the trailers frame it, from the water. A licensed captain and host take you from Bayside Marina past PortMiami, the island mansions and the Venetian Islands, then cut the engines for the Brickell skyline at sunset.",
+  title="Millionaire's Row Boat Tour Miami: Star Island | Leonida Tours",
+  meta="2-hour Millionaire's Row boat tour from Bayside: PortMiami, Fisher Island, megayachts, Star, Palm & Hibiscus Island mansions and a sunset skyline. $79.",
+  intro="Our Millionaire's Row cruise shows Miami the way the trailers frame it, from the water. A licensed captain and host loop out of Bayside Marina past PortMiami, Fisher Island and the Miami Beach Marina megayachts, then the celebrity mansions of Star, Palm and Hibiscus Islands and the Venetian Islands, before cutting the engines for the skyline at golden hour.",
   faq=[("Where does the Miami boat tour leave from?","Bayside Marina in Downtown Miami, with departures at 11am, 4pm and sunset."),
-       ("Is the sunset departure worth it?","Yes. The tour ends with a golden-hour hold on the Brickell skyline, the shot fans know best.")]),
+       ("Which mansions and islands do we see?","Star Island and the rest of Millionaire's Row, Palm and Hibiscus Islands, Fisher Island and the Venetian Islands, plus the megayachts at Miami Beach Marina."),
+       ("Is the sunset departure worth it?","Yes. The tour ends with a golden-hour hold on the skyline, the shot fans know best.")]),
  "airboat": dict(slug="everglades-airboat-tour-from-miami", type="Everglades airboat tour",
   title="Everglades Airboat Tour from Miami | Leonida Tours",
-  meta="Half-day Everglades airboat tour with round-trip shuttle from Miami: 30-minute airboat ride, wildlife guide, gator spotting and boardwalk. $79.",
+  meta="Half-day Everglades airboat tour with shuttle from Miami: airboat ride, wildlife guide and gator spotting. Add a gator farm or night ATV ride. $79.",
   intro="Leave the neon behind for the swamp that inspired the game's wetlands, the Grasslands. A shuttle takes you from Miami to the Everglades for an airboat run through the sawgrass with a wildlife guide, then a boardwalk and viewing-tower stop.",
   faq=[("Is transport from Miami included?","Yes. The tour includes a round-trip shuttle from Miami."),
        ("Will we see alligators?","Your wildlife guide takes you to the places gators are most often spotted, though wildlife sightings are never guaranteed."),
+       ("Can I add anything to the airboat tour?","Yes: an alligator farm visit (+$29), or a one-hour glow-in-the-dark ATV ride after sunset (+$79)."),
        ("Is it suitable for kids?","Yes, for ages 5 and up.")]),
  "nightsky": dict(slug="everglades-night-sky-stargazing-tour", type="Everglades night tour",
   title="Everglades Sunset Airboat & Stargazing | Leonida Tours",
@@ -101,7 +111,7 @@ SEO = {
        ("Who is it for?","Night owls, nature and photo fans, ages 12 and up.")]),
  "keys": dict(slug="florida-keys-day-trip-from-miami", type="Florida Keys day trip",
   title="Florida Keys Day Trip from Miami | Leonida Tours",
-  meta="Full-day small-group road trip from Miami down the Overseas Highway: Key Largo, Islamorada, the Seven Mile Bridge and beach time. $99 per person.",
+  meta="Full-day small-group road trip from Miami down the Overseas Highway: Key Largo, Islamorada, the Seven Mile Bridge and beach time. $149 per person.",
   intro="The island road that inspired the Leonida Keys. A small-group minibus takes you down the Overseas Highway through Key Largo and Islamorada to the Seven Mile Bridge, with beach time at a state park and a seafood lunch stop.",
   faq=[("How long is the Florida Keys day trip?","A full day, with a 7:30am pickup in Miami."),
        ("Do we go to Key West?","No. The route covers Key Largo, Islamorada and the Seven Mile Bridge, which leaves time for the beach instead of a long day on the road.")]),
@@ -421,6 +431,7 @@ def build_tour(k):
   <div><h2>What's included</h2><ul class="ticks">{"".join(f"<li>{esc(i)}</li>" for i in T["incl"])}</ul></div>
   <div><h2>Best for</h2><ul class="ticks">{"".join(f"<li>{esc(i)}</li>" for i in T["good"])}</ul></div>
 </div></section>
+{"" if not T.get("opts") else '<section><div class="wrap"><h2>Optional add-ons</h2><ul class="ticks">' + "".join(f"<li>{esc(o[0])} <strong>{esc(o[1])}</strong></li>" for o in T["opts"]) + "</ul></div></section>"}
 {itin}
 <section class="faq"><div class="wrap"><h2>Questions about this tour</h2>{faq_html}</div></section>
 <section><div class="wrap cta"><span class="eyebrow">Free reservation · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>

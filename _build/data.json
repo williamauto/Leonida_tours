@@ -92,10 +92,10 @@
    "group": "Up to 12",
    "departs": "11a · 4p · sunset",
    "meet": "Bayside Marina",
-   "desc": "See Miami the way the trailers love to frame it, from the water. Cruise past PortMiami, the island mansions and the Venetian Islands, then hold for the Brickell skyline at sunset.",
+   "desc": "Our Millionaire’s Row cruise. Loop out of Bayside past PortMiami, Fisher Island and the Miami Beach Marina megayachts, then the celebrity mansions of Star, Palm and Hibiscus Islands and the Venetian Islands, before a golden-hour hold on the skyline.",
    "incl": [
     "Licensed captain and host",
-    "PortMiami and the island mansions",
+    "Star Island & Millionaire’s Row mansions",
     "Skyline hold at golden hour",
     "Soft drinks and water",
     "Crew Souvenir Map + bandana"
@@ -118,7 +118,17 @@
    "group": "Up to 20",
    "departs": "9a · 1p",
    "meet": "Pickup in Miami",
-   "desc": "Leave the neon behind for the swamp that inspired the game’s wetlands. Round-trip shuttle from Miami, then an airboat run through the Everglades sawgrass with a wildlife guide.",
+   "opts": [
+    [
+     "Alligator farm visit",
+     "+$29"
+    ],
+    [
+     "Glow-in-the-dark night ATV ride (1 hr)",
+     "+$79"
+    ]
+   ],
+   "desc": "Leave the neon behind for the swamp that inspired the game’s wetlands. Round-trip shuttle from Miami, then an airboat run through the Everglades sawgrass with a wildlife guide. Add an alligator farm visit, or stay for a glow-in-the-dark ATV ride after sunset.",
    "incl": [
     "Round-trip shuttle from Miami",
     "30-minute airboat ride",
@@ -138,7 +148,7 @@
    "img": "keys",
    "loc": "Leonida Keys",
    "irl": "Florida Keys",
-   "price": 99,
+   "price": 149,
    "unit": "person",
    "dur": "Full day",
    "group": "Up to 12",
@@ -324,55 +334,73 @@
    "x": 262,
    "y": 272,
    "img": "boat",
-   "name": "Downtown waterfront",
-   "irl": "Bayside Marina",
-   "p": "Board at the marina with the arena and the downtown towers right behind you."
+   "name": "Bayside Marina",
+   "irl": "the downtown waterfront",
+   "p": "Board under the downtown towers, with the arena and the waterfront right behind you."
   },
   {
-   "t": "0:15",
+   "t": "0:10",
    "x": 318,
-   "y": 320,
+   "y": 332,
    "img": "port",
    "name": "PortMiami",
    "irl": "the port scenes",
-   "p": "Slide past the cruise terminals and cargo cranes from the port scenes."
+   "p": "Cruise past the giant cruise ships and cargo cranes of the world’s busiest cruise port."
+  },
+  {
+   "t": "0:25",
+   "x": 392,
+   "y": 378,
+   "img": "b_fisher",
+   "name": "Fisher Island",
+   "irl": "the private island",
+   "p": "The island with no road: reachable only by boat or ferry, and home to some of the most expensive real estate in the US."
   },
   {
    "t": "0:35",
-   "x": 372,
-   "y": 300,
-   "img": "causeway",
-   "name": "The island mansions",
-   "irl": "Star Island views",
-   "p": "Waterfront estates behind palm walls. The part of the bay only boats get close to."
+   "x": 412,
+   "y": 336,
+   "img": "b_marina",
+   "name": "Miami Beach Marina",
+   "irl": "the megayachts",
+   "p": "Superyachts lined up at the south end of Miami Beach, near South Pointe."
   },
   {
-   "t": "0:55",
+   "t": "0:50",
+   "x": 372,
+   "y": 270,
+   "img": "b_star",
+   "name": "Star Island",
+   "irl": "Millionaire’s Row",
+   "p": "The heart of Millionaire’s Row: celebrity mansions with private docks, one after another."
+  },
+  {
+   "t": "1:05",
+   "x": 322,
+   "y": 258,
+   "img": "b_palm",
+   "name": "Palm & Hibiscus Islands",
+   "irl": "the island estates",
+   "p": "Palm-lined estates along the MacArthur Causeway, including the island where Al Capone once owned a waterfront house."
+  },
+  {
+   "t": "1:20",
    "x": 342,
    "y": 206,
    "img": "bridgenight",
    "name": "Venetian Islands",
    "irl": "the causeway bridges",
-   "p": "Weave under the causeway bridges between the islands.",
+   "p": "Weave between the islands and under the old drawbridge causeway.",
    "q": "Optional drone shot"
   },
   {
-   "t": "1:25",
-   "x": 300,
-   "y": 420,
+   "t": "1:40",
+   "x": 286,
+   "y": 300,
    "img": "skyday",
-   "name": "Brickell skyline",
+   "name": "Downtown & Brickell skyline",
    "irl": "the skyline shot",
-   "p": "Engines off for the golden-hour hold on the skyline shot fans know best."
-  },
-  {
-   "t": "1:50",
-   "x": 262,
-   "y": 272,
-   "img": "hero",
-   "name": "Back to Downtown",
-   "irl": "Bayside Marina",
-   "p": "Return as the towers light up."
+   "p": "Engines off mid-bay for the golden-hour skyline shot, then back to Bayside."
   }
  ]
 }
