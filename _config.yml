@@ -1,0 +1,3 @@
+# GitHub Pages: publish files as-is; _build/ holds the generator.
+exclude: [_build, README.md]
+include: [.well-known]

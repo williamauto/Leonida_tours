@@ -1,0 +1,32 @@
+name: Notify search engines (IndexNow)
+
+# After each push, tell Bing (which also feeds ChatGPT search, Copilot and DuckDuckGo),
+# Yandex, Seznam and Naver that the pages changed, so they recrawl within hours.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages to finish deploying
+        run: sleep 120
+      - name: Ping IndexNow
+        run: |
+          python3 - <<'EOF'
+          import json, urllib.request
+          d = json.load(open('_build/urls.json'))
+          body = json.dumps({
+              "host": d["host"],
+              "key": d["indexnow_key"],
+              "keyLocation": d["site_url"] + "/" + d["indexnow_key"] + ".txt",
+              "urlList": d["urls"],
+          }).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8"})
+          print("IndexNow status:", urllib.request.urlopen(req).status)
+          EOF

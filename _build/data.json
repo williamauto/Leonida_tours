@@ -1,0 +1,378 @@
+{
+ "TOURS": {
+  "vc-van": {
+   "title": "Miami Vice City Small-Group Tour",
+   "ride": "Small-group minibus",
+   "img": "oceannight",
+   "loc": "Miami Vice City",
+   "irl": "Miami",
+   "price": 79,
+   "unit": "person",
+   "dur": "3 hours · day or night",
+   "group": "Up to 12",
+   "departs": "Day 10a & 2p · Night 6:30p",
+   "meet": "Ocean Drive",
+   "desc": "Our signature tour, by day or by night. Take a daytime departure, or the sunset + night run that starts at golden hour and finishes as the neon switches on. The spots that inspired eight trailer scenes, in one loop: the Ocean Drive neon, the Venetian Causeway, downtown, the Wynwood murals, Little Haiti, Little Havana and the Brickell skyline.",
+   "incl": [
+    "Local host with scene-by-scene commentary",
+    "Air-conditioned minibus, big windows",
+    "Crew Souvenir Map + bandana",
+    "Cafecito stop in Little Havana",
+    "Optional drone shots (+$49 per group)"
+   ],
+   "good": [
+    "Fans and first-timers",
+    "Friends and families",
+    "Sunset departure recommended"
+   ]
+  },
+  "vc-car": {
+   "title": "Private Classic Convertible Tour",
+   "ride": "Private classic convertible",
+   "img": "classic",
+   "loc": "Miami Vice City",
+   "irl": "Miami",
+   "price": 600,
+   "unit": "car",
+   "dur": "2.5 hours",
+   "group": "Up to 3",
+   "departs": "Your time",
+   "meet": "Hotel pickup",
+   "priv": true,
+   "desc": "The most cinematic way to see it. Just your crew in a top-down vintage convertible with a driver-guide who knows every angle. Same stops as the signature tour, at your pace.",
+   "incl": [
+    "Private driver-guide",
+    "Vintage convertible, top down",
+    "Golden-hour photo stop on the causeway",
+    "Crew Souvenir Map + bandana",
+    "Pickup in Miami Beach, Downtown or Brickell"
+   ],
+   "good": [
+    "Couples and small crews",
+    "Birthdays and proposals",
+    "Content creators"
+   ]
+  },
+  "vc-jeep": {
+   "title": "Private Jeep Convertible Tour",
+   "ride": "Private Jeep convertible",
+   "img": "downtown",
+   "loc": "Miami Vice City",
+   "irl": "Miami",
+   "price": 450,
+   "unit": "Jeep",
+   "dur": "2.5 hours",
+   "group": "Up to 3",
+   "departs": "Your time",
+   "meet": "Hotel pickup",
+   "priv": true,
+   "desc": "Roof off, wind in. Your crew in an open-top Jeep with a driver-guide, running the full Miami loop from the Ocean Drive neon to the Brickell skyline.",
+   "incl": [
+    "Private driver-guide",
+    "Open-top Jeep convertible",
+    "Sunset photo stops",
+    "Crew Souvenir Map + bandana",
+    "Pickup in Miami Beach, Downtown or Brickell"
+   ],
+   "good": [
+    "Small crews",
+    "Adventure lovers",
+    "Great value private option"
+   ]
+  },
+  "vc-boat": {
+   "title": "Miami Vice City by Boat",
+   "ride": "Small-group boat",
+   "img": "boat",
+   "loc": "Miami Vice City",
+   "irl": "Biscayne Bay",
+   "price": 79,
+   "unit": "person",
+   "dur": "2 hours",
+   "group": "Up to 12",
+   "departs": "11a · 4p · sunset",
+   "meet": "Bayside Marina",
+   "desc": "See Miami the way the trailers love to frame it, from the water. Cruise past PortMiami, the island mansions and the Venetian Islands, then hold for the Brickell skyline at sunset.",
+   "incl": [
+    "Licensed captain and host",
+    "PortMiami and the island mansions",
+    "Skyline hold at golden hour",
+    "Soft drinks and water",
+    "Crew Souvenir Map + bandana"
+   ],
+   "good": [
+    "Sunset lovers",
+    "Groups of friends",
+    "Pairs well with the city tour"
+   ]
+  },
+  "airboat": {
+   "title": "Grasslands Airboat",
+   "ride": "Small-group airboat",
+   "img": "airboat",
+   "loc": "Grasslands",
+   "irl": "The Everglades",
+   "price": 79,
+   "unit": "person",
+   "dur": "4 hours",
+   "group": "Up to 20",
+   "departs": "9a · 1p",
+   "meet": "Pickup in Miami",
+   "desc": "Leave the neon behind for the swamp that inspired the game’s wetlands. Round-trip shuttle from Miami, then an airboat run through the Everglades sawgrass with a wildlife guide.",
+   "incl": [
+    "Round-trip shuttle from Miami",
+    "30-minute airboat ride",
+    "Wildlife guide and gator spotting",
+    "Boardwalk and viewing tower stop",
+    "Crew Souvenir Map + bandana"
+   ],
+   "good": [
+    "Nature and wildlife fans",
+    "A half day outside the city",
+    "Ages 5 and up"
+   ]
+  },
+  "keys": {
+   "title": "Leonida Keys Road Trip",
+   "ride": "Small-group minibus",
+   "img": "keys",
+   "loc": "Leonida Keys",
+   "irl": "Florida Keys",
+   "price": 99,
+   "unit": "person",
+   "dur": "Full day",
+   "group": "Up to 12",
+   "departs": "7:30a",
+   "meet": "Pickup in Miami",
+   "desc": "The island road that inspired the game’s Keys. Drive the Overseas Highway through Key Largo and Islamorada to the Seven Mile Bridge, with beach time and a seafood lunch stop.",
+   "incl": [
+    "Air-conditioned minibus and host",
+    "Key Largo and Islamorada stops",
+    "Seven Mile Bridge photo stop",
+    "Beach time at a state park",
+    "Crew Souvenir Map + bandana"
+   ],
+   "good": [
+    "Road-trip crews",
+    "Beach and water lovers",
+    "A full-day adventure"
+   ]
+  },
+  "pass": {
+   "title": "Leonida City Pass",
+   "ride": "3 experiences",
+   "img": "bridgenight",
+   "loc": "City Pass",
+   "irl": "Streets, bay & swamp",
+   "price": 199,
+   "unit": "person",
+   "dur": "Book each date",
+   "group": "Any size",
+   "departs": "Your schedule",
+   "meet": "Varies",
+   "desc": "The Miami Vice City small-group tour, Miami Vice City by Boat and the Grasslands Airboat, booked on your own schedule. A $237 value for $199.",
+   "incl": [
+    "Miami Vice City small-group tour",
+    "Miami Vice City by Boat",
+    "Grasslands Airboat (Everglades)",
+    "Save $38 per person",
+    "Crew Souvenir Map + bandana"
+   ],
+   "good": [
+    "First-time visitors",
+    "A long weekend",
+    "Seeing the whole map"
+   ]
+  }
+ },
+ "ORDER": [
+  "vc-van",
+  "vc-car",
+  "vc-jeep",
+  "vc-boat",
+  "airboat",
+  "keys",
+  "pass"
+ ],
+ "REGIONS": {
+  "vicecity": {
+   "name": "Miami Vice City",
+   "irl": "Miami",
+   "img": "hero",
+   "blurb": "Neon hotels, glass towers, murals and the bay: the real city that inspired the game. Ride it in a small group, privately, or by boat.",
+   "tours": [
+    "vc-van",
+    "vc-car",
+    "vc-jeep",
+    "vc-boat"
+   ]
+  },
+  "grassrivers": {
+   "name": "Grasslands",
+   "irl": "The Everglades",
+   "img": "airboat",
+   "blurb": "Sawgrass to the horizon, airboats, gators and quiet water: the wetlands that inspired the game’s swamp scenes. An hour from Miami.",
+   "tours": [
+    "airboat"
+   ]
+  },
+  "keys": {
+   "name": "Leonida Keys",
+   "irl": "Florida Keys",
+   "img": "keysaerial",
+   "blurb": "Island roads, turquoise water and bridges that run to the horizon. A full-day road trip down the island chain.",
+   "tours": [
+    "keys"
+   ]
+  },
+  "ambrosia": {
+   "name": "Lake Okeechobee",
+   "irl": "Clewiston & sugar country",
+   "img": "glades",
+   "blurb": "Sugar country, heat-haze roads and small-town stops. We’re scouting this route for 2027.",
+   "tours": [],
+   "soon": true
+  }
+ },
+ "LAND": [
+  {
+   "t": "0:00",
+   "x": 438,
+   "y": 470,
+   "img": "decoday",
+   "nimg": "neon",
+   "name": "Ocean Drive",
+   "irl": "the neon hotel strip",
+   "p": "Meet on the Art Deco strip the first trailer’s look is built on: pastel hotels, neon signage and the Clevelander corner.",
+   "np": "We finish here after dark, when the whole strip glows pink and blue, exactly like the trailer."
+  },
+  {
+   "t": "0:25",
+   "x": 440,
+   "y": 396,
+   "img": "tower",
+   "nimg": "beach",
+   "name": "Lummus Park Beach",
+   "irl": "the beach scenes",
+   "p": "The candy-colored lifeguard towers and the sand from the beach scenes. Crew photo stop.",
+   "np": "Golden-hour light on the lifeguard towers: the best crew photo of the night."
+  },
+  {
+   "t": "0:40",
+   "x": 410,
+   "y": 200,
+   "img": "bridgenight",
+   "name": "Venetian Causeway",
+   "irl": "the causeway drive",
+   "p": "Island-hop across the bay on the old drawbridge causeway, skyline rising ahead.",
+   "q": "Optional drone shot"
+  },
+  {
+   "t": "0:55",
+   "x": 230,
+   "y": 262,
+   "img": "skyday",
+   "nimg": "downtown",
+   "name": "Downtown & Biscayne Blvd",
+   "irl": "the arena and the club",
+   "p": "The waterfront arena, the color-changing crown of the tallest tower and the 24-hour superclub from the second trailer.",
+   "np": "Light trails on the boulevard and the tower crowns changing color: downtown at its most cinematic."
+  },
+  {
+   "t": "1:10",
+   "x": 160,
+   "y": 172,
+   "img": "wynwood",
+   "name": "Wynwood",
+   "irl": "the arts district",
+   "p": "A 25-minute walk through the murals and warehouse streets of the arts district.",
+   "np": "The murals under the streetlights, with the bars and music just starting up."
+  },
+  {
+   "t": "1:40",
+   "x": 140,
+   "y": 108,
+   "img": "laperle",
+   "name": "Little Haiti",
+   "irl": "the Caribbean quarter",
+   "p": "Caribbean color, murals and music. Stop by the cultural complex and taste a Haitian patty."
+  },
+  {
+   "t": "2:10",
+   "x": 70,
+   "y": 390,
+   "img": "havana",
+   "name": "Little Havana",
+   "irl": "Calle Ocho",
+   "p": "Cafecito and a pastelito at a ventanita, then the domino tables of Máximo Gómez Park."
+  },
+  {
+   "t": "2:35",
+   "x": 190,
+   "y": 458,
+   "img": "skyday",
+   "nimg": "brickell",
+   "name": "Brickell",
+   "np": "The glass towers lit up, then back over the MacArthur Causeway past the lit cruise ships to the neon of Ocean Drive.",
+   "irl": "the skyline shots",
+   "p": "The glass canyon of the financial district, then back over the MacArthur Causeway past PortMiami to Ocean Drive."
+  }
+ ],
+ "WATER": [
+  {
+   "t": "0:00",
+   "x": 262,
+   "y": 272,
+   "img": "boat",
+   "name": "Downtown waterfront",
+   "irl": "Bayside Marina",
+   "p": "Board at the marina with the arena and the downtown towers right behind you."
+  },
+  {
+   "t": "0:15",
+   "x": 318,
+   "y": 320,
+   "img": "port",
+   "name": "PortMiami",
+   "irl": "the port scenes",
+   "p": "Slide past the cruise terminals and cargo cranes from the port scenes."
+  },
+  {
+   "t": "0:35",
+   "x": 372,
+   "y": 300,
+   "img": "causeway",
+   "name": "The island mansions",
+   "irl": "Star Island views",
+   "p": "Waterfront estates behind palm walls. The part of the bay only boats get close to."
+  },
+  {
+   "t": "0:55",
+   "x": 342,
+   "y": 206,
+   "img": "bridgenight",
+   "name": "Venetian Islands",
+   "irl": "the causeway bridges",
+   "p": "Weave under the causeway bridges between the islands.",
+   "q": "Optional drone shot"
+  },
+  {
+   "t": "1:25",
+   "x": 300,
+   "y": 420,
+   "img": "skyday",
+   "name": "Brickell skyline",
+   "irl": "the skyline shot",
+   "p": "Engines off for the golden-hour hold on the skyline shot fans know best."
+  },
+  {
+   "t": "1:50",
+   "x": 262,
+   "y": 272,
+   "img": "hero",
+   "name": "Back to Downtown",
+   "irl": "Bayside Marina",
+   "p": "Return as the towers light up."
+  }
+ ]
+}
