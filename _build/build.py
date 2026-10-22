@@ -393,6 +393,40 @@ def build_index():
     body = re.sub(r'(<img src="img/([a-z]+)\.jpg") alt=""', lambda m: f'{m.group(1)} alt="{esc(ALT.get(m.group(2), ""))}"', body)
 
     body = body.replace('<img src="img/${T.img}.jpg" alt="">', '<img src="img/${T.img}.jpg" alt="${T.title}">')
+    # latest guides from the blog, as real links (before the FAQ)
+    posts = load_posts()
+    picks = [r for r in posts if r.get("featured")][:3]
+    picks += [r for r in posts if r not in picks][:6 - len(picks)]
+    guides = ('<section id="guides">\n  <div class="wrap">\n    <div class="sec-head">\n'
+              '      <span class="eyebrow">From the blog</span>\n'
+              '      <h2>Guides to <span class="grad">plan your trip</span>.</h2>\n'
+              '      <p class="lede">Our guides explain where the places from the game are in real life, '
+              'how to plan your days in Miami and what to expect in the Everglades and the Florida Keys.</p>\n'
+              '    </div>\n'
+              f'    <div class="guides">{guide_cards(picks, "")}</div>\n'
+              f'    <p class="guides-all"><a class="btn btn-glass" href="blog/">Read all {len(posts)} guides</a></p>\n'
+              '  </div>\n</section>\n\n')
+    assert body.count('<section id="faq">') == 1
+    body = body.replace('<section id="faq">', guides + '<section id="faq">', 1)
+    css += ("\n#guides{padding-top:0}.guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}"
+            "@media(max-width:940px){.guides{grid-template-columns:1fr 1fr}}@media(max-width:600px){.guides{grid-template-columns:1fr}}"
+            ".guide{display:flex;flex-direction:column;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .2s,transform .2s}"
+            ".guide:hover{border-color:var(--line-2);transform:translateY(-2px)}"
+            ".guide img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover}"
+            ".guide div{display:grid;gap:8px;padding:16px 18px 20px}"
+            ".guide .k{font:700 11px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}"
+            ".guide h3{font:700 17px/1.3 var(--display);color:var(--text)}"
+            ".guide p{font-size:14px;line-height:1.55;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}"
+            ".guides-all{margin-top:24px;text-align:center}"
+            "\n.nav-blog{display:none;font:600 14px/1 var(--body);color:var(--text);text-decoration:none;margin-left:auto;margin-right:14px}"
+            "@media (max-width:920px){.nav-blog{display:inline-block}}"
+            "@media (max-width:480px){.nav .wrap{gap:10px}.logo-text{font-size:13px}.nav .btn-sm{padding:10px 12px;font-size:13px}.nav-blog{margin-right:4px}}"
+            "@media (max-width:360px){.logo-text{display:none}#hudDays{display:none}}"
+            "html,body{overflow-x:clip}#showcase{min-width:0;max-width:100%}@media (max-width:940px){.garage{grid-template-columns:minmax(0,1fr)}}")
+    old_nav_btn = '    <a class="btn btn-primary btn-sm" href="#preregister">Reserve Now</a>\n  </div>\n  <div class="xpbar"'
+    assert body.count(old_nav_btn) == 1
+    body = body.replace(old_nav_btn, '    <a class="nav-blog" href="blog/">Blog</a>\n' + old_nav_btn, 1)
+
     # crawlable footer links
     links = "".join(f'<li><a href="tours/{SEO[k]["slug"]}/">{esc(TOURS[k]["title"])}</a></li>' for k in ORDER)
     site_links = "".join(f'<li><a href="{href}">{label}</a></li>' for href, label in
@@ -466,8 +500,33 @@ section{padding-block:clamp(40px,6vw,64px);border-top:1px solid var(--line)}
 .related a{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}.related a:hover{border-color:var(--line-2)}.related img{aspect-ratio:16/10;object-fit:cover;width:100%}.related div{padding:14px 16px;display:grid;gap:6px}.related span{color:var(--muted);font-size:14px}
 .cta{background:radial-gradient(120% 120% at 100% 0%,rgba(255,95,162,.25),transparent 55%),var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,40px);display:grid;gap:16px;justify-items:start}
 footer{border-top:1px solid var(--line);padding-block:32px 48px;color:var(--muted);font-size:13px}footer .legal{margin-top:14px;max-width:90ch}footer ul{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px}footer a{text-decoration:none}footer a:hover{color:var(--text)}
+
+.nav .links{display:flex;gap:18px;margin-left:auto;margin-right:6px}.nav .links a{font:600 14px/1 var(--body);color:var(--text);text-decoration:none}.nav .links a:hover{color:var(--pink)}@media(max-width:640px){.nav .hide-sm{display:none}.logo{font-size:13px}}
+.guides .k{font:700 11px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}.guides h3{font-size:16px;line-height:1.3}.guides p{color:var(--muted);font-size:14px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+footer ul+ul{margin-top:6px}
 """
 PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg>'
+
+TOUR_GUIDES = {
+    "vc-van": ["gta-6-locations-in-real-life", "best-things-to-do-in-miami-beach", "gta-6-trailers-timestamped"],
+    "vc-car": ["gta-6-locations-in-real-life", "best-things-to-do-in-miami-beach", "miami-in-3-days-itinerary"],
+    "vc-jeep": ["gta-6-locations-in-real-life", "is-gta-6-set-in-miami", "miami-in-3-days-itinerary"],
+    "vc-boat": ["miami-sunset-cruise-guide", "gta-6-locations-in-real-life", "miami-in-3-days-itinerary"],
+    "airboat": ["everglades-airboat-tour-guide", "gta-6-everglades-grassrivers", "gta-6-map-and-regions"],
+    "keys": ["gta-6-florida-keys-leonida-keys", "gta-6-map-and-regions", "miami-in-3-days-itinerary"],
+    "pass": ["miami-in-3-days-itinerary", "miami-launch-week-guide", "gta-6-release-date"],
+}
+
+def load_posts():
+    import pages as P
+    return P.load_posts()
+
+def guide_cards(posts, p, cls="guide"):
+    """Crawlable article cards linking to the blog."""
+    return "".join(
+        f'<a class="{cls}" href="{p}blog/{r["slug"]}/"><img src="{p}img/{r["img"]}.jpg" alt="{esc(r["img_alt"])}" loading="lazy" decoding="async" {img_attrs(r["img"])}>'
+        f'<div><span class="k">{esc(r["kicker"])}</span><h3>{esc(r["title"])}</h3><p>{esc(r["excerpt"])}</p></div></a>'
+        for r in posts)
 
 def related_for(k):
     if k == "pass": return ["vc-van", "vc-boat", "airboat"]
@@ -490,6 +549,11 @@ def build_tour(k):
     rel = "".join(f'<a href="{p}tours/{SEO[x]["slug"]}/"><img src="{p}img/{TOURS[x]["img"]}.jpg" alt="{esc(ALT[TOURS[x]["img"]])}" loading="lazy" decoding="async" {img_attrs(TOURS[x]["img"])}>'
                   f'<div><h3>{esc(TOURS[x]["title"])}</h3><span>{esc(TOURS[x]["dur"])} · from {money(TOURS[x]["price"])} / {esc(TOURS[x]["unit"])}</span></div></a>' for x in related_for(k))
     foot = "".join(f'<li><a href="{p}tours/{SEO[x]["slug"]}/">{esc(TOURS[x]["title"])}</a></li>' for x in ORDER)
+    site_foot = "".join(f'<li><a href="{p}{h}">{l}</a></li>' for h, l in
+                        [("blog/", "Blog"), ("locations/", "Locations"), ("map/", "Map"), ("about/", "About us"),
+                         ("contact/", "Contact"), ("meeting-point/", "Meeting point"), ("cancellation-policy/", "Cancellation policy")])
+    by_slug = {r["slug"]: r for r in load_posts()}
+    guides = guide_cards([by_slug[x] for x in TOUR_GUIDES.get(k, []) if x in by_slug], p, "")
     graph = [org(), {"@type": "WebSite", "@id": SITE_ID, "url": url(), "name": BRAND},
              {"@type": "WebPage", "@id": page + "#webpage", "url": page, "name": S["title"], "description": S["meta"],
               "isPartOf": {"@id": SITE_ID}, "inLanguage": "en-US", "dateModified": TODAY, "mainEntity": {"@id": page + "#trip"},
@@ -510,6 +574,7 @@ def build_tour(k):
 </head>
 <body>
 {GTM_BODY}<header class="nav"><div class="wrap"><a class="logo" href="{p}"><i>{PIN}</i>LEONIDA <span class="grad">TOURS</span></a>
+<nav class="links" aria-label="Sections"><a href="{p}blog/">Blog</a><a class="hide-sm" href="{p}locations/">Locations</a><a class="hide-sm" href="{p}map/">Map</a></nav>
 <a class="btn btn-primary btn-sm" href="{reserve}">Reserve Now</a></div></header>
 <main>
 <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="{p}">Home</a></li><li><a href="{p}#map">Tours</a></li><li aria-current="page">{esc(T["title"])}</li></ol></nav></div>
@@ -537,8 +602,9 @@ def build_tour(k):
 <section class="faq"><div class="wrap"><h2>Questions about this tour</h2>{faq_html}</div></section>
 <section><div class="wrap cta"><span class="eyebrow">Reserve now · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
 <section><div class="wrap"><h2>You might also like</h2><div class="related">{rel}</div></div></section>
+<section><div class="wrap"><h2>Guides for this tour</h2><div class="related guides">{guides}</div><p style="margin-top:20px"><a class="btn btn-glass" href="{p}blog/">See all guides on the blog</a></p></div></section>
 </main>
-<footer><div class="wrap"><ul>{foot}</ul><p>© 2026 {BRAND} · <a href="{p}contact/">Contact us</a></p><p class="legal">{DISCLAIMER}</p></div></footer>
+<footer><div class="wrap"><ul>{foot}</ul><ul>{site_foot}</ul><p>© 2026 {BRAND} · <a href="{p}contact/">Contact us</a></p><p class="legal">{DISCLAIMER}</p></div></footer>
 </body>
 </html>
 """
