@@ -246,39 +246,11 @@ def toc_html(blocks):
 
 # ---------------------------------------------------------------- shell
 def nav(p, current=""):
-    def a(href, label):
-        cur = ' aria-current="page"' if href == current else ""
-        return f'<a href="{p}{href}"{cur}>{label}</a>'
-    return (
-        '<header class="nav article-nav"><div class="wrap">'
-        f'<a class="logo" href="{p}"><i>{CTX["PIN"]}</i>LEONIDA <span class="grad">TOURS</span></a>'
-        '<nav class="links" aria-label="Sections">'
-        + a("blog/", "Blog") + a("locations/", "Locations") + a("map/", "Map") + a("about/", "About")
-        + '</nav>'
-        f'<a class="btn btn-primary btn-sm" href="{p}#preregister">Reserve Now</a>'
-        "</div></header>"
-    )
+    return CTX["site_nav"](p, current)
 
 
 def footer(p):
-    links = []
-    for href, label in [("blog/", "Blog"), ("locations/", "Locations"), ("map/", "Map"),
-                        ("about/", "About us"), ("editorial-policy/", "Editorial policy"),
-                        ("contact/", "Contact"), ("meeting-point/", "Meeting point"),
-                        ("cancellation-policy/", "Cancellation policy"),
-                        ("insurance-and-licensing/", "Insurance & licensing"),
-                        ("privacy/", "Privacy"), ("terms/", "Terms")]:
-        links.append(f'<li><a href="{p}{href}">{label}</a></li>')
-    tours = "".join(f'<li><a href="{p}tours/{CTX["SEO"][k]["slug"]}/">{esc(CTX["TOURS"][k]["title"])}</a></li>'
-                    for k in CTX["ORDER"])
-    return (
-        '<footer><div class="wrap">'
-        f'<nav aria-label="Tours"><ul>{tours}</ul></nav>'
-        f'<nav aria-label="Site"><ul>{"".join(links)}</ul></nav>'
-        f"<p>© 2026 {CTX['BRAND']} · <a href=\"{p}contact/\">Contact us</a></p>"
-        f'<p class="legal">{CTX["DISCLAIMER"]}</p>'
-        "</div></footer>"
-    )
+    return CTX["site_footer"](p)
 
 
 def page_head(title, desc, page_url, og_img, og_alt, p, extra="", og_type="website", article=None):
@@ -323,10 +295,79 @@ def web_page(page, name, desc, extra=None):
 
 # ---------------------------------------------------------------- shared CTA
 def CTA(p):
-    return ('<section><div class="wrap cta"><span class="eyebrow">Reserve now &middot; nothing to pay today</span>'
+    return ('<section><div class="wrap cta"><span class="eyebrow">Early access &middot; no prepayment needed</span>'
             '<h2 style="margin:0">Come and see it. <span class="grad">Ride first.</span></h2>'
             '<p class="lede">Tell us your date and group size and we will confirm your spot before public booking opens, plus 20% off your first tour.</p>'
             f'<a class="btn btn-primary" href="{p}#preregister">Reserve Now</a></div></section>')
+
+
+# ---------------------------------------------------------------- blog topics
+TOPICS = [
+    {"slug": "gta-6-locations", "name": "GTA 6 locations in real life", "kicker": "Topic",
+     "title": "GTA 6 Locations in Real Life: Miami Guides | Leonida Tours",
+     "h1": "GTA 6 locations in real life",
+     "meta": "Guides to the real Miami, Everglades and Florida Keys places behind Vice City and Leonida: maps, regions, trailer timestamps and addresses.",
+     "intro": "Where the game map meets the real one. These guides match Vice City and the regions of Leonida to real Miami, Everglades and Florida Keys places, with addresses, coordinates and the trailer moments where they appear.",
+     "posts": ["gta-6-locations-in-real-life", "is-gta-6-set-in-miami", "gta-6-map-and-regions", "gta-6-trailers-timestamped",
+               "gta-6-everglades-grassrivers", "gta-6-florida-keys-leonida-keys"]},
+    {"slug": "miami-travel-guides", "name": "Miami travel guides", "kicker": "Topic",
+     "title": "Miami Travel Guides & Itineraries | Leonida Tours",
+     "h1": "Miami travel guides",
+     "meta": "Plan your days in Miami: one-day and three-day itineraries, sunset cruises on Biscayne Bay and Everglades airboat tips from local tour guides.",
+     "intro": "Practical guides for a short trip to South Florida: how to order your days, when the light is best on the water and what an Everglades airboat ride really involves.",
+     "posts": ["best-things-to-do-in-miami-beach", "miami-in-3-days-itinerary", "miami-sunset-cruise-guide", "everglades-airboat-tour-guide"]},
+    {"slug": "gta-6-launch-week", "name": "GTA 6 release & launch week", "kicker": "Topic",
+     "title": "GTA 6 Release & Miami Launch Week Guides | Leonida Tours",
+     "h1": "GTA 6 release and launch week in Miami",
+     "meta": "The GTA 6 release date and how to plan a South Florida trip around launch week from November 19, 2026: what fills up and when to book.",
+     "intro": "Everything about the release date and the week around it: the confirmed timeline, what changes in Miami that week and which experiences to book first.",
+     "posts": ["gta-6-release-date", "miami-launch-week-guide"]},
+]
+
+
+def topic_of(slug):
+    for t in TOPICS:
+        if slug in t["posts"]:
+            return t
+    return None
+
+
+def post_card(r, p):
+    return (f'<a class="card" href="{p}blog/{r["slug"]}/">'
+            f'<img src="{p}img/{r["img"]}.jpg" alt="{esc(r["img_alt"])}" loading="lazy" decoding="async" {CTX["img_attrs"](r["img"])}>'
+            f'<div class="cb"><span class="ct">{esc(r["kicker"])}</span><h3>{esc(r["title"])}</h3>'
+            f'<p>{esc(r["excerpt"])}</p>'
+            f'<span class="cm">{r["date"]} · {reading_time(r["body"])} min read</span></div></a>')
+
+
+def build_topic(t, posts):
+    p = "../../"
+    page = CTX["url"](f'blog/{t["slug"]}/')
+    by = {r["slug"]: r for r in posts}
+    items = [by[x] for x in t["posts"] if x in by]
+    others = "".join(f'<a class="tag" href="{p}blog/{o["slug"]}/">{esc(o["name"])}</a>' for o in TOPICS if o is not t)
+    graph = [
+        CTX["org"](),
+        {"@type": "WebSite", "@id": CTX["SITE_ID"], "url": CTX["url"](), "name": CTX["BRAND"]},
+        web_page(page, t["h1"], t["meta"], {"mainEntity": {"@id": page + "#list"}}),
+        breadcrumb(page, [("Blog", CTX["url"]("blog/")), (t["name"], page)]),
+        {"@type": "CollectionPage", "@id": page + "#list", "name": t["name"], "url": page, "numberOfItems": len(items),
+         "itemListElement": [{"@type": "ListItem", "position": i + 1,
+                              "item": {"@type": "Article", "name": r["title"], "url": CTX["url"](f'blog/{r["slug"]}/')}}
+                             for i, r in enumerate(items)]},
+    ]
+    # editorial page: like blog articles, exempt from the trademark guard
+    out = ("<!doctype html>\n<html lang=\"en-US\">\n<head>\n" +
+           page_head(t["title"], t["meta"], page, CTX["url"]("assets/og-home.jpg"), t["name"] + " - Leonida Tours blog", p, CTX["ld"](graph)) +
+           "</head>\n<body>\n" + CTX["GTM_BODY"] + nav(p, "blog/") +
+           '<main><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol>'
+           f'<li><a href="{p}">Home</a></li><li><a href="{p}blog/">Blog</a></li><li aria-current="page">{esc(t["name"])}</li></ol></nav></div>'
+           f'<div class="wrap ahead"><div class="kicker">Guides<span class="dot"></span>{len(items)} articles</div>'
+           f'<h1>{esc(t["h1"])}</h1><p class="lede">{esc(t["intro"])}</p>'
+           f'<div class="tag-row"><a class="tag" href="{p}blog/">All guides</a>{others}</div></div>'
+           f'<section><div class="wrap"><div class="card-grid">{"".join(post_card(r, p) for r in items)}</div></div></section>'
+           + CTA(p) + "</main>" + footer(p) + "</body>\n</html>\n")
+    write_html(f'blog/{t["slug"]}', out)
 
 
 # ---------------------------------------------------------------- blog
@@ -343,8 +384,7 @@ def build_blog_index(posts):
             f'<p>{esc(r["excerpt"])}</p>'
             f'<span class="cm">{r["date"]} · {reading_time(r["body"])} min read</span></div></a>'
         )
-    cats = sorted({r["cat"] for r in posts})
-    tagrow = "".join(f'<span class="tag">{esc(c)}</span>' for c in cats)
+    tagrow = "".join(f'<a class="tag" href="{p}blog/{t["slug"]}/">{esc(t["name"])}</a>' for t in TOPICS)
     featured = posts[0] if posts else None
     feat_html = ""
     if featured:
@@ -447,7 +487,8 @@ def build_post(r, posts):
            "</head>\n<body>\n" + CTX["GTM_BODY"] + nav(p, "blog/") +
            '<main><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol>'
            f'<li><a href="{p}">Home</a></li><li><a href="{p}blog/">Blog</a></li>'
-           f'<li aria-current="page">{esc(r["cat"])}</li></ol></nav></div>'
+           + (f'<li><a href="{p}blog/{topic_of(slug)["slug"]}/">{esc(topic_of(slug)["name"])}</a></li>' if topic_of(slug) else "")
+           + f'<li aria-current="page">{esc(r["cat"])}</li></ol></nav></div>'
            f'<div class="wrap ahead"><div class="kicker"><span>{esc(r["kicker"])}</span><span class="dot"></span>'
            f'<span>{esc(r["cat"])}</span></div><h1>{esc(r["title"])}</h1>'
            f'<p class="lede">{esc(r["excerpt"])}</p>'
@@ -1009,7 +1050,7 @@ def build_llms_full(posts, locs, statics):
     L.append(f"# {CTX['BRAND']}: full site text for AI assistants")
     L.append("")
     L.append("> Independent South Florida tour company running small-group and private tours to the real Miami, "
-             "Everglades and Florida Keys places. Reservations are free with nothing to pay upfront. "
+             "Everglades and Florida Keys places. Reservations need no prepayment. "
              "Not affiliated with, endorsed by or sponsored by any game publisher. "
              "All game names are used only to identify real-world locations.")
     L.append("")
@@ -1075,6 +1116,8 @@ def build_all():
     build_blog_index(posts)
     for r in posts:
         build_post(r, posts)
+    for t in TOPICS:
+        build_topic(t, posts)
     build_locations_index(locs)
     for l in locs["locations"]:
         build_location(l, locs)

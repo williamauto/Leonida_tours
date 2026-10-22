@@ -1,0 +1,6 @@
+{
+  "tours/": "#missions-sec",
+  "guides/": "blog/",
+  "faq/": "contact/",
+  "blog/topics/": "blog/"
+}

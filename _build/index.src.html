@@ -59,14 +59,27 @@ section{padding-block:clamp(72px,10vw,120px)}
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,9,16,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap}
-.logo-mark{width:34px;height:34px;border-radius:10px;background:var(--sunset);display:grid;place-items:center;box-shadow:0 6px 18px -6px rgba(255,95,162,.8)}
-.logo-mark svg{width:20px;height:20px}
+.logo-mark{width:34px;height:34px;display:block;border-radius:10px;box-shadow:0 6px 18px -6px rgba(255,95,162,.8)}
+.logo-mark svg{width:34px;height:34px;display:block}
 .logo-text{font:800 15px/1 var(--display);letter-spacing:.02em}
 .logo-text span{background:var(--sunset);-webkit-background-clip:text;background-clip:text;color:transparent}
 .nav ul{display:flex;gap:clamp(14px,2vw,28px);list-style:none;margin:0;padding:0}
 .nav ul a{font:600 14px/1 var(--body);text-decoration:none;color:var(--muted);transition:color .2s}
 .nav ul a:hover{color:var(--text)}
-@media (max-width:920px){.nav ul{display:none}}
+.nav .menu{display:none;position:relative;background:none;border:0;border-radius:0;padding:0}
+.nav .menu summary::after{content:none!important}
+.nav .menu summary{display:flex!important;align-items:center;justify-content:center!important}
+.nav .menu summary{list-style:none;cursor:pointer;width:42px;height:42px;padding:0;gap:0;border-radius:12px;display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--line-2)}
+.nav .menu summary::-webkit-details-marker{display:none}
+.nav .menu summary span,.nav .menu summary span::before,.nav .menu summary span::after{display:block;width:18px;height:2px;border-radius:2px;background:var(--text);position:relative;transition:transform .2s}
+.nav .menu summary span::before,.nav .menu summary span::after{content:"";position:absolute;left:0}.nav .menu summary span::before{top:-6px}.nav .menu summary span::after{top:6px}
+.nav .menu[open] summary span{background:transparent}.nav .menu[open] summary span::before{top:0;transform:rotate(45deg)}.nav .menu[open] summary span::after{top:0;transform:rotate(-45deg)}
+.nav .menu-panel{position:absolute;right:0;top:52px;min-width:230px;display:grid;padding:8px;background:rgba(19,17,27,.97);border:1px solid var(--line-2);border-radius:18px;box-shadow:0 24px 60px -20px #000;z-index:60}
+.nav .menu-panel a{padding:13px 14px;border-radius:10px;color:var(--text);text-decoration:none;font:600 15px/1 var(--body)}
+.nav .menu-panel a:hover{background:rgba(255,255,255,.06)}
+@media (max-width:1080px){.nav ul{display:none}.nav .menu{display:block}.nav .btn-sm{margin-left:auto}}
+@media (max-width:420px){.nav .wrap{gap:8px}.nav .logo{gap:8px}.logo-mark,.logo-mark svg{width:30px!important;height:30px!important}.logo-text{font-size:12.5px}.nav .btn-sm{padding:9px 12px;font-size:13px}.nav .menu summary{width:40px;height:40px}}
+@media (max-width:380px){.nav .btn-sm{display:none}.nav .menu{margin-left:auto}}
 
 /* hero */
 .hero{position:relative;padding:0;overflow:hidden;isolation:isolate}
@@ -271,6 +284,12 @@ legend{font:700 13px/1 var(--body);color:#D9D3E3;margin-bottom:8px;padding:0}
 .stepper input:focus{box-shadow:none}
 .stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .hint{font:500 12px/1.3 var(--body);color:var(--muted)}
+.form-row{align-items:start}.form-row label{align-content:start}
+.form-row input[type=date],.form-row .stepper{height:54px;box-sizing:border-box}
+.form-row input[type=date]{-webkit-appearance:none;appearance:none;padding-block:0;line-height:52px;display:flex;align-items:center}
+.form-row .stepper input{height:100%;padding:0 4px;line-height:1}
+.form-row .stepper button{width:52px}
+@media (max-width:380px){.form-row .stepper button{width:44px}}
 .consent{display:flex;gap:10px;align-items:flex-start;font:500 13px/1.45 var(--body);color:var(--muted)}
 .consent input{width:18px;height:18px;flex:none;margin-top:1px;accent-color:var(--pink);padding:0}
 .form-msg{font-size:14px;min-height:1.4em}
@@ -495,7 +514,7 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Leonida Tours home">
-      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg></span>
+      <span class="logo-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="ltG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".55" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient><linearGradient id="ltS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA66B"/><stop offset="1" stop-color="#FF5FA2"/></linearGradient><clipPath id="ltM"><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z"/></clipPath></defs><rect width="64" height="64" rx="15" fill="url(#ltG)"/><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z" fill="#1A0712"/><path d="M23.5 13 L40.5 18 V51 L23.5 46Z" fill="#2B1022"/><g clip-path="url(#ltM)"><circle cx="22" cy="38" r="7.5" fill="url(#ltS)"/><path d="M8 41 Q20 36 31 40 T56 37 V53 H8Z" fill="#3EE6D6"/><path d="M8 46 Q20 42 31 45 T56 43" fill="none" stroke="#1A0712" stroke-width="1.6" opacity=".45"/><g fill="#FFE3EF"><path d="M33 41.5 C33.6 34 34.8 28 37.6 22.6 L39.4 23.4 C37 28.6 36 34.4 35.6 41.5Z"/><path d="M38.4 22.8 C34.4 18 27.6 17.6 23.2 20.6 C28.8 20 33.2 21.2 37.4 24.4Z"/><path d="M38.4 22.8 C36 16.6 37.6 12.2 41 10 C39.4 14.4 39.4 18.8 39.6 23.2Z"/><path d="M38.6 23 C43.2 18.2 49.8 18.6 53.2 22 C48.2 20.8 43.6 22 39.4 24.6Z"/><path d="M38.4 23.2 C32.2 23.8 28.4 27.6 27.4 32.2 C30.6 28.2 34.6 26 38.6 25Z"/><path d="M39 23.2 C44.8 24.4 48.2 28.2 48.6 32.8 C45.8 28.8 42.6 26.6 38.8 25Z"/></g></g><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linejoin="round"/></svg></span>
       <span class="logo-text">LEONIDA <span>TOURS</span></span>
     </a>
     <ul>
@@ -503,12 +522,12 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
       <li><a href="#map">Map</a></li>
       <li><a href="#pass">City Pass</a></li>
       <li><a href="#missions-sec">Tours</a></li>
-      <li><a href="locations/">Locations</a></li>
+      <li><a href="#photo">Game mode</a></li>
       <li><a href="blog/">Blog</a></li>
-      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a class="btn btn-primary btn-sm" href="#preregister">Reserve Now</a>
+    <details class="menu"><summary aria-label="Menu"><span></span></summary><nav class="menu-panel" aria-label="Menu"><a href="#irl">IRL vs Game</a><a href="#map">Map</a><a href="#pass">City Pass</a><a href="#missions-sec">Tours</a><a href="#photo">Game mode</a><a href="blog/">Blog</a><a href="#contact">Contact</a></nav></details>
   </div>
   <div class="xpbar" aria-hidden="true"><i id="xpBar"></i></div>
 </nav>
@@ -527,46 +546,74 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
     </div>
   </div>
   <div class="street" aria-hidden="true">
-    <svg id="scene" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax meet">
+    <svg id="scene" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice">
       <defs>
-        <linearGradient id="roadG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A1528" stop-opacity=".2"/><stop offset=".5" stop-color="#0E0C16" stop-opacity=".95"/><stop offset="1" stop-color="#0A0910"/></linearGradient>
-        <linearGradient id="carTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".6" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient>
-        <linearGradient id="carShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></linearGradient>
-        <linearGradient id="carLow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2FC9BB"/><stop offset="1" stop-color="#5CF0E2"/></linearGradient>
-        <radialGradient id="rimG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F4FBFB"/><stop offset=".55" stop-color="#B9C6CE"/><stop offset="1" stop-color="#5A6470"/></radialGradient>
-        <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFF1CF" stop-opacity=".55"/><stop offset="1" stop-color="#FFF1CF" stop-opacity="0"/></linearGradient>
+        <linearGradient id="waterG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A0910" stop-opacity="0"/><stop offset=".35" stop-color="#0C0A14" stop-opacity=".55"/><stop offset="1" stop-color="#0A0910"/></linearGradient>
+        <linearGradient id="rimG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".55" stop-color="#FF8A85"/><stop offset="1" stop-color="#FFB27A"/></linearGradient>
+        <linearGradient id="deckG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B1626"/><stop offset="1" stop-color="#0B0910"/></linearGradient>
+        <linearGradient id="pierG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D0A14"/><stop offset="1" stop-color="#0D0A14" stop-opacity="0"/></linearGradient>
+        <linearGradient id="beamG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFF1CF" stop-opacity=".5"/><stop offset="1" stop-color="#FFF1CF" stop-opacity="0"/></linearGradient>
+        <radialGradient id="hubG" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#F2F4F7"/><stop offset=".5" stop-color="#8E98A4"/><stop offset="1" stop-color="#2A2F38"/></radialGradient>
+        <radialGradient id="lampG"><stop offset="0" stop-color="#FFD9A0" stop-opacity=".9"/><stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/></radialGradient>
+        <linearGradient id="skyRefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A2E52" stop-opacity=".0"/><stop offset=".35" stop-color="#6B3558" stop-opacity=".35"/><stop offset=".8" stop-color="#2A1830" stop-opacity=".35"/><stop offset="1" stop-color="#0A0910" stop-opacity="0"/></linearGradient>
+        <linearGradient id="hullG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E5EE"/><stop offset=".6" stop-color="#A9A3B4"/><stop offset="1" stop-color="#3B3546"/></linearGradient>
+        <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+        <filter id="blur4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+        <filter id="blurX" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="3 0.6"/></filter>
       </defs>
-      <rect x="-2000" y="200" width="6000" height="60" fill="url(#roadG)"/>
-      <g id="lane"></g>
-      <g id="carBack">
-        <rect x="150" y="18" width="46" height="32" rx="10" fill="#F2E6D8"/>
-        <rect x="236" y="16" width="44" height="34" rx="10" fill="#F2E6D8"/>
-        <path d="M150 34 H196 M236 32 H280" stroke="#D9C8B6" stroke-width="2"/>
-        <ellipse cx="316" cy="22" rx="4" ry="14" fill="none" stroke="#2B2446" stroke-width="4" transform="rotate(-18 316 22)"/>
-        <path d="M312 22 L300 44" stroke="#2B2446" stroke-width="4" stroke-linecap="round"/>
-      </g>
-      <g id="person"></g>
-      <g id="carFront">
-        <ellipse cx="228" cy="100" rx="232" ry="9" fill="#000" opacity=".5"/>
-        <path d="M334 38 L352 2 L360 4 L346 38Z" fill="#BFEFFF" fill-opacity=".35" stroke="#E6ECF2" stroke-width="3" stroke-linejoin="round"/>
-        <path d="M14 80 Q2 78 4 64 L8 40 Q10 26 24 22 L40 30 L70 36 L150 38 L300 38 Q334 38 354 44 L424 48 Q452 50 456 64 L458 76 Q456 84 444 84 L396 84 A30 30 0 0 0 336 84 L126 84 A30 30 0 0 0 66 84 Z" fill="url(#carTop)"/>
-        <path d="M6 60 L458 62 L458 76 Q456 84 444 84 L396 84 A30 30 0 0 0 336 84 L126 84 A30 30 0 0 0 66 84 L14 84 Q2 82 4 70Z" fill="url(#carLow)"/>
-        <path d="M14 80 Q2 78 4 64 L8 40 Q10 26 24 22 L40 30 L70 36 L150 38 L300 38 Q334 38 354 44 L424 48 Q452 50 456 64 L458 76 Q456 84 444 84 L396 84 A30 30 0 0 0 336 84 L126 84 A30 30 0 0 0 66 84 Z" fill="url(#carShade)"/>
-        <path d="M8 60 Q200 56 456 62" stroke="#F4F7FA" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <path d="M150 38 L300 38" stroke="#F4F7FA" stroke-width="3" stroke-linecap="round"/>
-        <path d="M232 40 V58" stroke="#1A0712" stroke-opacity=".25" stroke-width="2"/>
-        <rect x="244" y="46" width="16" height="4" rx="2" fill="#F4F7FA"/>
-        <path d="M10 30 L24 22 L30 30 Z" fill="#FF3B5C"/>
-        <ellipse cx="452" cy="56" rx="5" ry="7" fill="#FFF4D6"/>
-        <path d="M444 76 H462" stroke="#F4F7FA" stroke-width="5" stroke-linecap="round"/>
-        <path d="M2 74 H20" stroke="#F4F7FA" stroke-width="5" stroke-linecap="round"/>
-        <g id="wheels">
-          <g transform="translate(96 84)"><circle r="26" fill="#0A0910"/><circle r="19" fill="#F4F2EE"/><circle r="13" fill="url(#rimG)"/><g class="spin"><path d="M-12 0 H12 M0 -12 V12" stroke="#6A7480" stroke-width="2"/></g></g>
-          <g transform="translate(366 84)"><circle r="26" fill="#0A0910"/><circle r="19" fill="#F4F2EE"/><circle r="13" fill="url(#rimG)"/><g class="spin"><path d="M-12 0 H12 M0 -12 V12" stroke="#6A7480" stroke-width="2"/></g></g>
+      <rect x="-50" y="132" width="4000" height="140" fill="url(#waterG)"/>
+      <rect x="-50" y="150" width="4000" height="110" fill="url(#skyRefl)"/>
+      <g id="shimmer"></g>
+      <g id="lampRefl" filter="url(#blurX)"></g>
+      <g id="carRefl" opacity=".16" filter="url(#blur2)"></g>
+      <g id="piers"></g>
+      <rect x="-50" y="124" width="4000" height="9" fill="url(#deckG)"/>
+      <rect x="-50" y="123.4" width="4000" height="1.2" fill="url(#rimG)" opacity=".55"/>
+      <g id="car">
+        <path id="carBeam" d="M196 -19 L470 -46 L470 14 Z" fill="url(#beamG)" opacity=".7"/>
+        <ellipse cx="3" cy="-19" rx="9" ry="5" fill="#FF2D55" opacity=".55" filter="url(#blur2)"/>
+        <g id="carBody">
+          <path d="M3 -13 L5 -23 Q7 -27 15 -27.5 L40 -28.5 L53 -35.5 L59 -30 L120 -30 L136 -30.5 L152 -29 Q186 -28 194 -22 L198 -14 Q198 -8 192 -8 L177 -8 A17 17 0 0 0 143 -8 L57 -8 A17 17 0 0 0 23 -8 L9 -8 Q3 -8 3 -13 Z" fill="#0F0C16"/>
+          <path d="M15 -27.5 L40 -28.5 L53 -35.5 L59 -30 L120 -30 L136 -30.5 L152 -29 Q186 -28 194 -22" fill="none" stroke="url(#rimG)" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M8 -17.5 L193 -18.5" stroke="#E9E4F2" stroke-width="1.1" opacity=".55"/>
+          <path d="M129 -30 L140 -46 L144.5 -45 L137 -30 Z" fill="#9FB4C6" opacity=".35"/>
+          <path d="M140 -46 L144.5 -45" stroke="#FFB27A" stroke-width="1.4"/>
+          <g fill="#0F0C16"><circle cx="94" cy="-41" r="5.6"/><path d="M86 -30 Q87 -37 94 -36.5 Q101 -37 102 -30 Z"/><circle cx="114" cy="-42" r="5.6"/><path d="M106 -30 Q107 -38 114 -37.5 Q121 -38 122 -30 Z"/></g>
+          <path d="M89 -45 Q94 -49 99 -45" stroke="#FF8A85" stroke-width="1.2" fill="none" opacity=".8"/>
+          <path d="M109 -46 Q114 -50 119 -46" stroke="#FF8A85" stroke-width="1.2" fill="none" opacity=".8"/>
+          <ellipse cx="195.5" cy="-18" rx="2.2" ry="3" fill="#FFF4D6"/>
         </g>
-        <path id="beamEl" d="M458 50 L760 12 L760 104 Z" fill="url(#beam)" opacity="0"/>
+        <g class="wheel" transform="translate(40 -7)"><circle r="14" fill="#08070C"/><circle r="8.5" fill="url(#hubG)"/><g class="spin"><path d="M-7 0 H7 M0 -7 V7" stroke="#3A414C" stroke-width="1.4"/></g></g>
+        <g class="wheel" transform="translate(160 -7)"><circle r="14" fill="#08070C"/><circle r="8.5" fill="url(#hubG)"/><g class="spin"><path d="M-7 0 H7 M0 -7 V7" stroke="#3A414C" stroke-width="1.4"/></g></g>
       </g>
-      <g id="puffs"></g>
+      <g id="rail"></g>
+      <g id="lamps"></g>
+      <g id="wakes"></g>
+      <g id="airboat">
+        <path d="M-4 -2 Q0 -11 12 -11 L124 -11 L128 0 L4 0 Z" fill="url(#hullG)"/><path d="M2 -4 L126 -4" stroke="#FF5FA2" stroke-width="1.6" opacity=".9"/>
+        <path d="M12 -11 L124 -11" stroke="url(#rimG)" stroke-width="1.4"/>
+        <g fill="#0F0C16"><circle cx="30" cy="-22" r="4.6"/><path d="M24 -11 Q25 -18 30 -17.5 Q35 -18 36 -11Z"/><circle cx="46" cy="-22" r="4.6"/><path d="M40 -11 Q41 -18 46 -17.5 Q51 -18 52 -11Z"/></g>
+        <path d="M64 -11 L68 -36 M80 -11 L76 -36" stroke="#8E95A1" stroke-width="2.2"/>
+        <rect x="62" y="-39" width="20" height="4" rx="1.5" fill="#16121F"/>
+        <g fill="#0F0C16"><circle cx="72" cy="-50" r="4.8"/><path d="M66 -39 Q66 -46 72 -45.5 Q78 -46 78 -39Z"/></g>
+        <path d="M68 -54 Q72 -57 76 -54" stroke="#FF8A85" stroke-width="1.1" fill="none"/>
+        <circle cx="106" cy="-40" r="29" fill="none" stroke="#B9BEC8" stroke-width="2"/>
+        <circle cx="106" cy="-40" r="29" fill="none" stroke="url(#rimG)" stroke-width=".9" stroke-dasharray="40 142" opacity=".8"/>
+        <path d="M77 -40 H135 M106 -69 V-11 M86 -60 L126 -20 M86 -20 L126 -60" stroke="#B9BEC8" stroke-width=".7" opacity=".55"/>
+        <circle cx="106" cy="-40" r="25" fill="#E8E0F0" opacity=".07"/>
+        <g id="prop" filter="url(#blur2)"><path d="M106 -64 L106 -16" stroke="#C9C2D4" stroke-width="4" stroke-linecap="round" opacity=".45"/></g>
+        <circle cx="106" cy="-40" r="3.2" fill="#16121F"/>
+        <path d="M100 -11 L104 -64 M112 -11 L108 -64" stroke="#8E95A1" stroke-width="2"/>
+        <rect x="136" y="-56" width="3" height="40" fill="#16121F"/><rect x="141" y="-56" width="3" height="40" fill="#16121F"/>
+      </g>
+      <g id="jetski">
+        <path d="M0 0 Q-3 -7 6 -9 L42 -12 Q55 -12 60 -4 L62 0 Z" fill="url(#hullG)"/><path d="M4 -5 Q30 -8 58 -5" stroke="#3EE6D6" stroke-width="1.6" fill="none"/>
+        <path d="M6 -9 L42 -12 Q55 -12 60 -4" fill="none" stroke="url(#rimG)" stroke-width="1.3"/>
+        <path d="M44 -12 L48 -20" stroke="#16121F" stroke-width="2.2"/>
+        <g stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M25 -15 L37 -18 L33 -9" stroke="#0F0C16" stroke-width="5"/><path d="M25 -15 L35 -31" stroke="#0F0C16" stroke-width="8"/><path d="M27 -20 L34 -30" stroke="#FF5FA2" stroke-width="3" opacity=".85"/><path d="M36 -29 L45 -24 L49 -20" stroke="#0F0C16" stroke-width="3.6"/></g><circle cx="39" cy="-37" r="5.2" fill="#0F0C16"/>
+        <path d="M36 -39 Q40 -42 44 -39" stroke="#FF8A85" stroke-width="1.1" fill="none"/>
+      </g>
+      <g id="spray" filter="url(#blur2)"></g>
     </svg>
   </div>
 </header>
@@ -791,7 +838,7 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
     <div>
       <div class="sec-top"><span class="step-tag">04 / 04</span><span class="eyebrow">Reserve now</span></div>
       <h2 style="margin-top:16px">Reserve now. <span class="grad">Ride first.</span></h2>
-      <p class="lede" style="margin-top:18px">Tours start mid-November 2026. Reserving is free and there’s nothing to pay today: tell us when you’re coming and what you want to ride, and we’ll confirm your spot before public booking opens.</p>
+      <p class="lede" style="margin-top:18px">Tours start mid-November 2026. Reserve now with no prepayment: tell us when you’re coming and what you want to ride, and we’ll confirm your spot before public booking opens.</p>
       <ul class="perks">
         <li><span class="k grad">24h</span><div><strong>Early access</strong><span>Book 24 hours before public release.</span></div></li>
         <li><span class="k grad">−20%</span><div><strong>Reservation reward</strong><span>20% off your first tour.</span></div></li>
@@ -802,7 +849,7 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
     <form class="card" id="waitlist" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
       <input type="hidden" name="form-name" value="waitlist">
       <p hidden><label>Leave empty <input name="bot-field" id="botField"></label></p>
-      <div class="form-top"><h3>Reserve your spot</h3><span class="chip">Free · 30 seconds</span></div>
+      <div class="form-top"><h3>Reserve your spot</h3><span class="chip">No prepayment · 30 seconds</span></div>
       <label for="email">Email
         <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
       </label>
@@ -831,26 +878,6 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
   </div>
 </section>
 
-<section id="faq">
-  <div class="wrap faq-grid">
-    <div class="sec-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Before you <span class="grad">drop in</span>.</h2>
-      <p class="lede">Anything else? Message us and a real person answers.</p>
-    </div>
-    <div class="faq">
-      <details open><summary>Is this an official game tour?</summary><p>No. Leonida Tours is an independent South Florida tour company running unofficial tours. We take you IRL to the real places that inspired the game’s world. We are not affiliated with, endorsed or sponsored by any game publisher.</p></details>
-      <details><summary>Why do you use names like Leonida?</summary><p>Fans know these places by their in-game nicknames, so we use them to point you to the real spots that inspired them. Every stop is a real, public place in Miami, the Everglades or the Florida Keys.</p></details>
-      <details><summary>Do I need to be a gamer?</summary><p>Not at all. Fans get the scene-by-scene details. Everyone else gets Miami Beach, downtown, Wynwood, Little Haiti, Little Havana, the Everglades and the Keys with a great local guide.</p></details>
-      <details><summary>What does reserving mean?</summary><p>It’s free and there’s no payment today. We confirm your date with you personally before public booking opens, plus 20% off your first tour.</p></details>
-      <details><summary>When do tours start?</summary><p>19 November 2026, and every day of the year after that. Miami tours run daily, with day departures and a sunset + night run; the Grasslands (Everglades) and Leonida Keys trips run on set days each week.</p></details>
-      <details><summary>What’s the difference between small group and private?</summary><p>Small-group tours ride in a minibus with up to 12 guests and a host. Private tours are just your crew, up to 3 people, in a classic convertible ($600) or a Jeep convertible ($450) with a driver-guide.</p></details>
-      <details><summary>How does the City Pass work?</summary><p>One pass covers the Miami Vice City small-group tour, the boat tour and the Grasslands airboat. Book each date whenever you like during your stay.</p></details>
-      <details><summary>What if it rains?</summary><p>Every route has covered stops. If a storm cancels your tour, rebook for free or get a full refund.</p></details>
-    </div>
-  </div>
-</section>
-
 <section id="contact" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
@@ -870,7 +897,7 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
 <footer>
   <div class="wrap">
     <div class="footer-top">
-      <a class="logo" href="#top"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg></span><span class="logo-text">LEONIDA <span>TOURS</span></span></a>
+      <a class="logo" href="#top"><span class="logo-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="ltGf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".55" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient><linearGradient id="ltSf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA66B"/><stop offset="1" stop-color="#FF5FA2"/></linearGradient><clipPath id="ltMf"><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z"/></clipPath></defs><rect width="64" height="64" rx="15" fill="url(#ltGf)"/><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z" fill="#1A0712"/><path d="M23.5 13 L40.5 18 V51 L23.5 46Z" fill="#2B1022"/><g clip-path="url(#ltMf)"><circle cx="22" cy="38" r="7.5" fill="url(#ltSf)"/><path d="M8 41 Q20 36 31 40 T56 37 V53 H8Z" fill="#3EE6D6"/><path d="M8 46 Q20 42 31 45 T56 43" fill="none" stroke="#1A0712" stroke-width="1.6" opacity=".45"/><g fill="#FFE3EF"><path d="M33 41.5 C33.6 34 34.8 28 37.6 22.6 L39.4 23.4 C37 28.6 36 34.4 35.6 41.5Z"/><path d="M38.4 22.8 C34.4 18 27.6 17.6 23.2 20.6 C28.8 20 33.2 21.2 37.4 24.4Z"/><path d="M38.4 22.8 C36 16.6 37.6 12.2 41 10 C39.4 14.4 39.4 18.8 39.6 23.2Z"/><path d="M38.6 23 C43.2 18.2 49.8 18.6 53.2 22 C48.2 20.8 43.6 22 39.4 24.6Z"/><path d="M38.4 23.2 C32.2 23.8 28.4 27.6 27.4 32.2 C30.6 28.2 34.6 26 38.6 25Z"/><path d="M39 23.2 C44.8 24.4 48.2 28.2 48.6 32.8 C45.8 28.8 42.6 26.6 38.8 25Z"/></g></g><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linejoin="round"/></svg></span><span class="logo-text">LEONIDA <span>TOURS</span></span></a>
       <span>© 2026 Leonida Tours</span>
     </div>
     <p class="legal"><strong>Unofficial tours.</strong> Leonida Tours is an independent tour company. Our tours are not affiliated with, endorsed, sponsored or licensed by any game publisher or their affiliates. All game titles, characters, place names and trademarks belong to their respective owners and are used here only to describe the real-world locations that inspired them. Every stop on our tours is a real, publicly accessible place. Illustrations are original; photography via Unsplash.</p>
@@ -956,62 +983,68 @@ function tickCd(){
 }
 tickCd(); setInterval(tickCd,30000);
 
-/* hero scene: a tourist walks up, hops into the classic car and drives off */
+document.querySelectorAll('.menu-panel a').forEach(a=>a.addEventListener('click',()=>{const d=a.closest('details'); if(d) d.removeAttribute('open');}));
+/* hero scene: a classic convertible crosses the causeway while an airboat and a jet ski cut across the bay */
 const NS='http://www.w3.org/2000/svg';
-const svg=$('#scene'), personG=$('#person'), carBack=$('#carBack'), carFront=$('#carFront'), laneG=$('#lane'), puffG=$('#puffs'), beamEl=$('#beamEl');
-personG.innerHTML=`
-  <g id="pLegB"><path d="M0 -52 V-6" stroke="#B8795A" stroke-width="10" stroke-linecap="round"/><path d="M-4 -4 h14 a4 4 0 0 1 0 8 h-14z" fill="#F4F2EE"/></g>
-  <g id="pArmB"><path d="M0 -90 V-62" stroke="#B8795A" stroke-width="8" stroke-linecap="round"/></g>
-  <g id="pBody">
-    <rect x="-12" y="-62" width="24" height="18" rx="5" fill="#E9D7B5"/>
-    <rect x="-14" y="-100" width="28" height="44" rx="10" fill="#FF5FA2"/>
-    <g fill="#FFD9E8"><circle cx="-6" cy="-88" r="3"/><circle cx="5" cy="-78" r="3"/><circle cx="-4" cy="-68" r="2.5"/><circle cx="7" cy="-94" r="2"/></g>
-    <g fill="#3EE6D6"><circle cx="0" cy="-84" r="1.8"/><circle cx="-8" cy="-76" r="1.6"/><circle cx="8" cy="-66" r="1.6"/></g>
-    <path d="M-10 -98 L10 -66" stroke="#1A1424" stroke-width="2"/>
-    <rect x="6" y="-72" width="12" height="9" rx="2" fill="#1A1424"/><circle cx="14" cy="-67.5" r="2.6" fill="#5A6470"/>
-    <circle cx="3" cy="-114" r="12" fill="#C98B63"/>
-    <path d="M-12 -116 Q-10 -132 4 -132 Q18 -132 18 -116 Z" fill="#3EE6D6"/>
-    <path d="M-15 -116 H22" stroke="#2FC9BB" stroke-width="4" stroke-linecap="round"/>
-    <rect x="4" y="-115" width="12" height="5" rx="2" fill="#0A0910"/>
-  </g>
-  <g id="pLegF"><path d="M0 -52 V-6" stroke="#C98B63" stroke-width="10" stroke-linecap="round"/><path d="M-4 -4 h14 a4 4 0 0 1 0 8 h-14z" fill="#FFFFFF"/></g>
-  <g id="pArmF"><path d="M0 -90 V-62" stroke="#C98B63" stroke-width="8" stroke-linecap="round"/></g>`;
-const legB=$('#pLegB'), legF=$('#pLegF'), armB=$('#pArmB'), armF=$('#pArmF');
-const spins=[...document.querySelectorAll('#wheels .spin')];
-let VW=1200, parkX=640, T0=performance.now(), puffs=[];
+const svg=$('#scene');
+const el=(tag,attrs,parent)=>{const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);if(parent)parent.appendChild(n);return n;};
+const heroCar=$('#car'), carRefl=$('#carRefl'), airboat=$('#airboat'), jetski=$('#jetski'), prop=$('#prop'), sprayG=$('#spray'), wakesG=$('#wakes'), shimmerG=$('#shimmer');
+const wheelSpins=[...document.querySelectorAll('#car .spin')];
+el('use',{href:'#carBody'},carRefl);
+let VW=1200, shimmer=[], spray=[], T0=performance.now(), last=T0;
 function layoutScene(){
   const r=svg.getBoundingClientRect(); const aspect=r.width/Math.max(1,r.height);
-  VW=Math.round(Math.min(1500,Math.max(760,aspect*260)));
+  VW=Math.round(Math.max(520,aspect*260));
   svg.setAttribute('viewBox',`0 0 ${VW} 260`);
-  parkX=Math.max(200,VW-560);
-  laneG.innerHTML=''; for(let x=-200;x<VW+400;x+=80){const d=document.createElementNS(NS,'rect'); d.setAttribute('x',x); d.setAttribute('y',226); d.setAttribute('width',40); d.setAttribute('height',3); d.setAttribute('rx',1.5); d.setAttribute('fill','#FFC478'); d.setAttribute('opacity','.6'); laneG.appendChild(d);}
+  const piers=$('#piers'), lamps=$('#lamps'), refl=$('#lampRefl'), rail=$('#rail');
+  [piers,lamps,refl,rail,shimmerG].forEach(g=>g.innerHTML='');
+  for(let x=75;x<VW+150;x+=150) el('rect',{x:x-5,y:133,width:10,height:44,fill:'url(#pierG)'},piers);
+  el('rect',{x:-50,y:115.4,width:VW+100,height:1.6,fill:'#1C1727'},rail);
+  for(let x=0;x<VW+20;x+=16) el('rect',{x,y:116,width:1.3,height:8,fill:'#1C1727'},rail);
+  for(let x=40;x<VW+150;x+=150){
+    el('path',{d:`M${x} 124 V92 Q${x} 86 ${x+8} 86 H${x+14}`,stroke:'#1C1727','stroke-width':2.2,fill:'none'},lamps);
+    el('circle',{cx:x+16,cy:87,r:12,fill:'url(#lampG)'},lamps);
+    el('circle',{cx:x+16,cy:87.5,r:2.2,fill:'#FFE9C4'},lamps);
+    el('rect',{x:x+14.5,y:138,width:3,height:70,fill:'#FFD9A0',opacity:.22},refl);
+  }
+  shimmer=[]; for(let i=0;i<Math.round(VW/22);i++){const y=140+Math.pow(Math.random(),1.4)*115; const w=8+Math.random()*(10+(y-140)*.35);
+    shimmer.push({n:el('rect',{y:y.toFixed(1),width:w.toFixed(1),height:1.1,rx:.5,fill:Math.random()<.3?'#FF9FB8':'#E8E0F0'},shimmerG),x:Math.random()*VW,v:4+Math.random()*10,ph:Math.random()*6.28,s:.6+Math.random()});}
 }
-const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
-const CYCLE=11;
+function wake(sx,y,dir,len,a){ // two diverging trails behind a hull
+  const ex=sx+dir*len;
+  el('path',{d:`M${sx} ${y} Q${sx+dir*len*.45} ${y+3} ${ex} ${y+9}`,stroke:'#E8E0F0','stroke-width':1.4,fill:'none',opacity:a},wakesG);
+  el('path',{d:`M${sx} ${y-1} Q${sx+dir*len*.5} ${y-3} ${ex} ${y-5}`,stroke:'#E8E0F0','stroke-width':1,fill:'none',opacity:a*.6},wakesG);
+}
+const lerpS=(a,b,p)=>a+(b-a)*p;
 function frame(now){
-  const t=((now-T0)/1000)%CYCLE;
-  const seatX=parkX+214, walkEnd=seatX-28;
-  let px=-200, py=0, legA=0, armA=0, carX=parkX, carOp=1, seated=false, legSit=0, wave=0, laneOff=0, wheelA=0, speed=0, show=true;
-  if(t<4.2){ const p=t/4.2; px=-60+(walkEnd+60)*p; const ph=t*9; legA=Math.sin(ph)*26; armA=-Math.sin(ph)*22; py=-Math.abs(Math.cos(ph))*2.5; }
-  else if(t<5){ const p=(t-4.2)/.8; px=walkEnd+28*ease(p); py=-Math.sin(Math.PI*p)*48+18*p; legSit=-80*ease(p); armA=-40*Math.sin(Math.PI*p); seated=true; }
-  else if(t<5.9){ px=seatX; py=18; legSit=-80; seated=true; wave=Math.sin((t-5)*14)*18+1; }
-  else if(t<9.6){ const p=(t-5.9)/3.7; const d=Math.pow(p,2.1)*(VW-parkX+520); carX=parkX+d; px=seatX+d; py=18; legSit=-80; seated=true; speed=p; laneOff=-d*.35; wheelA=d*2.2; }
-  else { const p=(t-9.6)/1.4; carOp=ease(Math.min(1,p*1.6)); show=false; }
-  carBack.setAttribute('transform',`translate(${carX} 140)`); carFront.setAttribute('transform',`translate(${carX} 140)`);
-  carBack.style.opacity=carFront.style.opacity=carOp;
-  personG.setAttribute('transform',`translate(${px} ${240+py}) scale(1.15)`); personG.style.display=show?'':'none';
-  if(seated){ legF.setAttribute('transform',`rotate(${legSit} 0 -52)`); legB.setAttribute('transform',`rotate(${legSit} 0 -52)`); }
-  else { legF.setAttribute('transform',`rotate(${legA} 0 -52)`); legB.setAttribute('transform',`rotate(${-legA} 0 -52)`); }
-  armF.setAttribute('transform',`rotate(${wave?(-150+wave):armA} 0 -90)`); armB.setAttribute('transform',`rotate(${-armA} 0 -90)`);
-  laneG.setAttribute('transform',`translate(${laneOff%80} 0)`);
-  spins.forEach(s=>s.setAttribute('transform',`rotate(${wheelA})`));
-  beamEl.setAttribute('opacity',speed>0?Math.min(.9,.3+speed):0);
-  if(speed>0 && Math.random()<.35){puffs.push({x:carX+4,y:212,r:4,a:.5});}
-  puffG.innerHTML=''; puffs=puffs.filter(p=>p.a>0.02); puffs.forEach(p=>{p.x-=2;p.y-=.4;p.r+=.5;p.a*=.93; const c=document.createElementNS(NS,'circle'); c.setAttribute('cx',p.x); c.setAttribute('cy',p.y); c.setAttribute('r',p.r); c.setAttribute('fill','#E8E0F0'); c.setAttribute('opacity',p.a); puffG.appendChild(c);});
+  const t=(now-T0)/1000, dt=Math.min(.05,(now-last)/1000); last=now;
+  // classic car on the causeway, left to right, 10s loop
+  const pc=(t%10)/10, cx=lerpS(-260,VW+60,pc), cy=117;
+  heroCar.setAttribute('transform',`translate(${cx.toFixed(1)} ${cy})`);
+  carRefl.setAttribute('transform',`translate(${cx.toFixed(1)} ${2*133-cy}) scale(1,-1)`);
+  wheelSpins.forEach(s=>s.setAttribute('transform',`rotate(${(t*720)%360})`));
+  // airboat, right to left across the middle of the bay, 13s loop
+  const pa=((t+4)%13)/13, ax=lerpS(VW+80,-260,pa), ay=196+Math.sin(t*3.1)*1.2;
+  airboat.setAttribute('transform',`translate(${ax.toFixed(1)} ${ay.toFixed(1)}) rotate(${(Math.sin(t*2.3)*.8).toFixed(2)}) scale(1.2)`);
+  prop.setAttribute('transform',`rotate(${(t*2200)%360} 106 -40)`);
+  // jet ski, left to right close to shore, 8s loop
+  const pj=((t+1.5)%8)/8, jx=lerpS(-120,VW+120,pj), jy=236+Math.sin(t*5.2)*1.6;
+  jetski.setAttribute('transform',`translate(${jx.toFixed(1)} ${jy.toFixed(1)}) rotate(${(-2+Math.sin(t*4.4)*1.4).toFixed(2)}) scale(1.45)`);
+  // wakes
+  wakesG.innerHTML=''; wake(ax+154,ay,1,240,.3); wake(jx,jy,-1,170,.35);
+  // spray particles
+  if(!reduce){
+    if(Math.random()<.45) spray.push({x:ax+156,y:ay-3,vx:50+Math.random()*40,vy:-6-Math.random()*12,r:1.2+Math.random()*1.4,a:.28,g:20});
+    if(Math.random()<.6) spray.push({x:jx+2,y:jy-4,vx:-40-Math.random()*40,vy:-55-Math.random()*25,r:1+Math.random()*1.2,a:.45,g:160});
+  }
+  sprayG.innerHTML=''; spray=spray.filter(p=>p.a>.03);
+  spray.forEach(p=>{p.vy+=p.g*dt; p.x+=p.vx*dt; p.y+=p.vy*dt; p.r+=3*dt; p.a*=Math.pow(.12,dt); el('circle',{cx:p.x.toFixed(1),cy:p.y.toFixed(1),r:p.r.toFixed(1),fill:'#F4EEF8',opacity:p.a.toFixed(2)},sprayG);});
+  // water shimmer
+  shimmer.forEach(s=>{s.x-=s.v*dt; if(s.x<-40) s.x=VW+20; s.n.setAttribute('x',s.x.toFixed(1)); s.n.setAttribute('opacity',(.08+.14*(.5+.5*Math.sin(t*s.s*2+s.ph))).toFixed(2));});
   if(!reduce) requestAnimationFrame(frame);
 }
 layoutScene(); addEventListener('resize',layoutScene);
-if(reduce){ T0=performance.now()-5.5*1000; frame(performance.now()); } else requestAnimationFrame(frame);
+if(reduce){ T0=performance.now()-4500; frame(performance.now()); } else requestAnimationFrame(frame);
 
 /* Leonida map + panel */
 const panel=$('#panel');
@@ -1353,7 +1386,7 @@ form.addEventListener('submit',async e=>{
 
 /* HUD + progress */
 const hudEl=$('#hud'), xp=$('#xpBar'), hudZone=$('#hudZone'), hudDays=$('#hudDays');
-const ZONES=[['missions-sec','Zone · Tours'],['map','Zone · Leonida map'],['garage','Zone · The garage'],['vice-city','Zone · City tour'],['photo','Zone · Photo mode'],['irl','Zone · IRL vs Game'],['pass','Zone · City Pass'],['preregister','Zone · Reserve'],['faq','Zone · FAQ'],['contact','Zone · Contact']];
+const ZONES=[['missions-sec','Zone · Tours'],['map','Zone · Leonida map'],['garage','Zone · The garage'],['vice-city','Zone · City tour'],['photo','Zone · Photo mode'],['irl','Zone · IRL vs Game'],['pass','Zone · City Pass'],['preregister','Zone · Reserve'],['contact','Zone · Contact']];
 function daysLeft(){const d=Math.ceil((launch-Date.now())/864e5); hudDays.textContent=d>0?`· ${d} days left`:'· tours are live';}
 daysLeft();
 let ticking=false;

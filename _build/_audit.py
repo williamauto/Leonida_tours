@@ -154,6 +154,8 @@ def main():
     for path in pages():
         counts["pages"] += 1
         doc = open(path, encoding="utf-8").read()
+        if 'name="lt-redirect"' in doc:  # redirect stubs for retired URLs
+            continue
         check_links(path, doc)
         check_seo(path, doc)
         check_trademarks(path, doc)

@@ -155,7 +155,7 @@ FAQ = [
  ("Is this an official game tour?", "No. Leonida Tours is an independent South Florida tour company running unofficial tours. We take you IRL to the real places that inspired the game's world. We are not affiliated with, endorsed or sponsored by any game publisher."),
  ("Why do you use names like Leonida?", "Fans know these places by their in-game nicknames, so we use them to point you to the real spots that inspired them. Every stop is a real, public place in Miami, the Everglades or the Florida Keys."),
  ("Do I need to be a gamer?", "Not at all. Fans get the scene-by-scene details. Everyone else gets Miami Beach, downtown, Wynwood, Little Haiti, Little Havana, the Everglades and the Keys with a great local guide."),
- ("What does reserving mean?", "It's free and there's no payment today. We confirm your date with you personally before public booking opens, plus 20% off your first tour."),
+ ("What does reserving mean?", "Reserving holds your spot with no prepayment needed. We confirm your date with you personally before public booking opens, and you get 20% off your first tour."),
  ("When do tours start?", "19 November 2026, and every day of the year after that. Miami tours run daily; the Grasslands (Everglades) and Leonida Keys trips run on set days each week."),
  ("Do you pick me up from my hotel?", "Yes, across the greater Miami area: South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura. Your exact pickup point is sent with your booking, not published on the site."),
  ("What's the difference between small group and private?", "Small-group tours ride in a minibus with up to 12 guests and a host. Private tours are just your crew, up to 3 people, in a classic convertible ($600) or a Jeep convertible ($450) with a driver-guide."),
@@ -284,7 +284,11 @@ def ld(graph):
     return '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": graph},
                                                               ensure_ascii=False, separators=(",", ":")) + "</script>"
 
+SEO_OVERRIDES = json.load(open(os.path.join(HERE, "seo_overrides.json"))) if os.path.exists(os.path.join(HERE, "seo_overrides.json")) else {}
+
 def head_common(title, desc, canonical, og_img, og_alt, prefix, extra="", og_type="website", article=None):
+    o = SEO_OVERRIDES.get(canonical[len(url()):] if canonical.startswith(url()) else canonical, {})
+    title, desc = o.get("title", title), o.get("meta", desc)
     art = ""
     if og_type == "article" and article:
         art = (f'\n<meta property="article:published_time" content="{article.get("published", TODAY)}">'
@@ -393,60 +397,16 @@ def build_index():
     body = re.sub(r'(<img src="img/([a-z]+)\.jpg") alt=""', lambda m: f'{m.group(1)} alt="{esc(ALT.get(m.group(2), ""))}"', body)
 
     body = body.replace('<img src="img/${T.img}.jpg" alt="">', '<img src="img/${T.img}.jpg" alt="${T.title}">')
-    # latest guides from the blog, as real links (before the FAQ)
-    posts = load_posts()
-    picks = [r for r in posts if r.get("featured")][:3]
-    picks += [r for r in posts if r not in picks][:6 - len(picks)]
-    guides = ('<section id="guides">\n  <div class="wrap">\n    <div class="sec-head">\n'
-              '      <span class="eyebrow">From the blog</span>\n'
-              '      <h2>Guides to <span class="grad">plan your trip</span>.</h2>\n'
-              '      <p class="lede">Our guides explain where the places from the game are in real life, '
-              'how to plan your days in Miami and what to expect in the Everglades and the Florida Keys.</p>\n'
-              '    </div>\n'
-              f'    <div class="guides">{guide_cards(picks, "")}</div>\n'
-              f'    <p class="guides-all"><a class="btn btn-glass" href="blog/">Read all {len(posts)} guides</a></p>\n'
-              '  </div>\n</section>\n\n')
-    assert body.count('<section id="faq">') == 1
-    body = body.replace('<section id="faq">', guides + '<section id="faq">', 1)
-    css += ("\n#guides{padding-top:0}.guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}"
-            "@media(max-width:940px){.guides{grid-template-columns:1fr 1fr}}@media(max-width:600px){.guides{grid-template-columns:1fr}}"
-            ".guide{display:flex;flex-direction:column;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .2s,transform .2s}"
-            ".guide:hover{border-color:var(--line-2);transform:translateY(-2px)}"
-            ".guide img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover}"
-            ".guide div{display:grid;gap:8px;padding:16px 18px 20px}"
-            ".guide .k{font:700 11px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}"
-            ".guide h3{font:700 17px/1.3 var(--display);color:var(--text)}"
-            ".guide p{font-size:14px;line-height:1.55;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}"
-            ".guides-all{margin-top:24px;text-align:center}"
-            "\n.nav-blog{display:none;font:600 14px/1 var(--body);color:var(--text);text-decoration:none;margin-left:auto;margin-right:14px}"
-            "@media (max-width:920px){.nav-blog{display:inline-block}}"
-            "@media (max-width:480px){.nav .wrap{gap:10px}.logo-text{font-size:13px}.nav .btn-sm{padding:10px 12px;font-size:13px}.nav-blog{margin-right:4px}}"
-            "@media (max-width:360px){.logo-text{display:none}#hudDays{display:none}}"
-            "html,body{overflow-x:clip}#showcase{min-width:0;max-width:100%}@media (max-width:940px){.garage{grid-template-columns:minmax(0,1fr)}}")
-    old_nav_btn = '    <a class="btn btn-primary btn-sm" href="#preregister">Reserve Now</a>\n  </div>\n  <div class="xpbar"'
-    assert body.count(old_nav_btn) == 1
-    body = body.replace(old_nav_btn, '    <a class="nav-blog" href="blog/">Blog</a>\n' + old_nav_btn, 1)
+    css += ("\nhtml,body{overflow-x:clip}#showcase{min-width:0;max-width:100%}@media (max-width:940px){.garage{grid-template-columns:minmax(0,1fr)}}"
+            "@media (max-width:360px){#hudDays{display:none}}")
 
-    # crawlable footer links
-    links = "".join(f'<li><a href="tours/{SEO[k]["slug"]}/">{esc(TOURS[k]["title"])}</a></li>' for k in ORDER)
-    site_links = "".join(f'<li><a href="{href}">{label}</a></li>' for href, label in
-                         [("blog/", "Blog"), ("locations/", "Real locations field guide"), ("map/", "Map of the real locations"),
-                          ("about/", "About us"), ("editorial-policy/", "Editorial policy"), ("contact/", "Contact"),
-                          ("meeting-point/", "Meeting point"), ("cancellation-policy/", "Cancellation policy"),
-                          ("insurance-and-licensing/", "Insurance & licensing"), ("privacy/", "Privacy"), ("terms/", "Terms"),
-                          ("feed.xml", "RSS feed"), ("llms-full.txt", "Full text for AI assistants")])
-    body = body.replace('<p class="legal">',
-        f'<nav class="foot-links" aria-label="All tours"><h2>Tours</h2><ul>{links}</ul></nav>\n'
-        f'    <nav class="foot-links" aria-label="Guides and policies"><h2>Guides & policies</h2><ul>{site_links}</ul></nav>\n'
-        '    <p class="legal">', 1)
-    css += ("\n.foot-links{margin:28px 0 8px}.foot-links h2{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}"
-            ".foot-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px 24px}"
-            ".foot-links a{color:var(--muted);text-decoration:none;font-size:14px}.foot-links a:hover{color:var(--text)}"
-            "\na.mcard{text-decoration:none}")
+    # crawlable footer columns (tours, guide topics, company pages)
+    body = body.replace('<p class="legal">', foot_cols("") + '\n    <p class="legal">', 1)
+    css += "\n" + FOOT_CSS + "\na.mcard{text-decoration:none}"
 
     title = "Leonida Tours | Miami Vice City IRL Tours, Everglades & Keys"
-    desc = ("Unofficial small-group & private tours to the real South Florida spots that inspired the game: "
-            "Ocean Drive, Wynwood, the Everglades & the Keys. From $79.")
+    desc = ("Guided tours of the real Miami places that inspired the game, from Ocean Drive to the Everglades. "
+            "Tours start November 2026. Reserve now, no prepayment needed.")
     graph = [org(),
              {"@type": "WebSite", "@id": SITE_ID, "url": url(), "name": BRAND, "inLanguage": "en-US", "publisher": {"@id": ORG_ID}},
              {"@type": "WebPage", "@id": url("#webpage"), "url": url(), "name": title, "description": desc, "isPartOf": {"@id": SITE_ID},
@@ -454,8 +414,7 @@ def build_index():
               "primaryImageOfPage": {"@type": "ImageObject", "url": url("img/hero.jpg"), "width": 1900, "height": 1200},
               "mainEntity": {"@id": url("#tours")}},
              {"@type": "ItemList", "@id": url("#tours"), "name": "Leonida Tours experiences", "numberOfItems": len(ORDER),
-              "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": trip(k, full=False)} for i, k in enumerate(ORDER)]},
-             faq_schema(FAQ, url())]
+              "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": trip(k, full=False)} for i, k in enumerate(ORDER)]}]
     extra = ('<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">\n' + ld(graph) +
              "\n<style>[hidden]:not([hidden=until-found i]){display:none!important}\n" + css + "</style>")
     guard("home", [("title", title), ("meta", desc), ("h1", "Step into Leonida IRL.")], graph)
@@ -501,32 +460,87 @@ section{padding-block:clamp(40px,6vw,64px);border-top:1px solid var(--line)}
 .cta{background:radial-gradient(120% 120% at 100% 0%,rgba(255,95,162,.25),transparent 55%),var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,40px);display:grid;gap:16px;justify-items:start}
 footer{border-top:1px solid var(--line);padding-block:32px 48px;color:var(--muted);font-size:13px}footer .legal{margin-top:14px;max-width:90ch}footer ul{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px}footer a{text-decoration:none}footer a:hover{color:var(--text)}
 
-.nav .links{display:flex;gap:18px;margin-left:auto;margin-right:6px}.nav .links a{font:600 14px/1 var(--body);color:var(--text);text-decoration:none}.nav .links a:hover{color:var(--pink)}@media(max-width:640px){.nav .hide-sm{display:none}.logo{font-size:13px}}
-.guides .k{font:700 11px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}.guides h3{font-size:16px;line-height:1.3}.guides p{color:var(--muted);font-size:14px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-footer ul+ul{margin-top:6px}
 """
-PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg>'
+LOGO = '<svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="ltG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".55" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient><linearGradient id="ltS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA66B"/><stop offset="1" stop-color="#FF5FA2"/></linearGradient><clipPath id="ltM"><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z"/></clipPath></defs><rect width="64" height="64" rx="15" fill="url(#ltG)"/><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z" fill="#1A0712"/><path d="M23.5 13 L40.5 18 V51 L23.5 46Z" fill="#2B1022"/><g clip-path="url(#ltM)"><circle cx="22" cy="38" r="7.5" fill="url(#ltS)"/><path d="M8 41 Q20 36 31 40 T56 37 V53 H8Z" fill="#3EE6D6"/><path d="M8 46 Q20 42 31 45 T56 43" fill="none" stroke="#1A0712" stroke-width="1.6" opacity=".45"/><g fill="#FFE3EF"><path d="M33 41.5 C33.6 34 34.8 28 37.6 22.6 L39.4 23.4 C37 28.6 36 34.4 35.6 41.5Z"/><path d="M38.4 22.8 C34.4 18 27.6 17.6 23.2 20.6 C28.8 20 33.2 21.2 37.4 24.4Z"/><path d="M38.4 22.8 C36 16.6 37.6 12.2 41 10 C39.4 14.4 39.4 18.8 39.6 23.2Z"/><path d="M38.6 23 C43.2 18.2 49.8 18.6 53.2 22 C48.2 20.8 43.6 22 39.4 24.6Z"/><path d="M38.4 23.2 C32.2 23.8 28.4 27.6 27.4 32.2 C30.6 28.2 34.6 26 38.6 25Z"/><path d="M39 23.2 C44.8 24.4 48.2 28.2 48.6 32.8 C45.8 28.8 42.6 26.6 38.8 25Z"/></g></g><path d="M9 18 L23.5 13 L40.5 18 L55 13 V46 L40.5 51 L23.5 46 L9 51Z" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linejoin="round"/></svg>'
+PIN = LOGO  # the brand mark used in every header
 
-TOUR_GUIDES = {
-    "vc-van": ["gta-6-locations-in-real-life", "best-things-to-do-in-miami-beach", "gta-6-trailers-timestamped"],
-    "vc-car": ["gta-6-locations-in-real-life", "best-things-to-do-in-miami-beach", "miami-in-3-days-itinerary"],
-    "vc-jeep": ["gta-6-locations-in-real-life", "is-gta-6-set-in-miami", "miami-in-3-days-itinerary"],
-    "vc-boat": ["miami-sunset-cruise-guide", "gta-6-locations-in-real-life", "miami-in-3-days-itinerary"],
-    "airboat": ["everglades-airboat-tour-guide", "gta-6-everglades-grassrivers", "gta-6-map-and-regions"],
-    "keys": ["gta-6-florida-keys-leonida-keys", "gta-6-map-and-regions", "miami-in-3-days-itinerary"],
-    "pass": ["miami-in-3-days-itinerary", "miami-launch-week-guide", "gta-6-release-date"],
-}
+def logo_svg(sfx):
+    """The brand mark with element ids made unique per instance on a page."""
+    out = LOGO
+    for i in ("ltG", "ltS", "ltM"):
+        out = out.replace(f'id="{i}"', f'id="{i}{sfx}"').replace(f'url(#{i})', f'url(#{i}{sfx})')
+    return out
 
-def load_posts():
-    import pages as P
-    return P.load_posts()
+# the one main menu, used on every page (the home page uses the same items)
+MENU = [("#irl", "IRL vs Game"), ("#map", "Map"), ("#pass", "City Pass"), ("#missions-sec", "Tours"),
+        ("#photo", "Game mode"), ("blog/", "Blog"), ("contact/", "Contact")]
 
-def guide_cards(posts, p, cls="guide"):
-    """Crawlable article cards linking to the blog."""
-    return "".join(
-        f'<a class="{cls}" href="{p}blog/{r["slug"]}/"><img src="{p}img/{r["img"]}.jpg" alt="{esc(r["img_alt"])}" loading="lazy" decoding="async" {img_attrs(r["img"])}>'
-        f'<div><span class="k">{esc(r["kicker"])}</span><h3>{esc(r["title"])}</h3><p>{esc(r["excerpt"])}</p></div></a>'
-        for r in posts)
+def menu_links(p, current=""):
+    return "".join(f'<a href="{p}{h}"' + (' aria-current="page"' if h == current else "") + f'>{l}</a>' for h, l in MENU)
+
+def site_nav(p, current=""):
+    links = menu_links(p, current)
+    return ('<header class="nav site-nav"><div class="wrap">'
+            f'<a class="logo" href="{p or "./"}"><i>{logo_svg("n")}</i><span class="lt">LEONIDA <span class="grad">TOURS</span></span></a>'
+            f'<nav class="links" aria-label="Main">{links}</nav>'
+            f'<a class="btn btn-primary btn-sm" href="{p}#preregister">Reserve Now</a>'
+            f'<details class="menu"><summary aria-label="Menu"><span></span></summary><nav class="menu-panel" aria-label="Menu">{links}</nav></details>'
+            '</div></header>')
+
+# blog topics: the footer and the blog link to these, never to single articles
+TOPICS = [
+    {"slug": "gta-6-locations", "name": "GTA 6 locations in real life"},
+    {"slug": "miami-travel-guides", "name": "Miami travel guides"},
+    {"slug": "gta-6-launch-week", "name": "GTA 6 release & launch week"},
+]
+
+def foot_cols(p):
+    tours = "".join(f'<li><a href="{p}tours/{SEO[k]["slug"]}/">{esc(TOURS[k]["title"])}</a></li>' for k in ORDER)
+    guides = "".join(f'<li><a href="{p}blog/{t["slug"]}/">{esc(t["name"])}</a></li>' for t in TOPICS)
+    guides += f'<li><a href="{p}blog/">All guides</a></li><li><a href="{p}locations/">Real locations field guide</a></li><li><a href="{p}map/">Map of the real locations</a></li>'
+    company = "".join(f'<li><a href="{p}{h}">{l}</a></li>' for h, l in
+                      [("about/", "About us"), ("contact/", "Contact"), ("meeting-point/", "Meeting point"),
+                       ("cancellation-policy/", "Cancellation policy"), ("insurance-and-licensing/", "Insurance & licensing"),
+                       ("editorial-policy/", "Editorial policy"), ("privacy/", "Privacy"), ("terms/", "Terms")])
+    return ('<div class="foot-cols">'
+            f'<nav class="foot-links" aria-label="Tours"><h2>Tours</h2><ul>{tours}</ul></nav>'
+            f'<nav class="foot-links" aria-label="Guides"><h2>Guides</h2><ul>{guides}</ul></nav>'
+            f'<nav class="foot-links" aria-label="Company"><h2>Company</h2><ul>{company}</ul></nav>'
+            '</div>')
+
+def site_footer(p):
+    return ('<footer><div class="wrap">'
+            f'<div class="foot-top"><a class="logo" href="{p or "./"}"><i>{logo_svg("f")}</i>LEONIDA <span class="grad">TOURS</span></a><span>© 2026 {BRAND}</span></div>'
+            + foot_cols(p) +
+            f'<p class="legal">{DISCLAIMER}</p></div></footer>')
+
+FOOT_CSS = (".foot-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:28px 0 8px}"
+            "@media(max-width:760px){.foot-cols{grid-template-columns:1fr 1fr}}@media(max-width:480px){.foot-cols{grid-template-columns:1fr}}"
+            ".foot-links h2{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:0 0 14px}"
+            ".foot-links ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}"
+            ".foot-links a{color:var(--muted);text-decoration:none;font-size:14px}.foot-links a:hover{color:var(--text)}")
+
+NAV_CSS = (".site-nav .wrap{display:flex;align-items:center;gap:14px;height:64px}"
+           ".site-nav .links{display:flex;gap:clamp(12px,1.6vw,22px);margin-left:auto}"
+           ".site-nav .links a{font:600 14px/1 var(--body);color:var(--muted);text-decoration:none;white-space:nowrap}"
+           ".site-nav .links a:hover,.site-nav .links a[aria-current]{color:var(--text)}"
+           ".menu{display:none;position:relative}"
+           ".menu summary{list-style:none;cursor:pointer;width:42px;height:42px;padding:0;border-radius:12px;display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--line-2)}"
+           ".menu summary::-webkit-details-marker{display:none}"
+           ".menu summary{display:flex!important;align-items:center;justify-content:center!important}.menu summary::after{content:none!important}"
+           ".menu summary span,.menu summary span::before,.menu summary span::after{display:block;width:18px;height:2px;border-radius:2px;background:var(--text);position:relative}"
+           ".menu summary span::before,.menu summary span::after{content:'';position:absolute;left:0}.menu summary span::before{top:-6px}.menu summary span::after{top:6px}"
+           ".menu[open] summary span{background:transparent}.menu[open] summary span::before{top:0;transform:rotate(45deg)}.menu[open] summary span::after{top:0;transform:rotate(-45deg)}"
+           ".menu-panel{position:absolute;right:0;top:52px;min-width:230px;display:grid;padding:8px;background:rgba(19,17,27,.97);border:1px solid var(--line-2);border-radius:18px;box-shadow:0 24px 60px -20px #000;z-index:60}"
+           ".menu-panel a{padding:13px 14px;border-radius:10px;color:var(--text);text-decoration:none;font:600 15px/1 var(--body)}"
+           ".menu-panel a:hover,.menu-panel a[aria-current]{background:rgba(255,255,255,.06)}"
+           "@media(max-width:1080px){.site-nav .links{display:none}.menu{display:block}.site-nav .btn{margin-left:auto}}"
+           "@media(max-width:420px){.site-nav .logo{font-size:13px}.site-nav .btn-sm{padding:10px 12px;font-size:13px}.site-nav .wrap{gap:10px}}"
+           "@media(max-width:380px){.site-nav .btn-sm{display:none}.site-nav .menu{margin-left:auto}}"
+           ".logo i{background:none!important;width:32px;height:32px;display:block}.logo i svg{width:32px;height:32px;display:block}"
+           ".foot-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}"
+           "@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}}@media(max-width:480px){.hero .row .btn{white-space:normal;text-align:center;flex:1 1 100%}}"
+           ".cta{grid-template-columns:minmax(0,1fr)}.cta .btn{white-space:normal;text-align:center;justify-self:start;max-width:100%}")
 
 def related_for(k):
     if k == "pass": return ["vc-van", "vc-boat", "airboat"]
@@ -549,11 +563,6 @@ def build_tour(k):
     rel = "".join(f'<a href="{p}tours/{SEO[x]["slug"]}/"><img src="{p}img/{TOURS[x]["img"]}.jpg" alt="{esc(ALT[TOURS[x]["img"]])}" loading="lazy" decoding="async" {img_attrs(TOURS[x]["img"])}>'
                   f'<div><h3>{esc(TOURS[x]["title"])}</h3><span>{esc(TOURS[x]["dur"])} · from {money(TOURS[x]["price"])} / {esc(TOURS[x]["unit"])}</span></div></a>' for x in related_for(k))
     foot = "".join(f'<li><a href="{p}tours/{SEO[x]["slug"]}/">{esc(TOURS[x]["title"])}</a></li>' for x in ORDER)
-    site_foot = "".join(f'<li><a href="{p}{h}">{l}</a></li>' for h, l in
-                        [("blog/", "Blog"), ("locations/", "Locations"), ("map/", "Map"), ("about/", "About us"),
-                         ("contact/", "Contact"), ("meeting-point/", "Meeting point"), ("cancellation-policy/", "Cancellation policy")])
-    by_slug = {r["slug"]: r for r in load_posts()}
-    guides = guide_cards([by_slug[x] for x in TOUR_GUIDES.get(k, []) if x in by_slug], p, "")
     graph = [org(), {"@type": "WebSite", "@id": SITE_ID, "url": url(), "name": BRAND},
              {"@type": "WebPage", "@id": page + "#webpage", "url": page, "name": S["title"], "description": S["meta"],
               "isPartOf": {"@id": SITE_ID}, "inLanguage": "en-US", "dateModified": TODAY, "mainEntity": {"@id": page + "#trip"},
@@ -573,9 +582,7 @@ def build_tour(k):
              f'<link rel="preload" as="image" href="{p}img/{T["img"]}.jpg">' + chr(10) + ld(graph) + chr(10) + f'<link rel="stylesheet" href="{p}assets/tour.css">')}
 </head>
 <body>
-{GTM_BODY}<header class="nav"><div class="wrap"><a class="logo" href="{p}"><i>{PIN}</i>LEONIDA <span class="grad">TOURS</span></a>
-<nav class="links" aria-label="Sections"><a href="{p}blog/">Blog</a><a class="hide-sm" href="{p}locations/">Locations</a><a class="hide-sm" href="{p}map/">Map</a></nav>
-<a class="btn btn-primary btn-sm" href="{reserve}">Reserve Now</a></div></header>
+{GTM_BODY}{site_nav(p)}
 <main>
 <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="{p}">Home</a></li><li><a href="{p}#map">Tours</a></li><li aria-current="page">{esc(T["title"])}</li></ol></nav></div>
 <div class="wrap hero">
@@ -584,7 +591,7 @@ def build_tour(k):
     <h1>{esc(T["title"])}</h1>
     <p class="lede">{esc(S["intro"])}</p>
     <div class="price">{money(T["price"])}<small>per {esc(T["unit"])} · launch price, tours from mid-November 2026</small></div>
-    <div class="row"><a class="btn btn-primary" href="{reserve}">Reserve now, pay later</a><a class="btn btn-glass" href="{p}#map">See all tours</a></div>
+    <div class="row"><a class="btn btn-primary" href="{reserve}">Reserve now · no prepayment</a><a class="btn btn-glass" href="{p}#map">See all tours</a></div>
   </div>
   <div class="ph"><img src="{p}img/{T["img"]}.jpg" alt="{esc(ALT[T["img"]])}" fetchpriority="high" {img_attrs(T["img"])}></div>
 </div>
@@ -600,11 +607,10 @@ def build_tour(k):
 {"" if not T.get("opts") else '<section><div class="wrap"><h2>Optional add-ons</h2><ul class="ticks">' + "".join(f"<li>{esc(o[0])} <strong>{esc(o[1])}</strong></li>" for o in T["opts"]) + "</ul></div></section>"}
 {itin}
 <section class="faq"><div class="wrap"><h2>Questions about this tour</h2>{faq_html}</div></section>
-<section><div class="wrap cta"><span class="eyebrow">Reserve now · nothing to pay today</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
+<section><div class="wrap cta"><span class="eyebrow">Early access · no prepayment needed</span><h2 style="margin:0">Reserve now. <span class="grad">Ride first.</span></h2><p class="lede">Tell us your date and group size and we'll confirm your spot before public booking opens, plus 20% off your first tour.</p><a class="btn btn-primary" href="{reserve}">Reserve {esc(T["title"])}</a></div></section>
 <section><div class="wrap"><h2>You might also like</h2><div class="related">{rel}</div></div></section>
-<section><div class="wrap"><h2>Guides for this tour</h2><div class="related guides">{guides}</div><p style="margin-top:20px"><a class="btn btn-glass" href="{p}blog/">See all guides on the blog</a></p></div></section>
 </main>
-<footer><div class="wrap"><ul>{foot}</ul><ul>{site_foot}</ul><p>© 2026 {BRAND} · <a href="{p}contact/">Contact us</a></p><p class="legal">{DISCLAIMER}</p></div></footer>
+{site_footer(p)}
 </body>
 </html>
 """
@@ -640,6 +646,13 @@ def sunset(w, h):
         for y in range(h): px[x, y] = c
     return g
 
+def brand_icon(size):
+    """The map-and-palm brand mark, resized from assets/logo-512.png (falls back to the old pin)."""
+    src = os.path.join(ROOT, "assets", "logo-512.png")
+    if os.path.exists(src):
+        return Image.open(src).convert("RGBA").resize((size, size), Image.LANCZOS)
+    return pin_icon(size)
+
 def pin_icon(size):
     s = size * 4
     m = Image.new("L", (s, s), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, s - 1, s - 1], radius=int(s * .24), fill=255)
@@ -670,7 +683,7 @@ def og_card(img_name, kicker, title, sub, out):
         for y in range(H): sp[x, y] = v
     im = Image.composite(Image.new("RGB", (W, H), (10, 9, 16)), im, shade)
     d = ImageDraw.Draw(im)
-    icon = pin_icon(64); im.paste(icon, (64, 56), icon)
+    icon = brand_icon(64); im.paste(icon, (64, 56), icon)
     d.text((146, 74), "LEONIDA TOURS", font=ImageFont.truetype(FONT_B, 30), fill=(246, 243, 250))
     d.text((64, 176), kicker.upper(), font=ImageFont.truetype(FONT_B, 22), fill=(62, 230, 214))
     f = ImageFont.truetype(FONT_B, 62 if len(title) < 34 else 52)
@@ -686,7 +699,7 @@ def og_card(img_name, kicker, title, sub, out):
 
 def build_images():
     a = os.path.join(ROOT, "assets"); os.makedirs(os.path.join(a, "og"), exist_ok=True)
-    open(os.path.join(a, "tour.css"), "w").write(TOUR_CSS)
+    open(os.path.join(a, "tour.css"), "w").write(TOUR_CSS + NAV_CSS + "\n" + FOOT_CSS + "\n")
     og_card("hero", "Miami · Everglades · Florida Keys", "Leonida is real. Play it IRL.",
             "Small-group & private tours to the real places that inspired the game. From $79.", os.path.join(a, "og-home.jpg"))
     for k in ORDER:
@@ -694,11 +707,9 @@ def build_images():
         og_card(T["img"], f'{T["loc"]} · {T["irl"]}', T["title"], f'{T["dur"]} · {money(T["price"])} per {T["unit"]} · tours from mid-Nov 2026',
                 os.path.join(a, "og", SEO[k]["slug"] + ".jpg"))
     for s, n in [(32, "icon-32.png"), (48, "icon-48.png"), (96, "icon-96.png"), (144, "icon-144.png"), (180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")]:
-        pin_icon(s).save(os.path.join(a, n))
-    pin_icon(256).save(os.path.join(ROOT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
-    open(os.path.join(ROOT, "favicon.svg"), "w").write(
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FF5FA2"/><stop offset=".45" stop-color="#FF7A85"/><stop offset="1" stop-color="#FFA66B"/></linearGradient></defs>'
-        '<rect width="32" height="32" rx="8" fill="url(#g)"/><g transform="translate(4 4)" fill="none" stroke="#1A0712" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></g></svg>\n')
+        brand_icon(s).save(os.path.join(a, n))
+    brand_icon(256).save(os.path.join(ROOT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
+    open(os.path.join(ROOT, "favicon.svg"), "w").write(LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ', 1).replace(' aria-hidden="true"', '') + "\n")
 
 # ---------------------------------------------------------------- content pages
 def _short(s, n):
@@ -724,17 +735,64 @@ def build_content():
         "img_attrs": img_attrs, "ALT": ALT, "SIZE": SIZE, "TOURS": TOURS, "SEO": SEO, "ORDER": ORDER,
         "BRAND": BRAND, "CONTACT_EMAIL": CONTACT_EMAIL, "CONTACT_ENDPOINT": CONTACT_ENDPOINT,
         "FORM_JS": form_js(),
-        "DISCLAIMER": DISCLAIMER, "TODAY": TODAY, "PIN": PIN,
+        "DISCLAIMER": DISCLAIMER, "TODAY": TODAY, "PIN": PIN, "site_nav": site_nav, "site_footer": site_footer, "TOPICS": TOPICS,
         "ORG_ID": ORG_ID, "SITE_ID": SITE_ID, "GTM_BODY": GTM_BODY, "guard": guard,
     }
     P.build_all()
     entries = [(url("blog/"), "0.9", "hero")]
+    entries += [(url(f'blog/{t["slug"]}/'), "0.8", "hero") for t in P.TOPICS]
     entries += [(url(f'blog/{r["slug"]}/'), "0.7", r["img"]) for r in posts]
     entries += [(url("locations/"), "0.9", "hero")]
     entries += [(url(f'locations/{l["slug"]}/'), "0.7", l["img"]) for l in locs["locations"]]
     entries += [(url("map/"), "0.8", "hero")]
     entries += [(url(f'{s["slug"]}/'), "0.5", s["img"]) for s in statics]
     return entries
+
+# ---------------------------------------------------------------- redirects
+# RULE: a URL that has ever been published must never 404. Every build records
+# all live pages in _build/url-history.json. If a later build no longer
+# generates one of them, a redirect page is written at the old address,
+# pointing to the target in _build/redirects.json, or else to the closest
+# live parent section. 404.html applies the same rules to unknown addresses.
+REDIRECT_MARK = '<meta name="lt-redirect" content="1">'
+
+def redirect_fallback(path):
+    for prefix, target in (("blog/", "blog/"), ("locations/", "locations/"), ("tours/", "#missions-sec")):
+        if path.startswith(prefix) and path != prefix:
+            return target
+    return ""
+
+def write_redirects():
+    hist_path = os.path.join(HERE, "url-history.json")
+    red_path = os.path.join(HERE, "redirects.json")
+    try: history = set(json.load(open(hist_path)))
+    except Exception: history = set()
+    try: manual = json.load(open(red_path))
+    except Exception: manual = {}
+    live = set()
+    for u in json.load(open(os.path.join(HERE, "urls.json")))["urls"]:
+        live.add(u[len(url()):] if u.startswith(url()) else u)
+    history |= live
+    made = 0
+    for path in sorted(history | set(manual)):
+        if path in live or path.endswith(".xml") or path.endswith(".txt"):
+            continue
+        d = os.path.join(ROOT, path)
+        idx = os.path.join(d, "index.html")
+        if os.path.exists(idx) and REDIRECT_MARK not in open(idx, encoding="utf-8").read():
+            continue  # a real page lives here
+        target = manual.get(path, redirect_fallback(path))
+        dest = target if target.startswith("http") else url(target.lstrip("/"))
+        os.makedirs(d, exist_ok=True)
+        open(idx, "w", encoding="utf-8").write(
+            f'<!doctype html><html lang="en-US"><head><meta charset="utf-8">{REDIRECT_MARK}'
+            f'<title>Moved | {BRAND}</title><meta name="robots" content="noindex,follow">'
+            f'<link rel="canonical" href="{dest}"><meta http-equiv="refresh" content="0; url={dest}">'
+            f'<script>location.replace({json.dumps(dest)}+location.search)</script></head>'
+            f'<body><p>This page has moved to <a href="{dest}">{dest}</a>.</p></body></html>\n')
+        made += 1
+    json.dump(sorted(history), open(hist_path, "w"), indent=1)
+    return made
 
 # ---------------------------------------------------------------- crawl files
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot",
@@ -764,7 +822,7 @@ def build_crawl_files(extra_pages=()):
     lines = [f"# {BRAND}", "",
              "> Independent South Florida tour company running unofficial small-group and private tours to the real Miami, "
              "Everglades and Florida Keys places that inspired the game world of Leonida (Vice City). Tours start mid-November 2026 "
-             f"(launch day {LAUNCH}). Reservations are free with nothing to pay upfront. Not affiliated with any game publisher.", "",
+             f"(launch day {LAUNCH}). Reservations need no prepayment. Not affiliated with any game publisher.", "",
              "- Service area: the greater Miami area - South Beach, Brickell, Downtown, Coral Gables, Coconut Grove, Key Biscayne, Hialeah, Doral and Aventura",
              f"- Contact: {url('contact/')} - one form for bookings, changes, groups and corrections. We answer by email.",
              "- No street address, phone number or mailbox is published: pickup points are sent with each booking.",
@@ -802,7 +860,8 @@ def build_crawl_files(extra_pages=()):
 {GTM_HEAD}<title>Page not found | {BRAND}</title><meta name="robots" content="noindex"><link rel="icon" href="{url('favicon.svg')}" type="image/svg+xml">
 <style>body{{margin:0;min-height:100vh;display:grid;place-items:center;background:#0A0910;color:#F6F3FA;font:16px/1.6 system-ui,sans-serif;text-align:center;padding:24px}}
 h1{{font-size:clamp(32px,6vw,56px);margin:0 0 12px}}a{{display:inline-block;margin-top:20px;padding:14px 22px;border-radius:999px;background:linear-gradient(100deg,#FF5FA2,#FFA66B);color:#1A0712;font-weight:700;text-decoration:none}}p{{color:#A7A1B6}}</style></head>
-<body>{GTM_BODY}<main><h1>Wasted. Page not found.</h1><p>This spot isn't on the map. Respawn on the home page and pick a tour.</p><a href="{url()}">Back to Leonida Tours</a></main></body></html>
+<body>{GTM_BODY}<script>(function(){{var m={json.dumps(json.load(open(os.path.join(HERE, "redirects.json"))) if os.path.exists(os.path.join(HERE, "redirects.json")) else {})},p=location.pathname.replace(/^\\//,"");if(p&&!p.endsWith("/")&&p.indexOf(".")<0)p+="/";var t=m[p];if(t===undefined){{if(/^blog\\/./.test(p))t="blog/";else if(/^locations\\/./.test(p))t="locations/";else if(/^tours\\/./.test(p))t="#missions-sec";}}if(t!==undefined)location.replace("/"+t.replace(/^\\//,""));}})();</script>
+<main><h1>Wasted. Page not found.</h1><p>This spot isn't on the map. Respawn on the home page and pick a tour.</p><a href="{url()}">Back to Leonida Tours</a></main></body></html>
 """)
     open(os.path.join(ROOT, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY + "\n")
     open(os.path.join(ROOT, "_config.yml"), "w").write("# GitHub Pages: publish files as-is; _build/ holds the generator.\nexclude: [_build, README.md]\ninclude: [.well-known]\n")
@@ -823,12 +882,12 @@ if __name__ == "__main__":
                | {f"loc-{l['slug']}" for l in locs["locations"]}
                | {f"page-{s['slug']}" for s in statics})
     live_top = {"blog", "locations", "map"} | {s["slug"] for s in statics}
-    live_blog = {r["slug"] for r in posts}
+    live_blog = {r["slug"] for r in posts} | {t["slug"] for t in P.TOPICS}
     live_locs = {l["slug"] for l in locs["locations"]}
 
     # remove pages that no longer exist in the content modules
     for d in os.listdir(os.path.join(ROOT, "tours")) if os.path.isdir(os.path.join(ROOT, "tours")) else []:
-        if d not in live_tours: shutil.rmtree(os.path.join(ROOT, "tours", d))
+        if d not in live_tours and os.path.isdir(os.path.join(ROOT, "tours", d)): shutil.rmtree(os.path.join(ROOT, "tours", d))
     for f in os.listdir(os.path.join(ROOT, "assets", "og")) if os.path.isdir(os.path.join(ROOT, "assets", "og")) else []:
         if f.endswith(".jpg") and f[:-4] not in live_og: os.remove(os.path.join(ROOT, "assets", "og", f))
 
@@ -858,4 +917,5 @@ if __name__ == "__main__":
     build_crawl_files(entries)
     build_index()
     for k in ORDER: build_tour(k)
+    write_redirects()
     print(f"built for {SITE} - {len(entries) + 1 + len(ORDER)} pages")

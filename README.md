@@ -35,6 +35,13 @@ SITE_URL=https://leonidatours.com python3 _build/build.py
 
 `SITE_URL` must be the address the site is live at. If it's your own domain, the build writes `CNAME`; for a `github.io` address it doesn't.
 
+## Rules
+
+- **No dead URLs.** Every address the site has ever published is recorded in `_build/url-history.json`. If a build stops generating one of them, it writes a redirect page at the old address: to the target listed in `_build/redirects.json`, or else to the closest live section (`/blog/`, `/locations/`, or the tours on the home page). `404.html` applies the same rules to any other unknown address. Never delete `url-history.json`; add an entry to `redirects.json` whenever you rename or remove a page on purpose.
+- **One menu, one footer.** The main menu (`MENU` in `build.py`) and the footer columns (Tours, Guides, Company) are shared by every page. The footer links to blog topics, never to single articles. Topics live in `TOPICS` in `_build/pages.py`.
+- **Unique search titles.** Every page has its own `<title>` (under 60 characters) and meta description (110 to 160 characters). When a search title should differ from the on-page heading, set it in `_build/seo_overrides.json`. Run `python3 _build/_audit.py` after every build.
+- **Brand icon.** All icons and the favicon are generated from `assets/logo-512.png` and the `LOGO` SVG in `build.py`.
+
 ## Go-live checklist
 
 1. **GitHub Pages:** repo Settings → Pages → Source: *Deploy from a branch*, branch `main`, folder `/ (root)`.

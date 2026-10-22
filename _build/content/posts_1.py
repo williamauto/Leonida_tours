@@ -39,7 +39,7 @@ POSTS = [
     "Get on the water once. The trailer's establishing shot of Vice City is a jet ski on Biscayne Bay, and the real version is a two-hour loop past PortMiami, Fisher Island and Millionaire's Row.",
     "Go west, out of the city, for half a day. Grassrivers is the Everglades, and the contrast between the swamp and the strip is the whole point of the game.",
     "Do the Keys if you have the day. The Leonida Keys are the Florida Keys, and the Seven Mile Bridge is exactly where the game puts it."]},
-  {"note": {"title": "Our tours launch the same week", "text": "Leonida Tours begins running on November 19, 2026. Reserving is free, there is nothing to pay today, and we confirm your date by email before public booking opens, with 20% off your first tour."}},
+  {"note": {"title": "Our tours launch the same week", "text": "Leonida Tours begins running on November 19, 2026. You can reserve now with no prepayment needed: we confirm your date by email before public booking opens, with 20% off your first tour."}},
   {"h2": "What has not been announced", "id": "not-announced"},
   {"p": ["Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming the publisher has confirmed that a specific building is a specific in-game location is overstating what has been published."]},
   {"p": ["What has been published is the official region copy for the six areas of Leonida, and that copy is the highest-quality primary source available. We quote it directly wherever it matters, and we separate it clearly from the community's location matching."]}

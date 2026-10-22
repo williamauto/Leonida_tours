@@ -1,6 +1,6 @@
 # Leonida Tours: full site text for AI assistants
 
-> Independent South Florida tour company running small-group and private tours to the real Miami, Everglades and Florida Keys places. Reservations are free with nothing to pay upfront. Not affiliated with, endorsed by or sponsored by any game publisher. All game names are used only to identify real-world locations.
+> Independent South Florida tour company running small-group and private tours to the real Miami, Everglades and Florida Keys places. Reservations need no prepayment. Not affiliated with, endorsed by or sponsored by any game publisher. All game names are used only to identify real-world locations.
 
 Site: https://leonidatours.com/  |  Contact: https://leonidatours.com/contact/  |  One form for enquiries, and we answer by email. No street address, phone number or mailbox is published: pickup points are sent with each booking, and we collect guests across the greater Miami area.
 
@@ -238,7 +238,7 @@ Book the sunset departure, not the daytime one. The game's identity is the neon,
 Get on the water once. The trailer's establishing shot of Vice City is a jet ski on Biscayne Bay, and the real version is a two-hour loop past PortMiami, Fisher Island and Millionaire's Row.
 Go west, out of the city, for half a day. Grassrivers is the Everglades, and the contrast between the swamp and the strip is the whole point of the game.
 Do the Keys if you have the day. The Leonida Keys are the Florida Keys, and the Seven Mile Bridge is exactly where the game puts it.
-> Our tours launch the same week: Leonida Tours begins running on November 19, 2026. Reserving is free, there is nothing to pay today, and we confirm your date by email before public booking opens, with 20% off your first tour.
+> Our tours launch the same week: Leonida Tours begins running on November 19, 2026. You can reserve now with no prepayment needed: we confirm your date by email before public booking opens, with 20% off your first tour.
 
 ## What has not been announced
 Quite a lot, and the gaps are worth knowing about if you are reading fan wikis. There is no published PC release, no published install size, no performance targets, no published map of any region, and no official list of real-world inspirations. Any page claiming the publisher has confirmed that a specific building is a specific in-game location is overstating what has been published.

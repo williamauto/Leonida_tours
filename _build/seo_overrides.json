@@ -1,0 +1,17 @@
+{
+  "_note": "Search titles that differ from the on-page H1. Keyed by page path. Keep titles under 60 characters and unique.",
+  "blog/everglades-airboat-tour-guide/": {"title": "Everglades Airboat Tours from Miami: Times & What You'll See"},
+  "blog/gta-6-everglades-grassrivers/": {"title": "Grassrivers Is the Everglades: GTA 6's Swamp in Real Life"},
+  "blog/gta-6-release-date/": {"title": "GTA 6 Release Date (Nov 19, 2026) and What to Do in Miami"},
+  "blog/is-gta-6-set-in-miami/": {"title": "Is GTA 6 Set in Miami? Vice City, Leonida and Real Florida"},
+  "blog/miami-launch-week-guide/": {"title": "Miami Launch Week Guide: South Florida from November 19"},
+  "blog/miami-sunset-cruise-guide/": {"title": "Miami Sunset Cruise Guide: Biscayne Bay & Millionaire's Row"},
+  "tours/miami-boat-tour-biscayne-bay/": {"title": "Millionaire's Row Boat Tour, Miami | Leonida Tours"},
+  "cancellation-policy/": {"title": "Cancellation & Rescheduling Policy | Leonida Tours"},
+  "insurance-and-licensing/": {"title": "Licensing, Insurance & Safety | Leonida Tours"},
+  "privacy/": {"title": "Privacy Policy | Leonida Tours"},
+  "terms/": {"title": "Terms of Service | Leonida Tours"},
+  "locations/calle-ocho-little-cuba/": {"title": "Calle Ocho and Domino Park, Little Havana | Leonida Tours"},
+  "locations/vice-city-sign/": {"title": "The VICE Sign Near Miami Airport | Leonida Tours"},
+  "locations/ocean-view-hotel-clevelander/": {"title": "The Clevelander, Ocean Drive, Miami Beach | Leonida Tours"}
+}
