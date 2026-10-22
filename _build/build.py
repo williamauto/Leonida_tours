@@ -348,6 +348,27 @@ def build_index():
     body = src[src.index('<nav class="nav"'):]
     body = body[:body.rindex("</body>")]
 
+    # single source of truth: tour copy, regions and itineraries live in data.json
+    # and are injected here, so the homepage can never drift from the tour pages.
+    def js_json(obj):
+        # "</" is escaped so a stray "</script>" can never close the script tag
+        return json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
+
+    old_data = "const TOURS=/*__LT_TOURS__*/{},ORDER=/*__LT_ORDER__*/[],REGIONS=/*__LT_REGIONS__*/{};"
+    assert old_data in body
+    body = body.replace(old_data, "const TOURS=" + js_json(TOURS) +
+                          ",ORDER=" + json.dumps(ORDER) +
+                          ",REGIONS=" + js_json(D["REGIONS"]) + ";")
+    old_itin = "const LAND=/*__LT_LAND__*/[],WATER=/*__LT_WATER__*/[];"
+    assert old_itin in body
+    body = body.replace(old_itin, "const LAND=" + js_json(LAND) +
+                          ",WATER=" + js_json(WATER) + ";")
+
+
+
+
+
+
     # static, crawlable mission cards (identical markup to the JS render, but real links)
     cards = []
     for k in ORDER:
