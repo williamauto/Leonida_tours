@@ -410,7 +410,7 @@ def build_blog_index(posts):
     ]
     extra = CTX["ld"](graph)
     out = ("<!doctype html>\n<html lang=\"en-US\">\n<head>\n" +
-           page_head(f"Blog & Guides | {CTX['BRAND']}",
+           page_head(f"Miami & GTA 6 Travel Guides: The Blog | {CTX['BRAND']}",
                      "Practical guides to Miami, the Everglades and the Florida Keys: real locations, honest itineraries, current prices and how to get the most from a few days.",
                      page, CTX["url"]("assets/og-home.jpg"), "Leonida Tours blog: guides to Miami, the Everglades and the Florida Keys", p, extra) +
            "</head>\n<body>\n" + CTX["GTM_BODY"] + nav(p, "blog/") +
