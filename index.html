@@ -538,6 +538,8 @@ dialog.modal::backdrop{background:rgba(6,5,10,.72);backdrop-filter:blur(6px);-we
   *{transition:none!important}
 }
 
+#guides{padding-top:0}.guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}@media(max-width:940px){.guides{grid-template-columns:1fr 1fr}}@media(max-width:600px){.guides{grid-template-columns:1fr}}.guide{display:flex;flex-direction:column;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .2s,transform .2s}.guide:hover{border-color:var(--line-2);transform:translateY(-2px)}.guide img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover}.guide div{display:grid;gap:8px;padding:16px 18px 20px}.guide .k{font:700 11px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}.guide h3{font:700 17px/1.3 var(--display);color:var(--text)}.guide p{font-size:14px;line-height:1.55;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.guides-all{margin-top:24px;text-align:center}
+.nav-blog{display:none;font:600 14px/1 var(--body);color:var(--text);text-decoration:none;margin-left:auto;margin-right:14px}@media (max-width:920px){.nav-blog{display:inline-block}}@media (max-width:480px){.nav .wrap{gap:10px}.logo-text{font-size:13px}.nav .btn-sm{padding:10px 12px;font-size:13px}.nav-blog{margin-right:4px}}@media (max-width:360px){.logo-text{display:none}#hudDays{display:none}}html,body{overflow-x:clip}#showcase{min-width:0;max-width:100%}@media (max-width:940px){.garage{grid-template-columns:minmax(0,1fr)}}
 .foot-links{margin:28px 0 8px}.foot-links h2{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}.foot-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px 24px}.foot-links a{color:var(--muted);text-decoration:none;font-size:14px}.foot-links a:hover{color:var(--text)}
 a.mcard{text-decoration:none}</style></head>
 <body>
@@ -561,6 +563,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a class="nav-blog" href="blog/">Blog</a>
     <a class="btn btn-primary btn-sm" href="#preregister">Reserve Now</a>
   </div>
   <div class="xpbar" aria-hidden="true"><i id="xpBar"></i></div>
@@ -881,6 +884,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="btn btn-primary" type="submit" id="submitBtn">Reserve now</button>
       <p class="form-msg" id="formMsg" role="status"></p>
     </form>
+  </div>
+</section>
+
+<section id="guides">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">From the blog</span>
+      <h2>Guides to <span class="grad">plan your trip</span>.</h2>
+      <p class="lede">Our guides explain where the places from the game are in real life, how to plan your days in Miami and what to expect in the Everglades and the Florida Keys.</p>
+    </div>
+    <div class="guides"><a class="guide" href="blog/gta-6-release-date/"><img src="img/hero.jpg" alt="Downtown Miami skyline across Biscayne Bay at a pink sunset" loading="lazy" decoding="async" width="1900" height="1200"><div><span class="k">Release guide</span><h3>GTA 6 Release Date: November 19, 2026 and What to Do in Miami</h3><p>The date is locked: November 19, 2026, on PlayStation 5 and Xbox Series X|S. Here is the confirmed timeline, what changed twice on the way, and the smartest way to spend launch week if you are already in South Florida.</p></div></a><a class="guide" href="blog/gta-6-locations-in-real-life/"><img src="img/neon.jpg" alt="Ocean Drive neon signs and palm trees at night, Miami Beach" loading="lazy" decoding="async" width="1300" height="867"><div><span class="k">The field guide</span><h3>GTA 6 Locations in Real Life: 24 Miami and Florida Places</h3><p>Twenty-four places, from the Ocean View Hotel to the Everglades airboat, each matched to a real address with coordinates and a confidence rating. This is the list to take with you.</p></div></a><a class="guide" href="blog/best-things-to-do-in-miami-beach/"><img src="img/decoday.jpg" alt="Pastel Art Deco hotels on Ocean Drive, Miami Beach" loading="lazy" decoding="async" width="1300" height="867"><div><span class="k">Itinerary</span><h3>Best Things to Do in Miami Beach in One Day (2026)</h3><p>One day, no filler. The order matters: the beach at 7am, the murals at 11, the water at sunset and the neon after 8. Here is the timing that makes it work.</p></div></a><a class="guide" href="blog/is-gta-6-set-in-miami/"><img src="img/oceannight.jpg" alt="Neon-lit Art Deco hotels on Ocean Drive, Miami Beach, at night" loading="lazy" decoding="async" width="1000" height="1250"><div><span class="k">Explainer</span><h3>Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida</h3><p>Partly. Vice City is Miami, but Leonida is a whole invented state, and the differences matter for anyone planning a trip or writing about the game.</p></div></a><a class="guide" href="blog/gta-6-map-and-regions/"><img src="img/bridgenight.jpg" alt="Miami skyline and causeway bridge at sunset over Biscayne Bay" loading="lazy" decoding="async" width="800" height="1000"><div><span class="k">Map guide</span><h3>GTA 6 Map: The Six Regions of Leonida and Where They Are</h3><p>Six official regions, one fictional state, and a surprising amount of real Florida underneath. Here is the official copy for each region next to the geography it borrows from.</p></div></a><a class="guide" href="blog/gta-6-trailers-timestamped/"><img src="img/downtown.jpg" alt="Downtown Miami highways, palm trees and towers at night" loading="lazy" decoding="async" width="800" height="534"><div><span class="k">Frame by frame</span><h3>GTA 6 Trailers, Timestamped to the Real Miami Locations</h3><p>Four official videos, and every one of them contains at least one frame you can stand in. Here is where each real location appears, to the second.</p></div></a></div>
+    <p class="guides-all"><a class="btn btn-glass" href="blog/">Read all 12 guides</a></p>
   </div>
 </section>
 
