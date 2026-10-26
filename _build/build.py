@@ -438,7 +438,7 @@ def build_index():
               "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": trip(k, full=False)} for i, k in enumerate(ORDER)]}]
     extra = ('<link rel="preload" as="image" href="img/decoday.jpg" fetchpriority="high">\n' + ld(graph) +
              "\n<style>[hidden]:not([hidden=until-found i]){display:none!important}\n" + css + "</style>")
-    guard("home", [("title", title), ("meta", desc), ("h1", "Walk the real Miami behind the game.")], graph)
+    guard("home", [("title", title), ("meta", desc), ("h1", "Discover the real Miami behind the game.")], graph)
     out = ("<!doctype html>\n<html lang=\"en-US\">\n<head>\n" +
            head_common(title, desc, url(), url("assets/og-home.jpg"), "Leonida Tours: Miami skyline at sunset, unofficial IRL tours", "", extra) +
            "</head>\n<body>\n" + GTM_BODY + body + "</body>\n</html>\n")
