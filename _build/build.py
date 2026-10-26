@@ -33,6 +33,13 @@ GTM_HEAD = ("<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]
             "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n"
             "'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
             f"}})(window,document,'script','dataLayer','{GTM_ID}');</script>\n<!-- End Google Tag Manager -->\n") if GTM_ID else ""
+POSTHOG_KEY = os.environ.get("POSTHOG_KEY", "phc_qm4rrzy5bQyGuQbLU5bqnM86fLLk5u7tWrMRCLAEXH2e")
+POSTHOG_HOST = os.environ.get("POSTHOG_HOST", "https://us.i.posthog.com")
+POSTHOG_HEAD = ("<!-- PostHog -->\n<script>(function(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';\n"
+                f"s.src='{POSTHOG_HOST.replace('.i.posthog.com', '-assets.i.posthog.com')}/static/array.js';\n"
+                f"s.onload=function(){{posthog.init('{POSTHOG_KEY}',{{api_host:'{POSTHOG_HOST}',defaults:'2025-05-24',person_profiles:'identified_only'}});}};\n"
+                "document.head.appendChild(s);})();</script>\n<!-- End PostHog -->\n") if POSTHOG_KEY else ""
+GTM_HEAD = GTM_HEAD + POSTHOG_HEAD
 GTM_BODY = (f'<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_ID}"\n'
             'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->\n') if GTM_ID else ""
 SOCIAL = ["https://www.instagram.com/leonidatours", "https://www.tiktok.com/@leonidatours"]
