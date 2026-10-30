@@ -57,7 +57,7 @@
   - Seven Mile Bridge (Leonida Keys): Overseas Highway, Marathon, FL 32952 - 24.7016, -81.15969 - confidence: Strong - in the game as Seven Mile Bridge.
   - Everglades National Park (Grassrivers): 40001 State Road 6, Homestead, FL 33034 - 25.2866, -80.8986 - confidence: Official region + community match - in the game as Grassrivers.
   - Jade Ocean Condominium (Vice Beach): 17121 Collins Ave, Sunny Isles Beach, FL 33160 - 25.93434, -80.12102 - confidence: Strong - in the game as The Jade Ocean tower.
-  - Star Island and the Flagler Memorial (Vice City): 1200 Brickell Ave, Miami, FL 33131 - 25.77404, -80.14889 - confidence: Strong - in the game as Star Island.
+  - Star Island and the Flagler Memorial (Vice City): Star Island, Miami Beach, FL 33139 - 25.77404, -80.14889 - confidence: Strong - in the game as Star Island.
   - Bayside Marketplace (Vice City): 401 N Biscayne Blvd, Miami, FL 33132 - 25.7794, -80.186 - confidence: Strong - in the game as The observation wheel.
   - Little Haiti (Vice City): 500 NW 2nd Ave, Miami, FL 33128 - 25.8065, -80.217 - confidence: Official naming - in the game as Little Haiti.
   - Venetian Causeway (Vice City): 1000 Venetian Causeway, Miami, FL 33132 - 25.79003, -80.17821 - confidence: Strong - in the game as The Vice Causeway toll plaza.
@@ -68,7 +68,7 @@
 - [https://leonidatours.com/blog/]: 12 guides to Miami, the Everglades and the Florida Keys.
   - [https://leonidatours.com/blog/gta-6-release-date/]: GTA 6 Release Date: November 19, 2026 and What to Do in Miami (2026-10-20)
   - [https://leonidatours.com/blog/gta-6-locations-in-real-life/]: GTA 6 Locations in Real Life: 24 Miami and Florida Places (2026-10-19)
-  - [https://leonidatours.com/blog/is-gta-6-set-in-miami/]: Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida (2026-10-18)
+  - [https://leonidatours.com/blog/is-gta-6-set-in-miami/]: Is GTA 6 Based on Miami? Leonida, Vice City and the Real Florida (2026-10-18)
   - [https://leonidatours.com/blog/gta-6-map-and-regions/]: GTA 6 Map: The Six Regions of Leonida and Where They Are (2026-10-17)
   - [https://leonidatours.com/blog/gta-6-trailers-timestamped/]: GTA 6 Trailers, Timestamped to the Real Miami Locations (2026-10-16)
   - [https://leonidatours.com/blog/gta-6-everglades-grassrivers/]: Grassrivers Is the Everglades: Seeing GTA 6's Swamp for Real (2026-10-15)

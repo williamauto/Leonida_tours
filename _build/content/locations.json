@@ -1184,7 +1184,7 @@
    "name": "Star Island and the Flagler Memorial",
    "game_name": "Star Island",
    "area": "Vice City",
-   "addr": "1200 Brickell Ave, Miami, FL 33131",
+   "addr": "Star Island, Miami Beach, FL 33139",
    "lat": 25.77404,
    "lng": -80.14889,
    "img": "b_star",
@@ -1220,7 +1220,7 @@
       "rows": [
        [
         "Address",
-        "1200 Brickell Ave, Miami, FL 33131"
+        "Star Island, Miami Beach, FL 33139"
        ],
        [
         "Coordinates",

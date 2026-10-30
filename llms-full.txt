@@ -154,7 +154,7 @@ Every stop on a Leonida Tours route is a real, publicly accessible place in Sout
 
 ### Star Island and the Flagler Memorial (Vice City)
 - URL: https://leonidatours.com/locations/star-island-flagler-memorial/
-- Address: 1200 Brickell Ave, Miami, FL 33131  |  Coordinates: 25.77404, -80.14889
+- Address: Star Island, Miami Beach, FL 33139  |  Coordinates: 25.77404, -80.14889
 - In the game as: Star Island  |  Confidence: Strong
 - Where it is seen: Trailer 1 (0:11) and Trailer 2 (2:19)
 - The villas in Trailer 1, filmed from a jet ski across Biscayne Bay, are Star Island, the man-made island off the MacArthur Causeway. The giveaway in the frame is not the mansions but the white obelisk above the trees on the right: that is the Flagler Memorial on Monument Island, and it can be seen from across the bay. No canal view can produce that sightline.
@@ -315,7 +315,7 @@ A map is the limit of what a reference site can do for you. Every location on th
 - Q: Are the GTA 6 Everglades really the Everglades? A: Yes. The official Grassrivers description names gators and mangroves and calls the region a primordial wetland expanse, and the Everglades is the only wetland of that scale and character in Florida.
 - Q: How many locations does GTA 6 have? A: Mapping projects have charted hundreds of named points across Leonida. The 24 on this page are the ones with enough independent evidence to stand behind, and we have deliberately left out the long tail of weak or single-frame guesses.
 
-### Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida
+### Is GTA 6 Based on Miami? Leonida, Vice City and the Real Florida
 - URL: https://leonidatours.com/blog/is-gta-6-set-in-miami/  |  Published: 2026-10-18  |  Category: Guide
 - Partly. Vice City is Miami, but Leonida is a whole invented state, and the differences matter for anyone planning a trip or writing about the game.
 The short answer is: GTA 6 is set in a fictional American state called Leonida, and its biggest city, Vice City, is Miami with the serial numbers filed off. The official copy for the city names the real neighbourhoods, so the answer is not ambiguous in the way that "it is based on Miami" usually is.

@@ -129,7 +129,7 @@ POSTS = [
 },
 {
  "slug": "is-gta-6-set-in-miami",
- "title": "Is GTA 6 Set in Miami? Leonida, Vice City and the Real Florida",
+ "title": "Is GTA 6 Based on Miami? Leonida, Vice City and the Real Florida",
  "meta": "GTA 6 is set in Leonida, a fictional state built on Florida, with Vice City modelled on Miami. What is official, what is inferred, what the real place is like.",
  "kicker": "Explainer",
  "cat": "Guide",

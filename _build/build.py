@@ -114,6 +114,7 @@ SEO = {
   faq=[("How is the Jeep tour different from the classic car?","Same private route and guide, in an open-top Jeep instead of a vintage convertible, for $450 per Jeep."),
        ("How long does it take?","About 2.5 hours, with pickup from your hotel anywhere in the greater Miami area.")]),
  "vc-boat": dict(slug="miami-boat-tour-biscayne-bay", type="Miami boat tour",
+  h1="Miami Vice City by Boat: Star Island & Millionaire's Row",
   title="Millionaire's Row Boat Tour Miami: Star Island | Leonida Tours",
   meta="2-hour Millionaire's Row boat tour from Bayside: PortMiami, Fisher Island, megayachts, Star, Palm & Hibiscus Island mansions and a sunset skyline. $79.",
   intro="Our Millionaire's Row cruise shows Miami the way the trailers frame it, from the water. A licensed captain and host loop out of Bayside Marina past PortMiami, Fisher Island and the Miami Beach Marina megayachts, then the celebrity mansions of Star, Palm and Hibiscus Islands and the Venetian Islands, before cutting the engines for the skyline at golden hour.",
@@ -616,7 +617,7 @@ def build_tour(k):
 <div class="wrap hero">
   <div class="copy">
     <span class="eyebrow">{esc(T["loc"])} · Real place: {esc(T["irl"])}</span>
-    <h1>{esc(T["title"])}</h1>
+    <h1>{esc(S.get("h1", T["title"]))}</h1>
     <p class="lede">{esc(S["intro"])}</p>
     <div class="price">{money(T["price"])}<small>per {esc(T["unit"])} · launch price, tours from mid-November 2026</small></div>
     <div class="row"><a class="btn btn-primary" href="{reserve}">Reserve now · no prepayment</a><a class="btn btn-glass" href="{p}#map">See all tours</a></div>
